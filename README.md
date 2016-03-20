@@ -1,7 +1,7 @@
 # Tic Tac Toe game in Chapel
 
 # Description
-This is a project to create a tic tac toe game in Chape using a gui library built using the third party
+This is a project to create a tic tac toe game in Chapel using a gui library built using the third party
 open source library gtk.
 
 # Prerequisite for compiling and running the program
