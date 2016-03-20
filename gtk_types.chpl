@@ -5,6 +5,9 @@ extern type gpointer;
 extern type GCallback;
 extern type GObject;
 extern type GdkEvent;
+extern type GType;
+extern type GtkReliefStyle;
+extern type GtkAttachOptions;
 
 //Individual Widget Gallery
 	//Windows
