@@ -43,6 +43,7 @@ extern proc gtk_widget_set_size_request( widget: c_ptr(GtkWidget), wid: c_int, h
 //Function macros
 extern proc G_CALLBACK(f): GCallback;
 extern proc G_OBJECT(f): c_ptr(GObject);
+extern proc GTK_WINDOW(obj): c_ptr(GtkWindow);
 extern proc GTK_BUTTON(obj): c_ptr(GtkButton);
 extern proc GTK_LABEL(obj): c_ptr(GtkLabel);
 extern proc GTK_TABLE(obj): c_ptr(GtkTable);
@@ -53,6 +54,11 @@ extern proc GTK_CONTAINER( a: c_ptr(GtkWidget)) : c_ptr(GtkContainer);
 extern proc g_signal_connect(widget , signal_name: c_string, call_fxn: GCallback, data);
 extern proc g_signal_connect_swapped(widget , signal_name: c_string, call_fxn: GCallback, data);
 
+//Window
+extern proc gtk_window_set_title(win: c_ptr(GtkWindow), str: c_string): void;
+extern proc gtk_window_set_resizable(win: c_ptr(GtkWindow), resizable: bool): void;
+extern proc gtk_window_set_icon_from_file(win: c_ptr(GtkWindow), filename: c_string,ref err: c_ptr(GError)): void;
+
 //Buttons
 extern proc gtk_button_new(): c_ptr(GtkWidget);
 extern proc gtk_button_new_with_label( a: c_string): c_ptr(GtkWidget);
@@ -60,7 +66,6 @@ extern proc gtk_button_new_with_mnemonic(str: c_string): c_ptr(GtkWidget);
 extern proc gtk_button_new_from_stock(str: c_string): c_ptr(GtkWidget);
 extern proc gtk_button_set_label(b: c_ptr(GtkButton), str: c_string) : void;
 extern proc gtk_button_set_relief(butn: c_ptr(GtkButton), style: GtkReliefStyle): void;
-extern proc gtk_button_new_with_mnemonic(str: c_string): c_ptr(GtkWidget);
 
 
 //Tables

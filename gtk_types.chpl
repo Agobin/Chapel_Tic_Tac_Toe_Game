@@ -8,6 +8,8 @@ extern type GdkEvent;
 extern type GType;
 extern type GtkReliefStyle;
 extern type GtkAttachOptions;
+extern type GError;
+extern type GErrorType;
 
 //Individual Widget Gallery
 	//Windows
