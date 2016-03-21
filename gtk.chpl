@@ -21,17 +21,11 @@ extern proc gtk_widget_show_all( object: c_ptr(GtkWidget)): void;
 extern proc gtk_main(): void;
 extern proc gtk_main_quit();
 
-//This function returns a label widget
+//Label
 extern proc gtk_label_new( str: c_string): c_ptr(GtkWidget);
 
-//This function adds a widget into a container
+//Container
 extern proc gtk_container_add( wid: c_ptr(GtkContainer), child: c_ptr(GtkWidget));
-
-//This function links a widget to a callback function
-extern proc link_close_signal(ref window: c_ptr(GtkWidget)) :void;
-
-//This function hides a window
-extern proc link_hide_signal(ref window: c_ptr(GtkWidget)) :void;
 
 //Miscellaneous
 extern proc g_print(args...): void;
@@ -51,7 +45,7 @@ extern proc GTK_CONTAINER( a: c_ptr(GtkWidget)) : c_ptr(GtkContainer);
 
 
 //signals
-extern proc g_signal_connect(widget , signal_name: c_string, call_fxn: GCallback, data);
+extern proc g_signal_connect(widget , signal_name, call_fxn, data): void;
 extern proc g_signal_connect_swapped(widget , signal_name: c_string, call_fxn: GCallback, data);
 
 //Window
@@ -95,8 +89,9 @@ extern proc gtk_table_set_row_spacings(table: c_ptr(GtkTable), spacing: c_int): 
  
 //Custom defined functions 
 extern proc destroy_c( a:c_ptr(GtkWidget) , b:gpointer): void;
-
 extern proc delete_event(a: c_ptr(GtkWidget), b: c_ptr(GdkEvent), c: gpointer): bool;
+extern proc link_close_signal(ref window: c_ptr(GtkWidget)) :void;
+extern proc link_hide_signal(ref window: c_ptr(GtkWidget)) :void;
 
 
 //This function shows a dialog

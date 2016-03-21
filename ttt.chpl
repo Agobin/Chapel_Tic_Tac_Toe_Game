@@ -2,7 +2,10 @@ use gtk;
 
 var boardMatrix: [1..9] int;
 
-//Beginning of main
+proc callMe(btn, data){
+	//gtk_button_set_label(GTK_BUTTON(btn), "Changed");
+	//gtk_widget_show(btn);
+}
 proc main( args: [] string){
   
 	gtk_init(args);
@@ -12,6 +15,7 @@ proc main( args: [] string){
   
 	var board: c_ptr(GtkWidget) = gtk_table_new(5, 3, true);
 	var rBtn: c_ptr(GtkWidget) = gtk_button_new_with_mnemonic("R_eset game");
+	//g_signal_connect(rBtn, "clicked", G_CALLBACK(callMe), rBtn);
 		
 	for i in 1..3{
 		for j in 1..3{
