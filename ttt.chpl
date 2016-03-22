@@ -26,8 +26,6 @@ proc main( args: [] string){
 	//g_signal_connect(btn, "clicked", G_CALLBACK(callMe), nil); //This doesn't work
   
 	gtk_container_add(GTK_CONTAINER(window), btn);
-	//g_signal_connect(G_OBJECT(window), "destroy", G_CALLBACK(destroy_c), nil );
-	//g_signal_connect(G_OBJECT(window), "delete_event", G_CALLBACK(delete_event), nil);
 	
 	link_close_signal(window);
 	gtk_widget_show_all(window);
