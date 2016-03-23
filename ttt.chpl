@@ -51,6 +51,7 @@ proc main( args: [] string){
 	//Adds the board to the window
 	gtk_container_add(GTK_CONTAINER(window), board);
 	
+	//Linking close signal of window to its callback function
 	link_close_signal(window);  
 	gtk_widget_show_all(window);
 
