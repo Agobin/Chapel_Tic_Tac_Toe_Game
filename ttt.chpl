@@ -7,6 +7,7 @@ extern proc G_OBJECT(f): c_ptr(GObject);
 extern var g_signal_connect: opaque;
 extern var g_print: opaque;
 extern proc GTK_BUTTON(obj): c_ptr(GtkButton);
+extern proc gtk_button_new_with_label(str: c_string): c_ptr(GtkWidget);
 extern proc gtk_button_set_label(btn: c_ptr(GtkButton), text: c_string): void;
 
 //Callback funstion
