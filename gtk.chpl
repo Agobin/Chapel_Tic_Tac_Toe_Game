@@ -45,8 +45,9 @@ extern proc GTK_CONTAINER( a: c_ptr(GtkWidget)) : c_ptr(GtkContainer);
 
 
 //signals
-extern proc g_signal_connect(widget , signal_name, call_fxn, data): void;
-extern proc g_signal_connect_swapped(widget , signal_name: c_string, call_fxn: GCallback, data);
+
+extern proc g_signal_connect(widget , signal_name: c_string, call_fxn: GCallback, data): void;
+extern proc g_signal_connect_swapped(widget , signal_name: c_string, call_fxn: GCallback, data): void;
 
 //Window
 extern proc gtk_window_set_title(win: c_ptr(GtkWindow), str: c_string): void;
