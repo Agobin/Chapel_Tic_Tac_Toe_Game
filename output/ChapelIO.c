@@ -136,7 +136,7 @@ static void writeIt(Writer this6, chpl_string x, int64_t _ln, c_string _fn) {
 #line 332 "ChapelIO.chpl"
   _virtual_method_tmp_ = ((object)(this6))->chpl__cid;
 #line 332 "ChapelIO.chpl"
-  ((void(*)(Writer, chpl_string, int64_t, c_string))chpl_vmtable[((INT64(4) * _virtual_method_tmp_) + INT64(3))])(this6, x, _ln, _fn);
+  ((void(*)(Writer, chpl_string, int64_t, c_string))chpl_vmtable[((INT64(4) * _virtual_method_tmp_) + INT64(1))])(this6, x, _ln, _fn);
 #line 330 "ChapelIO.chpl"
   return;
 #line 330 "ChapelIO.chpl"
@@ -170,7 +170,7 @@ static void writeIt3(Writer this6, ioLiteral_chpl* const x, int64_t _ln, c_strin
 #line 332 "ChapelIO.chpl"
   _virtual_method_tmp_ = ((object)(this6))->chpl__cid;
 #line 332 "ChapelIO.chpl"
-  ((void(*)(Writer, ioLiteral_chpl* const, int64_t, c_string))chpl_vmtable[((INT64(4) * _virtual_method_tmp_) + INT64(1))])(this6, x, _ln, _fn);
+  ((void(*)(Writer, ioLiteral_chpl* const, int64_t, c_string))chpl_vmtable[((INT64(4) * _virtual_method_tmp_) + INT64(2))])(this6, x, _ln, _fn);
 #line 330 "ChapelIO.chpl"
   return;
 #line 330 "ChapelIO.chpl"
@@ -187,7 +187,7 @@ static void writeIt4(Writer this6, int64_t x, int64_t _ln, c_string _fn) {
 #line 332 "ChapelIO.chpl"
   _virtual_method_tmp_ = ((object)(this6))->chpl__cid;
 #line 332 "ChapelIO.chpl"
-  ((void(*)(Writer, int64_t, int64_t, c_string))chpl_vmtable[((INT64(4) * _virtual_method_tmp_) + INT64(2))])(this6, x, _ln, _fn);
+  ((void(*)(Writer, int64_t, int64_t, c_string))chpl_vmtable[((INT64(4) * _virtual_method_tmp_) + INT64(3))])(this6, x, _ln, _fn);
 #line 330 "ChapelIO.chpl"
   return;
 #line 330 "ChapelIO.chpl"

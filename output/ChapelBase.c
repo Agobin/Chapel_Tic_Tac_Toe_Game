@@ -556,29 +556,29 @@ static void init_elts4(_ddata_int64_t x, int64_t s, int64_t _ln, c_string _fn) {
 #line 712 "ChapelBase.chpl"
         chpl_check_nil(_args_forcoforall_fn, INT64(712), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelBase.chpl");
 #line 712 "ChapelBase.chpl"
-        (_args_forcoforall_fn)->_1_len = len;
+        (_args_forcoforall_fn)->_1_numChunks = numChunks;
 #line 712 "ChapelBase.chpl"
         chpl_check_nil(_args_forcoforall_fn, INT64(712), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelBase.chpl");
 #line 712 "ChapelBase.chpl"
-        (_args_forcoforall_fn)->_2_numChunks = numChunks;
+        (_args_forcoforall_fn)->_2_rvfDerefTmp = rvfDerefTmp;
 #line 712 "ChapelBase.chpl"
         chpl_check_nil(_args_forcoforall_fn, INT64(712), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelBase.chpl");
 #line 712 "ChapelBase.chpl"
-        (_args_forcoforall_fn)->_3_rvfDerefTmp = rvfDerefTmp;
+        (_args_forcoforall_fn)->_3_this = this11;
 #line 712 "ChapelBase.chpl"
         chpl_check_nil(_args_forcoforall_fn, INT64(712), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelBase.chpl");
 #line 712 "ChapelBase.chpl"
-        (_args_forcoforall_fn)->_4__yieldedIndex = i2;
+        (_args_forcoforall_fn)->_4_len = len;
 #line 712 "ChapelBase.chpl"
         chpl_check_nil(_args_forcoforall_fn, INT64(712), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelBase.chpl");
 #line 712 "ChapelBase.chpl"
-        (_args_forcoforall_fn)->_5_this = this11;
+        (_args_forcoforall_fn)->_5__yieldedIndex = i2;
 #line 712 "ChapelBase.chpl"
         (_args_forcoforall_fn)->_ln = _ln;
 #line 712 "ChapelBase.chpl"
         (_args_forcoforall_fn)->_fn = _fn;
 #line 712 "ChapelBase.chpl"
-        /*** wrapcoforall_fn ***/ chpl_taskListAddCoStmt(INT32(-2), INT64(0), ((void*)(_args_forcoforall_fn)), &(((_args_forcoforall_fn)->_3_rvfDerefTmp)->taskList), chpl_nodeID, INT64(712), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelBase.chpl");
+        /*** wrapcoforall_fn ***/ chpl_taskListAddCoStmt(INT32(-2), INT64(0), ((void*)(_args_forcoforall_fn)), &(((_args_forcoforall_fn)->_2_rvfDerefTmp)->taskList), chpl_nodeID, INT64(712), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelBase.chpl");
 #line 712 "ChapelBase.chpl"
       }
 #line 712 "ChapelBase.chpl"
@@ -668,15 +668,15 @@ static void wrapcoforall_fn(_class_localscoforall_fn c) {
 #line 669 "ChapelBase.chpl"
   _ddata_int64_t _0_x1_tet = NULL;
 #line 669 "ChapelBase.chpl"
-  int64_t _1_len;
+  int64_t _1_numChunks;
 #line 669 "ChapelBase.chpl"
-  int64_t _2_numChunks;
+  chpl___EndCount_atomic_int64_int64_t _2_rvfDerefTmp = NULL;
 #line 669 "ChapelBase.chpl"
-  chpl___EndCount_atomic_int64_int64_t _3_rvfDerefTmp = NULL;
+  _ref_range_int64_t_bounded_F _3_this = NULL;
 #line 669 "ChapelBase.chpl"
-  int64_t _4__yieldedIndex;
+  int64_t _4_len;
 #line 669 "ChapelBase.chpl"
-  _ref_range_int64_t_bounded_F _5_this = NULL;
+  int64_t _5__yieldedIndex;
 #line 712 "ChapelBase.chpl"
   _ln = (c)->_ln;
 #line 712 "ChapelBase.chpl"
@@ -688,25 +688,25 @@ static void wrapcoforall_fn(_class_localscoforall_fn c) {
 #line 712 "ChapelBase.chpl"
   chpl_check_nil(c, INT64(712), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelBase.chpl");
 #line 712 "ChapelBase.chpl"
-  _1_len = (c)->_1_len;
+  _1_numChunks = (c)->_1_numChunks;
 #line 712 "ChapelBase.chpl"
   chpl_check_nil(c, INT64(712), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelBase.chpl");
 #line 712 "ChapelBase.chpl"
-  _2_numChunks = (c)->_2_numChunks;
+  _2_rvfDerefTmp = (c)->_2_rvfDerefTmp;
 #line 712 "ChapelBase.chpl"
   chpl_check_nil(c, INT64(712), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelBase.chpl");
 #line 712 "ChapelBase.chpl"
-  _3_rvfDerefTmp = (c)->_3_rvfDerefTmp;
+  _3_this = (c)->_3_this;
 #line 712 "ChapelBase.chpl"
   chpl_check_nil(c, INT64(712), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelBase.chpl");
 #line 712 "ChapelBase.chpl"
-  _4__yieldedIndex = (c)->_4__yieldedIndex;
+  _4_len = (c)->_4_len;
 #line 712 "ChapelBase.chpl"
   chpl_check_nil(c, INT64(712), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelBase.chpl");
 #line 712 "ChapelBase.chpl"
-  _5_this = (c)->_5_this;
+  _5__yieldedIndex = (c)->_5__yieldedIndex;
 #line 712 "ChapelBase.chpl"
-  coforall_fn(_0_x1_tet, _1_len, _2_numChunks, _3_rvfDerefTmp, _4__yieldedIndex, _5_this, _ln, _fn);
+  coforall_fn(_0_x1_tet, _1_numChunks, _2_rvfDerefTmp, _3_this, _4_len, _5__yieldedIndex, _ln, _fn);
 #line 712 "ChapelBase.chpl"
   chpl_here_free(((void*)(c)), _ln, _fn);
 #line 712 "ChapelBase.chpl"
@@ -1584,7 +1584,7 @@ static void chpl__autoDestroy3(DefaultRectangularArr_int64_t_1_int64_t_F x, int6
 #line 1163 "ChapelBase.chpl"
 /* ChapelRange.chpl:1507 */
 #line 1163 "ChapelBase.chpl"
-static void coforall_fn(_ddata_int64_t x1_tet, int64_t len, int64_t numChunks, chpl___EndCount_atomic_int64_int64_t _coforallCount, int64_t chunk, _ref_range_int64_t_bounded_F this6, int64_t _ln, c_string _fn) {
+static void coforall_fn(_ddata_int64_t x1_tet, int64_t numChunks, chpl___EndCount_atomic_int64_int64_t _coforallCount, _ref_range_int64_t_bounded_F this6, int64_t len, int64_t chunk, int64_t _ln, c_string _fn) {
 #line 1163 "ChapelBase.chpl"
   _tuple_2_star_int64_t const_tmp;
 #line 1163 "ChapelBase.chpl"

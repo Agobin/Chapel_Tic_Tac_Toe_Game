@@ -821,7 +821,7 @@ static int64_t destroyArr(BaseArr this6, int64_t _ln, c_string _fn) {
 #line 296 "ChapelDistribution.chpl"
       _virtual_method_tmp_2 = ((object)(this6))->chpl__cid;
 #line 296 "ChapelDistribution.chpl"
-      ((void(*)(BaseArr, int64_t, c_string))chpl_vmtable[((INT64(4) * _virtual_method_tmp_2) + INT64(2))])(this6, _ln, _fn);
+      ((void(*)(BaseArr, int64_t, c_string))chpl_vmtable[((INT64(4) * _virtual_method_tmp_2) + INT64(1))])(this6, _ln, _fn);
 #line 296 "ChapelDistribution.chpl"
     }
 #line 296 "ChapelDistribution.chpl"
@@ -837,7 +837,7 @@ static int64_t destroyArr(BaseArr this6, int64_t _ln, c_string _fn) {
 #line 300 "ChapelDistribution.chpl"
     _virtual_method_tmp_3 = ((object)(this6))->chpl__cid;
 #line 300 "ChapelDistribution.chpl"
-    call_tmp14 = ((BaseDom(*)(BaseArr, int64_t, c_string))chpl_vmtable[((INT64(4) * _virtual_method_tmp_3) + INT64(1))])(this6, _ln, _fn);
+    call_tmp14 = ((BaseDom(*)(BaseArr, int64_t, c_string))chpl_vmtable[((INT64(4) * _virtual_method_tmp_3) + INT64(2))])(this6, _ln, _fn);
 #line 300 "ChapelDistribution.chpl"
     dom = call_tmp14;
 #line 302 "ChapelDistribution.chpl"
