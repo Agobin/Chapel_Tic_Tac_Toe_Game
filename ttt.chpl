@@ -31,7 +31,7 @@ proc main( args: [] string){
 	//Linking callback functions to buttons
 	//g_print() prints it arguments to the terminal
 	g_signal_connect(resetBtn, "clicked", G_CALLBACK(g_print), "Test");
-	g_signal_connect(stopBtn, "clicked", G_CALLBACK(callMe), stopBtn);
+	g_signal_connect(stopBtn, "clicked", G_CALLBACK(callMe), nil);
 	
 	//outputLabel is used to display game status at any moment
 	var outputLabel = gtk_label_new("Output label");
