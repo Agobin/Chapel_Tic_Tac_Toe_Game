@@ -213,7 +213,7 @@ static int64_t id(locale this6, int64_t _ln, c_string _fn) {
 #line 57 "ChapelLocale.chpl"
   _virtual_method_tmp_ = ((object)(this6))->chpl__cid;
 #line 57 "ChapelLocale.chpl"
-  call_tmp = ((int64_t(*)(locale, int64_t, c_string))chpl_vmtable[((INT64(4) * _virtual_method_tmp_) + INT64(2))])(this6, _ln, _fn);
+  call_tmp = ((int64_t(*)(locale, int64_t, c_string))chpl_vmtable[((INT64(4) * _virtual_method_tmp_) + INT64(1))])(this6, _ln, _fn);
 #line 57 "ChapelLocale.chpl"
   return call_tmp;
 #line 57 "ChapelLocale.chpl"
@@ -968,7 +968,7 @@ static void wait5(_ref_localesBarrier this6, int64_t locIdx, DefaultRectangularA
 #line 290 "ChapelLocale.chpl"
       string_from_c_string(&call_tmp34, "array index out of bounds: ", INT64(0), INT64(0), _ln, _fn);
 #line 290 "ChapelLocale.chpl"
-      halt3(call_tmp34, &this21, _ln, _fn);
+      halt2(call_tmp34, &this21, _ln, _fn);
 #line 290 "ChapelLocale.chpl"
     }
 #line 290 "ChapelLocale.chpl"
@@ -1264,7 +1264,7 @@ static void chpl_rootLocaleInitPrivate(int64_t locIdx, int64_t _ln, c_string _fn
 #line 340 "ChapelLocale.chpl"
     rootLocale = call_tmp13;
 #line 330 "ChapelLocale.chpl"
-    chpl__autoDestroy5(call_tmp7, _ln, _fn);
+    chpl__autoDestroy4(call_tmp7, _ln, _fn);
 #line 330 "ChapelLocale.chpl"
   }
 #line 342 "ChapelLocale.chpl"

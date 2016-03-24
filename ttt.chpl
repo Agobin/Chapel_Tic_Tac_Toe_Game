@@ -4,7 +4,7 @@ var boardMatrix: [1..9] int;
 
 //This is a callback function that changes the label on a button
 //when it is clicked
-proc callMe( btn:c_ptr(GtkWidget), data: c_void_ptr){
+export proc callMe( btn:c_ptr(GtkWidget), data: c_void_ptr){
 	gtk_button_set_label(GTK_BUTTON(btn), "Changed");
 	gtk_widget_show(btn);
 }
@@ -14,7 +14,9 @@ extern var g_print: opaque;
 
 //Beginning of main
 proc main( args: [] string){
-	
+
+        extern var callMe: opaque;
+  
 	//Initialises all widgets
 	gtk_init(args);  
 	
