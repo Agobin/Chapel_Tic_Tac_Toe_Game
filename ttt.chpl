@@ -4,8 +4,13 @@ var boardMatrix: [1..9] int;
 
 //This is a callback function that changes the label on a button
 //when it is clicked
+var timesClicked: int = 0;
 export proc callMe( btn:c_ptr(GtkWidget), data: c_void_ptr){
-	gtk_button_set_label(GTK_BUTTON(btn), "Changed");
+	if(timesClicked % 2 == 0)
+		gtk_button_set_label(GTK_BUTTON(btn), "Normal text");
+	else
+		gtk_button_set_label(GTK_BUTTON(btn), "Text changed");
+
 	gtk_widget_show(btn);
 }
 
@@ -27,8 +32,8 @@ proc main( args: [] string){
 	var board: c_ptr(GtkWidget) = gtk_table_new(5, 3, true);
 	
 	//Declaring resetBtn and stopBtn to reset and stop game respectively
-	var resetBtn: c_ptr(GtkWidget) = gtk_button_new_with_mnemonic("This button works");
-	var stopBtn: c_ptr(GtkWidget) = gtk_button_new_with_mnemonic("This button doesn't work'");
+	var resetBtn: c_ptr(GtkWidget) = gtk_button_new_with_mnemonic("Reset");
+	var stopBtn: c_ptr(GtkWidget) = gtk_button_new_with_mnemonic("Click Me");
 	
 	//Linking callback functions to buttons
 	//g_print() prints it arguments to the terminal
