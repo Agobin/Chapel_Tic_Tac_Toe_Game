@@ -450,7 +450,7 @@ static int64_t destroyDom(BaseDom this6, int64_t _ln, c_string _fn) {
 #line 138 "ChapelDistribution.chpl"
     chpl_check_nil(call_tmp16, INT64(138), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelDistribution.chpl");
 #line 138 "ChapelDistribution.chpl"
-    remove_chpl2(call_tmp16, this6, _ln, _fn);
+    remove_chpl(call_tmp16, this6, _ln, _fn);
 #line 138 "ChapelDistribution.chpl"
     chpl_check_nil(dist2, INT64(138), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelDistribution.chpl");
 #line 138 "ChapelDistribution.chpl"
@@ -837,7 +837,7 @@ static int64_t destroyArr(BaseArr this6, int64_t _ln, c_string _fn) {
 #line 300 "ChapelDistribution.chpl"
     _virtual_method_tmp_3 = ((object)(this6))->chpl__cid;
 #line 300 "ChapelDistribution.chpl"
-    call_tmp14 = ((BaseDom(*)(BaseArr, int64_t, c_string))chpl_vmtable[((INT64(4) * _virtual_method_tmp_3) + INT64(3))])(this6, _ln, _fn);
+    call_tmp14 = ((BaseDom(*)(BaseArr, int64_t, c_string))chpl_vmtable[((INT64(4) * _virtual_method_tmp_3) + INT64(1))])(this6, _ln, _fn);
 #line 300 "ChapelDistribution.chpl"
     dom = call_tmp14;
 #line 302 "ChapelDistribution.chpl"
@@ -881,7 +881,7 @@ static int64_t destroyArr(BaseArr this6, int64_t _ln, c_string _fn) {
 #line 302 "ChapelDistribution.chpl"
     chpl_check_nil(call_tmp21, INT64(302), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelDistribution.chpl");
 #line 302 "ChapelDistribution.chpl"
-    remove_chpl(call_tmp21, this6, _ln, _fn);
+    remove_chpl2(call_tmp21, this6, _ln, _fn);
 #line 302 "ChapelDistribution.chpl"
     chpl_check_nil(dom, INT64(302), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelDistribution.chpl");
 #line 302 "ChapelDistribution.chpl"

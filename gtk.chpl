@@ -11,11 +11,11 @@ extern proc chpl_init(ref argc: c_int, ref argv: c_string) : void;
 // and third arguments respectively
 extern proc chpl_window_new( title: c_string,  width: c_int, height: c_int) : c_ptr(GtkWidget);
 
-//This function sets the visibility of a widget to true
+//Widgets
 extern proc gtk_widget_show( object: c_ptr(GtkWidget)): void;
-
-//This function sets the visibility of all widgets in a container to true
 extern proc gtk_widget_show_all( object: c_ptr(GtkWidget)): void;
+extern proc gtk_widget_set_size_request( widget: c_ptr(GtkWidget), wid: c_int, h: c_int): void;
+extern var gtk_widget_destroy: opaque;
 
 //This function calls indicates the end of the program
 extern proc gtk_main(): void;
@@ -28,11 +28,8 @@ extern proc gtk_label_new( str: c_string): c_ptr(GtkWidget);
 extern proc gtk_container_add( wid: c_ptr(GtkContainer), child: c_ptr(GtkWidget));
 
 //Miscellaneous
-extern proc g_print(args...): void;
+//extern proc g_print(args...): void;
 
-
-//Widgets
-extern proc gtk_widget_set_size_request( widget: c_ptr(GtkWidget), wid: c_int, h: c_int): void;
 
 //Function macros
 extern proc G_CALLBACK(f): GCallback;

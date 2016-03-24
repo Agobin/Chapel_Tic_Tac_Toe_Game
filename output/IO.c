@@ -238,7 +238,7 @@ static void chpl__init_IO(int64_t _ln_chpl, c_string _fn_chpl) {
 #line 4491 "IO.chpl"
   (&this_chpl)->_channel_internal_chpl = default_arg_channel_internal_chpl;
 #line 4491 "IO.chpl"
-  wrap_call_tmp_chpl = _construct_channel_chpl2(call_tmp_chpl11, default_arg_channel_internal_chpl, &this_chpl, _ln_chpl, _fn_chpl);
+  wrap_call_tmp_chpl = _construct_channel_chpl(call_tmp_chpl11, default_arg_channel_internal_chpl, &this_chpl, _ln_chpl, _fn_chpl);
 #line 4491 "IO.chpl"
   type_tmp_chpl5 = wrap_call_tmp_chpl;
 #line 4491 "IO.chpl"
@@ -310,7 +310,7 @@ static void chpl__init_IO(int64_t _ln_chpl, c_string _fn_chpl) {
 #line 4493 "IO.chpl"
   (&this_chpl2)->_channel_internal_chpl = default_arg_channel_internal_chpl2;
 #line 4493 "IO.chpl"
-  wrap_call_tmp_chpl4 = _construct_channel_chpl(call_tmp_chpl17, default_arg_channel_internal_chpl2, &this_chpl2, _ln_chpl, _fn_chpl);
+  wrap_call_tmp_chpl4 = _construct_channel_chpl2(call_tmp_chpl17, default_arg_channel_internal_chpl2, &this_chpl2, _ln_chpl, _fn_chpl);
 #line 4493 "IO.chpl"
   type_tmp_chpl6 = wrap_call_tmp_chpl4;
 #line 4493 "IO.chpl"
@@ -382,7 +382,7 @@ static void chpl__init_IO(int64_t _ln_chpl, c_string _fn_chpl) {
 #line 4495 "IO.chpl"
   (&this_chpl3)->_channel_internal_chpl = default_arg_channel_internal_chpl3;
 #line 4495 "IO.chpl"
-  wrap_call_tmp_chpl7 = _construct_channel_chpl(call_tmp_chpl24, default_arg_channel_internal_chpl3, &this_chpl3, _ln_chpl, _fn_chpl);
+  wrap_call_tmp_chpl7 = _construct_channel_chpl2(call_tmp_chpl24, default_arg_channel_internal_chpl3, &this_chpl3, _ln_chpl, _fn_chpl);
 #line 4495 "IO.chpl"
   type_tmp_chpl7 = wrap_call_tmp_chpl7;
 #line 4495 "IO.chpl"
@@ -1660,7 +1660,7 @@ static void openfp_chpl2(_cfile fp_chpl, int32_t hints_chpl, iostyle* const styl
 #line 2446 "IO.chpl"
 /* IO.chpl:2567 */
 #line 2446 "IO.chpl"
-static channel_T_dynamic_T_chpl _construct_channel_chpl(locale home_chpl, qio_channel_ptr_t _channel_internal_chpl, channel_T_dynamic_T_chpl* const meme_chpl, int64_t _ln_chpl, c_string _fn_chpl) {
+static channel_T_dynamic_T_chpl _construct_channel_chpl2(locale home_chpl, qio_channel_ptr_t _channel_internal_chpl, channel_T_dynamic_T_chpl* const meme_chpl, int64_t _ln_chpl, c_string _fn_chpl) {
 #line 2446 "IO.chpl"
   channel_T_dynamic_T_chpl this_chpl;
 #line 2567 "IO.chpl"
@@ -1677,7 +1677,7 @@ static channel_T_dynamic_T_chpl _construct_channel_chpl(locale home_chpl, qio_ch
 #line 2567 "IO.chpl"
 /* IO.chpl:2567 */
 #line 2567 "IO.chpl"
-static channel_F_dynamic_T_chpl _construct_channel_chpl2(locale home_chpl, qio_channel_ptr_t _channel_internal_chpl, channel_F_dynamic_T_chpl* const meme_chpl, int64_t _ln_chpl, c_string _fn_chpl) {
+static channel_F_dynamic_T_chpl _construct_channel_chpl(locale home_chpl, qio_channel_ptr_t _channel_internal_chpl, channel_F_dynamic_T_chpl* const meme_chpl, int64_t _ln_chpl, c_string _fn_chpl) {
 #line 2567 "IO.chpl"
   channel_F_dynamic_T_chpl this_chpl;
 #line 2567 "IO.chpl"
@@ -1864,7 +1864,7 @@ static channel_F_dynamic_T_chpl channel_chpl(file_chpl* const f_chpl, _ref_syser
 #line 2615 "IO.chpl"
   (&this_chpl2)->_channel_internal_chpl = default_arg_channel_internal_chpl;
 #line 2615 "IO.chpl"
-  wrap_call_tmp_chpl = _construct_channel_chpl2(call_tmp_chpl, default_arg_channel_internal_chpl, &this_chpl2, _ln_chpl, _fn_chpl);
+  wrap_call_tmp_chpl = _construct_channel_chpl(call_tmp_chpl, default_arg_channel_internal_chpl, &this_chpl2, _ln_chpl, _fn_chpl);
 #line 2615 "IO.chpl"
   this_chpl = wrap_call_tmp_chpl;
 #line 2617 "IO.chpl"
@@ -1941,7 +1941,7 @@ static channel_T_dynamic_T_chpl channel_chpl2(file_chpl* const f_chpl, _ref_syse
 #line 2615 "IO.chpl"
   (&this_chpl2)->_channel_internal_chpl = default_arg_channel_internal_chpl;
 #line 2615 "IO.chpl"
-  wrap_call_tmp_chpl = _construct_channel_chpl(call_tmp_chpl, default_arg_channel_internal_chpl, &this_chpl2, _ln_chpl, _fn_chpl);
+  wrap_call_tmp_chpl = _construct_channel_chpl2(call_tmp_chpl, default_arg_channel_internal_chpl, &this_chpl2, _ln_chpl, _fn_chpl);
 #line 2615 "IO.chpl"
   this_chpl = wrap_call_tmp_chpl;
 #line 2617 "IO.chpl"
@@ -2136,7 +2136,7 @@ static void reader_chpl(_ref_file this_chpl, _ref_syserr error_chpl, int64_t sta
 #line 3168 "IO.chpl"
   (&this_chpl2)->_channel_internal_chpl = default_arg_channel_internal_chpl;
 #line 3168 "IO.chpl"
-  wrap_call_tmp_chpl = _construct_channel_chpl2(call_tmp_chpl, default_arg_channel_internal_chpl, &this_chpl2, _ln_chpl, _fn_chpl);
+  wrap_call_tmp_chpl = _construct_channel_chpl(call_tmp_chpl, default_arg_channel_internal_chpl, &this_chpl2, _ln_chpl, _fn_chpl);
 #line 3168 "IO.chpl"
   ret_chpl = wrap_call_tmp_chpl;
 #line 3168 "IO.chpl"
@@ -2156,7 +2156,7 @@ static void reader_chpl(_ref_file this_chpl, _ref_syserr error_chpl, int64_t sta
 #line 3171 "IO.chpl"
   (&this_chpl3)->_channel_internal_chpl = default_arg_channel_internal_chpl2;
 #line 3171 "IO.chpl"
-  wrap_call_tmp_chpl2 = _construct_channel_chpl2(call_tmp_chpl2, default_arg_channel_internal_chpl2, &this_chpl3, _ln_chpl, _fn_chpl);
+  wrap_call_tmp_chpl2 = _construct_channel_chpl(call_tmp_chpl2, default_arg_channel_internal_chpl2, &this_chpl3, _ln_chpl, _fn_chpl);
 #line 3171 "IO.chpl"
   ret_chpl2 = wrap_call_tmp_chpl2;
 #line 3173 "IO.chpl"
@@ -2259,7 +2259,7 @@ static void reader_chpl2(_ref_file this_chpl, int64_t start_chpl, int64_t end_ch
 #line 3180 "IO.chpl"
   (&this_chpl2)->_channel_internal_chpl = default_arg_channel_internal_chpl;
 #line 3180 "IO.chpl"
-  wrap_call_tmp_chpl = _construct_channel_chpl2(call_tmp_chpl, default_arg_channel_internal_chpl, &this_chpl2, _ln_chpl, _fn_chpl);
+  wrap_call_tmp_chpl = _construct_channel_chpl(call_tmp_chpl, default_arg_channel_internal_chpl, &this_chpl2, _ln_chpl, _fn_chpl);
 #line 3180 "IO.chpl"
   ret_chpl = wrap_call_tmp_chpl;
 #line 3180 "IO.chpl"
@@ -2382,7 +2382,7 @@ static void writer_chpl(_ref_file this_chpl, _ref_syserr error_chpl, int64_t sta
 #line 3268 "IO.chpl"
   (&this_chpl2)->_channel_internal_chpl = default_arg_channel_internal_chpl;
 #line 3268 "IO.chpl"
-  wrap_call_tmp_chpl = _construct_channel_chpl(call_tmp_chpl, default_arg_channel_internal_chpl, &this_chpl2, _ln_chpl, _fn_chpl);
+  wrap_call_tmp_chpl = _construct_channel_chpl2(call_tmp_chpl, default_arg_channel_internal_chpl, &this_chpl2, _ln_chpl, _fn_chpl);
 #line 3268 "IO.chpl"
   ret_chpl = wrap_call_tmp_chpl;
 #line 3268 "IO.chpl"
@@ -2402,7 +2402,7 @@ static void writer_chpl(_ref_file this_chpl, _ref_syserr error_chpl, int64_t sta
 #line 3271 "IO.chpl"
   (&this_chpl3)->_channel_internal_chpl = default_arg_channel_internal_chpl2;
 #line 3271 "IO.chpl"
-  wrap_call_tmp_chpl2 = _construct_channel_chpl(call_tmp_chpl2, default_arg_channel_internal_chpl2, &this_chpl3, _ln_chpl, _fn_chpl);
+  wrap_call_tmp_chpl2 = _construct_channel_chpl2(call_tmp_chpl2, default_arg_channel_internal_chpl2, &this_chpl3, _ln_chpl, _fn_chpl);
 #line 3271 "IO.chpl"
   ret_chpl2 = wrap_call_tmp_chpl2;
 #line 3273 "IO.chpl"
@@ -2505,7 +2505,7 @@ static void writer_chpl2(_ref_file this_chpl, int64_t start_chpl, int64_t end_ch
 #line 3280 "IO.chpl"
   (&this_chpl2)->_channel_internal_chpl = default_arg_channel_internal_chpl;
 #line 3280 "IO.chpl"
-  wrap_call_tmp_chpl = _construct_channel_chpl(call_tmp_chpl, default_arg_channel_internal_chpl, &this_chpl2, _ln_chpl, _fn_chpl);
+  wrap_call_tmp_chpl = _construct_channel_chpl2(call_tmp_chpl, default_arg_channel_internal_chpl, &this_chpl2, _ln_chpl, _fn_chpl);
 #line 3280 "IO.chpl"
   ret_chpl = wrap_call_tmp_chpl;
 #line 3280 "IO.chpl"

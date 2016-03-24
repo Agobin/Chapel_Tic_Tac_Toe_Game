@@ -64,7 +64,7 @@ static listNode_BaseArr_chpl _construct_listNode_chpl(BaseArr data_chpl, listNod
 #line 30 "List.chpl"
 /* List.chpl:30 */
 #line 30 "List.chpl"
-static void chpl__auto_destroy_listNode2(listNode_BaseArr_chpl this_chpl, int64_t _ln_chpl, c_string _fn_chpl) {
+static void chpl__auto_destroy_listNode(listNode_BaseArr_chpl this_chpl, int64_t _ln_chpl, c_string _fn_chpl) {
 #line 30 "List.chpl"
   return;
 #line 30 "List.chpl"
@@ -73,7 +73,7 @@ static void chpl__auto_destroy_listNode2(listNode_BaseArr_chpl this_chpl, int64_
 #line 30 "List.chpl"
 /* List.chpl:30 */
 #line 30 "List.chpl"
-static void chpl__auto_destroy_listNode(listNode_BaseDom_chpl this_chpl, int64_t _ln_chpl, c_string _fn_chpl) {
+static void chpl__auto_destroy_listNode2(listNode_BaseDom_chpl this_chpl, int64_t _ln_chpl, c_string _fn_chpl) {
 #line 30 "List.chpl"
   return;
 #line 30 "List.chpl"
@@ -301,7 +301,7 @@ static void append_chpl(_ref_list_BaseArr this_chpl, BaseArr e_chpl, int64_t _ln
 #line 75 "List.chpl"
 /* List.chpl:117 */
 #line 75 "List.chpl"
-static void remove_chpl2(_ref_list_BaseDom this_chpl, BaseDom x_chpl, int64_t _ln_chpl, c_string _fn_chpl) {
+static void remove_chpl(_ref_list_BaseDom this_chpl, BaseDom x_chpl, int64_t _ln_chpl, c_string _fn_chpl) {
 #line 75 "List.chpl"
   listNode_BaseDom_chpl tmp_chpl = NULL;
 #line 75 "List.chpl"
@@ -566,7 +566,7 @@ static void remove_chpl2(_ref_list_BaseDom this_chpl, BaseDom x_chpl, int64_t _l
 #line 117 "List.chpl"
 /* List.chpl:117 */
 #line 117 "List.chpl"
-static void remove_chpl(_ref_list_BaseArr this_chpl, BaseArr x_chpl, int64_t _ln_chpl, c_string _fn_chpl) {
+static void remove_chpl2(_ref_list_BaseArr this_chpl, BaseArr x_chpl, int64_t _ln_chpl, c_string _fn_chpl) {
 #line 117 "List.chpl"
   listNode_BaseArr_chpl tmp_chpl = NULL;
 #line 117 "List.chpl"

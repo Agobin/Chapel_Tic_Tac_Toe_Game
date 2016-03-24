@@ -57,7 +57,7 @@ static DefaultRectangularArr_chpl_string_1_int64_t_F chpl_convert_args(chpl_main
 #line 24 "ChapelUtil.chpl"
   _ref_DefaultRectangularDom_1_int64_t_F ret_to_arg_ref_tmp_3 = NULL;
 #line 24 "ChapelUtil.chpl"
-  chpl___RuntimeTypeInfo5 call_tmp4;
+  chpl___RuntimeTypeInfo6 call_tmp4;
 #line 24 "ChapelUtil.chpl"
   DefaultRectangularDom_1_int64_t_F _runtime_type_tmp_ = NULL;
 #line 24 "ChapelUtil.chpl"
@@ -141,13 +141,13 @@ static DefaultRectangularArr_chpl_string_1_int64_t_F chpl_convert_args(chpl_main
 #line 162 "ChapelUtil.chpl"
   chpl__ensureDomainExpr2(&call_tmp2, ret_to_arg_ref_tmp_3, _ln, _fn);
 #line 162 "ChapelUtil.chpl"
-  call_tmp4 = chpl__buildArrayRuntimeType3(call_tmp3, _ln, _fn);
+  call_tmp4 = chpl__buildArrayRuntimeType2(call_tmp3, _ln, _fn);
 #line 162 "ChapelUtil.chpl"
   _runtime_type_tmp_ = (&call_tmp4)->dom;
 #line 162 "ChapelUtil.chpl"
   ret_to_arg_ref_tmp_4 = &type_tmp;
 #line 162 "ChapelUtil.chpl"
-  chpl__convertRuntimeTypeToValue2(_runtime_type_tmp_, ret_to_arg_ref_tmp_4, _ln, _fn);
+  chpl__convertRuntimeTypeToValue6(_runtime_type_tmp_, ret_to_arg_ref_tmp_4, _ln, _fn);
 #line 162 "ChapelUtil.chpl"
   array = type_tmp;
 #line 162 "ChapelUtil.chpl"
@@ -213,7 +213,7 @@ static DefaultRectangularArr_chpl_string_1_int64_t_F chpl_convert_args(chpl_main
 #line 166 "ChapelUtil.chpl"
       string_from_c_string(&call_tmp10, "array index out of bounds: ", INT64(0), INT64(0), _ln, _fn);
 #line 166 "ChapelUtil.chpl"
-      halt2(call_tmp10, &this7, _ln, _fn);
+      halt3(call_tmp10, &this7, _ln, _fn);
 #line 166 "ChapelUtil.chpl"
     }
 #line 166 "ChapelUtil.chpl"
