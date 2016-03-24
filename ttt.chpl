@@ -18,7 +18,7 @@ proc main( args: [] string){
         extern var callMe: opaque;
   
 	//Initialises all widgets
-	gtk_init(args);  
+	gtk_init(args);    
 	
 	var window: c_ptr(GtkWidget) = chpl_window_new("Tic Tac Toe Game", 600, 500);
 	gtk_window_set_resizable(GTK_WINDOW(window), false);
