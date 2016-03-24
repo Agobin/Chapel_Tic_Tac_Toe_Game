@@ -5,12 +5,16 @@ var boardMatrix: [1..9] int;
 //This is a callback function that changes the label on a button
 //when it is clicked
 var timesClicked: int = 0;
-export proc callMe( btn:c_ptr(GtkWidget), data: c_void_ptr){
-	if(timesClicked % 2 == 0)
-		gtk_button_set_label(GTK_BUTTON(btn), "Normal text");
-	else
-		gtk_button_set_label(GTK_BUTTON(btn), "Text changed");
-
+export proc callMe( btn:c_ptr(GtkWidget), data: c_string){
+	
+	if (timesClicked % 2 == 0){
+		gtk_button_set_label(GTK_BUTTON(btn), data); // "Normal text");
+	}
+	else{
+		gtk_button_set_label(GTK_BUTTON(btn), "Text changed"); 
+	}
+	
+	timesClicked += 1;
 	gtk_widget_show(btn);
 }
 
@@ -20,7 +24,7 @@ extern var g_print: opaque;
 //Beginning of main
 proc main( args: [] string){
 
-        extern var callMe: opaque;
+    extern var callMe: opaque;
   
 	//Initialises all widgets
 	gtk_init(args);    
@@ -38,7 +42,7 @@ proc main( args: [] string){
 	//Linking callback functions to buttons
 	//g_print() prints it arguments to the terminal
 	g_signal_connect(resetBtn, "clicked", G_CALLBACK(g_print), "Test");
-	g_signal_connect(stopBtn, "clicked", G_CALLBACK(callMe), nil);
+	g_signal_connect(stopBtn, "clicked", G_CALLBACK(callMe), "It works");
 	
 	//outputLabel is used to display game status at any moment
 	var outputLabel = gtk_label_new("Output label");

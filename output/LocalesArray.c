@@ -64,7 +64,7 @@ static void chpl__init_LocalesArray(int64_t _ln, c_string _fn) {
 #line 51 "LocalesArray.chpl"
   chpl_check_nil(T, INT64(51), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/LocalesArray.chpl");
 #line 51 "LocalesArray.chpl"
-  getDefaultLocaleArray2(T, ret_to_arg_ref_tmp_, _ln, _fn);
+  getDefaultLocaleArray(T, ret_to_arg_ref_tmp_, _ln, _fn);
 #line 51 "LocalesArray.chpl"
   ret_to_arg_ref_tmp_2 = &call_tmp6;
 #line 51 "LocalesArray.chpl"
@@ -82,7 +82,7 @@ static void chpl__init_LocalesArray(int64_t _ln, c_string _fn) {
 #line 55 "LocalesArray.chpl"
   LocaleSpace = const_tmp;
 #line 51 "LocalesArray.chpl"
-  chpl__autoDestroy4(call_tmp5, _ln, _fn);
+  chpl__autoDestroy5(call_tmp5, _ln, _fn);
 #line 40 "LocalesArray.chpl"
   *(refIndentLevel) -= INT64(1);
 #line 40 "LocalesArray.chpl"

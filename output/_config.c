@@ -17,7 +17,6 @@ void CreateConfigVarTable(void) {
   installConfigVar("memLeaksLog", "c_string", "Built-in");
   installConfigVar("memLeaksByDesc", "c_string", "Built-in");
   installConfigVar("numLocales", "int(64)", "Built-in");
-  installConfigVar("callPotentiallyDeadFunctions", "bool", "ttt");
 }
 
 
