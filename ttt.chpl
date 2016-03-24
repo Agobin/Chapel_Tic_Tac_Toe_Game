@@ -23,7 +23,7 @@ proc main( args: [] string){
 	var window: c_ptr(GtkWidget) = chpl_window_new("Tic Tac Toe Game", 600, 500);
 	gtk_window_set_resizable(GTK_WINDOW(window), false);
   
-	//Declaring and initialising a table to hold widgets
+	//Declaring and initialising a table to hold widgets  
 	var board: c_ptr(GtkWidget) = gtk_table_new(5, 3, true);
 	
 	//Declaring resetBtn and stopBtn to reset and stop game respectively
