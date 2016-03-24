@@ -150,119 +150,119 @@ static void chpl_user_main(DefaultRectangularArr_chpl_string_1_int64_t_F args_ch
   c_ptr_GtkContainer_chpl call_tmp_chpl26 = NULL;
 #line 1 "ttt.chpl"
   _ref_c_ptr_GtkWidget _ref_tmp__chpl = NULL;
-#line 18 "ttt.chpl"
+#line 19 "ttt.chpl"
   gtk_init_chpl(args_chpl);
-#line 20 "ttt.chpl"
+#line 21 "ttt.chpl"
   call_tmp_chpl2 = ((int32_t)(INT64(600)));
-#line 20 "ttt.chpl"
+#line 21 "ttt.chpl"
   call_tmp_chpl3 = ((int32_t)(INT64(500)));
-#line 20 "ttt.chpl"
+#line 21 "ttt.chpl"
   call_tmp_chpl = chpl_window_new("Tic Tac Toe Game", call_tmp_chpl2, call_tmp_chpl3);
-#line 20 "ttt.chpl"
+#line 21 "ttt.chpl"
   window_chpl = call_tmp_chpl;
-#line 21 "ttt.chpl"
+#line 22 "ttt.chpl"
   call_tmp_chpl4 = GTK_WINDOW(call_tmp_chpl);
-#line 21 "ttt.chpl"
+#line 22 "ttt.chpl"
   gtk_window_set_resizable(call_tmp_chpl4, false);
-#line 24 "ttt.chpl"
+#line 25 "ttt.chpl"
   call_tmp_chpl6 = ((int32_t)(INT64(5)));
-#line 24 "ttt.chpl"
+#line 25 "ttt.chpl"
   call_tmp_chpl7 = ((int32_t)(INT64(3)));
-#line 24 "ttt.chpl"
+#line 25 "ttt.chpl"
   call_tmp_chpl5 = gtk_table_new(call_tmp_chpl6, call_tmp_chpl7, true);
-#line 24 "ttt.chpl"
+#line 25 "ttt.chpl"
   board_chpl = call_tmp_chpl5;
-#line 27 "ttt.chpl"
+#line 28 "ttt.chpl"
   call_tmp_chpl8 = gtk_button_new_with_mnemonic("This button works");
-#line 27 "ttt.chpl"
+#line 28 "ttt.chpl"
   resetBtn_chpl = call_tmp_chpl8;
-#line 28 "ttt.chpl"
+#line 29 "ttt.chpl"
   call_tmp_chpl9 = gtk_button_new_with_mnemonic("This button doesn't work'");
-#line 28 "ttt.chpl"
+#line 29 "ttt.chpl"
   stopBtn_chpl = call_tmp_chpl9;
-#line 32 "ttt.chpl"
+#line 33 "ttt.chpl"
   call_tmp_chpl10 = G_CALLBACK(g_print);
-#line 32 "ttt.chpl"
+#line 33 "ttt.chpl"
   g_signal_connect(call_tmp_chpl8, "clicked", call_tmp_chpl10, "Test");
-#line 33 "ttt.chpl"
+#line 34 "ttt.chpl"
   call_tmp_chpl11 = sizeof(chpl__chpl_fcf_0_callMe_chpl_object);
-#line 33 "ttt.chpl"
-  cast_tmp_chpl = chpl_here_alloc(call_tmp_chpl11, INT16(30), INT64(33), "ttt.chpl");
-#line 33 "ttt.chpl"
+#line 34 "ttt.chpl"
+  cast_tmp_chpl = chpl_here_alloc(call_tmp_chpl11, INT16(30), INT64(34), "ttt.chpl");
+#line 34 "ttt.chpl"
   this_chpl = ((_chpl_fcf_0_callMe_chpl)(cast_tmp_chpl));
-#line 33 "ttt.chpl"
+#line 34 "ttt.chpl"
   ((object)(this_chpl))->chpl__cid = chpl__cid__chpl_fcf_0_callMe_chpl;
-#line 33 "ttt.chpl"
-  wrap_call_tmp_chpl = _construct__chpl_fcf_0_callMe_chpl(this_chpl, INT64(33), "ttt.chpl");
-#line 33 "ttt.chpl"
+#line 34 "ttt.chpl"
+  wrap_call_tmp_chpl = _construct__chpl_fcf_0_callMe_chpl(this_chpl, INT64(34), "ttt.chpl");
+#line 34 "ttt.chpl"
   call_tmp_chpl12 = ((chpl__fcf_type_c_ptr_GtkWidget_c_void_ptr_void)(wrap_call_tmp_chpl));
-#line 33 "ttt.chpl"
+#line 34 "ttt.chpl"
   call_tmp_chpl13 = G_CALLBACK(call_tmp_chpl12);
-#line 33 "ttt.chpl"
-  g_signal_connect(call_tmp_chpl9, "clicked", call_tmp_chpl13, nil);
-#line 36 "ttt.chpl"
+#line 34 "ttt.chpl"
+  g_signal_connect(call_tmp_chpl9, "clicked", call_tmp_chpl13, call_tmp_chpl9);
+#line 37 "ttt.chpl"
   call_tmp_chpl14 = gtk_label_new("Output label");
-#line 36 "ttt.chpl"
+#line 37 "ttt.chpl"
   outputLabel_chpl = call_tmp_chpl14;
-#line 39 "ttt.chpl"
+#line 40 "ttt.chpl"
   _ic__F1_high_chpl = INT64(3);
-#line 39 "ttt.chpl"
-  chpl_checkIfRangeIterWillOverflow(INT64(1), INT64(3), INT64(1), INT64(1), INT64(3), true, INT64(39), "ttt.chpl");
 #line 40 "ttt.chpl"
-  _ic__F1_high_chpl2 = INT64(3);
-#line 39 "ttt.chpl"
-  for (i_chpl = INT64(1); ((i_chpl <= _ic__F1_high_chpl)); i_chpl += INT64(1)) {
-#line 39 "ttt.chpl"
-    i_chpl2 = i_chpl;
-#line 40 "ttt.chpl"
-    chpl_checkIfRangeIterWillOverflow(INT64(1), INT64(3), INT64(1), INT64(1), INT64(3), true, INT64(40), "ttt.chpl");
-#line 42 "ttt.chpl"
-    call_tmp_chpl17 = (i_chpl2 - INT64(1));
-#line 40 "ttt.chpl"
-    for (i_chpl3 = INT64(1); ((i_chpl3 <= _ic__F1_high_chpl2)); i_chpl3 += INT64(1)) {
+  chpl_checkIfRangeIterWillOverflow(INT64(1), INT64(3), INT64(1), INT64(1), INT64(3), true, INT64(40), "ttt.chpl");
 #line 41 "ttt.chpl"
+  _ic__F1_high_chpl2 = INT64(3);
+#line 40 "ttt.chpl"
+  for (i_chpl = INT64(1); ((i_chpl <= _ic__F1_high_chpl)); i_chpl += INT64(1)) {
+#line 40 "ttt.chpl"
+    i_chpl2 = i_chpl;
+#line 41 "ttt.chpl"
+    chpl_checkIfRangeIterWillOverflow(INT64(1), INT64(3), INT64(1), INT64(1), INT64(3), true, INT64(41), "ttt.chpl");
+#line 43 "ttt.chpl"
+    call_tmp_chpl17 = (i_chpl2 - INT64(1));
+#line 41 "ttt.chpl"
+    for (i_chpl3 = INT64(1); ((i_chpl3 <= _ic__F1_high_chpl2)); i_chpl3 += INT64(1)) {
+#line 42 "ttt.chpl"
       call_tmp_chpl15 = gtk_button_new_with_label(" ");
-#line 42 "ttt.chpl"
+#line 43 "ttt.chpl"
       call_tmp_chpl16 = GTK_TABLE(board_chpl);
-#line 42 "ttt.chpl"
+#line 43 "ttt.chpl"
       call_tmp_chpl18 = ((int32_t)(call_tmp_chpl17));
-#line 42 "ttt.chpl"
+#line 43 "ttt.chpl"
       call_tmp_chpl19 = ((int32_t)(i_chpl2));
-#line 42 "ttt.chpl"
+#line 43 "ttt.chpl"
       call_tmp_chpl20 = (i_chpl3 - INT64(1));
-#line 42 "ttt.chpl"
+#line 43 "ttt.chpl"
       call_tmp_chpl21 = ((int32_t)(call_tmp_chpl20));
-#line 42 "ttt.chpl"
+#line 43 "ttt.chpl"
       call_tmp_chpl22 = ((int32_t)(i_chpl3));
-#line 42 "ttt.chpl"
+#line 43 "ttt.chpl"
       gtk_table_attach_defaults(call_tmp_chpl16, call_tmp_chpl15, call_tmp_chpl18, call_tmp_chpl19, call_tmp_chpl21, call_tmp_chpl22);
-#line 42 "ttt.chpl"
+#line 43 "ttt.chpl"
     }
-#line 42 "ttt.chpl"
+#line 43 "ttt.chpl"
   }
-#line 47 "ttt.chpl"
+#line 48 "ttt.chpl"
   call_tmp_chpl23 = GTK_TABLE(board_chpl);
-#line 47 "ttt.chpl"
+#line 48 "ttt.chpl"
   gtk_table_attach_defaults(call_tmp_chpl23, outputLabel_chpl, INT32(0), INT32(1), INT32(3), INT32(4));
-#line 48 "ttt.chpl"
+#line 49 "ttt.chpl"
   call_tmp_chpl24 = GTK_TABLE(board_chpl);
-#line 48 "ttt.chpl"
+#line 49 "ttt.chpl"
   gtk_table_attach_defaults(call_tmp_chpl24, resetBtn_chpl, INT32(0), INT32(1), INT32(4), INT32(5));
-#line 49 "ttt.chpl"
+#line 50 "ttt.chpl"
   call_tmp_chpl25 = GTK_TABLE(board_chpl);
-#line 49 "ttt.chpl"
+#line 50 "ttt.chpl"
   gtk_table_attach_defaults(call_tmp_chpl25, stopBtn_chpl, INT32(2), INT32(3), INT32(4), INT32(5));
-#line 52 "ttt.chpl"
+#line 53 "ttt.chpl"
   call_tmp_chpl26 = GTK_CONTAINER(window_chpl);
-#line 52 "ttt.chpl"
+#line 53 "ttt.chpl"
   gtk_container_add(call_tmp_chpl26, board_chpl);
-#line 54 "ttt.chpl"
+#line 56 "ttt.chpl"
   _ref_tmp__chpl = &window_chpl;
-#line 54 "ttt.chpl"
+#line 56 "ttt.chpl"
   link_close_signal(_ref_tmp__chpl);
-#line 55 "ttt.chpl"
-  gtk_widget_show_all(window_chpl);
 #line 57 "ttt.chpl"
+  gtk_widget_show_all(window_chpl);
+#line 59 "ttt.chpl"
   gtk_main();
 #line 16 "ttt.chpl"
   return;
@@ -456,32 +456,32 @@ static void chpl__autoDestroyGlobals(void) {
 }
 
 #line 23 "ChapelBase.chpl"
-/* ttt.chpl:33 */
+/* ttt.chpl:34 */
 #line 23 "ChapelBase.chpl"
 static _chpl_fcf_0_callMe_chpl _construct__chpl_fcf_0_callMe_chpl(_chpl_fcf_0_callMe_chpl meme_chpl, int64_t _ln_chpl, c_string _fn_chpl) {
 #line 23 "ChapelBase.chpl"
   _chpl_fcf_0_callMe_chpl this_chpl = NULL;
 #line 23 "ChapelBase.chpl"
   chpl__fcf_type_c_ptr_GtkWidget_c_void_ptr_void tmp_chpl = NULL;
-#line 33 "ttt.chpl"
+#line 34 "ttt.chpl"
   this_chpl = meme_chpl;
-#line 33 "ttt.chpl"
-  chpl_check_nil(this_chpl, INT64(33), "ttt.chpl");
-#line 33 "ttt.chpl"
+#line 34 "ttt.chpl"
+  chpl_check_nil(this_chpl, INT64(34), "ttt.chpl");
+#line 34 "ttt.chpl"
   tmp_chpl = &((this_chpl)->super_chpl);
-#line 33 "ttt.chpl"
+#line 34 "ttt.chpl"
   _construct_chpl__fcf_type_c_ptr_GtkWidget_c_void_ptr_void(tmp_chpl, _ln_chpl, _fn_chpl);
-#line 33 "ttt.chpl"
+#line 34 "ttt.chpl"
   return meme_chpl;
-#line 33 "ttt.chpl"
+#line 34 "ttt.chpl"
 }
 
-#line 33 "ttt.chpl"
-/* ttt.chpl:33 */
-#line 33 "ttt.chpl"
+#line 34 "ttt.chpl"
+/* ttt.chpl:34 */
+#line 34 "ttt.chpl"
 static void chpl__auto_destroy__chpl_fcf_0_callMe(_chpl_fcf_0_callMe_chpl this_chpl, int64_t _ln_chpl, c_string _fn_chpl) {
-#line 33 "ttt.chpl"
+#line 34 "ttt.chpl"
   return;
-#line 33 "ttt.chpl"
+#line 34 "ttt.chpl"
 }
 

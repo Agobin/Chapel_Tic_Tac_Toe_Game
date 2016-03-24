@@ -39,7 +39,7 @@ static void chpl__init_gtk(int64_t _ln_chpl, c_string _fn_chpl) {
 }
 
 #line 1 "gtk.chpl"
-/* gtk.chpl:112 */
+/* gtk.chpl:111 */
 #line 1 "gtk.chpl"
 static void gtk_init_chpl(DefaultRectangularArr_chpl_string_1_int64_t_F args_chpl) {
 #line 1 "gtk.chpl"
@@ -92,80 +92,80 @@ static void gtk_init_chpl(DefaultRectangularArr_chpl_string_1_int64_t_F args_chp
   _ref_int32_t _ref_tmp__chpl2 = NULL;
 #line 1 "gtk.chpl"
   _ref_c_string _ref_tmp__chpl3 = NULL;
-#line 113 "gtk.chpl"
+#line 112 "gtk.chpl"
   call_tmp_chpl = ((int32_t)(INT64(1)));
-#line 113 "gtk.chpl"
+#line 112 "gtk.chpl"
   argc_chpl = call_tmp_chpl;
-#line 114 "gtk.chpl"
+#line 113 "gtk.chpl"
   type_tmp_chpl = "";
-#line 114 "gtk.chpl"
+#line 113 "gtk.chpl"
   *(this_chpl + INT64(0)) = INT64(0);
-#line 114 "gtk.chpl"
+#line 113 "gtk.chpl"
   *(i_chpl + INT64(0)) = *(this_chpl + INT64(0));
-#line 114 "gtk.chpl"
+#line 113 "gtk.chpl"
   ret_chpl2 = args_chpl;
-#line 114 "gtk.chpl"
+#line 113 "gtk.chpl"
   call_tmp_chpl2 = ret_chpl2;
-#line 114 "gtk.chpl"
-  chpl_check_nil(call_tmp_chpl2, INT64(114), "./gtk.chpl");
-#line 114 "gtk.chpl"
+#line 113 "gtk.chpl"
+  chpl_check_nil(call_tmp_chpl2, INT64(113), "./gtk.chpl");
+#line 113 "gtk.chpl"
   ret_chpl3 = (call_tmp_chpl2)->dom;
-#line 114 "gtk.chpl"
-  chpl_check_nil(ret_chpl3, INT64(114), "./gtk.chpl");
-#line 114 "gtk.chpl"
-  call_tmp_chpl3 = dsiMember(ret_chpl3, &this_chpl, INT64(114), "./gtk.chpl");
-#line 114 "gtk.chpl"
+#line 113 "gtk.chpl"
+  chpl_check_nil(ret_chpl3, INT64(113), "./gtk.chpl");
+#line 113 "gtk.chpl"
+  call_tmp_chpl3 = dsiMember(ret_chpl3, &this_chpl, INT64(113), "./gtk.chpl");
+#line 113 "gtk.chpl"
   call_tmp_chpl4 = (! call_tmp_chpl3);
-#line 114 "gtk.chpl"
-  if (call_tmp_chpl4) /* ZLINE: 114 ./gtk.chpl */
-#line 114 "gtk.chpl"
+#line 113 "gtk.chpl"
+  if (call_tmp_chpl4) /* ZLINE: 113 ./gtk.chpl */
+#line 113 "gtk.chpl"
   {
-#line 114 "gtk.chpl"
-    string_from_c_string(&call_tmp_chpl5, "array index out of bounds: ", INT64(0), INT64(0), INT64(114), "./gtk.chpl");
-#line 114 "gtk.chpl"
-    halt3(call_tmp_chpl5, &this_chpl, INT64(114), "./gtk.chpl");
-#line 114 "gtk.chpl"
+#line 113 "gtk.chpl"
+    string_from_c_string(&call_tmp_chpl5, "array index out of bounds: ", INT64(0), INT64(0), INT64(113), "./gtk.chpl");
+#line 113 "gtk.chpl"
+    halt3(call_tmp_chpl5, &this_chpl, INT64(113), "./gtk.chpl");
+#line 113 "gtk.chpl"
   }
-#line 114 "gtk.chpl"
+#line 113 "gtk.chpl"
   sum_chpl = INT64(0);
-#line 114 "gtk.chpl"
-  chpl_check_nil(call_tmp_chpl2, INT64(114), "./gtk.chpl");
-#line 114 "gtk.chpl"
+#line 113 "gtk.chpl"
+  chpl_check_nil(call_tmp_chpl2, INT64(113), "./gtk.chpl");
+#line 113 "gtk.chpl"
   ret__chpl = &((call_tmp_chpl2)->blk);
-#line 114 "gtk.chpl"
+#line 113 "gtk.chpl"
   ret_x1_chpl = *(*(ret__chpl) + INT64(0));
-#line 114 "gtk.chpl"
+#line 113 "gtk.chpl"
   coerce_tmp_chpl = *(i_chpl + INT64(0));
-#line 114 "gtk.chpl"
+#line 113 "gtk.chpl"
   call_tmp_chpl6 = (coerce_tmp_chpl * ret_x1_chpl);
-#line 114 "gtk.chpl"
+#line 113 "gtk.chpl"
   sum_chpl += call_tmp_chpl6;
-#line 114 "gtk.chpl"
-  chpl_check_nil(call_tmp_chpl2, INT64(114), "./gtk.chpl");
-#line 114 "gtk.chpl"
+#line 113 "gtk.chpl"
+  chpl_check_nil(call_tmp_chpl2, INT64(113), "./gtk.chpl");
+#line 113 "gtk.chpl"
   ret_chpl4 = (call_tmp_chpl2)->shiftedData;
-#line 114 "gtk.chpl"
+#line 113 "gtk.chpl"
   coerce_tmp_chpl2 = ret_chpl4;
-#line 114 "gtk.chpl"
+#line 113 "gtk.chpl"
   call_tmp_chpl7 = (coerce_tmp_chpl2 + sum_chpl);
-#line 114 "gtk.chpl"
+#line 113 "gtk.chpl"
   ret_chpl5 = *(call_tmp_chpl7);
-#line 114 "gtk.chpl"
+#line 113 "gtk.chpl"
   _ref_tmp__chpl = &type_tmp_chpl;
-#line 114 "gtk.chpl"
-  c_string_from_string(&call_tmp_chpl8, &ret_chpl5, INT64(114), "./gtk.chpl");
-#line 114 "gtk.chpl"
+#line 113 "gtk.chpl"
+  c_string_from_string(&call_tmp_chpl8, &ret_chpl5, INT64(113), "./gtk.chpl");
+#line 113 "gtk.chpl"
   *(_ref_tmp__chpl) = call_tmp_chpl8;
-#line 114 "gtk.chpl"
+#line 113 "gtk.chpl"
   cStr_chpl = type_tmp_chpl;
-#line 115 "gtk.chpl"
+#line 114 "gtk.chpl"
   _ref_tmp__chpl2 = &argc_chpl;
-#line 115 "gtk.chpl"
+#line 114 "gtk.chpl"
   _ref_tmp__chpl3 = &cStr_chpl;
-#line 115 "gtk.chpl"
+#line 114 "gtk.chpl"
   chpl_init(_ref_tmp__chpl2, _ref_tmp__chpl3);
-#line 112 "gtk.chpl"
+#line 111 "gtk.chpl"
   return;
-#line 112 "gtk.chpl"
+#line 111 "gtk.chpl"
 }
 
