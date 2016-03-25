@@ -15,9 +15,8 @@ module Functions{
 			(a[3] == key && a[6] == key && a[9] == key) || (a[7] == key && a[5] == key && a[3] == key) ){
 			return key;	
 		}
-		else{
-			return 0;
-		}
+		
+		return 0; 
 	}  
 	export proc resetGame(btn: c_ptr(GtkWidget), data: c_void_ptr): void{
 	
