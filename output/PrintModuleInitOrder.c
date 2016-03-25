@@ -45,7 +45,7 @@ void chpl__init_PrintModuleInitOrder(int64_t _ln, c_string _fn) {
 #line 30 "PrintModuleInitOrder.chpl"
     call_tmp3 = chpl_config_get_value("printModuleInitOrder", "Built-in");
 #line 30 "PrintModuleInitOrder.chpl"
-    const_tmp = _command_line_cast6(call_tmp3, _ln, _fn);
+    const_tmp = _command_line_cast10(call_tmp3, _ln, _fn);
 #line 30 "PrintModuleInitOrder.chpl"
   }
 #line 30 "PrintModuleInitOrder.chpl"

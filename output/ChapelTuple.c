@@ -71,7 +71,7 @@ static void this5(_ref__tuple_1_star_range_int64_t_bounded_F this6, int64_t i, _
 #line 141 "ChapelTuple.chpl"
     string_from_c_string(&call_tmp3, "tuple access out of bounds: ", INT64(0), INT64(0), _ln, _fn);
 #line 141 "ChapelTuple.chpl"
-    halt3(call_tmp3, i, _ln, _fn);
+    halt2(call_tmp3, i, _ln, _fn);
 #line 141 "ChapelTuple.chpl"
   }
 #line 142 "ChapelTuple.chpl"
@@ -122,7 +122,7 @@ static _ref_range_int64_t_bounded_F this4(_ref__tuple_1_star_range_int64_t_bound
 #line 141 "ChapelTuple.chpl"
     string_from_c_string(&call_tmp3, "tuple access out of bounds: ", INT64(0), INT64(0), _ln, _fn);
 #line 141 "ChapelTuple.chpl"
-    halt3(call_tmp3, i, _ln, _fn);
+    halt2(call_tmp3, i, _ln, _fn);
 #line 141 "ChapelTuple.chpl"
   }
 #line 142 "ChapelTuple.chpl"

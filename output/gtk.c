@@ -123,7 +123,7 @@ static void gtk_init_chpl(DefaultRectangularArr_chpl_string_1_int64_t_F args_chp
 #line 111 "gtk.chpl"
     string_from_c_string(&call_tmp_chpl5, "array index out of bounds: ", INT64(0), INT64(0), INT64(111), "./gtk.chpl");
 #line 111 "gtk.chpl"
-    halt2(call_tmp_chpl5, &this_chpl, INT64(111), "./gtk.chpl");
+    halt3(call_tmp_chpl5, &this_chpl, INT64(111), "./gtk.chpl");
 #line 111 "gtk.chpl"
   }
 #line 111 "gtk.chpl"

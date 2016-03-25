@@ -20,7 +20,16 @@ module Functions{
 			return 0;
 		}
 	} */
-
+	export proc resetGame(btn: c_ptr(GtkWidget), data: c_void_ptr){
+	
+		playerTime = 0;
+		
+		for i in 1..9{
+			boardMatrix[i] = 0;
+			gtk_button_set_label(GTK_BUTTON(button_array[i]), "");
+		}
+		gtk_label_set_text(GTK_LABEL(output), "Player one start play");
+	}
 	export proc record_move (button: c_ptr(GtkWidget), numPtr: c_ptr(int) ){
 		
 		var num = numPtr.deref();
@@ -84,6 +93,7 @@ module Functions{
 module FunctionSysbols{
 	extern var callMe: opaque;
     extern var record_move: opaque;
+    extern var resetGame: opaque;
 }
 //Beginning of main
 proc main( args: [] string){
@@ -101,10 +111,9 @@ proc main( args: [] string){
 	
 	//Declaring resetBtn and stopBtn to reset and stop game respectively
 	var resetBtn: c_ptr(GtkWidget) = gtk_button_new_with_mnemonic("Reset game");
-	var stopBtn: c_ptr(GtkWidget) = gtk_button_new_with_mnemonic("Quit game");
+	g_signal_connect(resetBtn, "clicked", G_CALLBACK(resetGame), nil);
 	
-	//Linking callback functions to buttons
-	//g_signal_connect(resetBtn, "clicked", G_CALLBACK(g_print), "Reset game");
+	var stopBtn: c_ptr(GtkWidget) = gtk_button_new_with_mnemonic("Quit game");
 	g_signal_connect_swapped(stopBtn, "clicked", G_CALLBACK(gtk_widget_destroy), window);
 	 
 	//outputLabel is used to display game status at any moment
@@ -124,19 +133,19 @@ proc main( args: [] string){
 				when 2 do
 					g_signal_connect(button_array[counter], "clicked", G_CALLBACK(record_move), c_ptrTo(two));
 				when 3 do
-					g_signal_connect(button_array[counter], "clicked", G_CALLBACK(record_move), c_ptrTo(two));
+					g_signal_connect(button_array[counter], "clicked", G_CALLBACK(record_move), c_ptrTo(three));
 				when 4 do
-					g_signal_connect(button_array[counter], "clicked", G_CALLBACK(record_move), c_ptrTo(two));
+					g_signal_connect(button_array[counter], "clicked", G_CALLBACK(record_move), c_ptrTo(four));
 				when 5 do
-					g_signal_connect(button_array[counter], "clicked", G_CALLBACK(record_move), c_ptrTo(two));
+					g_signal_connect(button_array[counter], "clicked", G_CALLBACK(record_move), c_ptrTo(five));
 				when 6 do
-					g_signal_connect(button_array[counter], "clicked", G_CALLBACK(record_move), c_ptrTo(two));
+					g_signal_connect(button_array[counter], "clicked", G_CALLBACK(record_move), c_ptrTo(six));
 				when 7 do
-					g_signal_connect(button_array[counter], "clicked", G_CALLBACK(record_move), c_ptrTo(two));
+					g_signal_connect(button_array[counter], "clicked", G_CALLBACK(record_move), c_ptrTo(seven));
 				when 8 do
-					g_signal_connect(button_array[counter], "clicked", G_CALLBACK(record_move), c_ptrTo(two));
+					g_signal_connect(button_array[counter], "clicked", G_CALLBACK(record_move), c_ptrTo(eight));
 				when 9 do
-					g_signal_connect(button_array[counter], "clicked", G_CALLBACK(record_move), c_ptrTo(two));
+					g_signal_connect(button_array[counter], "clicked", G_CALLBACK(record_move), c_ptrTo(nine));
 			}
 			
 			gtk_table_attach_defaults(GTK_TABLE(board), button_array[counter], (i-1):c_int, i:c_int, (j-1):c_int, j:c_int); 
