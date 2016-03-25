@@ -74,7 +74,7 @@ static void chpl__init_ttt(int64_t _ln_chpl, c_string _fn_chpl) {
 #line 4 "ttt.chpl"
   output_chpl = call_tmp_chpl4;
 #line 5 "ttt.chpl"
-  playerTime_chpl = INT64(0);
+  playCounter_chpl = INT64(0);
 #line 6 "ttt.chpl"
   ret_to_arg_ref_tmp__chpl4 = &call_tmp_chpl5;
 #line 6 "ttt.chpl"

@@ -2,7 +2,7 @@ use gtk;
 
 var boardMatrix: [1..9] int;
 var output: c_ptr(GtkWidget);
-var playerTime: int = 0;
+var playCounter: int = 0;
 var button_array: [1..9] c_ptr(GtkWidget);
 var board: c_ptr(GtkWidget);
 var gameOver:bool = false;
@@ -20,7 +20,7 @@ module Functions{
 	}  
 	export proc resetGame(btn: c_ptr(GtkWidget), data: c_void_ptr): void{
 	
-		playerTime = 0;
+		playCounter = 0;
 		
 		for i in 1..9{
 			boardMatrix[i] = 0;
@@ -40,7 +40,7 @@ module Functions{
 		}
 		else if( boardMatrix[num] != 0){
 			//Not a valid play
-			if(playerTime % 2 == 0){
+			if(playCounter % 2 == 0){
 				gtk_label_set_text(GTK_LABEL(output), "   Invalid move, spot occupied, Player one play again");
 			}
 			else{
@@ -50,7 +50,7 @@ module Functions{
 		}
 		else{ //Move was valid
 		
-			if(playerTime % 2 == 0){
+			if(playCounter % 2 == 0){
 				boardMatrix[num] = 1;
 				gtk_button_set_label(GTK_BUTTON(button), "X");
 			}
@@ -70,20 +70,20 @@ module Functions{
 				gtk_label_set_text(GTK_LABEL(output), "  Game Over\nPlayer two won!!");
 				gameOver = true;
 			}
-			else if(playerTime == 8){
+			else if(playCounter == 8){
 				gameOver = true;
 				gtk_label_set_text(GTK_LABEL(output), "  Game Over\nNobody won");
 			}
-			else if(playerTime < 8){
+			else if(playCounter < 8){
 			
-				if(playerTime % 2 == 0){
+				if(playCounter % 2 == 0){
 					gtk_label_set_text(GTK_LABEL(output), "Player two's time to play");
 				}
 				else{
 					gtk_label_set_text(GTK_LABEL(output), "Player one's time to play");
 				}
 				
-				playerTime += 1;
+				playCounter += 1;
 			}
 		}
 
@@ -92,11 +92,12 @@ module Functions{
 }
 
 module FunctionSysbols{
-	//extern var analyseBoard: opaque;
+	
 	extern var callMe: opaque;
     extern var record_move: opaque;
     extern var resetGame: opaque;
 }
+
 //Beginning of main
 proc main( args: [] string){
 	

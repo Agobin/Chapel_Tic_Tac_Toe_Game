@@ -290,11 +290,11 @@ typedef uint64_t *_ref_uint64_t;
 
 typedef struct chpl__class_localscoforall_fn_s {
   _ddata_int64_t _0_x1_tet;
-  int64_t _1_numChunks;
+  _ref_range_int64_t_bounded_F _1_this;
   int64_t _2_len;
   chpl___EndCount_atomic_int64_int64_t _3_rvfDerefTmp;
-  _ref_range_int64_t_bounded_F _4_this;
-  int64_t _5__yieldedIndex;
+  int64_t _4__yieldedIndex;
+  int64_t _5_numChunks;
   int64_t _ln;
   c_string _fn;
 } chpl__class_localscoforall_fn_object;
@@ -610,7 +610,7 @@ static void chpl__autoDestroy3(DefaultRectangularArr_locale_1_int64_t_F x, int64
 static void chpl__autoDestroy4(DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F x, int64_t _ln, c_string _fn);
 static void chpl__autoDestroy5(DefaultRectangularArr_localesSignal_1_int64_t_F x, int64_t _ln, c_string _fn);
 static void chpl__autoDestroy6(DefaultRectangularArr_int64_t_1_int64_t_F x, int64_t _ln, c_string _fn);
-static void coforall_fn(_ddata_int64_t x1_tet, int64_t numChunks, int64_t len, chpl___EndCount_atomic_int64_int64_t _coforallCount, _ref_range_int64_t_bounded_F this6, int64_t chunk, int64_t _ln, c_string _fn);
+static void coforall_fn(_ddata_int64_t x1_tet, _ref_range_int64_t_bounded_F this6, int64_t len, chpl___EndCount_atomic_int64_int64_t _coforallCount, int64_t chunk, int64_t numChunks, int64_t _ln, c_string _fn);
 static void chpl__init_ChapelDistribution(int64_t _ln, c_string _fn);
 static BaseDist _construct_BaseDist(atomic_refcnt* const _distCnt, list_BaseDom_chpl* const _doms, atomicflag* const _domsLock, BaseDist meme, int64_t _ln, c_string _fn);
 static void chpl__auto_destroy_BaseDist(BaseDist this6, int64_t _ln, c_string _fn);
@@ -931,7 +931,7 @@ chpl_fn_p chpl_vmtable[] = {
   (chpl_fn_p)NULL,
   (chpl_fn_p)NULL,
   /* _class_localscoforall_fn */
-  (chpl_fn_p)NULL,
+  (chpl_fn_p)chpl__auto_destroy_object,
   (chpl_fn_p)NULL,
   (chpl_fn_p)NULL,
   (chpl_fn_p)NULL,
@@ -952,14 +952,14 @@ chpl_fn_p chpl_vmtable[] = {
   (chpl_fn_p)NULL,
   /* BaseArr */
   (chpl_fn_p)chpl__auto_destroy_BaseArr,
-  (chpl_fn_p)dsiDestroyData,
   (chpl_fn_p)dsiReallocate,
+  (chpl_fn_p)dsiDestroyData,
   (chpl_fn_p)dsiGetBaseDom,
   /* Writer */
   (chpl_fn_p)chpl__auto_destroy_Writer,
-  (chpl_fn_p)writePrimitive2,
-  (chpl_fn_p)writePrimitive3,
   (chpl_fn_p)writePrimitive,
+  (chpl_fn_p)writePrimitive3,
+  (chpl_fn_p)writePrimitive2,
   /* Reader */
   (chpl_fn_p)chpl__auto_destroy_Reader,
   (chpl_fn_p)NULL,
@@ -967,9 +967,9 @@ chpl_fn_p chpl_vmtable[] = {
   (chpl_fn_p)NULL,
   /* StringWriter */
   (chpl_fn_p)chpl___TILDE_StringWriter,
-  (chpl_fn_p)writePrimitive5,
-  (chpl_fn_p)writePrimitive4,
   (chpl_fn_p)writePrimitive6,
+  (chpl_fn_p)writePrimitive4,
+  (chpl_fn_p)writePrimitive5,
   /* locale */
   (chpl_fn_p)chpl__auto_destroy_locale,
   (chpl_fn_p)chpl_id,
@@ -1002,28 +1002,28 @@ chpl_fn_p chpl_vmtable[] = {
   (chpl_fn_p)NULL,
   /* DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F */
   (chpl_fn_p)chpl__auto_destroy_DefaultRectangularArr2,
-  (chpl_fn_p)dsiDestroyData5,
   (chpl_fn_p)dsiReallocate6,
+  (chpl_fn_p)dsiDestroyData5,
   (chpl_fn_p)dsiGetBaseDom5,
   /* DefaultRectangularArr_chpl_string_1_int64_t_F */
   (chpl_fn_p)chpl__auto_destroy_DefaultRectangularArr5,
-  (chpl_fn_p)dsiDestroyData6,
   (chpl_fn_p)dsiReallocate5,
+  (chpl_fn_p)dsiDestroyData6,
   (chpl_fn_p)dsiGetBaseDom4,
   /* DefaultRectangularArr_int64_t_1_int64_t_F */
   (chpl_fn_p)chpl__auto_destroy_DefaultRectangularArr,
-  (chpl_fn_p)dsiDestroyData4,
   (chpl_fn_p)dsiReallocate2,
+  (chpl_fn_p)dsiDestroyData4,
   (chpl_fn_p)dsiGetBaseDom2,
   /* DefaultRectangularArr_locale_1_int64_t_F */
   (chpl_fn_p)chpl__auto_destroy_DefaultRectangularArr3,
-  (chpl_fn_p)dsiDestroyData2,
   (chpl_fn_p)dsiReallocate3,
+  (chpl_fn_p)dsiDestroyData2,
   (chpl_fn_p)dsiGetBaseDom3,
   /* DefaultRectangularArr_localesSignal_1_int64_t_F */
   (chpl_fn_p)chpl__auto_destroy_DefaultRectangularArr4,
-  (chpl_fn_p)dsiDestroyData3,
   (chpl_fn_p)dsiReallocate4,
+  (chpl_fn_p)dsiDestroyData3,
   (chpl_fn_p)dsiGetBaseDom6,
   /* LocaleModel */
   (chpl_fn_p)chpl__auto_destroy_LocaleModel,
@@ -1192,7 +1192,7 @@ static channel_T_dynamic_T_chpl stdout_chpl;
 static channel_T_dynamic_T_chpl stderr_chpl;
 static DefaultRectangularArr_int64_t_1_int64_t_F boardMatrix_chpl;
 static c_ptr_GtkWidget_chpl output_chpl;
-static int64_t playerTime_chpl;
+static int64_t playCounter_chpl;
 static DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F button_array_chpl;
 static c_ptr_GtkWidget_chpl board_chpl;
 static chpl_bool gameOver_chpl;
