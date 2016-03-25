@@ -685,7 +685,7 @@ static void chpl__auto_destroy_RootLocale(RootLocale this6, int64_t _ln, c_strin
 #line 195 "LocaleModel.chpl"
   _field_destructor_tmp_ = (this6)->myLocales;
 #line 195 "LocaleModel.chpl"
-  chpl__autoDestroy4(_field_destructor_tmp_, _ln, _fn);
+  chpl__autoDestroy6(_field_destructor_tmp_, _ln, _fn);
 #line 194 "LocaleModel.chpl"
   chpl_check_nil(this6, INT64(194), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/localeModels/flat/LocaleModel.chpl");
 #line 194 "LocaleModel.chpl"
@@ -1176,7 +1176,7 @@ static void init2(RootLocale this6, int64_t _ln, c_string _fn) {
 #line 207 "LocaleModel.chpl"
     chpl_here_alloc_size = sizeof(chpl__class_localscoforall_fn2_object);
 #line 207 "LocaleModel.chpl"
-    chpl_here_alloc_tmp = chpl_here_alloc(chpl_here_alloc_size, INT16(34), _ln, _fn);
+    chpl_here_alloc_tmp = chpl_here_alloc(chpl_here_alloc_size, INT16(36), _ln, _fn);
 #line 207 "LocaleModel.chpl"
     _args_forcoforall_fn = ((_class_localscoforall_fn2)(chpl_here_alloc_tmp));
 #line 207 "LocaleModel.chpl"
@@ -1228,7 +1228,7 @@ static void init2(RootLocale this6, int64_t _ln, c_string _fn) {
 #line 207 "LocaleModel.chpl"
   chpl_here_free(call_tmp10, _ln, _fn);
 #line 207 "LocaleModel.chpl"
-  chpl__autoDestroy3(flags, _ln, _fn);
+  chpl__autoDestroy5(flags, _ln, _fn);
 #line 214 "LocaleModel.chpl"
   _autoCopy_tmp_ = chpl_rt_buildLocaleID(chpl_nodeID, local_c_sublocid_any);
 #line 214 "LocaleModel.chpl"
@@ -1447,7 +1447,7 @@ static void coforall_fn2(localesBarrier* const b, DefaultRectangularArr_localesS
 #line 209 "LocaleModel.chpl"
     string_from_c_string(&call_tmp8, "array index out of bounds: ", INT64(0), INT64(0), _ln, _fn);
 #line 209 "LocaleModel.chpl"
-    halt3(call_tmp8, &this7, _ln, _fn);
+    halt2(call_tmp8, &this7, _ln, _fn);
 #line 209 "LocaleModel.chpl"
   }
 #line 209 "LocaleModel.chpl"
@@ -1600,7 +1600,7 @@ static locale getChild3(RootLocale this6, int64_t idx, int64_t _ln, c_string _fn
 #line 241 "LocaleModel.chpl"
     string_from_c_string(&call_tmp5, "array index out of bounds: ", INT64(0), INT64(0), _ln, _fn);
 #line 241 "LocaleModel.chpl"
-    halt3(call_tmp5, &this7, _ln, _fn);
+    halt2(call_tmp5, &this7, _ln, _fn);
 #line 241 "LocaleModel.chpl"
   }
 #line 241 "LocaleModel.chpl"
@@ -1745,7 +1745,7 @@ static locale localeIDtoLocale2(RootLocale this6, chpl_localeID_t* const id2, in
 #line 256 "LocaleModel.chpl"
     string_from_c_string(&call_tmp7, "array index out of bounds: ", INT64(0), INT64(0), _ln, _fn);
 #line 256 "LocaleModel.chpl"
-    halt3(call_tmp7, &this7, _ln, _fn);
+    halt2(call_tmp7, &this7, _ln, _fn);
 #line 256 "LocaleModel.chpl"
   }
 #line 256 "LocaleModel.chpl"

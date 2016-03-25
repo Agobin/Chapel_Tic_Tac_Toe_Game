@@ -278,7 +278,7 @@ static void chpl__init_IO(int64_t _ln_chpl, c_string _fn_chpl) {
 #line 4491 "IO.chpl"
   reader_chpl2(_ref_tmp__chpl6, INT64(0), INT64(9223372036854775807), default_arghints_chpl2, &default_argstyle_chpl2, ret_to_arg_ref_tmp__chpl4, _ln_chpl, _fn_chpl);
 #line 4491 "IO.chpl"
-  call_tmp_chpl16 = chpl__initCopy5(&wrap_call_tmp_chpl3, _ln_chpl, _fn_chpl);
+  call_tmp_chpl16 = chpl__initCopy4(&wrap_call_tmp_chpl3, _ln_chpl, _fn_chpl);
 #line 4491 "IO.chpl"
   call_tmp_chpl15 = call_tmp_chpl16;
 #line 4491 "IO.chpl"
@@ -350,7 +350,7 @@ static void chpl__init_IO(int64_t _ln_chpl, c_string _fn_chpl) {
 #line 4493 "IO.chpl"
   writer_chpl2(_ref_tmp__chpl12, INT64(0), INT64(9223372036854775807), call_tmp_chpl22, &default_argstyle_chpl4, ret_to_arg_ref_tmp__chpl8, _ln_chpl, _fn_chpl);
 #line 4493 "IO.chpl"
-  call_tmp_chpl23 = chpl__initCopy4(&wrap_call_tmp_chpl6, _ln_chpl, _fn_chpl);
+  call_tmp_chpl23 = chpl__initCopy5(&wrap_call_tmp_chpl6, _ln_chpl, _fn_chpl);
 #line 4493 "IO.chpl"
   call_tmp_chpl21 = call_tmp_chpl23;
 #line 4493 "IO.chpl"
@@ -422,7 +422,7 @@ static void chpl__init_IO(int64_t _ln_chpl, c_string _fn_chpl) {
 #line 4495 "IO.chpl"
   writer_chpl2(_ref_tmp__chpl18, INT64(0), INT64(9223372036854775807), call_tmp_chpl29, &default_argstyle_chpl6, ret_to_arg_ref_tmp__chpl12, _ln_chpl, _fn_chpl);
 #line 4495 "IO.chpl"
-  call_tmp_chpl30 = chpl__initCopy4(&wrap_call_tmp_chpl9, _ln_chpl, _fn_chpl);
+  call_tmp_chpl30 = chpl__initCopy5(&wrap_call_tmp_chpl9, _ln_chpl, _fn_chpl);
 #line 4495 "IO.chpl"
   call_tmp_chpl28 = call_tmp_chpl30;
 #line 4495 "IO.chpl"
@@ -1694,7 +1694,7 @@ static channel_F_dynamic_T_chpl _construct_channel_chpl(locale home_chpl, qio_ch
 #line 2567 "IO.chpl"
 /* IO.chpl:2592 */
 #line 2567 "IO.chpl"
-static channel_F_dynamic_T_chpl chpl__initCopy5(channel_F_dynamic_T_chpl* const x_chpl, int64_t _ln_chpl, c_string _fn_chpl) {
+static channel_F_dynamic_T_chpl chpl__initCopy4(channel_F_dynamic_T_chpl* const x_chpl, int64_t _ln_chpl, c_string _fn_chpl) {
 #line 2567 "IO.chpl"
   qio_channel_ptr_t ret_chpl;
 #line 2594 "IO.chpl"
@@ -1709,7 +1709,7 @@ static channel_F_dynamic_T_chpl chpl__initCopy5(channel_F_dynamic_T_chpl* const 
 #line 2592 "IO.chpl"
 /* IO.chpl:2592 */
 #line 2592 "IO.chpl"
-static channel_T_dynamic_T_chpl chpl__initCopy4(channel_T_dynamic_T_chpl* const x_chpl, int64_t _ln_chpl, c_string _fn_chpl) {
+static channel_T_dynamic_T_chpl chpl__initCopy5(channel_T_dynamic_T_chpl* const x_chpl, int64_t _ln_chpl, c_string _fn_chpl) {
 #line 2592 "IO.chpl"
   qio_channel_ptr_t ret_chpl;
 #line 2594 "IO.chpl"
@@ -2140,7 +2140,7 @@ static void reader_chpl(_ref_file this_chpl, _ref_syserr error_chpl, int64_t sta
 #line 3168 "IO.chpl"
   ret_chpl = wrap_call_tmp_chpl;
 #line 3168 "IO.chpl"
-  *(_retArg_chpl) = chpl__initCopy5(&wrap_call_tmp_chpl, _ln_chpl, _fn_chpl);
+  *(_retArg_chpl) = chpl__initCopy4(&wrap_call_tmp_chpl, _ln_chpl, _fn_chpl);
 #line 3169 "IO.chpl"
   chpl_check_nil(this_chpl, INT64(3169), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/standard/IO.chpl");
 #line 3169 "IO.chpl"
@@ -2178,7 +2178,7 @@ static void reader_chpl(_ref_file this_chpl, _ref_syserr error_chpl, int64_t sta
 #line 3175 "IO.chpl"
   chpl___ASSIGN_3(_ref_tmp__chpl4, &ret_chpl2, _ln_chpl, _fn_chpl);
 #line 3168 "IO.chpl"
-  *(_retArg_chpl) = chpl__initCopy5(&ret_chpl, _ln_chpl, _fn_chpl);
+  *(_retArg_chpl) = chpl__initCopy4(&ret_chpl, _ln_chpl, _fn_chpl);
 #line 3168 "IO.chpl"
   *(error_chpl) = _formal_tmp_error_chpl;
 #line 3171 "IO.chpl"
@@ -2263,7 +2263,7 @@ static void reader_chpl2(_ref_file this_chpl, int64_t start_chpl, int64_t end_ch
 #line 3180 "IO.chpl"
   ret_chpl = wrap_call_tmp_chpl;
 #line 3180 "IO.chpl"
-  call_tmp_chpl2 = chpl__initCopy5(&wrap_call_tmp_chpl, _ln_chpl, _fn_chpl);
+  call_tmp_chpl2 = chpl__initCopy4(&wrap_call_tmp_chpl, _ln_chpl, _fn_chpl);
 #line 3180 "IO.chpl"
   *(_retArg_chpl) = call_tmp_chpl2;
 #line 3181 "IO.chpl"
@@ -2305,7 +2305,7 @@ static void reader_chpl2(_ref_file this_chpl, int64_t start_chpl, int64_t end_ch
 #line 3184 "IO.chpl"
   chpl___ASSIGN_3(_ref_tmp__chpl3, &ret_chpl2, _ln_chpl, _fn_chpl);
 #line 3180 "IO.chpl"
-  call_tmp_chpl8 = chpl__initCopy5(&ret_chpl, _ln_chpl, _fn_chpl);
+  call_tmp_chpl8 = chpl__initCopy4(&ret_chpl, _ln_chpl, _fn_chpl);
 #line 3180 "IO.chpl"
   *(_retArg_chpl) = call_tmp_chpl8;
 #line 3182 "IO.chpl"
@@ -2386,7 +2386,7 @@ static void writer_chpl(_ref_file this_chpl, _ref_syserr error_chpl, int64_t sta
 #line 3268 "IO.chpl"
   ret_chpl = wrap_call_tmp_chpl;
 #line 3268 "IO.chpl"
-  *(_retArg_chpl) = chpl__initCopy4(&wrap_call_tmp_chpl, _ln_chpl, _fn_chpl);
+  *(_retArg_chpl) = chpl__initCopy5(&wrap_call_tmp_chpl, _ln_chpl, _fn_chpl);
 #line 3269 "IO.chpl"
   chpl_check_nil(this_chpl, INT64(3269), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/standard/IO.chpl");
 #line 3269 "IO.chpl"
@@ -2424,7 +2424,7 @@ static void writer_chpl(_ref_file this_chpl, _ref_syserr error_chpl, int64_t sta
 #line 3275 "IO.chpl"
   chpl___ASSIGN_4(_ref_tmp__chpl4, &ret_chpl2, _ln_chpl, _fn_chpl);
 #line 3268 "IO.chpl"
-  *(_retArg_chpl) = chpl__initCopy4(&ret_chpl, _ln_chpl, _fn_chpl);
+  *(_retArg_chpl) = chpl__initCopy5(&ret_chpl, _ln_chpl, _fn_chpl);
 #line 3268 "IO.chpl"
   *(error_chpl) = _formal_tmp_error_chpl;
 #line 3271 "IO.chpl"
@@ -2509,7 +2509,7 @@ static void writer_chpl2(_ref_file this_chpl, int64_t start_chpl, int64_t end_ch
 #line 3280 "IO.chpl"
   ret_chpl = wrap_call_tmp_chpl;
 #line 3280 "IO.chpl"
-  call_tmp_chpl2 = chpl__initCopy4(&wrap_call_tmp_chpl, _ln_chpl, _fn_chpl);
+  call_tmp_chpl2 = chpl__initCopy5(&wrap_call_tmp_chpl, _ln_chpl, _fn_chpl);
 #line 3280 "IO.chpl"
   *(_retArg_chpl) = call_tmp_chpl2;
 #line 3282 "IO.chpl"
@@ -2551,7 +2551,7 @@ static void writer_chpl2(_ref_file this_chpl, int64_t start_chpl, int64_t end_ch
 #line 3286 "IO.chpl"
   chpl___ASSIGN_4(_ref_tmp__chpl3, &ret_chpl2, _ln_chpl, _fn_chpl);
 #line 3280 "IO.chpl"
-  call_tmp_chpl8 = chpl__initCopy4(&ret_chpl, _ln_chpl, _fn_chpl);
+  call_tmp_chpl8 = chpl__initCopy5(&ret_chpl, _ln_chpl, _fn_chpl);
 #line 3280 "IO.chpl"
   *(_retArg_chpl) = call_tmp_chpl8;
 #line 3283 "IO.chpl"

@@ -82,7 +82,7 @@ static void chpl__auto_destroy_listNode2(listNode_BaseDom_chpl this_chpl, int64_
 #line 30 "List.chpl"
 /* List.chpl:45 */
 #line 30 "List.chpl"
-static list_BaseArr_chpl _construct_list_chpl(listNode_BaseArr_chpl first_chpl, listNode_BaseArr_chpl last_chpl, int64_t length_chpl, list_BaseArr_chpl* const meme_chpl, int64_t _ln_chpl, c_string _fn_chpl) {
+static list_BaseArr_chpl _construct_list_chpl2(listNode_BaseArr_chpl first_chpl, listNode_BaseArr_chpl last_chpl, int64_t length_chpl, list_BaseArr_chpl* const meme_chpl, int64_t _ln_chpl, c_string _fn_chpl) {
 #line 30 "List.chpl"
   list_BaseArr_chpl this_chpl;
 #line 45 "List.chpl"
@@ -101,7 +101,7 @@ static list_BaseArr_chpl _construct_list_chpl(listNode_BaseArr_chpl first_chpl, 
 #line 45 "List.chpl"
 /* List.chpl:45 */
 #line 45 "List.chpl"
-static list_BaseDom_chpl _construct_list_chpl2(listNode_BaseDom_chpl first_chpl, listNode_BaseDom_chpl last_chpl, int64_t length_chpl, list_BaseDom_chpl* const meme_chpl, int64_t _ln_chpl, c_string _fn_chpl) {
+static list_BaseDom_chpl _construct_list_chpl(listNode_BaseDom_chpl first_chpl, listNode_BaseDom_chpl last_chpl, int64_t length_chpl, list_BaseDom_chpl* const meme_chpl, int64_t _ln_chpl, c_string _fn_chpl) {
 #line 45 "List.chpl"
   list_BaseDom_chpl this_chpl;
 #line 45 "List.chpl"

@@ -23,6 +23,7 @@ extern proc gtk_main_quit();
 
 //Label
 extern proc gtk_label_new( str: c_string): c_ptr(GtkWidget);
+extern proc gtk_label_set_text( wid: c_ptr(GtkLabel), text: c_string): void;
 
 //Container
 extern proc gtk_container_add( wid: c_ptr(GtkContainer), child: c_ptr(GtkWidget));

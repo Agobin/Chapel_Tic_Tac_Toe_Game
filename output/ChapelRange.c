@@ -35,7 +35,7 @@ static void chpl__init_ChapelRange(int64_t _ln, c_string _fn) {
 #line 86 "ChapelRange.chpl"
 /* ChapelRange.chpl:138 */
 #line 86 "ChapelRange.chpl"
-static range_int64_t_bounded_F _construct_range2(int64_t _low, int64_t _high, int64_t _stride, int64_t _alignment, chpl_bool _aligned, range_int64_t_bounded_F* const meme, int64_t _ln, c_string _fn) {
+static range_int64_t_bounded_F _construct_range(int64_t _low, int64_t _high, int64_t _stride, int64_t _alignment, chpl_bool _aligned, range_int64_t_bounded_F* const meme, int64_t _ln, c_string _fn) {
 #line 86 "ChapelRange.chpl"
   range_int64_t_bounded_F this6;
 #line 138 "ChapelRange.chpl"
@@ -58,7 +58,7 @@ static range_int64_t_bounded_F _construct_range2(int64_t _low, int64_t _high, in
 #line 138 "ChapelRange.chpl"
 /* ChapelRange.chpl:138 */
 #line 138 "ChapelRange.chpl"
-static range_int64_t_boundedLow_F _construct_range(int64_t _low, int64_t _high, int64_t _stride, int64_t _alignment, chpl_bool _aligned, range_int64_t_boundedLow_F* const meme, int64_t _ln, c_string _fn) {
+static range_int64_t_boundedLow_F _construct_range2(int64_t _low, int64_t _high, int64_t _stride, int64_t _alignment, chpl_bool _aligned, range_int64_t_boundedLow_F* const meme, int64_t _ln, c_string _fn) {
 #line 138 "ChapelRange.chpl"
   range_int64_t_boundedLow_F this6;
 #line 138 "ChapelRange.chpl"
@@ -81,7 +81,7 @@ static range_int64_t_boundedLow_F _construct_range(int64_t _low, int64_t _high, 
 #line 138 "ChapelRange.chpl"
 /* ChapelRange.chpl:174 */
 #line 138 "ChapelRange.chpl"
-static range_int64_t_bounded_F range2(int64_t _low, int64_t _high, int64_t _stride, int64_t _alignment, chpl_bool _aligned, int64_t _ln, c_string _fn) {
+static range_int64_t_bounded_F range(int64_t _low, int64_t _high, int64_t _stride, int64_t _alignment, chpl_bool _aligned, int64_t _ln, c_string _fn) {
 #line 138 "ChapelRange.chpl"
   range_int64_t_bounded_F this6;
 #line 138 "ChapelRange.chpl"
@@ -97,75 +97,6 @@ static range_int64_t_bounded_F range2(int64_t _low, int64_t _high, int64_t _stri
 #line 138 "ChapelRange.chpl"
   chpl_bool call_tmp4;
 #line 138 "ChapelRange.chpl"
-  _ref_chpl_bool call_tmp5 = NULL;
-#line 174 "ChapelRange.chpl"
-  (&this7)->_low = INT64(0);
-#line 174 "ChapelRange.chpl"
-  (&this7)->_high = INT64(0);
-#line 174 "ChapelRange.chpl"
-  (&this7)->_stride = INT64(0);
-#line 174 "ChapelRange.chpl"
-  (&this7)->_alignment = INT64(0);
-#line 174 "ChapelRange.chpl"
-  (&this7)->_aligned = false;
-#line 174 "ChapelRange.chpl"
-  (&this7)->_low = INT64(1);
-#line 174 "ChapelRange.chpl"
-  (&this7)->_high = INT64(0);
-#line 174 "ChapelRange.chpl"
-  (&this7)->_stride = INT64(1);
-#line 174 "ChapelRange.chpl"
-  (&this7)->_alignment = INT64(0);
-#line 174 "ChapelRange.chpl"
-  (&this7)->_aligned = false;
-#line 174 "ChapelRange.chpl"
-  wrap_call_tmp = _construct_range2(INT64(1), INT64(0), INT64(1), INT64(0), false, &this7, _ln, _fn);
-#line 174 "ChapelRange.chpl"
-  this6 = wrap_call_tmp;
-#line 183 "ChapelRange.chpl"
-  call_tmp = &((&this6)->_low);
-#line 183 "ChapelRange.chpl"
-  *(call_tmp) = _low;
-#line 184 "ChapelRange.chpl"
-  call_tmp2 = &((&this6)->_high);
-#line 184 "ChapelRange.chpl"
-  *(call_tmp2) = _high;
-#line 186 "ChapelRange.chpl"
-  call_tmp3 = &((&this6)->_alignment);
-#line 186 "ChapelRange.chpl"
-  *(call_tmp3) = _alignment;
-#line 190 "ChapelRange.chpl"
-  call_tmp4 = (_stride == INT64(1));
-#line 190 "ChapelRange.chpl"
-  assert_chpl(call_tmp4, _ln, _fn);
-#line 192 "ChapelRange.chpl"
-  call_tmp5 = &((&this6)->_aligned);
-#line 192 "ChapelRange.chpl"
-  *(call_tmp5) = _aligned;
-#line 174 "ChapelRange.chpl"
-  return this6;
-#line 174 "ChapelRange.chpl"
-}
-
-#line 174 "ChapelRange.chpl"
-/* ChapelRange.chpl:174 */
-#line 174 "ChapelRange.chpl"
-static range_int64_t_boundedLow_F range(int64_t _low, int64_t _high, int64_t _stride, int64_t _alignment, chpl_bool _aligned, int64_t _ln, c_string _fn) {
-#line 174 "ChapelRange.chpl"
-  range_int64_t_boundedLow_F this6;
-#line 174 "ChapelRange.chpl"
-  range_int64_t_boundedLow_F this7;
-#line 174 "ChapelRange.chpl"
-  range_int64_t_boundedLow_F wrap_call_tmp;
-#line 174 "ChapelRange.chpl"
-  _ref_int64_t call_tmp = NULL;
-#line 174 "ChapelRange.chpl"
-  _ref_int64_t call_tmp2 = NULL;
-#line 174 "ChapelRange.chpl"
-  _ref_int64_t call_tmp3 = NULL;
-#line 174 "ChapelRange.chpl"
-  chpl_bool call_tmp4;
-#line 174 "ChapelRange.chpl"
   _ref_chpl_bool call_tmp5 = NULL;
 #line 174 "ChapelRange.chpl"
   (&this7)->_low = INT64(0);
@@ -217,13 +148,82 @@ static range_int64_t_boundedLow_F range(int64_t _low, int64_t _high, int64_t _st
 }
 
 #line 174 "ChapelRange.chpl"
+/* ChapelRange.chpl:174 */
+#line 174 "ChapelRange.chpl"
+static range_int64_t_boundedLow_F range2(int64_t _low, int64_t _high, int64_t _stride, int64_t _alignment, chpl_bool _aligned, int64_t _ln, c_string _fn) {
+#line 174 "ChapelRange.chpl"
+  range_int64_t_boundedLow_F this6;
+#line 174 "ChapelRange.chpl"
+  range_int64_t_boundedLow_F this7;
+#line 174 "ChapelRange.chpl"
+  range_int64_t_boundedLow_F wrap_call_tmp;
+#line 174 "ChapelRange.chpl"
+  _ref_int64_t call_tmp = NULL;
+#line 174 "ChapelRange.chpl"
+  _ref_int64_t call_tmp2 = NULL;
+#line 174 "ChapelRange.chpl"
+  _ref_int64_t call_tmp3 = NULL;
+#line 174 "ChapelRange.chpl"
+  chpl_bool call_tmp4;
+#line 174 "ChapelRange.chpl"
+  _ref_chpl_bool call_tmp5 = NULL;
+#line 174 "ChapelRange.chpl"
+  (&this7)->_low = INT64(0);
+#line 174 "ChapelRange.chpl"
+  (&this7)->_high = INT64(0);
+#line 174 "ChapelRange.chpl"
+  (&this7)->_stride = INT64(0);
+#line 174 "ChapelRange.chpl"
+  (&this7)->_alignment = INT64(0);
+#line 174 "ChapelRange.chpl"
+  (&this7)->_aligned = false;
+#line 174 "ChapelRange.chpl"
+  (&this7)->_low = INT64(1);
+#line 174 "ChapelRange.chpl"
+  (&this7)->_high = INT64(0);
+#line 174 "ChapelRange.chpl"
+  (&this7)->_stride = INT64(1);
+#line 174 "ChapelRange.chpl"
+  (&this7)->_alignment = INT64(0);
+#line 174 "ChapelRange.chpl"
+  (&this7)->_aligned = false;
+#line 174 "ChapelRange.chpl"
+  wrap_call_tmp = _construct_range2(INT64(1), INT64(0), INT64(1), INT64(0), false, &this7, _ln, _fn);
+#line 174 "ChapelRange.chpl"
+  this6 = wrap_call_tmp;
+#line 183 "ChapelRange.chpl"
+  call_tmp = &((&this6)->_low);
+#line 183 "ChapelRange.chpl"
+  *(call_tmp) = _low;
+#line 184 "ChapelRange.chpl"
+  call_tmp2 = &((&this6)->_high);
+#line 184 "ChapelRange.chpl"
+  *(call_tmp2) = _high;
+#line 186 "ChapelRange.chpl"
+  call_tmp3 = &((&this6)->_alignment);
+#line 186 "ChapelRange.chpl"
+  *(call_tmp3) = _alignment;
+#line 190 "ChapelRange.chpl"
+  call_tmp4 = (_stride == INT64(1));
+#line 190 "ChapelRange.chpl"
+  assert_chpl(call_tmp4, _ln, _fn);
+#line 192 "ChapelRange.chpl"
+  call_tmp5 = &((&this6)->_aligned);
+#line 192 "ChapelRange.chpl"
+  *(call_tmp5) = _aligned;
+#line 174 "ChapelRange.chpl"
+  return this6;
+#line 174 "ChapelRange.chpl"
+}
+
+#line 174 "ChapelRange.chpl"
 /* ChapelRange.chpl:209 */
 #line 174 "ChapelRange.chpl"
 static void chpl_build_bounded_range(int64_t low, int64_t high, _ref_range_int64_t_bounded_F _retArg, int64_t _ln, c_string _fn) {
 #line 174 "ChapelRange.chpl"
   range_int64_t_bounded_F wrap_call_tmp;
 #line 210 "ChapelRange.chpl"
-  wrap_call_tmp = range2(low, high, INT64(1), INT64(0), false, _ln, _fn);
+  wrap_call_tmp = range(low, high, INT64(1), INT64(0), false, _ln, _fn);
 #line 210 "ChapelRange.chpl"
   *(_retArg) = wrap_call_tmp;
 #line 209 "ChapelRange.chpl"
@@ -238,7 +238,7 @@ static void chpl_build_partially_bounded_range(int64_t bound, _ref_range_int64_t
 #line 209 "ChapelRange.chpl"
   range_int64_t_boundedLow_F wrap_call_tmp;
 #line 219 "ChapelRange.chpl"
-  wrap_call_tmp = range(bound, bound, INT64(1), INT64(0), false, _ln, _fn);
+  wrap_call_tmp = range2(bound, bound, INT64(1), INT64(0), false, _ln, _fn);
 #line 219 "ChapelRange.chpl"
   *(_retArg) = wrap_call_tmp;
 #line 218 "ChapelRange.chpl"
@@ -440,7 +440,7 @@ static void this3(_ref_range_int64_t_bounded_F this6, range_int64_t_bounded_F* c
 #line 1038 "ChapelRange.chpl"
   }
 #line 1031 "ChapelRange.chpl"
-  result = range2(T, T2, INT64(1), INT64(0), T3, _ln, _fn);
+  result = range(T, T2, INT64(1), INT64(0), T3, _ln, _fn);
 #line 1067 "ChapelRange.chpl"
   *(_retArg) = result;
 #line 967 "ChapelRange.chpl"
@@ -501,7 +501,7 @@ static void chpl_count_help(range_int64_t_boundedLow_F* const r, int64_t count, 
 #line 1096 "ChapelRange.chpl"
   {
 #line 1098 "ChapelRange.chpl"
-    call_tmp2 = range2(INT64(1), INT64(0), INT64(1), INT64(0), false, _ln, _fn);
+    call_tmp2 = range(INT64(1), INT64(0), INT64(1), INT64(0), false, _ln, _fn);
 #line 1098 "ChapelRange.chpl"
     *(_retArg) = call_tmp2;
 #line 1098 "ChapelRange.chpl"
@@ -589,7 +589,7 @@ static void chpl_count_help(range_int64_t_boundedLow_F* const r, int64_t count, 
 #line 1158 "ChapelRange.chpl"
   ret6 = (r)->_aligned;
 #line 1151 "ChapelRange.chpl"
-  call_tmp12 = range2(T2, T3, INT64(1), ret5, ret6, _ln, _fn);
+  call_tmp12 = range(T2, T3, INT64(1), ret5, ret6, _ln, _fn);
 #line 1151 "ChapelRange.chpl"
   *(_retArg) = call_tmp12;
 #line 1151 "ChapelRange.chpl"

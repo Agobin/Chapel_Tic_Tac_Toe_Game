@@ -26,6 +26,8 @@
 #include "ChapelUtil.c"
 #include "ChapelDynDispHack.c"
 #include "ChapelNumLocales.c"
+#include "Functions.c"
+#include "FunctionSysbols.c"
 #include "ttt.c"
 #include "gtk.c"
 #include "gtk_types.c"
