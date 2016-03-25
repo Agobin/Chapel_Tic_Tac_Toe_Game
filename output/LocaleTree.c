@@ -208,7 +208,7 @@ static void chpl_initLocaleTree(int64_t _ln, c_string _fn) {
 #line 41 "LocaleTree.chpl"
       _virtual_method_tmp_ = ((object)(rootLocale))->chpl__cid;
 #line 41 "LocaleTree.chpl"
-      call_tmp5 = ((locale(*)(locale, int64_t, int64_t, c_string))chpl_vmtable[((INT64(4) * _virtual_method_tmp_) + INT64(2))])(rootLocale, call_tmp3, _ln, _fn);
+      call_tmp5 = ((locale(*)(locale, int64_t, int64_t, c_string))chpl_vmtable[((INT64(4) * _virtual_method_tmp_) + INT64(1))])(rootLocale, call_tmp3, _ln, _fn);
 #line 41 "LocaleTree.chpl"
       left = call_tmp5;
 #line 42 "LocaleTree.chpl"
@@ -224,7 +224,7 @@ static void chpl_initLocaleTree(int64_t _ln, c_string _fn) {
 #line 44 "LocaleTree.chpl"
         _virtual_method_tmp_2 = ((object)(rootLocale))->chpl__cid;
 #line 44 "LocaleTree.chpl"
-        call_tmp7 = ((locale(*)(locale, int64_t, int64_t, c_string))chpl_vmtable[((INT64(4) * _virtual_method_tmp_2) + INT64(2))])(rootLocale, child, _ln, _fn);
+        call_tmp7 = ((locale(*)(locale, int64_t, int64_t, c_string))chpl_vmtable[((INT64(4) * _virtual_method_tmp_2) + INT64(1))])(rootLocale, child, _ln, _fn);
 #line 44 "LocaleTree.chpl"
         right = call_tmp7;
 #line 44 "LocaleTree.chpl"
@@ -232,7 +232,7 @@ static void chpl_initLocaleTree(int64_t _ln, c_string _fn) {
 #line 44 "LocaleTree.chpl"
     }
 #line 46 "LocaleTree.chpl"
-    ((locale(*)(locale, int64_t, int64_t, c_string))chpl_vmtable[((INT64(4) * _virtual_method_tmp_3) + INT64(2))])(rootLocale, i, _ln, _fn);
+    ((locale(*)(locale, int64_t, int64_t, c_string))chpl_vmtable[((INT64(4) * _virtual_method_tmp_3) + INT64(1))])(rootLocale, i, _ln, _fn);
 #line 47 "LocaleTree.chpl"
     call_tmp8 = &((&chpl_localeTree)->left);
 #line 47 "LocaleTree.chpl"

@@ -33,9 +33,10 @@ module Functions{
 	export proc record_move (button: c_ptr(GtkWidget), numPtr: c_ptr(int)): void{
 		
 		var num = numPtr.deref();
+		var ptr: c_void_ptr;
 		
 		if( gameOver ){
-			resetGame(NULL, NULL);
+			resetGame(button, ptr);
 			gameOver = false;
 		}
 		else if( boardMatrix[num] != 0){
@@ -71,6 +72,7 @@ module Functions{
 				gameOver = true;
 			}
 			else if(playerTime == 8){
+				gameOver = true;
 				gtk_label_set_text(GTK_LABEL(output), "  Game Over\nNobody won");
 			}
 			else if(playerTime < 8){

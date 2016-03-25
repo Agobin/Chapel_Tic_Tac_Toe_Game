@@ -206,7 +206,7 @@ static void chpl__autoDestroyGlobals(void) {
 }
 
 #line 23 "ChapelBase.chpl"
-/* ttt.chpl:99 */
+/* ttt.chpl:101 */
 #line 23 "ChapelBase.chpl"
 static void chpl_user_main(DefaultRectangularArr_chpl_string_1_int64_t_F args_chpl) {
 #line 23 "ChapelBase.chpl"
@@ -739,973 +739,973 @@ static void chpl_user_main(DefaultRectangularArr_chpl_string_1_int64_t_F args_ch
   c_ptr_GtkContainer_chpl call_tmp_chpl117 = NULL;
 #line 23 "ChapelBase.chpl"
   _ref_c_ptr_GtkWidget _ref_tmp__chpl10 = NULL;
-#line 104 "ttt.chpl"
+#line 106 "ttt.chpl"
   gtk_init_chpl(args_chpl);
-#line 106 "ttt.chpl"
+#line 108 "ttt.chpl"
   call_tmp_chpl2 = ((int32_t)(INT64(600)));
-#line 106 "ttt.chpl"
+#line 108 "ttt.chpl"
   call_tmp_chpl3 = ((int32_t)(INT64(500)));
-#line 106 "ttt.chpl"
+#line 108 "ttt.chpl"
   call_tmp_chpl = chpl_window_new("Tic Tac Toe Game", call_tmp_chpl2, call_tmp_chpl3);
-#line 106 "ttt.chpl"
+#line 108 "ttt.chpl"
   window_chpl = call_tmp_chpl;
-#line 107 "ttt.chpl"
+#line 109 "ttt.chpl"
   call_tmp_chpl4 = GTK_WINDOW(call_tmp_chpl);
-#line 107 "ttt.chpl"
+#line 109 "ttt.chpl"
   gtk_window_set_resizable(call_tmp_chpl4, false);
-#line 110 "ttt.chpl"
+#line 112 "ttt.chpl"
   call_tmp_chpl6 = ((int32_t)(INT64(5)));
-#line 110 "ttt.chpl"
+#line 112 "ttt.chpl"
   call_tmp_chpl7 = ((int32_t)(INT64(3)));
-#line 110 "ttt.chpl"
+#line 112 "ttt.chpl"
   call_tmp_chpl5 = gtk_table_new(call_tmp_chpl6, call_tmp_chpl7, true);
-#line 110 "ttt.chpl"
+#line 112 "ttt.chpl"
   board_chpl = call_tmp_chpl5;
-#line 113 "ttt.chpl"
+#line 115 "ttt.chpl"
   call_tmp_chpl8 = gtk_button_new_with_mnemonic("Reset game");
-#line 113 "ttt.chpl"
+#line 115 "ttt.chpl"
   resetBtn_chpl = call_tmp_chpl8;
-#line 114 "ttt.chpl"
+#line 116 "ttt.chpl"
   call_tmp_chpl9 = G_CALLBACK(resetGame);
-#line 114 "ttt.chpl"
+#line 116 "ttt.chpl"
   g_signal_connect(call_tmp_chpl8, "clicked", call_tmp_chpl9, nil);
-#line 116 "ttt.chpl"
+#line 118 "ttt.chpl"
   call_tmp_chpl10 = gtk_button_new_with_mnemonic("Quit game");
-#line 116 "ttt.chpl"
+#line 118 "ttt.chpl"
   stopBtn_chpl = call_tmp_chpl10;
-#line 117 "ttt.chpl"
+#line 119 "ttt.chpl"
   call_tmp_chpl11 = G_CALLBACK(gtk_widget_destroy);
-#line 117 "ttt.chpl"
+#line 119 "ttt.chpl"
   g_signal_connect_swapped(call_tmp_chpl10, "clicked", call_tmp_chpl11, call_tmp_chpl);
-#line 120 "ttt.chpl"
+#line 122 "ttt.chpl"
   call_tmp_chpl12 = gtk_label_new("Player one start play");
-#line 120 "ttt.chpl"
+#line 122 "ttt.chpl"
   output_chpl = call_tmp_chpl12;
-#line 123 "ttt.chpl"
+#line 125 "ttt.chpl"
   counter_chpl = INT64(1);
-#line 125 "ttt.chpl"
+#line 127 "ttt.chpl"
   one_chpl = INT64(1);
-#line 125 "ttt.chpl"
+#line 127 "ttt.chpl"
   two_chpl = INT64(2);
-#line 125 "ttt.chpl"
+#line 127 "ttt.chpl"
   three_chpl = INT64(3);
-#line 125 "ttt.chpl"
+#line 127 "ttt.chpl"
   four_chpl = INT64(4);
-#line 125 "ttt.chpl"
+#line 127 "ttt.chpl"
   five_chpl = INT64(5);
-#line 125 "ttt.chpl"
+#line 127 "ttt.chpl"
   six_chpl = INT64(6);
-#line 125 "ttt.chpl"
+#line 127 "ttt.chpl"
   seven_chpl = INT64(7);
-#line 125 "ttt.chpl"
+#line 127 "ttt.chpl"
   eight_chpl = INT64(8);
-#line 125 "ttt.chpl"
+#line 127 "ttt.chpl"
   nine_chpl = INT64(9);
-#line 126 "ttt.chpl"
+#line 128 "ttt.chpl"
   _ic__F1_high_chpl = INT64(3);
-#line 126 "ttt.chpl"
-  chpl_checkIfRangeIterWillOverflow(INT64(1), INT64(3), INT64(1), INT64(1), INT64(3), true, INT64(126), "ttt.chpl");
-#line 127 "ttt.chpl"
+#line 128 "ttt.chpl"
+  chpl_checkIfRangeIterWillOverflow(INT64(1), INT64(3), INT64(1), INT64(1), INT64(3), true, INT64(128), "ttt.chpl");
+#line 129 "ttt.chpl"
   _ic__F1_high_chpl2 = INT64(3);
-#line 126 "ttt.chpl"
+#line 128 "ttt.chpl"
   for (i_chpl = INT64(1); ((i_chpl <= _ic__F1_high_chpl)); i_chpl += INT64(1)) {
-#line 126 "ttt.chpl"
+#line 128 "ttt.chpl"
     i_chpl2 = i_chpl;
-#line 127 "ttt.chpl"
-    chpl_checkIfRangeIterWillOverflow(INT64(1), INT64(3), INT64(1), INT64(1), INT64(3), true, INT64(127), "ttt.chpl");
-#line 151 "ttt.chpl"
+#line 129 "ttt.chpl"
+    chpl_checkIfRangeIterWillOverflow(INT64(1), INT64(3), INT64(1), INT64(1), INT64(3), true, INT64(129), "ttt.chpl");
+#line 153 "ttt.chpl"
     call_tmp_chpl108 = (i_chpl2 - INT64(1));
-#line 127 "ttt.chpl"
+#line 129 "ttt.chpl"
     for (i_chpl3 = INT64(1); ((i_chpl3 <= _ic__F1_high_chpl2)); i_chpl3 += INT64(1)) {
-#line 128 "ttt.chpl"
+#line 130 "ttt.chpl"
       *(this_chpl + INT64(0)) = counter_chpl;
-#line 128 "ttt.chpl"
+#line 130 "ttt.chpl"
       *(i_chpl4 + INT64(0)) = *(this_chpl + INT64(0));
-#line 128 "ttt.chpl"
+#line 130 "ttt.chpl"
       ret_chpl = button_array_chpl;
-#line 128 "ttt.chpl"
+#line 130 "ttt.chpl"
       call_tmp_chpl13 = ret_chpl;
-#line 128 "ttt.chpl"
-      chpl_check_nil(call_tmp_chpl13, INT64(128), "ttt.chpl");
-#line 128 "ttt.chpl"
+#line 130 "ttt.chpl"
+      chpl_check_nil(call_tmp_chpl13, INT64(130), "ttt.chpl");
+#line 130 "ttt.chpl"
       ret_chpl2 = (call_tmp_chpl13)->dom;
-#line 128 "ttt.chpl"
-      chpl_check_nil(ret_chpl2, INT64(128), "ttt.chpl");
-#line 128 "ttt.chpl"
-      call_tmp_chpl14 = dsiMember(ret_chpl2, &this_chpl, INT64(128), "ttt.chpl");
-#line 128 "ttt.chpl"
+#line 130 "ttt.chpl"
+      chpl_check_nil(ret_chpl2, INT64(130), "ttt.chpl");
+#line 130 "ttt.chpl"
+      call_tmp_chpl14 = dsiMember(ret_chpl2, &this_chpl, INT64(130), "ttt.chpl");
+#line 130 "ttt.chpl"
       call_tmp_chpl15 = (! call_tmp_chpl14);
-#line 128 "ttt.chpl"
-      if (call_tmp_chpl15) /* ZLINE: 128 ttt.chpl */
-#line 128 "ttt.chpl"
+#line 130 "ttt.chpl"
+      if (call_tmp_chpl15) /* ZLINE: 130 ttt.chpl */
+#line 130 "ttt.chpl"
       {
-#line 128 "ttt.chpl"
-        string_from_c_string(&call_tmp_chpl16, "array index out of bounds: ", INT64(0), INT64(0), INT64(128), "ttt.chpl");
-#line 128 "ttt.chpl"
-        halt3(call_tmp_chpl16, &this_chpl, INT64(128), "ttt.chpl");
-#line 128 "ttt.chpl"
+#line 130 "ttt.chpl"
+        string_from_c_string(&call_tmp_chpl16, "array index out of bounds: ", INT64(0), INT64(0), INT64(130), "ttt.chpl");
+#line 130 "ttt.chpl"
+        halt3(call_tmp_chpl16, &this_chpl, INT64(130), "ttt.chpl");
+#line 130 "ttt.chpl"
       }
-#line 128 "ttt.chpl"
+#line 130 "ttt.chpl"
       sum_chpl = INT64(0);
-#line 128 "ttt.chpl"
-      chpl_check_nil(call_tmp_chpl13, INT64(128), "ttt.chpl");
-#line 128 "ttt.chpl"
+#line 130 "ttt.chpl"
+      chpl_check_nil(call_tmp_chpl13, INT64(130), "ttt.chpl");
+#line 130 "ttt.chpl"
       ret__chpl = &((call_tmp_chpl13)->blk);
-#line 128 "ttt.chpl"
+#line 130 "ttt.chpl"
       ret_x1_chpl = *(*(ret__chpl) + INT64(0));
-#line 128 "ttt.chpl"
+#line 130 "ttt.chpl"
       coerce_tmp_chpl = *(i_chpl4 + INT64(0));
-#line 128 "ttt.chpl"
+#line 130 "ttt.chpl"
       call_tmp_chpl17 = (coerce_tmp_chpl * ret_x1_chpl);
-#line 128 "ttt.chpl"
+#line 130 "ttt.chpl"
       sum_chpl += call_tmp_chpl17;
-#line 128 "ttt.chpl"
-      chpl_check_nil(call_tmp_chpl13, INT64(128), "ttt.chpl");
-#line 128 "ttt.chpl"
+#line 130 "ttt.chpl"
+      chpl_check_nil(call_tmp_chpl13, INT64(130), "ttt.chpl");
+#line 130 "ttt.chpl"
       ret_chpl3 = (call_tmp_chpl13)->shiftedData;
-#line 128 "ttt.chpl"
+#line 130 "ttt.chpl"
       coerce_tmp_chpl2 = ret_chpl3;
-#line 128 "ttt.chpl"
+#line 130 "ttt.chpl"
       call_tmp_chpl18 = (coerce_tmp_chpl2 + sum_chpl);
-#line 128 "ttt.chpl"
+#line 130 "ttt.chpl"
       call_tmp_chpl19 = gtk_button_new_with_label(" ");
-#line 128 "ttt.chpl"
+#line 130 "ttt.chpl"
       *(call_tmp_chpl18) = call_tmp_chpl19;
-#line 130 "ttt.chpl"
+#line 132 "ttt.chpl"
       call_tmp_chpl20 = (counter_chpl == INT64(1));
-#line 130 "ttt.chpl"
-      if (call_tmp_chpl20) /* ZLINE: 131 ttt.chpl */
-#line 130 "ttt.chpl"
-      {
 #line 132 "ttt.chpl"
+      if (call_tmp_chpl20) /* ZLINE: 133 ttt.chpl */
+#line 132 "ttt.chpl"
+      {
+#line 134 "ttt.chpl"
         *(this_chpl2 + INT64(0)) = counter_chpl;
-#line 132 "ttt.chpl"
+#line 134 "ttt.chpl"
         *(i_chpl5 + INT64(0)) = *(this_chpl2 + INT64(0));
-#line 132 "ttt.chpl"
+#line 134 "ttt.chpl"
         ret_chpl4 = button_array_chpl;
-#line 132 "ttt.chpl"
+#line 134 "ttt.chpl"
         call_tmp_chpl21 = ret_chpl4;
-#line 132 "ttt.chpl"
-        chpl_check_nil(call_tmp_chpl21, INT64(132), "ttt.chpl");
-#line 132 "ttt.chpl"
+#line 134 "ttt.chpl"
+        chpl_check_nil(call_tmp_chpl21, INT64(134), "ttt.chpl");
+#line 134 "ttt.chpl"
         ret_chpl5 = (call_tmp_chpl21)->dom;
-#line 132 "ttt.chpl"
-        chpl_check_nil(ret_chpl5, INT64(132), "ttt.chpl");
-#line 132 "ttt.chpl"
-        call_tmp_chpl22 = dsiMember(ret_chpl5, &this_chpl2, INT64(132), "ttt.chpl");
-#line 132 "ttt.chpl"
+#line 134 "ttt.chpl"
+        chpl_check_nil(ret_chpl5, INT64(134), "ttt.chpl");
+#line 134 "ttt.chpl"
+        call_tmp_chpl22 = dsiMember(ret_chpl5, &this_chpl2, INT64(134), "ttt.chpl");
+#line 134 "ttt.chpl"
         call_tmp_chpl23 = (! call_tmp_chpl22);
-#line 132 "ttt.chpl"
-        if (call_tmp_chpl23) /* ZLINE: 132 ttt.chpl */
-#line 132 "ttt.chpl"
+#line 134 "ttt.chpl"
+        if (call_tmp_chpl23) /* ZLINE: 134 ttt.chpl */
+#line 134 "ttt.chpl"
         {
-#line 132 "ttt.chpl"
-          string_from_c_string(&call_tmp_chpl24, "array index out of bounds: ", INT64(0), INT64(0), INT64(132), "ttt.chpl");
-#line 132 "ttt.chpl"
-          halt3(call_tmp_chpl24, &this_chpl2, INT64(132), "ttt.chpl");
-#line 132 "ttt.chpl"
+#line 134 "ttt.chpl"
+          string_from_c_string(&call_tmp_chpl24, "array index out of bounds: ", INT64(0), INT64(0), INT64(134), "ttt.chpl");
+#line 134 "ttt.chpl"
+          halt3(call_tmp_chpl24, &this_chpl2, INT64(134), "ttt.chpl");
+#line 134 "ttt.chpl"
         }
-#line 132 "ttt.chpl"
+#line 134 "ttt.chpl"
         sum_chpl2 = INT64(0);
-#line 132 "ttt.chpl"
-        chpl_check_nil(call_tmp_chpl21, INT64(132), "ttt.chpl");
-#line 132 "ttt.chpl"
+#line 134 "ttt.chpl"
+        chpl_check_nil(call_tmp_chpl21, INT64(134), "ttt.chpl");
+#line 134 "ttt.chpl"
         ret__chpl2 = &((call_tmp_chpl21)->blk);
-#line 132 "ttt.chpl"
+#line 134 "ttt.chpl"
         ret_x1_chpl2 = *(*(ret__chpl2) + INT64(0));
-#line 132 "ttt.chpl"
+#line 134 "ttt.chpl"
         coerce_tmp_chpl3 = *(i_chpl5 + INT64(0));
-#line 132 "ttt.chpl"
+#line 134 "ttt.chpl"
         call_tmp_chpl25 = (coerce_tmp_chpl3 * ret_x1_chpl2);
-#line 132 "ttt.chpl"
+#line 134 "ttt.chpl"
         sum_chpl2 += call_tmp_chpl25;
-#line 132 "ttt.chpl"
-        chpl_check_nil(call_tmp_chpl21, INT64(132), "ttt.chpl");
-#line 132 "ttt.chpl"
+#line 134 "ttt.chpl"
+        chpl_check_nil(call_tmp_chpl21, INT64(134), "ttt.chpl");
+#line 134 "ttt.chpl"
         ret_chpl6 = (call_tmp_chpl21)->shiftedData;
-#line 132 "ttt.chpl"
+#line 134 "ttt.chpl"
         coerce_tmp_chpl4 = ret_chpl6;
-#line 132 "ttt.chpl"
+#line 134 "ttt.chpl"
         call_tmp_chpl26 = (coerce_tmp_chpl4 + sum_chpl2);
-#line 132 "ttt.chpl"
+#line 134 "ttt.chpl"
         ret_chpl7 = *(call_tmp_chpl26);
-#line 132 "ttt.chpl"
+#line 134 "ttt.chpl"
         call_tmp_chpl27 = G_CALLBACK(record_move);
-#line 132 "ttt.chpl"
+#line 134 "ttt.chpl"
         _ref_tmp__chpl = &one_chpl;
-#line 132 "ttt.chpl"
+#line 134 "ttt.chpl"
         call_tmp_chpl28 = c_pointer_return(_ref_tmp__chpl);
-#line 132 "ttt.chpl"
+#line 134 "ttt.chpl"
         g_signal_connect(ret_chpl7, "clicked", call_tmp_chpl27, call_tmp_chpl28);
-#line 132 "ttt.chpl"
-      } else /* ZLINE: 130 ttt.chpl */
-#line 132 "ttt.chpl"
+#line 134 "ttt.chpl"
+      } else /* ZLINE: 132 ttt.chpl */
+#line 134 "ttt.chpl"
       {
-#line 130 "ttt.chpl"
+#line 132 "ttt.chpl"
         call_tmp_chpl29 = (counter_chpl == INT64(2));
-#line 130 "ttt.chpl"
-        if (call_tmp_chpl29) /* ZLINE: 133 ttt.chpl */
-#line 130 "ttt.chpl"
+#line 132 "ttt.chpl"
+        if (call_tmp_chpl29) /* ZLINE: 135 ttt.chpl */
+#line 132 "ttt.chpl"
         {
-#line 134 "ttt.chpl"
+#line 136 "ttt.chpl"
           *(this_chpl3 + INT64(0)) = counter_chpl;
-#line 134 "ttt.chpl"
+#line 136 "ttt.chpl"
           *(i_chpl6 + INT64(0)) = *(this_chpl3 + INT64(0));
-#line 134 "ttt.chpl"
+#line 136 "ttt.chpl"
           ret_chpl8 = button_array_chpl;
-#line 134 "ttt.chpl"
+#line 136 "ttt.chpl"
           call_tmp_chpl30 = ret_chpl8;
-#line 134 "ttt.chpl"
-          chpl_check_nil(call_tmp_chpl30, INT64(134), "ttt.chpl");
-#line 134 "ttt.chpl"
+#line 136 "ttt.chpl"
+          chpl_check_nil(call_tmp_chpl30, INT64(136), "ttt.chpl");
+#line 136 "ttt.chpl"
           ret_chpl9 = (call_tmp_chpl30)->dom;
-#line 134 "ttt.chpl"
-          chpl_check_nil(ret_chpl9, INT64(134), "ttt.chpl");
-#line 134 "ttt.chpl"
-          call_tmp_chpl31 = dsiMember(ret_chpl9, &this_chpl3, INT64(134), "ttt.chpl");
-#line 134 "ttt.chpl"
+#line 136 "ttt.chpl"
+          chpl_check_nil(ret_chpl9, INT64(136), "ttt.chpl");
+#line 136 "ttt.chpl"
+          call_tmp_chpl31 = dsiMember(ret_chpl9, &this_chpl3, INT64(136), "ttt.chpl");
+#line 136 "ttt.chpl"
           call_tmp_chpl32 = (! call_tmp_chpl31);
-#line 134 "ttt.chpl"
-          if (call_tmp_chpl32) /* ZLINE: 134 ttt.chpl */
-#line 134 "ttt.chpl"
+#line 136 "ttt.chpl"
+          if (call_tmp_chpl32) /* ZLINE: 136 ttt.chpl */
+#line 136 "ttt.chpl"
           {
-#line 134 "ttt.chpl"
-            string_from_c_string(&call_tmp_chpl33, "array index out of bounds: ", INT64(0), INT64(0), INT64(134), "ttt.chpl");
-#line 134 "ttt.chpl"
-            halt3(call_tmp_chpl33, &this_chpl3, INT64(134), "ttt.chpl");
-#line 134 "ttt.chpl"
+#line 136 "ttt.chpl"
+            string_from_c_string(&call_tmp_chpl33, "array index out of bounds: ", INT64(0), INT64(0), INT64(136), "ttt.chpl");
+#line 136 "ttt.chpl"
+            halt3(call_tmp_chpl33, &this_chpl3, INT64(136), "ttt.chpl");
+#line 136 "ttt.chpl"
           }
-#line 134 "ttt.chpl"
+#line 136 "ttt.chpl"
           sum_chpl3 = INT64(0);
-#line 134 "ttt.chpl"
-          chpl_check_nil(call_tmp_chpl30, INT64(134), "ttt.chpl");
-#line 134 "ttt.chpl"
+#line 136 "ttt.chpl"
+          chpl_check_nil(call_tmp_chpl30, INT64(136), "ttt.chpl");
+#line 136 "ttt.chpl"
           ret__chpl3 = &((call_tmp_chpl30)->blk);
-#line 134 "ttt.chpl"
+#line 136 "ttt.chpl"
           ret_x1_chpl3 = *(*(ret__chpl3) + INT64(0));
-#line 134 "ttt.chpl"
+#line 136 "ttt.chpl"
           coerce_tmp_chpl5 = *(i_chpl6 + INT64(0));
-#line 134 "ttt.chpl"
+#line 136 "ttt.chpl"
           call_tmp_chpl34 = (coerce_tmp_chpl5 * ret_x1_chpl3);
-#line 134 "ttt.chpl"
+#line 136 "ttt.chpl"
           sum_chpl3 += call_tmp_chpl34;
-#line 134 "ttt.chpl"
-          chpl_check_nil(call_tmp_chpl30, INT64(134), "ttt.chpl");
-#line 134 "ttt.chpl"
+#line 136 "ttt.chpl"
+          chpl_check_nil(call_tmp_chpl30, INT64(136), "ttt.chpl");
+#line 136 "ttt.chpl"
           ret_chpl10 = (call_tmp_chpl30)->shiftedData;
-#line 134 "ttt.chpl"
+#line 136 "ttt.chpl"
           coerce_tmp_chpl6 = ret_chpl10;
-#line 134 "ttt.chpl"
+#line 136 "ttt.chpl"
           call_tmp_chpl35 = (coerce_tmp_chpl6 + sum_chpl3);
-#line 134 "ttt.chpl"
+#line 136 "ttt.chpl"
           ret_chpl11 = *(call_tmp_chpl35);
-#line 134 "ttt.chpl"
+#line 136 "ttt.chpl"
           call_tmp_chpl36 = G_CALLBACK(record_move);
-#line 134 "ttt.chpl"
+#line 136 "ttt.chpl"
           _ref_tmp__chpl2 = &two_chpl;
-#line 134 "ttt.chpl"
+#line 136 "ttt.chpl"
           call_tmp_chpl37 = c_pointer_return(_ref_tmp__chpl2);
-#line 134 "ttt.chpl"
+#line 136 "ttt.chpl"
           g_signal_connect(ret_chpl11, "clicked", call_tmp_chpl36, call_tmp_chpl37);
-#line 134 "ttt.chpl"
-        } else /* ZLINE: 130 ttt.chpl */
-#line 134 "ttt.chpl"
+#line 136 "ttt.chpl"
+        } else /* ZLINE: 132 ttt.chpl */
+#line 136 "ttt.chpl"
         {
-#line 130 "ttt.chpl"
+#line 132 "ttt.chpl"
           call_tmp_chpl38 = (counter_chpl == INT64(3));
-#line 130 "ttt.chpl"
-          if (call_tmp_chpl38) /* ZLINE: 135 ttt.chpl */
-#line 130 "ttt.chpl"
+#line 132 "ttt.chpl"
+          if (call_tmp_chpl38) /* ZLINE: 137 ttt.chpl */
+#line 132 "ttt.chpl"
           {
-#line 136 "ttt.chpl"
+#line 138 "ttt.chpl"
             *(this_chpl4 + INT64(0)) = counter_chpl;
-#line 136 "ttt.chpl"
+#line 138 "ttt.chpl"
             *(i_chpl7 + INT64(0)) = *(this_chpl4 + INT64(0));
-#line 136 "ttt.chpl"
+#line 138 "ttt.chpl"
             ret_chpl12 = button_array_chpl;
-#line 136 "ttt.chpl"
+#line 138 "ttt.chpl"
             call_tmp_chpl39 = ret_chpl12;
-#line 136 "ttt.chpl"
-            chpl_check_nil(call_tmp_chpl39, INT64(136), "ttt.chpl");
-#line 136 "ttt.chpl"
+#line 138 "ttt.chpl"
+            chpl_check_nil(call_tmp_chpl39, INT64(138), "ttt.chpl");
+#line 138 "ttt.chpl"
             ret_chpl13 = (call_tmp_chpl39)->dom;
-#line 136 "ttt.chpl"
-            chpl_check_nil(ret_chpl13, INT64(136), "ttt.chpl");
-#line 136 "ttt.chpl"
-            call_tmp_chpl40 = dsiMember(ret_chpl13, &this_chpl4, INT64(136), "ttt.chpl");
-#line 136 "ttt.chpl"
+#line 138 "ttt.chpl"
+            chpl_check_nil(ret_chpl13, INT64(138), "ttt.chpl");
+#line 138 "ttt.chpl"
+            call_tmp_chpl40 = dsiMember(ret_chpl13, &this_chpl4, INT64(138), "ttt.chpl");
+#line 138 "ttt.chpl"
             call_tmp_chpl41 = (! call_tmp_chpl40);
-#line 136 "ttt.chpl"
-            if (call_tmp_chpl41) /* ZLINE: 136 ttt.chpl */
-#line 136 "ttt.chpl"
+#line 138 "ttt.chpl"
+            if (call_tmp_chpl41) /* ZLINE: 138 ttt.chpl */
+#line 138 "ttt.chpl"
             {
-#line 136 "ttt.chpl"
-              string_from_c_string(&call_tmp_chpl42, "array index out of bounds: ", INT64(0), INT64(0), INT64(136), "ttt.chpl");
-#line 136 "ttt.chpl"
-              halt3(call_tmp_chpl42, &this_chpl4, INT64(136), "ttt.chpl");
-#line 136 "ttt.chpl"
+#line 138 "ttt.chpl"
+              string_from_c_string(&call_tmp_chpl42, "array index out of bounds: ", INT64(0), INT64(0), INT64(138), "ttt.chpl");
+#line 138 "ttt.chpl"
+              halt3(call_tmp_chpl42, &this_chpl4, INT64(138), "ttt.chpl");
+#line 138 "ttt.chpl"
             }
-#line 136 "ttt.chpl"
+#line 138 "ttt.chpl"
             sum_chpl4 = INT64(0);
-#line 136 "ttt.chpl"
-            chpl_check_nil(call_tmp_chpl39, INT64(136), "ttt.chpl");
-#line 136 "ttt.chpl"
+#line 138 "ttt.chpl"
+            chpl_check_nil(call_tmp_chpl39, INT64(138), "ttt.chpl");
+#line 138 "ttt.chpl"
             ret__chpl4 = &((call_tmp_chpl39)->blk);
-#line 136 "ttt.chpl"
+#line 138 "ttt.chpl"
             ret_x1_chpl4 = *(*(ret__chpl4) + INT64(0));
-#line 136 "ttt.chpl"
+#line 138 "ttt.chpl"
             coerce_tmp_chpl7 = *(i_chpl7 + INT64(0));
-#line 136 "ttt.chpl"
+#line 138 "ttt.chpl"
             call_tmp_chpl43 = (coerce_tmp_chpl7 * ret_x1_chpl4);
-#line 136 "ttt.chpl"
+#line 138 "ttt.chpl"
             sum_chpl4 += call_tmp_chpl43;
-#line 136 "ttt.chpl"
-            chpl_check_nil(call_tmp_chpl39, INT64(136), "ttt.chpl");
-#line 136 "ttt.chpl"
+#line 138 "ttt.chpl"
+            chpl_check_nil(call_tmp_chpl39, INT64(138), "ttt.chpl");
+#line 138 "ttt.chpl"
             ret_chpl14 = (call_tmp_chpl39)->shiftedData;
-#line 136 "ttt.chpl"
+#line 138 "ttt.chpl"
             coerce_tmp_chpl8 = ret_chpl14;
-#line 136 "ttt.chpl"
+#line 138 "ttt.chpl"
             call_tmp_chpl44 = (coerce_tmp_chpl8 + sum_chpl4);
-#line 136 "ttt.chpl"
+#line 138 "ttt.chpl"
             ret_chpl15 = *(call_tmp_chpl44);
-#line 136 "ttt.chpl"
+#line 138 "ttt.chpl"
             call_tmp_chpl45 = G_CALLBACK(record_move);
-#line 136 "ttt.chpl"
+#line 138 "ttt.chpl"
             _ref_tmp__chpl3 = &three_chpl;
-#line 136 "ttt.chpl"
+#line 138 "ttt.chpl"
             call_tmp_chpl46 = c_pointer_return(_ref_tmp__chpl3);
-#line 136 "ttt.chpl"
+#line 138 "ttt.chpl"
             g_signal_connect(ret_chpl15, "clicked", call_tmp_chpl45, call_tmp_chpl46);
-#line 136 "ttt.chpl"
-          } else /* ZLINE: 130 ttt.chpl */
-#line 136 "ttt.chpl"
+#line 138 "ttt.chpl"
+          } else /* ZLINE: 132 ttt.chpl */
+#line 138 "ttt.chpl"
           {
-#line 130 "ttt.chpl"
+#line 132 "ttt.chpl"
             call_tmp_chpl47 = (counter_chpl == INT64(4));
-#line 130 "ttt.chpl"
-            if (call_tmp_chpl47) /* ZLINE: 137 ttt.chpl */
-#line 130 "ttt.chpl"
+#line 132 "ttt.chpl"
+            if (call_tmp_chpl47) /* ZLINE: 139 ttt.chpl */
+#line 132 "ttt.chpl"
             {
-#line 138 "ttt.chpl"
+#line 140 "ttt.chpl"
               *(this_chpl5 + INT64(0)) = counter_chpl;
-#line 138 "ttt.chpl"
+#line 140 "ttt.chpl"
               *(i_chpl8 + INT64(0)) = *(this_chpl5 + INT64(0));
-#line 138 "ttt.chpl"
+#line 140 "ttt.chpl"
               ret_chpl16 = button_array_chpl;
-#line 138 "ttt.chpl"
+#line 140 "ttt.chpl"
               call_tmp_chpl48 = ret_chpl16;
-#line 138 "ttt.chpl"
-              chpl_check_nil(call_tmp_chpl48, INT64(138), "ttt.chpl");
-#line 138 "ttt.chpl"
+#line 140 "ttt.chpl"
+              chpl_check_nil(call_tmp_chpl48, INT64(140), "ttt.chpl");
+#line 140 "ttt.chpl"
               ret_chpl17 = (call_tmp_chpl48)->dom;
-#line 138 "ttt.chpl"
-              chpl_check_nil(ret_chpl17, INT64(138), "ttt.chpl");
-#line 138 "ttt.chpl"
-              call_tmp_chpl49 = dsiMember(ret_chpl17, &this_chpl5, INT64(138), "ttt.chpl");
-#line 138 "ttt.chpl"
+#line 140 "ttt.chpl"
+              chpl_check_nil(ret_chpl17, INT64(140), "ttt.chpl");
+#line 140 "ttt.chpl"
+              call_tmp_chpl49 = dsiMember(ret_chpl17, &this_chpl5, INT64(140), "ttt.chpl");
+#line 140 "ttt.chpl"
               call_tmp_chpl50 = (! call_tmp_chpl49);
-#line 138 "ttt.chpl"
-              if (call_tmp_chpl50) /* ZLINE: 138 ttt.chpl */
-#line 138 "ttt.chpl"
+#line 140 "ttt.chpl"
+              if (call_tmp_chpl50) /* ZLINE: 140 ttt.chpl */
+#line 140 "ttt.chpl"
               {
-#line 138 "ttt.chpl"
-                string_from_c_string(&call_tmp_chpl51, "array index out of bounds: ", INT64(0), INT64(0), INT64(138), "ttt.chpl");
-#line 138 "ttt.chpl"
-                halt3(call_tmp_chpl51, &this_chpl5, INT64(138), "ttt.chpl");
-#line 138 "ttt.chpl"
+#line 140 "ttt.chpl"
+                string_from_c_string(&call_tmp_chpl51, "array index out of bounds: ", INT64(0), INT64(0), INT64(140), "ttt.chpl");
+#line 140 "ttt.chpl"
+                halt3(call_tmp_chpl51, &this_chpl5, INT64(140), "ttt.chpl");
+#line 140 "ttt.chpl"
               }
-#line 138 "ttt.chpl"
+#line 140 "ttt.chpl"
               sum_chpl5 = INT64(0);
-#line 138 "ttt.chpl"
-              chpl_check_nil(call_tmp_chpl48, INT64(138), "ttt.chpl");
-#line 138 "ttt.chpl"
+#line 140 "ttt.chpl"
+              chpl_check_nil(call_tmp_chpl48, INT64(140), "ttt.chpl");
+#line 140 "ttt.chpl"
               ret__chpl5 = &((call_tmp_chpl48)->blk);
-#line 138 "ttt.chpl"
+#line 140 "ttt.chpl"
               ret_x1_chpl5 = *(*(ret__chpl5) + INT64(0));
-#line 138 "ttt.chpl"
+#line 140 "ttt.chpl"
               coerce_tmp_chpl9 = *(i_chpl8 + INT64(0));
-#line 138 "ttt.chpl"
+#line 140 "ttt.chpl"
               call_tmp_chpl52 = (coerce_tmp_chpl9 * ret_x1_chpl5);
-#line 138 "ttt.chpl"
+#line 140 "ttt.chpl"
               sum_chpl5 += call_tmp_chpl52;
-#line 138 "ttt.chpl"
-              chpl_check_nil(call_tmp_chpl48, INT64(138), "ttt.chpl");
-#line 138 "ttt.chpl"
+#line 140 "ttt.chpl"
+              chpl_check_nil(call_tmp_chpl48, INT64(140), "ttt.chpl");
+#line 140 "ttt.chpl"
               ret_chpl18 = (call_tmp_chpl48)->shiftedData;
-#line 138 "ttt.chpl"
+#line 140 "ttt.chpl"
               coerce_tmp_chpl10 = ret_chpl18;
-#line 138 "ttt.chpl"
+#line 140 "ttt.chpl"
               call_tmp_chpl53 = (coerce_tmp_chpl10 + sum_chpl5);
-#line 138 "ttt.chpl"
+#line 140 "ttt.chpl"
               ret_chpl19 = *(call_tmp_chpl53);
-#line 138 "ttt.chpl"
+#line 140 "ttt.chpl"
               call_tmp_chpl54 = G_CALLBACK(record_move);
-#line 138 "ttt.chpl"
+#line 140 "ttt.chpl"
               _ref_tmp__chpl4 = &four_chpl;
-#line 138 "ttt.chpl"
+#line 140 "ttt.chpl"
               call_tmp_chpl55 = c_pointer_return(_ref_tmp__chpl4);
-#line 138 "ttt.chpl"
+#line 140 "ttt.chpl"
               g_signal_connect(ret_chpl19, "clicked", call_tmp_chpl54, call_tmp_chpl55);
-#line 138 "ttt.chpl"
-            } else /* ZLINE: 130 ttt.chpl */
-#line 138 "ttt.chpl"
+#line 140 "ttt.chpl"
+            } else /* ZLINE: 132 ttt.chpl */
+#line 140 "ttt.chpl"
             {
-#line 130 "ttt.chpl"
+#line 132 "ttt.chpl"
               call_tmp_chpl56 = (counter_chpl == INT64(5));
-#line 130 "ttt.chpl"
-              if (call_tmp_chpl56) /* ZLINE: 139 ttt.chpl */
-#line 130 "ttt.chpl"
+#line 132 "ttt.chpl"
+              if (call_tmp_chpl56) /* ZLINE: 141 ttt.chpl */
+#line 132 "ttt.chpl"
               {
-#line 140 "ttt.chpl"
+#line 142 "ttt.chpl"
                 *(this_chpl6 + INT64(0)) = counter_chpl;
-#line 140 "ttt.chpl"
+#line 142 "ttt.chpl"
                 *(i_chpl9 + INT64(0)) = *(this_chpl6 + INT64(0));
-#line 140 "ttt.chpl"
+#line 142 "ttt.chpl"
                 ret_chpl20 = button_array_chpl;
-#line 140 "ttt.chpl"
+#line 142 "ttt.chpl"
                 call_tmp_chpl57 = ret_chpl20;
-#line 140 "ttt.chpl"
-                chpl_check_nil(call_tmp_chpl57, INT64(140), "ttt.chpl");
-#line 140 "ttt.chpl"
+#line 142 "ttt.chpl"
+                chpl_check_nil(call_tmp_chpl57, INT64(142), "ttt.chpl");
+#line 142 "ttt.chpl"
                 ret_chpl21 = (call_tmp_chpl57)->dom;
-#line 140 "ttt.chpl"
-                chpl_check_nil(ret_chpl21, INT64(140), "ttt.chpl");
-#line 140 "ttt.chpl"
-                call_tmp_chpl58 = dsiMember(ret_chpl21, &this_chpl6, INT64(140), "ttt.chpl");
-#line 140 "ttt.chpl"
+#line 142 "ttt.chpl"
+                chpl_check_nil(ret_chpl21, INT64(142), "ttt.chpl");
+#line 142 "ttt.chpl"
+                call_tmp_chpl58 = dsiMember(ret_chpl21, &this_chpl6, INT64(142), "ttt.chpl");
+#line 142 "ttt.chpl"
                 call_tmp_chpl59 = (! call_tmp_chpl58);
-#line 140 "ttt.chpl"
-                if (call_tmp_chpl59) /* ZLINE: 140 ttt.chpl */
-#line 140 "ttt.chpl"
+#line 142 "ttt.chpl"
+                if (call_tmp_chpl59) /* ZLINE: 142 ttt.chpl */
+#line 142 "ttt.chpl"
                 {
-#line 140 "ttt.chpl"
-                  string_from_c_string(&call_tmp_chpl60, "array index out of bounds: ", INT64(0), INT64(0), INT64(140), "ttt.chpl");
-#line 140 "ttt.chpl"
-                  halt3(call_tmp_chpl60, &this_chpl6, INT64(140), "ttt.chpl");
-#line 140 "ttt.chpl"
+#line 142 "ttt.chpl"
+                  string_from_c_string(&call_tmp_chpl60, "array index out of bounds: ", INT64(0), INT64(0), INT64(142), "ttt.chpl");
+#line 142 "ttt.chpl"
+                  halt3(call_tmp_chpl60, &this_chpl6, INT64(142), "ttt.chpl");
+#line 142 "ttt.chpl"
                 }
-#line 140 "ttt.chpl"
+#line 142 "ttt.chpl"
                 sum_chpl6 = INT64(0);
-#line 140 "ttt.chpl"
-                chpl_check_nil(call_tmp_chpl57, INT64(140), "ttt.chpl");
-#line 140 "ttt.chpl"
+#line 142 "ttt.chpl"
+                chpl_check_nil(call_tmp_chpl57, INT64(142), "ttt.chpl");
+#line 142 "ttt.chpl"
                 ret__chpl6 = &((call_tmp_chpl57)->blk);
-#line 140 "ttt.chpl"
+#line 142 "ttt.chpl"
                 ret_x1_chpl6 = *(*(ret__chpl6) + INT64(0));
-#line 140 "ttt.chpl"
+#line 142 "ttt.chpl"
                 coerce_tmp_chpl11 = *(i_chpl9 + INT64(0));
-#line 140 "ttt.chpl"
+#line 142 "ttt.chpl"
                 call_tmp_chpl61 = (coerce_tmp_chpl11 * ret_x1_chpl6);
-#line 140 "ttt.chpl"
+#line 142 "ttt.chpl"
                 sum_chpl6 += call_tmp_chpl61;
-#line 140 "ttt.chpl"
-                chpl_check_nil(call_tmp_chpl57, INT64(140), "ttt.chpl");
-#line 140 "ttt.chpl"
+#line 142 "ttt.chpl"
+                chpl_check_nil(call_tmp_chpl57, INT64(142), "ttt.chpl");
+#line 142 "ttt.chpl"
                 ret_chpl22 = (call_tmp_chpl57)->shiftedData;
-#line 140 "ttt.chpl"
+#line 142 "ttt.chpl"
                 coerce_tmp_chpl12 = ret_chpl22;
-#line 140 "ttt.chpl"
+#line 142 "ttt.chpl"
                 call_tmp_chpl62 = (coerce_tmp_chpl12 + sum_chpl6);
-#line 140 "ttt.chpl"
+#line 142 "ttt.chpl"
                 ret_chpl23 = *(call_tmp_chpl62);
-#line 140 "ttt.chpl"
+#line 142 "ttt.chpl"
                 call_tmp_chpl63 = G_CALLBACK(record_move);
-#line 140 "ttt.chpl"
+#line 142 "ttt.chpl"
                 _ref_tmp__chpl5 = &five_chpl;
-#line 140 "ttt.chpl"
+#line 142 "ttt.chpl"
                 call_tmp_chpl64 = c_pointer_return(_ref_tmp__chpl5);
-#line 140 "ttt.chpl"
+#line 142 "ttt.chpl"
                 g_signal_connect(ret_chpl23, "clicked", call_tmp_chpl63, call_tmp_chpl64);
-#line 140 "ttt.chpl"
-              } else /* ZLINE: 130 ttt.chpl */
-#line 140 "ttt.chpl"
+#line 142 "ttt.chpl"
+              } else /* ZLINE: 132 ttt.chpl */
+#line 142 "ttt.chpl"
               {
-#line 130 "ttt.chpl"
+#line 132 "ttt.chpl"
                 call_tmp_chpl65 = (counter_chpl == INT64(6));
-#line 130 "ttt.chpl"
-                if (call_tmp_chpl65) /* ZLINE: 141 ttt.chpl */
-#line 130 "ttt.chpl"
+#line 132 "ttt.chpl"
+                if (call_tmp_chpl65) /* ZLINE: 143 ttt.chpl */
+#line 132 "ttt.chpl"
                 {
-#line 142 "ttt.chpl"
+#line 144 "ttt.chpl"
                   *(this_chpl7 + INT64(0)) = counter_chpl;
-#line 142 "ttt.chpl"
+#line 144 "ttt.chpl"
                   *(i_chpl10 + INT64(0)) = *(this_chpl7 + INT64(0));
-#line 142 "ttt.chpl"
+#line 144 "ttt.chpl"
                   ret_chpl24 = button_array_chpl;
-#line 142 "ttt.chpl"
+#line 144 "ttt.chpl"
                   call_tmp_chpl66 = ret_chpl24;
-#line 142 "ttt.chpl"
-                  chpl_check_nil(call_tmp_chpl66, INT64(142), "ttt.chpl");
-#line 142 "ttt.chpl"
+#line 144 "ttt.chpl"
+                  chpl_check_nil(call_tmp_chpl66, INT64(144), "ttt.chpl");
+#line 144 "ttt.chpl"
                   ret_chpl25 = (call_tmp_chpl66)->dom;
-#line 142 "ttt.chpl"
-                  chpl_check_nil(ret_chpl25, INT64(142), "ttt.chpl");
-#line 142 "ttt.chpl"
-                  call_tmp_chpl67 = dsiMember(ret_chpl25, &this_chpl7, INT64(142), "ttt.chpl");
-#line 142 "ttt.chpl"
+#line 144 "ttt.chpl"
+                  chpl_check_nil(ret_chpl25, INT64(144), "ttt.chpl");
+#line 144 "ttt.chpl"
+                  call_tmp_chpl67 = dsiMember(ret_chpl25, &this_chpl7, INT64(144), "ttt.chpl");
+#line 144 "ttt.chpl"
                   call_tmp_chpl68 = (! call_tmp_chpl67);
-#line 142 "ttt.chpl"
-                  if (call_tmp_chpl68) /* ZLINE: 142 ttt.chpl */
-#line 142 "ttt.chpl"
+#line 144 "ttt.chpl"
+                  if (call_tmp_chpl68) /* ZLINE: 144 ttt.chpl */
+#line 144 "ttt.chpl"
                   {
-#line 142 "ttt.chpl"
-                    string_from_c_string(&call_tmp_chpl69, "array index out of bounds: ", INT64(0), INT64(0), INT64(142), "ttt.chpl");
-#line 142 "ttt.chpl"
-                    halt3(call_tmp_chpl69, &this_chpl7, INT64(142), "ttt.chpl");
-#line 142 "ttt.chpl"
+#line 144 "ttt.chpl"
+                    string_from_c_string(&call_tmp_chpl69, "array index out of bounds: ", INT64(0), INT64(0), INT64(144), "ttt.chpl");
+#line 144 "ttt.chpl"
+                    halt3(call_tmp_chpl69, &this_chpl7, INT64(144), "ttt.chpl");
+#line 144 "ttt.chpl"
                   }
-#line 142 "ttt.chpl"
+#line 144 "ttt.chpl"
                   sum_chpl7 = INT64(0);
-#line 142 "ttt.chpl"
-                  chpl_check_nil(call_tmp_chpl66, INT64(142), "ttt.chpl");
-#line 142 "ttt.chpl"
+#line 144 "ttt.chpl"
+                  chpl_check_nil(call_tmp_chpl66, INT64(144), "ttt.chpl");
+#line 144 "ttt.chpl"
                   ret__chpl7 = &((call_tmp_chpl66)->blk);
-#line 142 "ttt.chpl"
+#line 144 "ttt.chpl"
                   ret_x1_chpl7 = *(*(ret__chpl7) + INT64(0));
-#line 142 "ttt.chpl"
+#line 144 "ttt.chpl"
                   coerce_tmp_chpl13 = *(i_chpl10 + INT64(0));
-#line 142 "ttt.chpl"
+#line 144 "ttt.chpl"
                   call_tmp_chpl70 = (coerce_tmp_chpl13 * ret_x1_chpl7);
-#line 142 "ttt.chpl"
+#line 144 "ttt.chpl"
                   sum_chpl7 += call_tmp_chpl70;
-#line 142 "ttt.chpl"
-                  chpl_check_nil(call_tmp_chpl66, INT64(142), "ttt.chpl");
-#line 142 "ttt.chpl"
+#line 144 "ttt.chpl"
+                  chpl_check_nil(call_tmp_chpl66, INT64(144), "ttt.chpl");
+#line 144 "ttt.chpl"
                   ret_chpl26 = (call_tmp_chpl66)->shiftedData;
-#line 142 "ttt.chpl"
+#line 144 "ttt.chpl"
                   coerce_tmp_chpl14 = ret_chpl26;
-#line 142 "ttt.chpl"
+#line 144 "ttt.chpl"
                   call_tmp_chpl71 = (coerce_tmp_chpl14 + sum_chpl7);
-#line 142 "ttt.chpl"
+#line 144 "ttt.chpl"
                   ret_chpl27 = *(call_tmp_chpl71);
-#line 142 "ttt.chpl"
+#line 144 "ttt.chpl"
                   call_tmp_chpl72 = G_CALLBACK(record_move);
-#line 142 "ttt.chpl"
+#line 144 "ttt.chpl"
                   _ref_tmp__chpl6 = &six_chpl;
-#line 142 "ttt.chpl"
+#line 144 "ttt.chpl"
                   call_tmp_chpl73 = c_pointer_return(_ref_tmp__chpl6);
-#line 142 "ttt.chpl"
+#line 144 "ttt.chpl"
                   g_signal_connect(ret_chpl27, "clicked", call_tmp_chpl72, call_tmp_chpl73);
-#line 142 "ttt.chpl"
-                } else /* ZLINE: 130 ttt.chpl */
-#line 142 "ttt.chpl"
+#line 144 "ttt.chpl"
+                } else /* ZLINE: 132 ttt.chpl */
+#line 144 "ttt.chpl"
                 {
-#line 130 "ttt.chpl"
+#line 132 "ttt.chpl"
                   call_tmp_chpl74 = (counter_chpl == INT64(7));
-#line 130 "ttt.chpl"
-                  if (call_tmp_chpl74) /* ZLINE: 143 ttt.chpl */
-#line 130 "ttt.chpl"
+#line 132 "ttt.chpl"
+                  if (call_tmp_chpl74) /* ZLINE: 145 ttt.chpl */
+#line 132 "ttt.chpl"
                   {
-#line 144 "ttt.chpl"
+#line 146 "ttt.chpl"
                     *(this_chpl8 + INT64(0)) = counter_chpl;
-#line 144 "ttt.chpl"
+#line 146 "ttt.chpl"
                     *(i_chpl11 + INT64(0)) = *(this_chpl8 + INT64(0));
-#line 144 "ttt.chpl"
+#line 146 "ttt.chpl"
                     ret_chpl28 = button_array_chpl;
-#line 144 "ttt.chpl"
+#line 146 "ttt.chpl"
                     call_tmp_chpl75 = ret_chpl28;
-#line 144 "ttt.chpl"
-                    chpl_check_nil(call_tmp_chpl75, INT64(144), "ttt.chpl");
-#line 144 "ttt.chpl"
+#line 146 "ttt.chpl"
+                    chpl_check_nil(call_tmp_chpl75, INT64(146), "ttt.chpl");
+#line 146 "ttt.chpl"
                     ret_chpl29 = (call_tmp_chpl75)->dom;
-#line 144 "ttt.chpl"
-                    chpl_check_nil(ret_chpl29, INT64(144), "ttt.chpl");
-#line 144 "ttt.chpl"
-                    call_tmp_chpl76 = dsiMember(ret_chpl29, &this_chpl8, INT64(144), "ttt.chpl");
-#line 144 "ttt.chpl"
+#line 146 "ttt.chpl"
+                    chpl_check_nil(ret_chpl29, INT64(146), "ttt.chpl");
+#line 146 "ttt.chpl"
+                    call_tmp_chpl76 = dsiMember(ret_chpl29, &this_chpl8, INT64(146), "ttt.chpl");
+#line 146 "ttt.chpl"
                     call_tmp_chpl77 = (! call_tmp_chpl76);
-#line 144 "ttt.chpl"
-                    if (call_tmp_chpl77) /* ZLINE: 144 ttt.chpl */
-#line 144 "ttt.chpl"
+#line 146 "ttt.chpl"
+                    if (call_tmp_chpl77) /* ZLINE: 146 ttt.chpl */
+#line 146 "ttt.chpl"
                     {
-#line 144 "ttt.chpl"
-                      string_from_c_string(&call_tmp_chpl78, "array index out of bounds: ", INT64(0), INT64(0), INT64(144), "ttt.chpl");
-#line 144 "ttt.chpl"
-                      halt3(call_tmp_chpl78, &this_chpl8, INT64(144), "ttt.chpl");
-#line 144 "ttt.chpl"
+#line 146 "ttt.chpl"
+                      string_from_c_string(&call_tmp_chpl78, "array index out of bounds: ", INT64(0), INT64(0), INT64(146), "ttt.chpl");
+#line 146 "ttt.chpl"
+                      halt3(call_tmp_chpl78, &this_chpl8, INT64(146), "ttt.chpl");
+#line 146 "ttt.chpl"
                     }
-#line 144 "ttt.chpl"
+#line 146 "ttt.chpl"
                     sum_chpl8 = INT64(0);
-#line 144 "ttt.chpl"
-                    chpl_check_nil(call_tmp_chpl75, INT64(144), "ttt.chpl");
-#line 144 "ttt.chpl"
+#line 146 "ttt.chpl"
+                    chpl_check_nil(call_tmp_chpl75, INT64(146), "ttt.chpl");
+#line 146 "ttt.chpl"
                     ret__chpl8 = &((call_tmp_chpl75)->blk);
-#line 144 "ttt.chpl"
+#line 146 "ttt.chpl"
                     ret_x1_chpl8 = *(*(ret__chpl8) + INT64(0));
-#line 144 "ttt.chpl"
+#line 146 "ttt.chpl"
                     coerce_tmp_chpl15 = *(i_chpl11 + INT64(0));
-#line 144 "ttt.chpl"
+#line 146 "ttt.chpl"
                     call_tmp_chpl79 = (coerce_tmp_chpl15 * ret_x1_chpl8);
-#line 144 "ttt.chpl"
+#line 146 "ttt.chpl"
                     sum_chpl8 += call_tmp_chpl79;
-#line 144 "ttt.chpl"
-                    chpl_check_nil(call_tmp_chpl75, INT64(144), "ttt.chpl");
-#line 144 "ttt.chpl"
+#line 146 "ttt.chpl"
+                    chpl_check_nil(call_tmp_chpl75, INT64(146), "ttt.chpl");
+#line 146 "ttt.chpl"
                     ret_chpl30 = (call_tmp_chpl75)->shiftedData;
-#line 144 "ttt.chpl"
+#line 146 "ttt.chpl"
                     coerce_tmp_chpl16 = ret_chpl30;
-#line 144 "ttt.chpl"
+#line 146 "ttt.chpl"
                     call_tmp_chpl80 = (coerce_tmp_chpl16 + sum_chpl8);
-#line 144 "ttt.chpl"
+#line 146 "ttt.chpl"
                     ret_chpl31 = *(call_tmp_chpl80);
-#line 144 "ttt.chpl"
+#line 146 "ttt.chpl"
                     call_tmp_chpl81 = G_CALLBACK(record_move);
-#line 144 "ttt.chpl"
+#line 146 "ttt.chpl"
                     _ref_tmp__chpl7 = &seven_chpl;
-#line 144 "ttt.chpl"
+#line 146 "ttt.chpl"
                     call_tmp_chpl82 = c_pointer_return(_ref_tmp__chpl7);
-#line 144 "ttt.chpl"
+#line 146 "ttt.chpl"
                     g_signal_connect(ret_chpl31, "clicked", call_tmp_chpl81, call_tmp_chpl82);
-#line 144 "ttt.chpl"
-                  } else /* ZLINE: 130 ttt.chpl */
-#line 144 "ttt.chpl"
+#line 146 "ttt.chpl"
+                  } else /* ZLINE: 132 ttt.chpl */
+#line 146 "ttt.chpl"
                   {
-#line 130 "ttt.chpl"
+#line 132 "ttt.chpl"
                     call_tmp_chpl83 = (counter_chpl == INT64(8));
-#line 130 "ttt.chpl"
-                    if (call_tmp_chpl83) /* ZLINE: 145 ttt.chpl */
-#line 130 "ttt.chpl"
+#line 132 "ttt.chpl"
+                    if (call_tmp_chpl83) /* ZLINE: 147 ttt.chpl */
+#line 132 "ttt.chpl"
                     {
-#line 146 "ttt.chpl"
+#line 148 "ttt.chpl"
                       *(this_chpl9 + INT64(0)) = counter_chpl;
-#line 146 "ttt.chpl"
+#line 148 "ttt.chpl"
                       *(i_chpl12 + INT64(0)) = *(this_chpl9 + INT64(0));
-#line 146 "ttt.chpl"
+#line 148 "ttt.chpl"
                       ret_chpl32 = button_array_chpl;
-#line 146 "ttt.chpl"
+#line 148 "ttt.chpl"
                       call_tmp_chpl84 = ret_chpl32;
-#line 146 "ttt.chpl"
-                      chpl_check_nil(call_tmp_chpl84, INT64(146), "ttt.chpl");
-#line 146 "ttt.chpl"
+#line 148 "ttt.chpl"
+                      chpl_check_nil(call_tmp_chpl84, INT64(148), "ttt.chpl");
+#line 148 "ttt.chpl"
                       ret_chpl33 = (call_tmp_chpl84)->dom;
-#line 146 "ttt.chpl"
-                      chpl_check_nil(ret_chpl33, INT64(146), "ttt.chpl");
-#line 146 "ttt.chpl"
-                      call_tmp_chpl85 = dsiMember(ret_chpl33, &this_chpl9, INT64(146), "ttt.chpl");
-#line 146 "ttt.chpl"
+#line 148 "ttt.chpl"
+                      chpl_check_nil(ret_chpl33, INT64(148), "ttt.chpl");
+#line 148 "ttt.chpl"
+                      call_tmp_chpl85 = dsiMember(ret_chpl33, &this_chpl9, INT64(148), "ttt.chpl");
+#line 148 "ttt.chpl"
                       call_tmp_chpl86 = (! call_tmp_chpl85);
-#line 146 "ttt.chpl"
-                      if (call_tmp_chpl86) /* ZLINE: 146 ttt.chpl */
-#line 146 "ttt.chpl"
+#line 148 "ttt.chpl"
+                      if (call_tmp_chpl86) /* ZLINE: 148 ttt.chpl */
+#line 148 "ttt.chpl"
                       {
-#line 146 "ttt.chpl"
-                        string_from_c_string(&call_tmp_chpl87, "array index out of bounds: ", INT64(0), INT64(0), INT64(146), "ttt.chpl");
-#line 146 "ttt.chpl"
-                        halt3(call_tmp_chpl87, &this_chpl9, INT64(146), "ttt.chpl");
-#line 146 "ttt.chpl"
+#line 148 "ttt.chpl"
+                        string_from_c_string(&call_tmp_chpl87, "array index out of bounds: ", INT64(0), INT64(0), INT64(148), "ttt.chpl");
+#line 148 "ttt.chpl"
+                        halt3(call_tmp_chpl87, &this_chpl9, INT64(148), "ttt.chpl");
+#line 148 "ttt.chpl"
                       }
-#line 146 "ttt.chpl"
+#line 148 "ttt.chpl"
                       sum_chpl9 = INT64(0);
-#line 146 "ttt.chpl"
-                      chpl_check_nil(call_tmp_chpl84, INT64(146), "ttt.chpl");
-#line 146 "ttt.chpl"
+#line 148 "ttt.chpl"
+                      chpl_check_nil(call_tmp_chpl84, INT64(148), "ttt.chpl");
+#line 148 "ttt.chpl"
                       ret__chpl9 = &((call_tmp_chpl84)->blk);
-#line 146 "ttt.chpl"
+#line 148 "ttt.chpl"
                       ret_x1_chpl9 = *(*(ret__chpl9) + INT64(0));
-#line 146 "ttt.chpl"
+#line 148 "ttt.chpl"
                       coerce_tmp_chpl17 = *(i_chpl12 + INT64(0));
-#line 146 "ttt.chpl"
+#line 148 "ttt.chpl"
                       call_tmp_chpl88 = (coerce_tmp_chpl17 * ret_x1_chpl9);
-#line 146 "ttt.chpl"
+#line 148 "ttt.chpl"
                       sum_chpl9 += call_tmp_chpl88;
-#line 146 "ttt.chpl"
-                      chpl_check_nil(call_tmp_chpl84, INT64(146), "ttt.chpl");
-#line 146 "ttt.chpl"
+#line 148 "ttt.chpl"
+                      chpl_check_nil(call_tmp_chpl84, INT64(148), "ttt.chpl");
+#line 148 "ttt.chpl"
                       ret_chpl34 = (call_tmp_chpl84)->shiftedData;
-#line 146 "ttt.chpl"
+#line 148 "ttt.chpl"
                       coerce_tmp_chpl18 = ret_chpl34;
-#line 146 "ttt.chpl"
+#line 148 "ttt.chpl"
                       call_tmp_chpl89 = (coerce_tmp_chpl18 + sum_chpl9);
-#line 146 "ttt.chpl"
+#line 148 "ttt.chpl"
                       ret_chpl35 = *(call_tmp_chpl89);
-#line 146 "ttt.chpl"
+#line 148 "ttt.chpl"
                       call_tmp_chpl90 = G_CALLBACK(record_move);
-#line 146 "ttt.chpl"
+#line 148 "ttt.chpl"
                       _ref_tmp__chpl8 = &eight_chpl;
-#line 146 "ttt.chpl"
+#line 148 "ttt.chpl"
                       call_tmp_chpl91 = c_pointer_return(_ref_tmp__chpl8);
-#line 146 "ttt.chpl"
+#line 148 "ttt.chpl"
                       g_signal_connect(ret_chpl35, "clicked", call_tmp_chpl90, call_tmp_chpl91);
-#line 146 "ttt.chpl"
-                    } else /* ZLINE: 130 ttt.chpl */
-#line 146 "ttt.chpl"
+#line 148 "ttt.chpl"
+                    } else /* ZLINE: 132 ttt.chpl */
+#line 148 "ttt.chpl"
                     {
-#line 130 "ttt.chpl"
+#line 132 "ttt.chpl"
                       call_tmp_chpl92 = (counter_chpl == INT64(9));
-#line 130 "ttt.chpl"
-                      if (call_tmp_chpl92) /* ZLINE: 147 ttt.chpl */
-#line 130 "ttt.chpl"
+#line 132 "ttt.chpl"
+                      if (call_tmp_chpl92) /* ZLINE: 149 ttt.chpl */
+#line 132 "ttt.chpl"
                       {
-#line 148 "ttt.chpl"
+#line 150 "ttt.chpl"
                         *(this_chpl10 + INT64(0)) = counter_chpl;
-#line 148 "ttt.chpl"
+#line 150 "ttt.chpl"
                         *(i_chpl13 + INT64(0)) = *(this_chpl10 + INT64(0));
-#line 148 "ttt.chpl"
+#line 150 "ttt.chpl"
                         ret_chpl36 = button_array_chpl;
-#line 148 "ttt.chpl"
+#line 150 "ttt.chpl"
                         call_tmp_chpl93 = ret_chpl36;
-#line 148 "ttt.chpl"
-                        chpl_check_nil(call_tmp_chpl93, INT64(148), "ttt.chpl");
-#line 148 "ttt.chpl"
+#line 150 "ttt.chpl"
+                        chpl_check_nil(call_tmp_chpl93, INT64(150), "ttt.chpl");
+#line 150 "ttt.chpl"
                         ret_chpl37 = (call_tmp_chpl93)->dom;
-#line 148 "ttt.chpl"
-                        chpl_check_nil(ret_chpl37, INT64(148), "ttt.chpl");
-#line 148 "ttt.chpl"
-                        call_tmp_chpl94 = dsiMember(ret_chpl37, &this_chpl10, INT64(148), "ttt.chpl");
-#line 148 "ttt.chpl"
+#line 150 "ttt.chpl"
+                        chpl_check_nil(ret_chpl37, INT64(150), "ttt.chpl");
+#line 150 "ttt.chpl"
+                        call_tmp_chpl94 = dsiMember(ret_chpl37, &this_chpl10, INT64(150), "ttt.chpl");
+#line 150 "ttt.chpl"
                         call_tmp_chpl95 = (! call_tmp_chpl94);
-#line 148 "ttt.chpl"
-                        if (call_tmp_chpl95) /* ZLINE: 148 ttt.chpl */
-#line 148 "ttt.chpl"
+#line 150 "ttt.chpl"
+                        if (call_tmp_chpl95) /* ZLINE: 150 ttt.chpl */
+#line 150 "ttt.chpl"
                         {
-#line 148 "ttt.chpl"
-                          string_from_c_string(&call_tmp_chpl96, "array index out of bounds: ", INT64(0), INT64(0), INT64(148), "ttt.chpl");
-#line 148 "ttt.chpl"
-                          halt3(call_tmp_chpl96, &this_chpl10, INT64(148), "ttt.chpl");
-#line 148 "ttt.chpl"
+#line 150 "ttt.chpl"
+                          string_from_c_string(&call_tmp_chpl96, "array index out of bounds: ", INT64(0), INT64(0), INT64(150), "ttt.chpl");
+#line 150 "ttt.chpl"
+                          halt3(call_tmp_chpl96, &this_chpl10, INT64(150), "ttt.chpl");
+#line 150 "ttt.chpl"
                         }
-#line 148 "ttt.chpl"
+#line 150 "ttt.chpl"
                         sum_chpl10 = INT64(0);
-#line 148 "ttt.chpl"
-                        chpl_check_nil(call_tmp_chpl93, INT64(148), "ttt.chpl");
-#line 148 "ttt.chpl"
+#line 150 "ttt.chpl"
+                        chpl_check_nil(call_tmp_chpl93, INT64(150), "ttt.chpl");
+#line 150 "ttt.chpl"
                         ret__chpl10 = &((call_tmp_chpl93)->blk);
-#line 148 "ttt.chpl"
+#line 150 "ttt.chpl"
                         ret_x1_chpl10 = *(*(ret__chpl10) + INT64(0));
-#line 148 "ttt.chpl"
+#line 150 "ttt.chpl"
                         coerce_tmp_chpl19 = *(i_chpl13 + INT64(0));
-#line 148 "ttt.chpl"
+#line 150 "ttt.chpl"
                         call_tmp_chpl97 = (coerce_tmp_chpl19 * ret_x1_chpl10);
-#line 148 "ttt.chpl"
+#line 150 "ttt.chpl"
                         sum_chpl10 += call_tmp_chpl97;
-#line 148 "ttt.chpl"
-                        chpl_check_nil(call_tmp_chpl93, INT64(148), "ttt.chpl");
-#line 148 "ttt.chpl"
+#line 150 "ttt.chpl"
+                        chpl_check_nil(call_tmp_chpl93, INT64(150), "ttt.chpl");
+#line 150 "ttt.chpl"
                         ret_chpl38 = (call_tmp_chpl93)->shiftedData;
-#line 148 "ttt.chpl"
+#line 150 "ttt.chpl"
                         coerce_tmp_chpl20 = ret_chpl38;
-#line 148 "ttt.chpl"
+#line 150 "ttt.chpl"
                         call_tmp_chpl98 = (coerce_tmp_chpl20 + sum_chpl10);
-#line 148 "ttt.chpl"
+#line 150 "ttt.chpl"
                         ret_chpl39 = *(call_tmp_chpl98);
-#line 148 "ttt.chpl"
+#line 150 "ttt.chpl"
                         call_tmp_chpl99 = G_CALLBACK(record_move);
-#line 148 "ttt.chpl"
+#line 150 "ttt.chpl"
                         _ref_tmp__chpl9 = &nine_chpl;
-#line 148 "ttt.chpl"
+#line 150 "ttt.chpl"
                         call_tmp_chpl100 = c_pointer_return(_ref_tmp__chpl9);
-#line 148 "ttt.chpl"
+#line 150 "ttt.chpl"
                         g_signal_connect(ret_chpl39, "clicked", call_tmp_chpl99, call_tmp_chpl100);
-#line 148 "ttt.chpl"
+#line 150 "ttt.chpl"
                       }
-#line 148 "ttt.chpl"
+#line 150 "ttt.chpl"
                     }
-#line 148 "ttt.chpl"
+#line 150 "ttt.chpl"
                   }
-#line 148 "ttt.chpl"
+#line 150 "ttt.chpl"
                 }
-#line 148 "ttt.chpl"
+#line 150 "ttt.chpl"
               }
-#line 148 "ttt.chpl"
+#line 150 "ttt.chpl"
             }
-#line 148 "ttt.chpl"
+#line 150 "ttt.chpl"
           }
-#line 148 "ttt.chpl"
+#line 150 "ttt.chpl"
         }
-#line 148 "ttt.chpl"
+#line 150 "ttt.chpl"
       }
-#line 151 "ttt.chpl"
+#line 153 "ttt.chpl"
       call_tmp_chpl101 = GTK_TABLE(board_chpl);
-#line 151 "ttt.chpl"
+#line 153 "ttt.chpl"
       *(this_chpl11 + INT64(0)) = counter_chpl;
-#line 151 "ttt.chpl"
+#line 153 "ttt.chpl"
       *(i_chpl14 + INT64(0)) = *(this_chpl11 + INT64(0));
-#line 151 "ttt.chpl"
+#line 153 "ttt.chpl"
       ret_chpl40 = button_array_chpl;
-#line 151 "ttt.chpl"
+#line 153 "ttt.chpl"
       call_tmp_chpl102 = ret_chpl40;
-#line 151 "ttt.chpl"
-      chpl_check_nil(call_tmp_chpl102, INT64(151), "ttt.chpl");
-#line 151 "ttt.chpl"
+#line 153 "ttt.chpl"
+      chpl_check_nil(call_tmp_chpl102, INT64(153), "ttt.chpl");
+#line 153 "ttt.chpl"
       ret_chpl41 = (call_tmp_chpl102)->dom;
-#line 151 "ttt.chpl"
-      chpl_check_nil(ret_chpl41, INT64(151), "ttt.chpl");
-#line 151 "ttt.chpl"
-      call_tmp_chpl103 = dsiMember(ret_chpl41, &this_chpl11, INT64(151), "ttt.chpl");
-#line 151 "ttt.chpl"
+#line 153 "ttt.chpl"
+      chpl_check_nil(ret_chpl41, INT64(153), "ttt.chpl");
+#line 153 "ttt.chpl"
+      call_tmp_chpl103 = dsiMember(ret_chpl41, &this_chpl11, INT64(153), "ttt.chpl");
+#line 153 "ttt.chpl"
       call_tmp_chpl104 = (! call_tmp_chpl103);
-#line 151 "ttt.chpl"
-      if (call_tmp_chpl104) /* ZLINE: 151 ttt.chpl */
-#line 151 "ttt.chpl"
+#line 153 "ttt.chpl"
+      if (call_tmp_chpl104) /* ZLINE: 153 ttt.chpl */
+#line 153 "ttt.chpl"
       {
-#line 151 "ttt.chpl"
-        string_from_c_string(&call_tmp_chpl105, "array index out of bounds: ", INT64(0), INT64(0), INT64(151), "ttt.chpl");
-#line 151 "ttt.chpl"
-        halt3(call_tmp_chpl105, &this_chpl11, INT64(151), "ttt.chpl");
-#line 151 "ttt.chpl"
+#line 153 "ttt.chpl"
+        string_from_c_string(&call_tmp_chpl105, "array index out of bounds: ", INT64(0), INT64(0), INT64(153), "ttt.chpl");
+#line 153 "ttt.chpl"
+        halt3(call_tmp_chpl105, &this_chpl11, INT64(153), "ttt.chpl");
+#line 153 "ttt.chpl"
       }
-#line 151 "ttt.chpl"
+#line 153 "ttt.chpl"
       sum_chpl11 = INT64(0);
-#line 151 "ttt.chpl"
-      chpl_check_nil(call_tmp_chpl102, INT64(151), "ttt.chpl");
-#line 151 "ttt.chpl"
+#line 153 "ttt.chpl"
+      chpl_check_nil(call_tmp_chpl102, INT64(153), "ttt.chpl");
+#line 153 "ttt.chpl"
       ret__chpl11 = &((call_tmp_chpl102)->blk);
-#line 151 "ttt.chpl"
+#line 153 "ttt.chpl"
       ret_x1_chpl11 = *(*(ret__chpl11) + INT64(0));
-#line 151 "ttt.chpl"
+#line 153 "ttt.chpl"
       coerce_tmp_chpl21 = *(i_chpl14 + INT64(0));
-#line 151 "ttt.chpl"
+#line 153 "ttt.chpl"
       call_tmp_chpl106 = (coerce_tmp_chpl21 * ret_x1_chpl11);
-#line 151 "ttt.chpl"
+#line 153 "ttt.chpl"
       sum_chpl11 += call_tmp_chpl106;
-#line 151 "ttt.chpl"
-      chpl_check_nil(call_tmp_chpl102, INT64(151), "ttt.chpl");
-#line 151 "ttt.chpl"
+#line 153 "ttt.chpl"
+      chpl_check_nil(call_tmp_chpl102, INT64(153), "ttt.chpl");
+#line 153 "ttt.chpl"
       ret_chpl42 = (call_tmp_chpl102)->shiftedData;
-#line 151 "ttt.chpl"
+#line 153 "ttt.chpl"
       coerce_tmp_chpl22 = ret_chpl42;
-#line 151 "ttt.chpl"
+#line 153 "ttt.chpl"
       call_tmp_chpl107 = (coerce_tmp_chpl22 + sum_chpl11);
-#line 151 "ttt.chpl"
+#line 153 "ttt.chpl"
       ret_chpl43 = *(call_tmp_chpl107);
-#line 151 "ttt.chpl"
+#line 153 "ttt.chpl"
       call_tmp_chpl109 = ((int32_t)(call_tmp_chpl108));
-#line 151 "ttt.chpl"
+#line 153 "ttt.chpl"
       call_tmp_chpl110 = ((int32_t)(i_chpl2));
-#line 151 "ttt.chpl"
+#line 153 "ttt.chpl"
       call_tmp_chpl111 = (i_chpl3 - INT64(1));
-#line 151 "ttt.chpl"
+#line 153 "ttt.chpl"
       call_tmp_chpl112 = ((int32_t)(call_tmp_chpl111));
-#line 151 "ttt.chpl"
+#line 153 "ttt.chpl"
       call_tmp_chpl113 = ((int32_t)(i_chpl3));
-#line 151 "ttt.chpl"
+#line 153 "ttt.chpl"
       gtk_table_attach_defaults(call_tmp_chpl101, ret_chpl43, call_tmp_chpl109, call_tmp_chpl110, call_tmp_chpl112, call_tmp_chpl113);
-#line 152 "ttt.chpl"
+#line 154 "ttt.chpl"
       counter_chpl += INT64(1);
-#line 152 "ttt.chpl"
+#line 154 "ttt.chpl"
     }
-#line 152 "ttt.chpl"
+#line 154 "ttt.chpl"
   }
-#line 157 "ttt.chpl"
+#line 159 "ttt.chpl"
   call_tmp_chpl114 = GTK_TABLE(board_chpl);
-#line 157 "ttt.chpl"
+#line 159 "ttt.chpl"
   gtk_table_attach_defaults(call_tmp_chpl114, output_chpl, INT32(0), INT32(3), INT32(3), INT32(4));
-#line 158 "ttt.chpl"
+#line 160 "ttt.chpl"
   call_tmp_chpl115 = GTK_TABLE(board_chpl);
-#line 158 "ttt.chpl"
+#line 160 "ttt.chpl"
   gtk_table_attach_defaults(call_tmp_chpl115, resetBtn_chpl, INT32(0), INT32(1), INT32(4), INT32(5));
-#line 159 "ttt.chpl"
+#line 161 "ttt.chpl"
   call_tmp_chpl116 = GTK_TABLE(board_chpl);
-#line 159 "ttt.chpl"
+#line 161 "ttt.chpl"
   gtk_table_attach_defaults(call_tmp_chpl116, stopBtn_chpl, INT32(2), INT32(3), INT32(4), INT32(5));
-#line 162 "ttt.chpl"
+#line 164 "ttt.chpl"
   call_tmp_chpl117 = GTK_CONTAINER(window_chpl);
-#line 162 "ttt.chpl"
+#line 164 "ttt.chpl"
   gtk_container_add(call_tmp_chpl117, board_chpl);
-#line 165 "ttt.chpl"
+#line 167 "ttt.chpl"
   _ref_tmp__chpl10 = &window_chpl;
-#line 165 "ttt.chpl"
+#line 167 "ttt.chpl"
   link_close_signal(_ref_tmp__chpl10);
-#line 166 "ttt.chpl"
-  gtk_widget_show_all(window_chpl);
 #line 168 "ttt.chpl"
+  gtk_widget_show_all(window_chpl);
+#line 170 "ttt.chpl"
   gtk_main();
-#line 99 "ttt.chpl"
+#line 101 "ttt.chpl"
   return;
-#line 99 "ttt.chpl"
+#line 101 "ttt.chpl"
 }
 
-#line 99 "ttt.chpl"
-/* ttt.chpl:99 */
-#line 99 "ttt.chpl"
+#line 101 "ttt.chpl"
+/* ttt.chpl:101 */
+#line 101 "ttt.chpl"
 int64_t chpl_gen_main(chpl_main_argument* const _arg) {
-#line 99 "ttt.chpl"
+#line 101 "ttt.chpl"
   chpl___EndCount_atomic_int64_int64_t this_chpl = NULL;
-#line 99 "ttt.chpl"
+#line 101 "ttt.chpl"
   int64_t call_tmp_chpl;
-#line 99 "ttt.chpl"
+#line 101 "ttt.chpl"
   chpl_opaque cast_tmp_chpl;
-#line 99 "ttt.chpl"
+#line 101 "ttt.chpl"
   atomic_int64 _init_class_tmp__chpl;
-#line 99 "ttt.chpl"
+#line 101 "ttt.chpl"
   atomic_int64 this_chpl2;
-#line 99 "ttt.chpl"
+#line 101 "ttt.chpl"
   atomic_int_least64_t ret_chpl;
-#line 99 "ttt.chpl"
+#line 101 "ttt.chpl"
   atomic_int_least64_t type_tmp_chpl;
-#line 99 "ttt.chpl"
+#line 101 "ttt.chpl"
   _ref_atomic_int_least64_t _ref_tmp__chpl = NULL;
-#line 99 "ttt.chpl"
+#line 101 "ttt.chpl"
   atomic_int64 wrap_call_tmp_chpl;
-#line 99 "ttt.chpl"
+#line 101 "ttt.chpl"
   chpl_task_list_p ret_chpl2;
-#line 99 "ttt.chpl"
+#line 101 "ttt.chpl"
   chpl___EndCount_atomic_int64_int64_t wrap_call_tmp_chpl2 = NULL;
-#line 99 "ttt.chpl"
+#line 101 "ttt.chpl"
   DefaultRectangularArr_chpl_string_1_int64_t_F _main_args_chpl = NULL;
-#line 99 "ttt.chpl"
+#line 101 "ttt.chpl"
   call_tmp_chpl = sizeof(chpl_chpl___EndCount_atomic_int64_int64_t_object);
-#line 99 "ttt.chpl"
-  cast_tmp_chpl = chpl_here_alloc(call_tmp_chpl, INT16(1), INT64(99), "ttt.chpl");
-#line 99 "ttt.chpl"
+#line 101 "ttt.chpl"
+  cast_tmp_chpl = chpl_here_alloc(call_tmp_chpl, INT16(1), INT64(101), "ttt.chpl");
+#line 101 "ttt.chpl"
   this_chpl = ((chpl___EndCount_atomic_int64_int64_t)(cast_tmp_chpl));
-#line 99 "ttt.chpl"
+#line 101 "ttt.chpl"
   ((object)(this_chpl))->chpl__cid = chpl__cid_chpl___EndCount_atomic_int64_int64_t;
-#line 99 "ttt.chpl"
-  chpl_check_nil(this_chpl, INT64(99), "ttt.chpl");
-#line 99 "ttt.chpl"
+#line 101 "ttt.chpl"
+  chpl_check_nil(this_chpl, INT64(101), "ttt.chpl");
+#line 101 "ttt.chpl"
   (this_chpl)->i = _init_class_tmp__chpl;
-#line 99 "ttt.chpl"
-  chpl_check_nil(this_chpl, INT64(99), "ttt.chpl");
-#line 99 "ttt.chpl"
+#line 101 "ttt.chpl"
+  chpl_check_nil(this_chpl, INT64(101), "ttt.chpl");
+#line 101 "ttt.chpl"
   (this_chpl)->taskCnt = INT64(0);
-#line 99 "ttt.chpl"
-  chpl_check_nil(this_chpl, INT64(99), "ttt.chpl");
-#line 99 "ttt.chpl"
+#line 101 "ttt.chpl"
+  chpl_check_nil(this_chpl, INT64(101), "ttt.chpl");
+#line 101 "ttt.chpl"
   (this_chpl)->taskList = NULL;
-#line 99 "ttt.chpl"
+#line 101 "ttt.chpl"
   ret_chpl = type_tmp_chpl;
-#line 99 "ttt.chpl"
+#line 101 "ttt.chpl"
   _ref_tmp__chpl = &ret_chpl;
-#line 99 "ttt.chpl"
+#line 101 "ttt.chpl"
   atomic_init_int_least64_t(_ref_tmp__chpl, INT64(0));
-#line 99 "ttt.chpl"
+#line 101 "ttt.chpl"
   (&this_chpl2)->_v = ret_chpl;
-#line 99 "ttt.chpl"
-  wrap_call_tmp_chpl = _construct_atomic_int64(ret_chpl, &this_chpl2, INT64(99), "ttt.chpl");
-#line 99 "ttt.chpl"
-  chpl_check_nil(this_chpl, INT64(99), "ttt.chpl");
-#line 99 "ttt.chpl"
+#line 101 "ttt.chpl"
+  wrap_call_tmp_chpl = _construct_atomic_int64(ret_chpl, &this_chpl2, INT64(101), "ttt.chpl");
+#line 101 "ttt.chpl"
+  chpl_check_nil(this_chpl, INT64(101), "ttt.chpl");
+#line 101 "ttt.chpl"
   (this_chpl)->i = wrap_call_tmp_chpl;
-#line 99 "ttt.chpl"
-  chpl_check_nil(this_chpl, INT64(99), "ttt.chpl");
-#line 99 "ttt.chpl"
+#line 101 "ttt.chpl"
+  chpl_check_nil(this_chpl, INT64(101), "ttt.chpl");
+#line 101 "ttt.chpl"
   (this_chpl)->taskCnt = INT64(0);
-#line 99 "ttt.chpl"
+#line 101 "ttt.chpl"
   ret_chpl2 = NULL;
-#line 99 "ttt.chpl"
-  chpl_check_nil(this_chpl, INT64(99), "ttt.chpl");
-#line 99 "ttt.chpl"
+#line 101 "ttt.chpl"
+  chpl_check_nil(this_chpl, INT64(101), "ttt.chpl");
+#line 101 "ttt.chpl"
   (this_chpl)->taskList = ret_chpl2;
-#line 99 "ttt.chpl"
-  wrap_call_tmp_chpl2 = _construct__EndCount(&wrap_call_tmp_chpl, INT64(0), ret_chpl2, this_chpl, INT64(99), "ttt.chpl");
-#line 99 "ttt.chpl"
+#line 101 "ttt.chpl"
+  wrap_call_tmp_chpl2 = _construct__EndCount(&wrap_call_tmp_chpl, INT64(0), ret_chpl2, this_chpl, INT64(101), "ttt.chpl");
+#line 101 "ttt.chpl"
   chpl_rt_preUserCodeHook();
-#line 99 "ttt.chpl"
-  chpl__init_ttt(INT64(99), "ttt.chpl");
-#line 99 "ttt.chpl"
-  _main_args_chpl = chpl_convert_args(_arg, INT64(99), "ttt.chpl");
-#line 99 "ttt.chpl"
+#line 101 "ttt.chpl"
+  chpl__init_ttt(INT64(101), "ttt.chpl");
+#line 101 "ttt.chpl"
+  _main_args_chpl = chpl_convert_args(_arg, INT64(101), "ttt.chpl");
+#line 101 "ttt.chpl"
   chpl_user_main(_main_args_chpl);
-#line 99 "ttt.chpl"
+#line 101 "ttt.chpl"
   chpl_rt_postUserCodeHook();
-#line 99 "ttt.chpl"
-  _waitEndCount2(wrap_call_tmp_chpl2, INT64(99), "ttt.chpl");
+#line 101 "ttt.chpl"
+  _waitEndCount2(wrap_call_tmp_chpl2, INT64(101), "ttt.chpl");
 #line 23 "ChapelBase.chpl"
   chpl__autoDestroyGlobals();
-#line 99 "ttt.chpl"
+#line 101 "ttt.chpl"
   return INT64(0);
-#line 99 "ttt.chpl"
+#line 101 "ttt.chpl"
 }
 

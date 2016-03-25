@@ -213,7 +213,7 @@ static int64_t id(locale this6, int64_t _ln, c_string _fn) {
 #line 57 "ChapelLocale.chpl"
   _virtual_method_tmp_ = ((object)(this6))->chpl__cid;
 #line 57 "ChapelLocale.chpl"
-  call_tmp = ((int64_t(*)(locale, int64_t, c_string))chpl_vmtable[((INT64(4) * _virtual_method_tmp_) + INT64(1))])(this6, _ln, _fn);
+  call_tmp = ((int64_t(*)(locale, int64_t, c_string))chpl_vmtable[((INT64(4) * _virtual_method_tmp_) + INT64(2))])(this6, _ln, _fn);
 #line 57 "ChapelLocale.chpl"
   return call_tmp;
 #line 57 "ChapelLocale.chpl"
