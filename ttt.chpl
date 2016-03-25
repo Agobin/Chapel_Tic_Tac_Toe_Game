@@ -9,16 +9,16 @@ var gameOver:bool = false;
 
 module Functions{
 	
-	/*export proc analyseBoard( a: []int, n: int, key: int): int{	
-		if( (a[0] == key && a[1] == key && a[2] == key) || (a[3] == key && a[4] == key && a[5] == key) || (a[6] == key && a[7] == key && a[8] == key) || 
-			(a[0] == key && a[4] == key && a[8] == key) || (a[0] == key && a[3] == key && a[6] == key) || (a[1] == key && a[4] == key && a[7] == key) || 
-			(a[2] == key && a[5] == key && a[8] == key) || (a[6] == key && a[4] == key && a[2] == key) ){
+	proc analyseBoard( a: []int, n: int, key: int): int{	
+		if( (a[1] == key && a[2] == key && a[3] == key) || (a[4] == key && a[5] == key && a[6] == key) || (a[7] == key && a[8] == key && a[9] == key) || 
+			(a[1] == key && a[5] == key && a[9] == key) || (a[1] == key && a[4] == key && a[7] == key) || (a[2] == key && a[5] == key && a[8] == key) || 
+			(a[3] == key && a[6] == key && a[9] == key) || (a[7] == key && a[5] == key && a[3] == key) ){
 			return key;	
 		}
 		else{
 			return 0;
 		}
-	}  */
+	}  
 	export proc resetGame(btn: c_ptr(GtkWidget), data: c_void_ptr): void{
 	
 		playerTime = 0;
@@ -60,8 +60,8 @@ module Functions{
 				gtk_button_set_label(GTK_BUTTON(button), "O");
 			}
 			
-			var gameWon1: int;// = analyseBoard(boardMatrix, 9, 1);
-			var gameWon2: int;// = analyseBoard(boardMatrix, 9, 2);
+			var gameWon1: int = analyseBoard(boardMatrix, 9, 1);
+			var gameWon2: int = analyseBoard(boardMatrix, 9, 2);
 			
 			if( gameWon1 ){ 
 				gtk_label_set_text(GTK_LABEL(output), "  Game Over\nPlayer one won!!");
@@ -93,6 +93,7 @@ module Functions{
 }
 
 module FunctionSysbols{
+	//extern var analyseBoard: opaque;
 	extern var callMe: opaque;
     extern var record_move: opaque;
     extern var resetGame: opaque;

@@ -288,7 +288,7 @@ static void chpl__init_IO(int64_t _ln_chpl, c_string _fn_chpl) {
 #line 4491 "IO.chpl"
   _ref_tmp__chpl8 = &type_tmp_chpl5;
 #line 4491 "IO.chpl"
-  chpl___ASSIGN_3(_ref_tmp__chpl8, &call_tmp_chpl16, _ln_chpl, _fn_chpl);
+  chpl___ASSIGN_4(_ref_tmp__chpl8, &call_tmp_chpl16, _ln_chpl, _fn_chpl);
 #line 4491 "IO.chpl"
   _ref_tmp__chpl9 = &call_tmp_chpl15;
 #line 4491 "IO.chpl"
@@ -360,7 +360,7 @@ static void chpl__init_IO(int64_t _ln_chpl, c_string _fn_chpl) {
 #line 4493 "IO.chpl"
   _ref_tmp__chpl14 = &type_tmp_chpl6;
 #line 4493 "IO.chpl"
-  chpl___ASSIGN_4(_ref_tmp__chpl14, &call_tmp_chpl23, _ln_chpl, _fn_chpl);
+  chpl___ASSIGN_3(_ref_tmp__chpl14, &call_tmp_chpl23, _ln_chpl, _fn_chpl);
 #line 4493 "IO.chpl"
   _ref_tmp__chpl15 = &call_tmp_chpl21;
 #line 4493 "IO.chpl"
@@ -432,7 +432,7 @@ static void chpl__init_IO(int64_t _ln_chpl, c_string _fn_chpl) {
 #line 4495 "IO.chpl"
   _ref_tmp__chpl20 = &type_tmp_chpl7;
 #line 4495 "IO.chpl"
-  chpl___ASSIGN_4(_ref_tmp__chpl20, &call_tmp_chpl30, _ln_chpl, _fn_chpl);
+  chpl___ASSIGN_3(_ref_tmp__chpl20, &call_tmp_chpl30, _ln_chpl, _fn_chpl);
 #line 4495 "IO.chpl"
   _ref_tmp__chpl21 = &call_tmp_chpl28;
 #line 4495 "IO.chpl"
@@ -1724,7 +1724,7 @@ static channel_T_dynamic_T_chpl chpl__initCopy4(channel_T_dynamic_T_chpl* const 
 #line 2592 "IO.chpl"
 /* IO.chpl:2600 */
 #line 2592 "IO.chpl"
-static void chpl___ASSIGN_3(_ref_channel_F_dynamic_T ret_chpl, channel_F_dynamic_T_chpl* const x_chpl, int64_t _ln_chpl, c_string _fn_chpl) {
+static void chpl___ASSIGN_4(_ref_channel_F_dynamic_T ret_chpl, channel_F_dynamic_T_chpl* const x_chpl, int64_t _ln_chpl, c_string _fn_chpl) {
 #line 2592 "IO.chpl"
   qio_channel_ptr_t ret_chpl2;
 #line 2592 "IO.chpl"
@@ -1771,7 +1771,7 @@ static void chpl___ASSIGN_3(_ref_channel_F_dynamic_T ret_chpl, channel_F_dynamic
 #line 2600 "IO.chpl"
 /* IO.chpl:2600 */
 #line 2600 "IO.chpl"
-static void chpl___ASSIGN_4(_ref_channel_T_dynamic_T ret_chpl, channel_T_dynamic_T_chpl* const x_chpl, int64_t _ln_chpl, c_string _fn_chpl) {
+static void chpl___ASSIGN_3(_ref_channel_T_dynamic_T ret_chpl, channel_T_dynamic_T_chpl* const x_chpl, int64_t _ln_chpl, c_string _fn_chpl) {
 #line 2600 "IO.chpl"
   qio_channel_ptr_t ret_chpl2;
 #line 2600 "IO.chpl"
@@ -1818,7 +1818,7 @@ static void chpl___ASSIGN_4(_ref_channel_T_dynamic_T ret_chpl, channel_T_dynamic
 #line 2600 "IO.chpl"
 /* IO.chpl:2615 */
 #line 2600 "IO.chpl"
-static channel_F_dynamic_T_chpl channel_chpl(file_chpl* const f_chpl, _ref_syserr error_chpl, int32_t hints_chpl, int64_t start_chpl, int64_t end_chpl, iostyle* const local_style_chpl, int64_t _ln_chpl, c_string _fn_chpl) {
+static channel_F_dynamic_T_chpl channel_chpl2(file_chpl* const f_chpl, _ref_syserr error_chpl, int32_t hints_chpl, int64_t start_chpl, int64_t end_chpl, iostyle* const local_style_chpl, int64_t _ln_chpl, c_string _fn_chpl) {
 #line 2600 "IO.chpl"
   qio_channel_ptr_t local_QIO_CHANNEL_PTR_NULL_chpl;
 #line 2600 "IO.chpl"
@@ -1895,7 +1895,7 @@ static channel_F_dynamic_T_chpl channel_chpl(file_chpl* const f_chpl, _ref_syser
 #line 2615 "IO.chpl"
 /* IO.chpl:2615 */
 #line 2615 "IO.chpl"
-static channel_T_dynamic_T_chpl channel_chpl2(file_chpl* const f_chpl, _ref_syserr error_chpl, int32_t hints_chpl, int64_t start_chpl, int64_t end_chpl, iostyle* const local_style_chpl, int64_t _ln_chpl, c_string _fn_chpl) {
+static channel_T_dynamic_T_chpl channel_chpl(file_chpl* const f_chpl, _ref_syserr error_chpl, int32_t hints_chpl, int64_t start_chpl, int64_t end_chpl, iostyle* const local_style_chpl, int64_t _ln_chpl, c_string _fn_chpl) {
 #line 2615 "IO.chpl"
   qio_channel_ptr_t local_QIO_CHANNEL_PTR_NULL_chpl;
 #line 2615 "IO.chpl"
@@ -2164,11 +2164,11 @@ static void reader_chpl(_ref_file this_chpl, _ref_syserr error_chpl, int64_t sta
 #line 3173 "IO.chpl"
   _ref_tmp__chpl = &_formal_tmp_error_chpl;
 #line 3173 "IO.chpl"
-  call_tmp_chpl3 = channel_chpl(&coerce_tmp_chpl, _ref_tmp__chpl, hints_chpl, start_chpl, end_chpl, style_chpl, _ln_chpl, _fn_chpl);
+  call_tmp_chpl3 = channel_chpl2(&coerce_tmp_chpl, _ref_tmp__chpl, hints_chpl, start_chpl, end_chpl, style_chpl, _ln_chpl, _fn_chpl);
 #line 3173 "IO.chpl"
   _ref_tmp__chpl2 = &ret_chpl2;
 #line 3173 "IO.chpl"
-  chpl___ASSIGN_3(_ref_tmp__chpl2, &call_tmp_chpl3, _ln_chpl, _fn_chpl);
+  chpl___ASSIGN_4(_ref_tmp__chpl2, &call_tmp_chpl3, _ln_chpl, _fn_chpl);
 #line 3173 "IO.chpl"
   _ref_tmp__chpl3 = &call_tmp_chpl3;
 #line 3173 "IO.chpl"
@@ -2176,7 +2176,7 @@ static void reader_chpl(_ref_file this_chpl, _ref_syserr error_chpl, int64_t sta
 #line 3175 "IO.chpl"
   _ref_tmp__chpl4 = &ret_chpl;
 #line 3175 "IO.chpl"
-  chpl___ASSIGN_3(_ref_tmp__chpl4, &ret_chpl2, _ln_chpl, _fn_chpl);
+  chpl___ASSIGN_4(_ref_tmp__chpl4, &ret_chpl2, _ln_chpl, _fn_chpl);
 #line 3168 "IO.chpl"
   *(_retArg_chpl) = chpl__initCopy5(&ret_chpl, _ln_chpl, _fn_chpl);
 #line 3168 "IO.chpl"
@@ -2303,7 +2303,7 @@ static void reader_chpl2(_ref_file this_chpl, int64_t start_chpl, int64_t end_ch
 #line 3184 "IO.chpl"
   _ref_tmp__chpl3 = &ret_chpl;
 #line 3184 "IO.chpl"
-  chpl___ASSIGN_3(_ref_tmp__chpl3, &ret_chpl2, _ln_chpl, _fn_chpl);
+  chpl___ASSIGN_4(_ref_tmp__chpl3, &ret_chpl2, _ln_chpl, _fn_chpl);
 #line 3180 "IO.chpl"
   call_tmp_chpl8 = chpl__initCopy5(&ret_chpl, _ln_chpl, _fn_chpl);
 #line 3180 "IO.chpl"
@@ -2410,11 +2410,11 @@ static void writer_chpl(_ref_file this_chpl, _ref_syserr error_chpl, int64_t sta
 #line 3273 "IO.chpl"
   _ref_tmp__chpl = &_formal_tmp_error_chpl;
 #line 3273 "IO.chpl"
-  call_tmp_chpl3 = channel_chpl2(&coerce_tmp_chpl, _ref_tmp__chpl, hints_chpl, start_chpl, end_chpl, style_chpl, _ln_chpl, _fn_chpl);
+  call_tmp_chpl3 = channel_chpl(&coerce_tmp_chpl, _ref_tmp__chpl, hints_chpl, start_chpl, end_chpl, style_chpl, _ln_chpl, _fn_chpl);
 #line 3273 "IO.chpl"
   _ref_tmp__chpl2 = &ret_chpl2;
 #line 3273 "IO.chpl"
-  chpl___ASSIGN_4(_ref_tmp__chpl2, &call_tmp_chpl3, _ln_chpl, _fn_chpl);
+  chpl___ASSIGN_3(_ref_tmp__chpl2, &call_tmp_chpl3, _ln_chpl, _fn_chpl);
 #line 3273 "IO.chpl"
   _ref_tmp__chpl3 = &call_tmp_chpl3;
 #line 3273 "IO.chpl"
@@ -2422,7 +2422,7 @@ static void writer_chpl(_ref_file this_chpl, _ref_syserr error_chpl, int64_t sta
 #line 3275 "IO.chpl"
   _ref_tmp__chpl4 = &ret_chpl;
 #line 3275 "IO.chpl"
-  chpl___ASSIGN_4(_ref_tmp__chpl4, &ret_chpl2, _ln_chpl, _fn_chpl);
+  chpl___ASSIGN_3(_ref_tmp__chpl4, &ret_chpl2, _ln_chpl, _fn_chpl);
 #line 3268 "IO.chpl"
   *(_retArg_chpl) = chpl__initCopy4(&ret_chpl, _ln_chpl, _fn_chpl);
 #line 3268 "IO.chpl"
@@ -2549,7 +2549,7 @@ static void writer_chpl2(_ref_file this_chpl, int64_t start_chpl, int64_t end_ch
 #line 3286 "IO.chpl"
   _ref_tmp__chpl3 = &ret_chpl;
 #line 3286 "IO.chpl"
-  chpl___ASSIGN_4(_ref_tmp__chpl3, &ret_chpl2, _ln_chpl, _fn_chpl);
+  chpl___ASSIGN_3(_ref_tmp__chpl3, &ret_chpl2, _ln_chpl, _fn_chpl);
 #line 3280 "IO.chpl"
   call_tmp_chpl8 = chpl__initCopy4(&ret_chpl, _ln_chpl, _fn_chpl);
 #line 3280 "IO.chpl"

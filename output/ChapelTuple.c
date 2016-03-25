@@ -437,7 +437,7 @@ static void readWriteThis(_ref__tuple_1_star_int64_t this6, Writer f, int64_t _l
 #line 236 "ChapelTuple.chpl"
     chpl_check_nil(f, INT64(236), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelTuple.chpl");
 #line 236 "ChapelTuple.chpl"
-    readwrite(f, &start, _ln, _fn);
+    readwrite2(f, &start, _ln, _fn);
 #line 236 "ChapelTuple.chpl"
   }
 #line 239 "ChapelTuple.chpl"
@@ -445,7 +445,7 @@ static void readWriteThis(_ref__tuple_1_star_int64_t this6, Writer f, int64_t _l
 #line 239 "ChapelTuple.chpl"
   chpl_check_nil(f, INT64(239), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelTuple.chpl");
 #line 239 "ChapelTuple.chpl"
-  readwrite2(f, coerce_tmp, _ln, _fn);
+  readwrite(f, coerce_tmp, _ln, _fn);
 #line 247 "ChapelTuple.chpl"
   call_tmp6 = (! call_tmp2);
 #line 247 "ChapelTuple.chpl"
@@ -455,7 +455,7 @@ static void readWriteThis(_ref__tuple_1_star_int64_t this6, Writer f, int64_t _l
 #line 248 "ChapelTuple.chpl"
     chpl_check_nil(f, INT64(248), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelTuple.chpl");
 #line 248 "ChapelTuple.chpl"
-    readwrite(f, &end, _ln, _fn);
+    readwrite2(f, &end, _ln, _fn);
 #line 248 "ChapelTuple.chpl"
   }
 #line 214 "ChapelTuple.chpl"
