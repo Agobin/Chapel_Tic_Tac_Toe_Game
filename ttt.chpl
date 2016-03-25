@@ -8,19 +8,18 @@ var board: c_ptr(GtkWidget);
 var gameOver:bool = false;
 
 module Functions{
-/*	export proc analyseBoard( a: [] int, n: int, key: int){
-		
+	
+	/*export proc analyseBoard( a: []int, n: int, key: int): int{	
 		if( (a[0] == key && a[1] == key && a[2] == key) || (a[3] == key && a[4] == key && a[5] == key) || (a[6] == key && a[7] == key && a[8] == key) || 
 			(a[0] == key && a[4] == key && a[8] == key) || (a[0] == key && a[3] == key && a[6] == key) || (a[1] == key && a[4] == key && a[7] == key) || 
 			(a[2] == key && a[5] == key && a[8] == key) || (a[6] == key && a[4] == key && a[2] == key) ){
-			
 			return key;	
 		}
 		else{
 			return 0;
 		}
-	} */
-	export proc resetGame(btn: c_ptr(GtkWidget), data: c_void_ptr){
+	}  */
+	export proc resetGame(btn: c_ptr(GtkWidget), data: c_void_ptr): void{
 	
 		playerTime = 0;
 		
@@ -30,12 +29,13 @@ module Functions{
 		}
 		gtk_label_set_text(GTK_LABEL(output), "Player one start play");
 	}
-	export proc record_move (button: c_ptr(GtkWidget), numPtr: c_ptr(int) ){
+	
+	export proc record_move (button: c_ptr(GtkWidget), numPtr: c_ptr(int)): void{
 		
 		var num = numPtr.deref();
 		
 		if( gameOver ){
-			//resetGame(NULL, NULL);
+			resetGame(NULL, NULL);
 			gameOver = false;
 		}
 		else if( boardMatrix[num] != 0){
