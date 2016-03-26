@@ -24,7 +24,7 @@ module Functions{
 		
 		for i in 1..9{
 			boardMatrix[i] = 0;
-			gtk_button_set_label(GTK_BUTTON(button_array[i]), "");
+			gtk_button_set_label(GTK_BUTTON(button_array[i]), "");  
 		}
 		gtk_label_set_text(GTK_LABEL(output), "Player one start play");
 	}
