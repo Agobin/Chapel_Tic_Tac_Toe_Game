@@ -38,7 +38,7 @@ module Functions{
 			resetGame(button, ptr);  
 			gameOver = false;
 		}
-		else if( boardMatrix[num] != 0){
+		else if( boardMatrix[num] != 0){          
 			//Not a valid play
 			if(playCounter % 2 == 0){
 				gtk_label_set_text(GTK_LABEL(output), "   Invalid move, spot occupied, Player one play again");
