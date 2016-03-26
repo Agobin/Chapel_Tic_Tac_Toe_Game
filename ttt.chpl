@@ -35,7 +35,7 @@ module Functions{
 		var ptr: c_void_ptr;
 		
 		if( gameOver ){
-			resetGame(button, ptr);
+			resetGame(button, ptr);  
 			gameOver = false;
 		}
 		else if( boardMatrix[num] != 0){
