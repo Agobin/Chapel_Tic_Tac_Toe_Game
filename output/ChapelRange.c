@@ -24,6 +24,12 @@ static void chpl__init_ChapelRange(int64_t _ln, c_string _fn) {
 #line 86 "ChapelRange.chpl"
   chpl__init_ChapelRange_p = true;
 #line 86 "ChapelRange.chpl"
+  {
+#line 86 "ChapelRange.chpl"
+    chpl__init_Math(_ln, _fn);
+#line 86 "ChapelRange.chpl"
+  }
+#line 86 "ChapelRange.chpl"
   *(refIndentLevel) -= INT64(1);
 #line 86 "ChapelRange.chpl"
   _exit_chpl__init_ChapelRange:;
@@ -35,7 +41,7 @@ static void chpl__init_ChapelRange(int64_t _ln, c_string _fn) {
 #line 86 "ChapelRange.chpl"
 /* ChapelRange.chpl:138 */
 #line 86 "ChapelRange.chpl"
-static range_int64_t_bounded_F _construct_range(int64_t _low, int64_t _high, int64_t _stride, int64_t _alignment, chpl_bool _aligned, range_int64_t_bounded_F* const meme, int64_t _ln, c_string _fn) {
+static range_int64_t_bounded_F _construct_range2(int64_t _low, int64_t _high, int64_t _stride, int64_t _alignment, chpl_bool _aligned, range_int64_t_bounded_F* const meme, int64_t _ln, c_string _fn) {
 #line 86 "ChapelRange.chpl"
   range_int64_t_bounded_F this6;
 #line 138 "ChapelRange.chpl"
@@ -58,7 +64,7 @@ static range_int64_t_bounded_F _construct_range(int64_t _low, int64_t _high, int
 #line 138 "ChapelRange.chpl"
 /* ChapelRange.chpl:138 */
 #line 138 "ChapelRange.chpl"
-static range_int64_t_boundedLow_F _construct_range2(int64_t _low, int64_t _high, int64_t _stride, int64_t _alignment, chpl_bool _aligned, range_int64_t_boundedLow_F* const meme, int64_t _ln, c_string _fn) {
+static range_int64_t_boundedLow_F _construct_range(int64_t _low, int64_t _high, int64_t _stride, int64_t _alignment, chpl_bool _aligned, range_int64_t_boundedLow_F* const meme, int64_t _ln, c_string _fn) {
 #line 138 "ChapelRange.chpl"
   range_int64_t_boundedLow_F this6;
 #line 138 "ChapelRange.chpl"
@@ -119,7 +125,7 @@ static range_int64_t_bounded_F range2(int64_t _low, int64_t _high, int64_t _stri
 #line 174 "ChapelRange.chpl"
   (&this7)->_aligned = false;
 #line 174 "ChapelRange.chpl"
-  wrap_call_tmp = _construct_range(INT64(1), INT64(0), INT64(1), INT64(0), false, &this7, _ln, _fn);
+  wrap_call_tmp = _construct_range2(INT64(1), INT64(0), INT64(1), INT64(0), false, &this7, _ln, _fn);
 #line 174 "ChapelRange.chpl"
   this6 = wrap_call_tmp;
 #line 183 "ChapelRange.chpl"
@@ -188,7 +194,7 @@ static range_int64_t_boundedLow_F range(int64_t _low, int64_t _high, int64_t _st
 #line 174 "ChapelRange.chpl"
   (&this7)->_aligned = false;
 #line 174 "ChapelRange.chpl"
-  wrap_call_tmp = _construct_range2(INT64(1), INT64(0), INT64(1), INT64(0), false, &this7, _ln, _fn);
+  wrap_call_tmp = _construct_range(INT64(1), INT64(0), INT64(1), INT64(0), false, &this7, _ln, _fn);
 #line 174 "ChapelRange.chpl"
   this6 = wrap_call_tmp;
 #line 183 "ChapelRange.chpl"

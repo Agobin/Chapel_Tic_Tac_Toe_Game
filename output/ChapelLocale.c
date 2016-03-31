@@ -1264,7 +1264,7 @@ static void chpl_rootLocaleInitPrivate(int64_t locIdx, int64_t _ln, c_string _fn
 #line 340 "ChapelLocale.chpl"
     rootLocale = call_tmp13;
 #line 330 "ChapelLocale.chpl"
-    chpl__autoDestroy3(call_tmp7, _ln, _fn);
+    chpl__autoDestroy5(call_tmp7, _ln, _fn);
 #line 330 "ChapelLocale.chpl"
   }
 #line 342 "ChapelLocale.chpl"

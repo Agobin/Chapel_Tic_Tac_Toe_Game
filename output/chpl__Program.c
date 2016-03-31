@@ -42,6 +42,8 @@ void chpl__init_preInit(int64_t _ln, c_string _fn) {
   chpl__init_ChapelTuple_p = false;
 #line 86 "ChapelRange.chpl"
   chpl__init_ChapelRange_p = false;
+#line 40 "ChapelSyncvar.chpl"
+  chpl__init_ChapelSyncvar_p = false;
 #line 29 "LocaleModel.chpl"
   chpl__init_LocaleModel_p = false;
 #line 22 "ChapelLocale.chpl"
@@ -70,20 +72,26 @@ void chpl__init_preInit(int64_t _ln, c_string _fn) {
   chpl__init_ChapelDynDispHack_p = false;
 #line 22 "ChapelNumLocales.chpl"
   chpl__init_ChapelNumLocales_p = false;
-#line 94 "ttt.chpl"
+#line 106 "ttt.chpl"
   chpl__init_FunctionSysbols_p = false;
 #line 1 "ttt.chpl"
   chpl__init_ttt_p = false;
 #line 1 "gtk.chpl"
   chpl__init_gtk_p = false;
+#line 84 "Random.chpl"
+  chpl__init_Random_p = false;
 #line 1 "gtk_types.chpl"
   chpl__init_gtk_types_p = false;
+#line 30 "Time.chpl"
+  chpl__init_Time_p = false;
 #line 72 "NewString.chpl"
   chpl__init_BaseStringType_p = false;
 #line 108 "NewString.chpl"
   chpl__init_NewString_p = false;
 #line 29 "Assert.chpl"
   chpl__init_Assert_p = false;
+#line 47 "Math.chpl"
+  chpl__init_Math_p = false;
 #line 169 "CommDiagnostics.chpl"
   chpl__init_CommDiagnostics_p = false;
 #line 44 "Sys.chpl"

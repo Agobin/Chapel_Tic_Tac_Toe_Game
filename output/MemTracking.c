@@ -95,7 +95,7 @@ static void chpl__init_MemTracking(int64_t _ln, c_string _fn) {
 #line 25 "MemTracking.chpl"
     call_tmp3 = chpl_config_get_value("memTrack", "Built-in");
 #line 25 "MemTracking.chpl"
-    const_tmp = _command_line_cast13(call_tmp3, _ln, _fn);
+    const_tmp = _command_line_cast3(call_tmp3, _ln, _fn);
 #line 25 "MemTracking.chpl"
   }
 #line 25 "MemTracking.chpl"
@@ -117,7 +117,7 @@ static void chpl__init_MemTracking(int64_t _ln, c_string _fn) {
 #line 26 "MemTracking.chpl"
     call_tmp6 = chpl_config_get_value("memStats", "Built-in");
 #line 26 "MemTracking.chpl"
-    const_tmp2 = _command_line_cast12(call_tmp6, _ln, _fn);
+    const_tmp2 = _command_line_cast4(call_tmp6, _ln, _fn);
 #line 26 "MemTracking.chpl"
   }
 #line 26 "MemTracking.chpl"
@@ -139,7 +139,7 @@ static void chpl__init_MemTracking(int64_t _ln, c_string _fn) {
 #line 27 "MemTracking.chpl"
     call_tmp9 = chpl_config_get_value("memLeaksByType", "Built-in");
 #line 27 "MemTracking.chpl"
-    const_tmp3 = _command_line_cast11(call_tmp9, _ln, _fn);
+    const_tmp3 = _command_line_cast6(call_tmp9, _ln, _fn);
 #line 27 "MemTracking.chpl"
   }
 #line 27 "MemTracking.chpl"
@@ -161,7 +161,7 @@ static void chpl__init_MemTracking(int64_t _ln, c_string _fn) {
 #line 28 "MemTracking.chpl"
     call_tmp12 = chpl_config_get_value("memLeaks", "Built-in");
 #line 28 "MemTracking.chpl"
-    const_tmp4 = _command_line_cast10(call_tmp12, _ln, _fn);
+    const_tmp4 = _command_line_cast8(call_tmp12, _ln, _fn);
 #line 28 "MemTracking.chpl"
   }
 #line 28 "MemTracking.chpl"
@@ -209,7 +209,7 @@ static void chpl__init_MemTracking(int64_t _ln, c_string _fn) {
 #line 30 "MemTracking.chpl"
     call_tmp20 = chpl_config_get_value("memThreshold", "Built-in");
 #line 30 "MemTracking.chpl"
-    const_tmp6 = _command_line_cast8(call_tmp20, _ln, _fn);
+    const_tmp6 = _command_line_cast12(call_tmp20, _ln, _fn);
 #line 30 "MemTracking.chpl"
   }
 #line 30 "MemTracking.chpl"
@@ -231,7 +231,7 @@ static void chpl__init_MemTracking(int64_t _ln, c_string _fn) {
 #line 31 "MemTracking.chpl"
     call_tmp23 = chpl_config_get_value("memLog", "Built-in");
 #line 31 "MemTracking.chpl"
-    const_tmp7 = _command_line_cast(call_tmp23);
+    const_tmp7 = _command_line_cast13(call_tmp23);
 #line 31 "MemTracking.chpl"
   }
 #line 31 "MemTracking.chpl"
@@ -253,7 +253,7 @@ static void chpl__init_MemTracking(int64_t _ln, c_string _fn) {
 #line 35 "MemTracking.chpl"
     call_tmp26 = chpl_config_get_value("memLeaksLog", "Built-in");
 #line 35 "MemTracking.chpl"
-    const_tmp8 = _command_line_cast6(call_tmp26);
+    const_tmp8 = _command_line_cast14(call_tmp26);
 #line 35 "MemTracking.chpl"
   }
 #line 35 "MemTracking.chpl"
@@ -275,7 +275,7 @@ static void chpl__init_MemTracking(int64_t _ln, c_string _fn) {
 #line 52 "MemTracking.chpl"
     call_tmp29 = chpl_config_get_value("memLeaksByDesc", "Built-in");
 #line 52 "MemTracking.chpl"
-    const_tmp9 = _command_line_cast5(call_tmp29);
+    const_tmp9 = _command_line_cast11(call_tmp29);
 #line 52 "MemTracking.chpl"
   }
 #line 52 "MemTracking.chpl"
@@ -295,7 +295,7 @@ static void chpl__init_MemTracking(int64_t _ln, c_string _fn) {
 #line 60 "MemTracking.chpl"
   _ref_tmp_ = &type_tmp;
 #line 60 "MemTracking.chpl"
-  chpl___ASSIGN_6(_ref_tmp_, memLeaksByDesc, _ln, _fn);
+  chpl___ASSIGN_7(_ref_tmp_, memLeaksByDesc, _ln, _fn);
 #line 60 "MemTracking.chpl"
   s_memLeaksByDesc = type_tmp;
 #line 61 "MemTracking.chpl"
@@ -305,7 +305,7 @@ static void chpl__init_MemTracking(int64_t _ln, c_string _fn) {
 #line 61 "MemTracking.chpl"
   _ref_tmp_2 = &type_tmp2;
 #line 61 "MemTracking.chpl"
-  chpl___ASSIGN_6(_ref_tmp_2, memLog, _ln, _fn);
+  chpl___ASSIGN_7(_ref_tmp_2, memLog, _ln, _fn);
 #line 61 "MemTracking.chpl"
   s_memLog = type_tmp2;
 #line 62 "MemTracking.chpl"
@@ -315,7 +315,7 @@ static void chpl__init_MemTracking(int64_t _ln, c_string _fn) {
 #line 62 "MemTracking.chpl"
   _ref_tmp_3 = &type_tmp3;
 #line 62 "MemTracking.chpl"
-  chpl___ASSIGN_6(_ref_tmp_3, memLeaksLog, _ln, _fn);
+  chpl___ASSIGN_7(_ref_tmp_3, memLeaksLog, _ln, _fn);
 #line 62 "MemTracking.chpl"
   s_memLeaksLog = type_tmp3;
 #line 22 "MemTracking.chpl"

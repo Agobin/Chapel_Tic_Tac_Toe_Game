@@ -238,7 +238,7 @@ static void chpl__init_IO(int64_t _ln_chpl, c_string _fn_chpl) {
 #line 4491 "IO.chpl"
   (&this_chpl)->_channel_internal_chpl = default_arg_channel_internal_chpl;
 #line 4491 "IO.chpl"
-  wrap_call_tmp_chpl = _construct_channel_chpl(call_tmp_chpl11, default_arg_channel_internal_chpl, &this_chpl, _ln_chpl, _fn_chpl);
+  wrap_call_tmp_chpl = _construct_channel_chpl2(call_tmp_chpl11, default_arg_channel_internal_chpl, &this_chpl, _ln_chpl, _fn_chpl);
 #line 4491 "IO.chpl"
   type_tmp_chpl5 = wrap_call_tmp_chpl;
 #line 4491 "IO.chpl"
@@ -278,7 +278,7 @@ static void chpl__init_IO(int64_t _ln_chpl, c_string _fn_chpl) {
 #line 4491 "IO.chpl"
   reader_chpl2(_ref_tmp__chpl6, INT64(0), INT64(9223372036854775807), default_arghints_chpl2, &default_argstyle_chpl2, ret_to_arg_ref_tmp__chpl4, _ln_chpl, _fn_chpl);
 #line 4491 "IO.chpl"
-  call_tmp_chpl16 = chpl__initCopy5(&wrap_call_tmp_chpl3, _ln_chpl, _fn_chpl);
+  call_tmp_chpl16 = chpl__initCopy4(&wrap_call_tmp_chpl3, _ln_chpl, _fn_chpl);
 #line 4491 "IO.chpl"
   call_tmp_chpl15 = call_tmp_chpl16;
 #line 4491 "IO.chpl"
@@ -310,7 +310,7 @@ static void chpl__init_IO(int64_t _ln_chpl, c_string _fn_chpl) {
 #line 4493 "IO.chpl"
   (&this_chpl2)->_channel_internal_chpl = default_arg_channel_internal_chpl2;
 #line 4493 "IO.chpl"
-  wrap_call_tmp_chpl4 = _construct_channel_chpl2(call_tmp_chpl17, default_arg_channel_internal_chpl2, &this_chpl2, _ln_chpl, _fn_chpl);
+  wrap_call_tmp_chpl4 = _construct_channel_chpl(call_tmp_chpl17, default_arg_channel_internal_chpl2, &this_chpl2, _ln_chpl, _fn_chpl);
 #line 4493 "IO.chpl"
   type_tmp_chpl6 = wrap_call_tmp_chpl4;
 #line 4493 "IO.chpl"
@@ -350,7 +350,7 @@ static void chpl__init_IO(int64_t _ln_chpl, c_string _fn_chpl) {
 #line 4493 "IO.chpl"
   writer_chpl2(_ref_tmp__chpl12, INT64(0), INT64(9223372036854775807), call_tmp_chpl22, &default_argstyle_chpl4, ret_to_arg_ref_tmp__chpl8, _ln_chpl, _fn_chpl);
 #line 4493 "IO.chpl"
-  call_tmp_chpl23 = chpl__initCopy4(&wrap_call_tmp_chpl6, _ln_chpl, _fn_chpl);
+  call_tmp_chpl23 = chpl__initCopy5(&wrap_call_tmp_chpl6, _ln_chpl, _fn_chpl);
 #line 4493 "IO.chpl"
   call_tmp_chpl21 = call_tmp_chpl23;
 #line 4493 "IO.chpl"
@@ -360,7 +360,7 @@ static void chpl__init_IO(int64_t _ln_chpl, c_string _fn_chpl) {
 #line 4493 "IO.chpl"
   _ref_tmp__chpl14 = &type_tmp_chpl6;
 #line 4493 "IO.chpl"
-  chpl___ASSIGN_3(_ref_tmp__chpl14, &call_tmp_chpl23, _ln_chpl, _fn_chpl);
+  chpl___ASSIGN_5(_ref_tmp__chpl14, &call_tmp_chpl23, _ln_chpl, _fn_chpl);
 #line 4493 "IO.chpl"
   _ref_tmp__chpl15 = &call_tmp_chpl21;
 #line 4493 "IO.chpl"
@@ -382,7 +382,7 @@ static void chpl__init_IO(int64_t _ln_chpl, c_string _fn_chpl) {
 #line 4495 "IO.chpl"
   (&this_chpl3)->_channel_internal_chpl = default_arg_channel_internal_chpl3;
 #line 4495 "IO.chpl"
-  wrap_call_tmp_chpl7 = _construct_channel_chpl2(call_tmp_chpl24, default_arg_channel_internal_chpl3, &this_chpl3, _ln_chpl, _fn_chpl);
+  wrap_call_tmp_chpl7 = _construct_channel_chpl(call_tmp_chpl24, default_arg_channel_internal_chpl3, &this_chpl3, _ln_chpl, _fn_chpl);
 #line 4495 "IO.chpl"
   type_tmp_chpl7 = wrap_call_tmp_chpl7;
 #line 4495 "IO.chpl"
@@ -422,7 +422,7 @@ static void chpl__init_IO(int64_t _ln_chpl, c_string _fn_chpl) {
 #line 4495 "IO.chpl"
   writer_chpl2(_ref_tmp__chpl18, INT64(0), INT64(9223372036854775807), call_tmp_chpl29, &default_argstyle_chpl6, ret_to_arg_ref_tmp__chpl12, _ln_chpl, _fn_chpl);
 #line 4495 "IO.chpl"
-  call_tmp_chpl30 = chpl__initCopy4(&wrap_call_tmp_chpl9, _ln_chpl, _fn_chpl);
+  call_tmp_chpl30 = chpl__initCopy5(&wrap_call_tmp_chpl9, _ln_chpl, _fn_chpl);
 #line 4495 "IO.chpl"
   call_tmp_chpl28 = call_tmp_chpl30;
 #line 4495 "IO.chpl"
@@ -432,7 +432,7 @@ static void chpl__init_IO(int64_t _ln_chpl, c_string _fn_chpl) {
 #line 4495 "IO.chpl"
   _ref_tmp__chpl20 = &type_tmp_chpl7;
 #line 4495 "IO.chpl"
-  chpl___ASSIGN_3(_ref_tmp__chpl20, &call_tmp_chpl30, _ln_chpl, _fn_chpl);
+  chpl___ASSIGN_5(_ref_tmp__chpl20, &call_tmp_chpl30, _ln_chpl, _fn_chpl);
 #line 4495 "IO.chpl"
   _ref_tmp__chpl21 = &call_tmp_chpl28;
 #line 4495 "IO.chpl"
@@ -510,7 +510,7 @@ static file_chpl chpl__initCopy3(file_chpl* const x_chpl, int64_t _ln_chpl, c_st
 #line 1964 "IO.chpl"
 /* IO.chpl:1972 */
 #line 1964 "IO.chpl"
-static void chpl___ASSIGN_2(_ref_file ret_chpl, file_chpl* const x_chpl, int64_t _ln_chpl, c_string _fn_chpl) {
+static void chpl___ASSIGN_3(_ref_file ret_chpl, file_chpl* const x_chpl, int64_t _ln_chpl, c_string _fn_chpl) {
 #line 1964 "IO.chpl"
   qio_file_ptr_t ret_chpl2;
 #line 1964 "IO.chpl"
@@ -1020,7 +1020,7 @@ static void openfd_chpl(int32_t fd_chpl, _ref_syserr error_chpl, int32_t hints_c
 #line 2386 "IO.chpl"
   _ref_tmp__chpl2 = &ret_chpl;
 #line 2386 "IO.chpl"
-  chpl___ASSIGN_2(_ref_tmp__chpl2, &ret_chpl2, _ln_chpl, _fn_chpl);
+  chpl___ASSIGN_3(_ref_tmp__chpl2, &ret_chpl2, _ln_chpl, _fn_chpl);
 #line 2379 "IO.chpl"
   *(_retArg_chpl) = chpl__initCopy3(&ret_chpl, _ln_chpl, _fn_chpl);
 #line 2379 "IO.chpl"
@@ -1247,7 +1247,7 @@ static void openfd_chpl2(int32_t fd_chpl, int32_t hints_chpl, iostyle* const sty
 #line 2402 "IO.chpl"
   _ref_tmp__chpl7 = &ret_chpl;
 #line 2402 "IO.chpl"
-  chpl___ASSIGN_2(_ref_tmp__chpl7, &ret_chpl2, _ln_chpl, _fn_chpl);
+  chpl___ASSIGN_3(_ref_tmp__chpl7, &ret_chpl2, _ln_chpl, _fn_chpl);
 #line 2391 "IO.chpl"
   call_tmp_chpl21 = chpl__initCopy3(&ret_chpl, _ln_chpl, _fn_chpl);
 #line 2391 "IO.chpl"
@@ -1410,7 +1410,7 @@ static void openfp_chpl(_cfile fp_chpl, _ref_syserr error_chpl, int32_t hints_ch
 #line 2441 "IO.chpl"
   _ref_tmp__chpl2 = &ret_chpl;
 #line 2441 "IO.chpl"
-  chpl___ASSIGN_2(_ref_tmp__chpl2, &ret_chpl2, _ln_chpl, _fn_chpl);
+  chpl___ASSIGN_3(_ref_tmp__chpl2, &ret_chpl2, _ln_chpl, _fn_chpl);
 #line 2434 "IO.chpl"
   *(_retArg_chpl) = chpl__initCopy3(&ret_chpl, _ln_chpl, _fn_chpl);
 #line 2434 "IO.chpl"
@@ -1637,7 +1637,7 @@ static void openfp_chpl2(_cfile fp_chpl, int32_t hints_chpl, iostyle* const styl
 #line 2457 "IO.chpl"
   _ref_tmp__chpl7 = &ret_chpl;
 #line 2457 "IO.chpl"
-  chpl___ASSIGN_2(_ref_tmp__chpl7, &ret_chpl2, _ln_chpl, _fn_chpl);
+  chpl___ASSIGN_3(_ref_tmp__chpl7, &ret_chpl2, _ln_chpl, _fn_chpl);
 #line 2446 "IO.chpl"
   call_tmp_chpl21 = chpl__initCopy3(&ret_chpl, _ln_chpl, _fn_chpl);
 #line 2446 "IO.chpl"
@@ -1660,9 +1660,9 @@ static void openfp_chpl2(_cfile fp_chpl, int32_t hints_chpl, iostyle* const styl
 #line 2446 "IO.chpl"
 /* IO.chpl:2567 */
 #line 2446 "IO.chpl"
-static channel_T_dynamic_T_chpl _construct_channel_chpl2(locale home_chpl, qio_channel_ptr_t _channel_internal_chpl, channel_T_dynamic_T_chpl* const meme_chpl, int64_t _ln_chpl, c_string _fn_chpl) {
+static channel_F_dynamic_T_chpl _construct_channel_chpl2(locale home_chpl, qio_channel_ptr_t _channel_internal_chpl, channel_F_dynamic_T_chpl* const meme_chpl, int64_t _ln_chpl, c_string _fn_chpl) {
 #line 2446 "IO.chpl"
-  channel_T_dynamic_T_chpl this_chpl;
+  channel_F_dynamic_T_chpl this_chpl;
 #line 2567 "IO.chpl"
   this_chpl = *(meme_chpl);
 #line 2584 "IO.chpl"
@@ -1677,9 +1677,9 @@ static channel_T_dynamic_T_chpl _construct_channel_chpl2(locale home_chpl, qio_c
 #line 2567 "IO.chpl"
 /* IO.chpl:2567 */
 #line 2567 "IO.chpl"
-static channel_F_dynamic_T_chpl _construct_channel_chpl(locale home_chpl, qio_channel_ptr_t _channel_internal_chpl, channel_F_dynamic_T_chpl* const meme_chpl, int64_t _ln_chpl, c_string _fn_chpl) {
+static channel_T_dynamic_T_chpl _construct_channel_chpl(locale home_chpl, qio_channel_ptr_t _channel_internal_chpl, channel_T_dynamic_T_chpl* const meme_chpl, int64_t _ln_chpl, c_string _fn_chpl) {
 #line 2567 "IO.chpl"
-  channel_F_dynamic_T_chpl this_chpl;
+  channel_T_dynamic_T_chpl this_chpl;
 #line 2567 "IO.chpl"
   this_chpl = *(meme_chpl);
 #line 2584 "IO.chpl"
@@ -1694,7 +1694,7 @@ static channel_F_dynamic_T_chpl _construct_channel_chpl(locale home_chpl, qio_ch
 #line 2567 "IO.chpl"
 /* IO.chpl:2592 */
 #line 2567 "IO.chpl"
-static channel_F_dynamic_T_chpl chpl__initCopy5(channel_F_dynamic_T_chpl* const x_chpl, int64_t _ln_chpl, c_string _fn_chpl) {
+static channel_F_dynamic_T_chpl chpl__initCopy4(channel_F_dynamic_T_chpl* const x_chpl, int64_t _ln_chpl, c_string _fn_chpl) {
 #line 2567 "IO.chpl"
   qio_channel_ptr_t ret_chpl;
 #line 2594 "IO.chpl"
@@ -1709,7 +1709,7 @@ static channel_F_dynamic_T_chpl chpl__initCopy5(channel_F_dynamic_T_chpl* const 
 #line 2592 "IO.chpl"
 /* IO.chpl:2592 */
 #line 2592 "IO.chpl"
-static channel_T_dynamic_T_chpl chpl__initCopy4(channel_T_dynamic_T_chpl* const x_chpl, int64_t _ln_chpl, c_string _fn_chpl) {
+static channel_T_dynamic_T_chpl chpl__initCopy5(channel_T_dynamic_T_chpl* const x_chpl, int64_t _ln_chpl, c_string _fn_chpl) {
 #line 2592 "IO.chpl"
   qio_channel_ptr_t ret_chpl;
 #line 2594 "IO.chpl"
@@ -1771,7 +1771,7 @@ static void chpl___ASSIGN_4(_ref_channel_F_dynamic_T ret_chpl, channel_F_dynamic
 #line 2600 "IO.chpl"
 /* IO.chpl:2600 */
 #line 2600 "IO.chpl"
-static void chpl___ASSIGN_3(_ref_channel_T_dynamic_T ret_chpl, channel_T_dynamic_T_chpl* const x_chpl, int64_t _ln_chpl, c_string _fn_chpl) {
+static void chpl___ASSIGN_5(_ref_channel_T_dynamic_T ret_chpl, channel_T_dynamic_T_chpl* const x_chpl, int64_t _ln_chpl, c_string _fn_chpl) {
 #line 2600 "IO.chpl"
   qio_channel_ptr_t ret_chpl2;
 #line 2600 "IO.chpl"
@@ -1818,7 +1818,7 @@ static void chpl___ASSIGN_3(_ref_channel_T_dynamic_T ret_chpl, channel_T_dynamic
 #line 2600 "IO.chpl"
 /* IO.chpl:2615 */
 #line 2600 "IO.chpl"
-static channel_F_dynamic_T_chpl channel_chpl2(file_chpl* const f_chpl, _ref_syserr error_chpl, int32_t hints_chpl, int64_t start_chpl, int64_t end_chpl, iostyle* const local_style_chpl, int64_t _ln_chpl, c_string _fn_chpl) {
+static channel_F_dynamic_T_chpl channel_chpl(file_chpl* const f_chpl, _ref_syserr error_chpl, int32_t hints_chpl, int64_t start_chpl, int64_t end_chpl, iostyle* const local_style_chpl, int64_t _ln_chpl, c_string _fn_chpl) {
 #line 2600 "IO.chpl"
   qio_channel_ptr_t local_QIO_CHANNEL_PTR_NULL_chpl;
 #line 2600 "IO.chpl"
@@ -1864,7 +1864,7 @@ static channel_F_dynamic_T_chpl channel_chpl2(file_chpl* const f_chpl, _ref_syse
 #line 2615 "IO.chpl"
   (&this_chpl2)->_channel_internal_chpl = default_arg_channel_internal_chpl;
 #line 2615 "IO.chpl"
-  wrap_call_tmp_chpl = _construct_channel_chpl(call_tmp_chpl, default_arg_channel_internal_chpl, &this_chpl2, _ln_chpl, _fn_chpl);
+  wrap_call_tmp_chpl = _construct_channel_chpl2(call_tmp_chpl, default_arg_channel_internal_chpl, &this_chpl2, _ln_chpl, _fn_chpl);
 #line 2615 "IO.chpl"
   this_chpl = wrap_call_tmp_chpl;
 #line 2617 "IO.chpl"
@@ -1895,7 +1895,7 @@ static channel_F_dynamic_T_chpl channel_chpl2(file_chpl* const f_chpl, _ref_syse
 #line 2615 "IO.chpl"
 /* IO.chpl:2615 */
 #line 2615 "IO.chpl"
-static channel_T_dynamic_T_chpl channel_chpl(file_chpl* const f_chpl, _ref_syserr error_chpl, int32_t hints_chpl, int64_t start_chpl, int64_t end_chpl, iostyle* const local_style_chpl, int64_t _ln_chpl, c_string _fn_chpl) {
+static channel_T_dynamic_T_chpl channel_chpl2(file_chpl* const f_chpl, _ref_syserr error_chpl, int32_t hints_chpl, int64_t start_chpl, int64_t end_chpl, iostyle* const local_style_chpl, int64_t _ln_chpl, c_string _fn_chpl) {
 #line 2615 "IO.chpl"
   qio_channel_ptr_t local_QIO_CHANNEL_PTR_NULL_chpl;
 #line 2615 "IO.chpl"
@@ -1941,7 +1941,7 @@ static channel_T_dynamic_T_chpl channel_chpl(file_chpl* const f_chpl, _ref_syser
 #line 2615 "IO.chpl"
   (&this_chpl2)->_channel_internal_chpl = default_arg_channel_internal_chpl;
 #line 2615 "IO.chpl"
-  wrap_call_tmp_chpl = _construct_channel_chpl2(call_tmp_chpl, default_arg_channel_internal_chpl, &this_chpl2, _ln_chpl, _fn_chpl);
+  wrap_call_tmp_chpl = _construct_channel_chpl(call_tmp_chpl, default_arg_channel_internal_chpl, &this_chpl2, _ln_chpl, _fn_chpl);
 #line 2615 "IO.chpl"
   this_chpl = wrap_call_tmp_chpl;
 #line 2617 "IO.chpl"
@@ -2028,10 +2028,25 @@ static void chpl___TILDE_channel2(_ref_channel_T_dynamic_T this_chpl, int64_t _l
 }
 
 #line 2629 "IO.chpl"
+/* IO.chpl:2673 */
+#line 2629 "IO.chpl"
+static ioNewline_chpl _construct_ioNewline_chpl(chpl_bool skipWhitespaceOnly_chpl, ioNewline_chpl* const meme_chpl, int64_t _ln_chpl, c_string _fn_chpl) {
+#line 2629 "IO.chpl"
+  ioNewline_chpl this_chpl;
+#line 2673 "IO.chpl"
+  this_chpl = *(meme_chpl);
+#line 2679 "IO.chpl"
+  (&this_chpl)->skipWhitespaceOnly_chpl = skipWhitespaceOnly_chpl;
+#line 2673 "IO.chpl"
+  return this_chpl;
+#line 2673 "IO.chpl"
+}
+
+#line 2673 "IO.chpl"
 /* IO.chpl:2707 */
-#line 2629 "IO.chpl"
+#line 2673 "IO.chpl"
 static ioLiteral_chpl _construct_ioLiteral_chpl(c_string val_chpl, chpl_bool ignoreWhiteSpace_chpl, ioLiteral_chpl* const meme_chpl, int64_t _ln_chpl, c_string _fn_chpl) {
-#line 2629 "IO.chpl"
+#line 2673 "IO.chpl"
   ioLiteral_chpl this_chpl;
 #line 2707 "IO.chpl"
   this_chpl = *(meme_chpl);
@@ -2047,7 +2062,7 @@ static ioLiteral_chpl _construct_ioLiteral_chpl(c_string val_chpl, chpl_bool ign
 #line 2707 "IO.chpl"
 /* IO.chpl:2707 */
 #line 2707 "IO.chpl"
-static void chpl___ASSIGN_5(_ref_ioLiteral _arg1_chpl, ioLiteral_chpl* const _arg2_chpl, int64_t _ln_chpl, c_string _fn_chpl) {
+static void chpl___ASSIGN_6(_ref_ioLiteral _arg1_chpl, ioLiteral_chpl* const _arg2_chpl, int64_t _ln_chpl, c_string _fn_chpl) {
 #line 2707 "IO.chpl"
   _ref_c_string call_tmp_chpl = NULL;
 #line 2707 "IO.chpl"
@@ -2078,50 +2093,151 @@ static void chpl___ASSIGN_5(_ref_ioLiteral _arg1_chpl, ioLiteral_chpl* const _ar
 }
 
 #line 2707 "IO.chpl"
+/* IO.chpl:2757 */
+#line 2707 "IO.chpl"
+static void _ch_ioerror_chpl(_ref_channel_T_dynamic_T this_chpl, syserr error_chpl, chpl_string msg_chpl, int64_t _ln_chpl, c_string _fn_chpl) {
+#line 2707 "IO.chpl"
+  chpl_string path_chpl;
+#line 2707 "IO.chpl"
+  chpl_string type_tmp_chpl;
+#line 2707 "IO.chpl"
+  chpl_string ret_chpl;
+#line 2707 "IO.chpl"
+  _ref_chpl_string _ref_tmp__chpl = NULL;
+#line 2707 "IO.chpl"
+  chpl_string call_tmp_chpl;
+#line 2707 "IO.chpl"
+  int64_t offset_chpl;
+#line 2707 "IO.chpl"
+  c_string tmp_path_chpl;
+#line 2707 "IO.chpl"
+  int64_t tmp_offset_chpl;
+#line 2707 "IO.chpl"
+  syserr type_tmp_chpl2;
+#line 2707 "IO.chpl"
+  _ref_syserr _ref_tmp__chpl2 = NULL;
+#line 2707 "IO.chpl"
+  syserr call_tmp_chpl2;
+#line 2707 "IO.chpl"
+  qio_channel_ptr_t ret_chpl2;
+#line 2707 "IO.chpl"
+  syserr call_tmp_chpl3;
+#line 2707 "IO.chpl"
+  int32_t call_tmp_chpl4;
+#line 2707 "IO.chpl"
+  _ref_c_string _ref_tmp__chpl3 = NULL;
+#line 2707 "IO.chpl"
+  _ref_int64_t _ref_tmp__chpl4 = NULL;
+#line 2707 "IO.chpl"
+  int32_t call_tmp_chpl5;
+#line 2707 "IO.chpl"
+  chpl_bool call_tmp_chpl6;
+#line 2707 "IO.chpl"
+  chpl_string call_tmp_chpl7;
+#line 2758 "IO.chpl"
+  ret_chpl = defaultStringValue;
+#line 2758 "IO.chpl"
+  type_tmp_chpl = ret_chpl;
+#line 2758 "IO.chpl"
+  _ref_tmp__chpl = &type_tmp_chpl;
+#line 2758 "IO.chpl"
+  string_from_c_string(&call_tmp_chpl, "unknown", INT64(0), INT64(0), _ln_chpl, _fn_chpl);
+#line 2758 "IO.chpl"
+  *(_ref_tmp__chpl) = call_tmp_chpl;
+#line 2758 "IO.chpl"
+  path_chpl = type_tmp_chpl;
+#line 2759 "IO.chpl"
+  offset_chpl = INT64(-1);
+#line 2761 "IO.chpl"
+  tmp_path_chpl = "";
+#line 2762 "IO.chpl"
+  tmp_offset_chpl = INT64(0);
+#line 2763 "IO.chpl"
+  _ref_tmp__chpl2 = &type_tmp_chpl2;
+#line 2763 "IO.chpl"
+  call_tmp_chpl2 = qio_int_to_err(INT32(0));
+#line 2763 "IO.chpl"
+  *(_ref_tmp__chpl2) = call_tmp_chpl2;
+#line 2764 "IO.chpl"
+  chpl_check_nil(this_chpl, INT64(2764), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/standard/IO.chpl");
+#line 2764 "IO.chpl"
+  ret_chpl2 = (this_chpl)->_channel_internal_chpl;
+#line 2764 "IO.chpl"
+  call_tmp_chpl4 = ((int32_t)(true));
+#line 2764 "IO.chpl"
+  _ref_tmp__chpl3 = &tmp_path_chpl;
+#line 2764 "IO.chpl"
+  _ref_tmp__chpl4 = &tmp_offset_chpl;
+#line 2764 "IO.chpl"
+  call_tmp_chpl3 = qio_channel_path_offset(call_tmp_chpl4, ret_chpl2, _ref_tmp__chpl3, _ref_tmp__chpl4);
+#line 2765 "IO.chpl"
+  call_tmp_chpl5 = qio_err_iserr(call_tmp_chpl3);
+#line 2765 "IO.chpl"
+  call_tmp_chpl6 = (call_tmp_chpl5 == INT32(0));
+#line 2765 "IO.chpl"
+  if (call_tmp_chpl6) /* ZLINE: 2766 /home/agobin/Documents/GitHub/chapel-1.12.0/modules/standard/IO.chpl */
+#line 2765 "IO.chpl"
+  {
+#line 2766 "IO.chpl"
+    string_from_c_string(&call_tmp_chpl7, tmp_path_chpl, INT64(0), INT64(0), _ln_chpl, _fn_chpl);
+#line 2766 "IO.chpl"
+    path_chpl = call_tmp_chpl7;
+#line 2767 "IO.chpl"
+    offset_chpl = tmp_offset_chpl;
+#line 2767 "IO.chpl"
+  }
+#line 2770 "IO.chpl"
+  ioerror_chpl2(error_chpl, msg_chpl, path_chpl, offset_chpl, _ln_chpl, _fn_chpl);
+#line 2757 "IO.chpl"
+  return;
+#line 2757 "IO.chpl"
+}
+
+#line 2757 "IO.chpl"
 /* IO.chpl:3168 */
-#line 2707 "IO.chpl"
+#line 2757 "IO.chpl"
 static void reader_chpl(_ref_file this_chpl, _ref_syserr error_chpl, int64_t start_chpl, int64_t end_chpl, int32_t hints_chpl, iostyle* const style_chpl, _ref_channel_F_dynamic_T _retArg_chpl, int64_t _ln_chpl, c_string _fn_chpl) {
-#line 2707 "IO.chpl"
+#line 2757 "IO.chpl"
   qio_channel_ptr_t local_QIO_CHANNEL_PTR_NULL_chpl;
-#line 2707 "IO.chpl"
+#line 2757 "IO.chpl"
   syserr _formal_tmp_error_chpl;
-#line 2707 "IO.chpl"
+#line 2757 "IO.chpl"
   channel_F_dynamic_T_chpl ret_chpl;
-#line 2707 "IO.chpl"
+#line 2757 "IO.chpl"
   channel_F_dynamic_T_chpl this_chpl2;
-#line 2707 "IO.chpl"
+#line 2757 "IO.chpl"
   locale call_tmp_chpl = NULL;
-#line 2707 "IO.chpl"
+#line 2757 "IO.chpl"
   qio_channel_ptr_t default_arg_channel_internal_chpl;
-#line 2707 "IO.chpl"
+#line 2757 "IO.chpl"
   channel_F_dynamic_T_chpl wrap_call_tmp_chpl;
-#line 2707 "IO.chpl"
+#line 2757 "IO.chpl"
   channel_F_dynamic_T_chpl ret_chpl2;
-#line 2707 "IO.chpl"
+#line 2757 "IO.chpl"
   channel_F_dynamic_T_chpl this_chpl3;
-#line 2707 "IO.chpl"
+#line 2757 "IO.chpl"
   locale call_tmp_chpl2 = NULL;
-#line 2707 "IO.chpl"
+#line 2757 "IO.chpl"
   qio_channel_ptr_t default_arg_channel_internal_chpl2;
-#line 2707 "IO.chpl"
+#line 2757 "IO.chpl"
   channel_F_dynamic_T_chpl wrap_call_tmp_chpl2;
-#line 2707 "IO.chpl"
+#line 2757 "IO.chpl"
   channel_F_dynamic_T_chpl call_tmp_chpl3;
-#line 2707 "IO.chpl"
+#line 2757 "IO.chpl"
   file_chpl coerce_tmp_chpl;
-#line 2707 "IO.chpl"
+#line 2757 "IO.chpl"
   _ref_syserr _ref_tmp__chpl = NULL;
-#line 2707 "IO.chpl"
+#line 2757 "IO.chpl"
   _ref_channel_F_dynamic_T _ref_tmp__chpl2 = NULL;
-#line 2707 "IO.chpl"
+#line 2757 "IO.chpl"
   _ref_channel_F_dynamic_T _ref_tmp__chpl3 = NULL;
-#line 2707 "IO.chpl"
+#line 2757 "IO.chpl"
   _ref_channel_F_dynamic_T _ref_tmp__chpl4 = NULL;
-#line 2707 "IO.chpl"
+#line 2757 "IO.chpl"
   _ref_channel_F_dynamic_T _ref_tmp__chpl5 = NULL;
-#line 2707 "IO.chpl"
+#line 2757 "IO.chpl"
   channel_F_dynamic_T_chpl ret_to_arg_tmp__chpl;
-#line 2707 "IO.chpl"
+#line 2757 "IO.chpl"
   _ref_channel_F_dynamic_T _ref_tmp__chpl6 = NULL;
 #line 3168 "IO.chpl"
   local_QIO_CHANNEL_PTR_NULL_chpl = QIO_CHANNEL_PTR_NULL;
@@ -2136,11 +2252,11 @@ static void reader_chpl(_ref_file this_chpl, _ref_syserr error_chpl, int64_t sta
 #line 3168 "IO.chpl"
   (&this_chpl2)->_channel_internal_chpl = default_arg_channel_internal_chpl;
 #line 3168 "IO.chpl"
-  wrap_call_tmp_chpl = _construct_channel_chpl(call_tmp_chpl, default_arg_channel_internal_chpl, &this_chpl2, _ln_chpl, _fn_chpl);
+  wrap_call_tmp_chpl = _construct_channel_chpl2(call_tmp_chpl, default_arg_channel_internal_chpl, &this_chpl2, _ln_chpl, _fn_chpl);
 #line 3168 "IO.chpl"
   ret_chpl = wrap_call_tmp_chpl;
 #line 3168 "IO.chpl"
-  *(_retArg_chpl) = chpl__initCopy5(&wrap_call_tmp_chpl, _ln_chpl, _fn_chpl);
+  *(_retArg_chpl) = chpl__initCopy4(&wrap_call_tmp_chpl, _ln_chpl, _fn_chpl);
 #line 3169 "IO.chpl"
   chpl_check_nil(this_chpl, INT64(3169), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/standard/IO.chpl");
 #line 3169 "IO.chpl"
@@ -2156,7 +2272,7 @@ static void reader_chpl(_ref_file this_chpl, _ref_syserr error_chpl, int64_t sta
 #line 3171 "IO.chpl"
   (&this_chpl3)->_channel_internal_chpl = default_arg_channel_internal_chpl2;
 #line 3171 "IO.chpl"
-  wrap_call_tmp_chpl2 = _construct_channel_chpl(call_tmp_chpl2, default_arg_channel_internal_chpl2, &this_chpl3, _ln_chpl, _fn_chpl);
+  wrap_call_tmp_chpl2 = _construct_channel_chpl2(call_tmp_chpl2, default_arg_channel_internal_chpl2, &this_chpl3, _ln_chpl, _fn_chpl);
 #line 3171 "IO.chpl"
   ret_chpl2 = wrap_call_tmp_chpl2;
 #line 3173 "IO.chpl"
@@ -2164,7 +2280,7 @@ static void reader_chpl(_ref_file this_chpl, _ref_syserr error_chpl, int64_t sta
 #line 3173 "IO.chpl"
   _ref_tmp__chpl = &_formal_tmp_error_chpl;
 #line 3173 "IO.chpl"
-  call_tmp_chpl3 = channel_chpl2(&coerce_tmp_chpl, _ref_tmp__chpl, hints_chpl, start_chpl, end_chpl, style_chpl, _ln_chpl, _fn_chpl);
+  call_tmp_chpl3 = channel_chpl(&coerce_tmp_chpl, _ref_tmp__chpl, hints_chpl, start_chpl, end_chpl, style_chpl, _ln_chpl, _fn_chpl);
 #line 3173 "IO.chpl"
   _ref_tmp__chpl2 = &ret_chpl2;
 #line 3173 "IO.chpl"
@@ -2178,7 +2294,7 @@ static void reader_chpl(_ref_file this_chpl, _ref_syserr error_chpl, int64_t sta
 #line 3175 "IO.chpl"
   chpl___ASSIGN_4(_ref_tmp__chpl4, &ret_chpl2, _ln_chpl, _fn_chpl);
 #line 3168 "IO.chpl"
-  *(_retArg_chpl) = chpl__initCopy5(&ret_chpl, _ln_chpl, _fn_chpl);
+  *(_retArg_chpl) = chpl__initCopy4(&ret_chpl, _ln_chpl, _fn_chpl);
 #line 3168 "IO.chpl"
   *(error_chpl) = _formal_tmp_error_chpl;
 #line 3171 "IO.chpl"
@@ -2259,11 +2375,11 @@ static void reader_chpl2(_ref_file this_chpl, int64_t start_chpl, int64_t end_ch
 #line 3180 "IO.chpl"
   (&this_chpl2)->_channel_internal_chpl = default_arg_channel_internal_chpl;
 #line 3180 "IO.chpl"
-  wrap_call_tmp_chpl = _construct_channel_chpl(call_tmp_chpl, default_arg_channel_internal_chpl, &this_chpl2, _ln_chpl, _fn_chpl);
+  wrap_call_tmp_chpl = _construct_channel_chpl2(call_tmp_chpl, default_arg_channel_internal_chpl, &this_chpl2, _ln_chpl, _fn_chpl);
 #line 3180 "IO.chpl"
   ret_chpl = wrap_call_tmp_chpl;
 #line 3180 "IO.chpl"
-  call_tmp_chpl2 = chpl__initCopy5(&wrap_call_tmp_chpl, _ln_chpl, _fn_chpl);
+  call_tmp_chpl2 = chpl__initCopy4(&wrap_call_tmp_chpl, _ln_chpl, _fn_chpl);
 #line 3180 "IO.chpl"
   *(_retArg_chpl) = call_tmp_chpl2;
 #line 3181 "IO.chpl"
@@ -2305,7 +2421,7 @@ static void reader_chpl2(_ref_file this_chpl, int64_t start_chpl, int64_t end_ch
 #line 3184 "IO.chpl"
   chpl___ASSIGN_4(_ref_tmp__chpl3, &ret_chpl2, _ln_chpl, _fn_chpl);
 #line 3180 "IO.chpl"
-  call_tmp_chpl8 = chpl__initCopy5(&ret_chpl, _ln_chpl, _fn_chpl);
+  call_tmp_chpl8 = chpl__initCopy4(&ret_chpl, _ln_chpl, _fn_chpl);
 #line 3180 "IO.chpl"
   *(_retArg_chpl) = call_tmp_chpl8;
 #line 3182 "IO.chpl"
@@ -2382,11 +2498,11 @@ static void writer_chpl(_ref_file this_chpl, _ref_syserr error_chpl, int64_t sta
 #line 3268 "IO.chpl"
   (&this_chpl2)->_channel_internal_chpl = default_arg_channel_internal_chpl;
 #line 3268 "IO.chpl"
-  wrap_call_tmp_chpl = _construct_channel_chpl2(call_tmp_chpl, default_arg_channel_internal_chpl, &this_chpl2, _ln_chpl, _fn_chpl);
+  wrap_call_tmp_chpl = _construct_channel_chpl(call_tmp_chpl, default_arg_channel_internal_chpl, &this_chpl2, _ln_chpl, _fn_chpl);
 #line 3268 "IO.chpl"
   ret_chpl = wrap_call_tmp_chpl;
 #line 3268 "IO.chpl"
-  *(_retArg_chpl) = chpl__initCopy4(&wrap_call_tmp_chpl, _ln_chpl, _fn_chpl);
+  *(_retArg_chpl) = chpl__initCopy5(&wrap_call_tmp_chpl, _ln_chpl, _fn_chpl);
 #line 3269 "IO.chpl"
   chpl_check_nil(this_chpl, INT64(3269), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/standard/IO.chpl");
 #line 3269 "IO.chpl"
@@ -2402,7 +2518,7 @@ static void writer_chpl(_ref_file this_chpl, _ref_syserr error_chpl, int64_t sta
 #line 3271 "IO.chpl"
   (&this_chpl3)->_channel_internal_chpl = default_arg_channel_internal_chpl2;
 #line 3271 "IO.chpl"
-  wrap_call_tmp_chpl2 = _construct_channel_chpl2(call_tmp_chpl2, default_arg_channel_internal_chpl2, &this_chpl3, _ln_chpl, _fn_chpl);
+  wrap_call_tmp_chpl2 = _construct_channel_chpl(call_tmp_chpl2, default_arg_channel_internal_chpl2, &this_chpl3, _ln_chpl, _fn_chpl);
 #line 3271 "IO.chpl"
   ret_chpl2 = wrap_call_tmp_chpl2;
 #line 3273 "IO.chpl"
@@ -2410,11 +2526,11 @@ static void writer_chpl(_ref_file this_chpl, _ref_syserr error_chpl, int64_t sta
 #line 3273 "IO.chpl"
   _ref_tmp__chpl = &_formal_tmp_error_chpl;
 #line 3273 "IO.chpl"
-  call_tmp_chpl3 = channel_chpl(&coerce_tmp_chpl, _ref_tmp__chpl, hints_chpl, start_chpl, end_chpl, style_chpl, _ln_chpl, _fn_chpl);
+  call_tmp_chpl3 = channel_chpl2(&coerce_tmp_chpl, _ref_tmp__chpl, hints_chpl, start_chpl, end_chpl, style_chpl, _ln_chpl, _fn_chpl);
 #line 3273 "IO.chpl"
   _ref_tmp__chpl2 = &ret_chpl2;
 #line 3273 "IO.chpl"
-  chpl___ASSIGN_3(_ref_tmp__chpl2, &call_tmp_chpl3, _ln_chpl, _fn_chpl);
+  chpl___ASSIGN_5(_ref_tmp__chpl2, &call_tmp_chpl3, _ln_chpl, _fn_chpl);
 #line 3273 "IO.chpl"
   _ref_tmp__chpl3 = &call_tmp_chpl3;
 #line 3273 "IO.chpl"
@@ -2422,9 +2538,9 @@ static void writer_chpl(_ref_file this_chpl, _ref_syserr error_chpl, int64_t sta
 #line 3275 "IO.chpl"
   _ref_tmp__chpl4 = &ret_chpl;
 #line 3275 "IO.chpl"
-  chpl___ASSIGN_3(_ref_tmp__chpl4, &ret_chpl2, _ln_chpl, _fn_chpl);
+  chpl___ASSIGN_5(_ref_tmp__chpl4, &ret_chpl2, _ln_chpl, _fn_chpl);
 #line 3268 "IO.chpl"
-  *(_retArg_chpl) = chpl__initCopy4(&ret_chpl, _ln_chpl, _fn_chpl);
+  *(_retArg_chpl) = chpl__initCopy5(&ret_chpl, _ln_chpl, _fn_chpl);
 #line 3268 "IO.chpl"
   *(error_chpl) = _formal_tmp_error_chpl;
 #line 3271 "IO.chpl"
@@ -2505,11 +2621,11 @@ static void writer_chpl2(_ref_file this_chpl, int64_t start_chpl, int64_t end_ch
 #line 3280 "IO.chpl"
   (&this_chpl2)->_channel_internal_chpl = default_arg_channel_internal_chpl;
 #line 3280 "IO.chpl"
-  wrap_call_tmp_chpl = _construct_channel_chpl2(call_tmp_chpl, default_arg_channel_internal_chpl, &this_chpl2, _ln_chpl, _fn_chpl);
+  wrap_call_tmp_chpl = _construct_channel_chpl(call_tmp_chpl, default_arg_channel_internal_chpl, &this_chpl2, _ln_chpl, _fn_chpl);
 #line 3280 "IO.chpl"
   ret_chpl = wrap_call_tmp_chpl;
 #line 3280 "IO.chpl"
-  call_tmp_chpl2 = chpl__initCopy4(&wrap_call_tmp_chpl, _ln_chpl, _fn_chpl);
+  call_tmp_chpl2 = chpl__initCopy5(&wrap_call_tmp_chpl, _ln_chpl, _fn_chpl);
 #line 3280 "IO.chpl"
   *(_retArg_chpl) = call_tmp_chpl2;
 #line 3282 "IO.chpl"
@@ -2549,9 +2665,9 @@ static void writer_chpl2(_ref_file this_chpl, int64_t start_chpl, int64_t end_ch
 #line 3286 "IO.chpl"
   _ref_tmp__chpl3 = &ret_chpl;
 #line 3286 "IO.chpl"
-  chpl___ASSIGN_3(_ref_tmp__chpl3, &ret_chpl2, _ln_chpl, _fn_chpl);
+  chpl___ASSIGN_5(_ref_tmp__chpl3, &ret_chpl2, _ln_chpl, _fn_chpl);
 #line 3280 "IO.chpl"
-  call_tmp_chpl8 = chpl__initCopy4(&ret_chpl, _ln_chpl, _fn_chpl);
+  call_tmp_chpl8 = chpl__initCopy5(&ret_chpl, _ln_chpl, _fn_chpl);
 #line 3280 "IO.chpl"
   *(_retArg_chpl) = call_tmp_chpl8;
 #line 3283 "IO.chpl"
@@ -2567,5 +2683,779 @@ static void writer_chpl2(_ref_file this_chpl, int64_t start_chpl, int64_t end_ch
 #line 3280 "IO.chpl"
   return;
 #line 3280 "IO.chpl"
+}
+
+#line 3280 "IO.chpl"
+/* IO.chpl:3361 */
+#line 3280 "IO.chpl"
+static syserr _write_text_internal_chpl(qio_channel_ptr_t _channel_internal_chpl, chpl_string x_chpl, int64_t _ln_chpl, c_string _fn_chpl) {
+#line 3280 "IO.chpl"
+  c_string call_tmp_chpl;
+#line 3280 "IO.chpl"
+  c_string call_tmp_chpl2;
+#line 3280 "IO.chpl"
+  int64_t call_tmp_chpl3;
+#line 3280 "IO.chpl"
+  syserr call_tmp_chpl4;
+#line 3280 "IO.chpl"
+  int32_t call_tmp_chpl5;
+#line 3387 "IO.chpl"
+  c_string_from_string(&call_tmp_chpl, &x_chpl, _ln_chpl, _fn_chpl);
+#line 3387 "IO.chpl"
+  c_string_from_string(&call_tmp_chpl2, &x_chpl, _ln_chpl, _fn_chpl);
+#line 3387 "IO.chpl"
+  call_tmp_chpl3 = string_length(call_tmp_chpl2);
+#line 3387 "IO.chpl"
+  call_tmp_chpl5 = ((int32_t)(false));
+#line 3387 "IO.chpl"
+  call_tmp_chpl4 = qio_channel_print_string(call_tmp_chpl5, _channel_internal_chpl, call_tmp_chpl, call_tmp_chpl3);
+#line 3361 "IO.chpl"
+  return call_tmp_chpl4;
+#line 3361 "IO.chpl"
+}
+
+#line 3361 "IO.chpl"
+/* IO.chpl:3697 */
+#line 3361 "IO.chpl"
+static chpl_string _args_to_proto_chpl(chpl_string _e0_args_chpl, ioNewline_chpl* const _e1_args_chpl, chpl_string preArg_chpl, int64_t _ln_chpl, c_string _fn_chpl) {
+#line 3361 "IO.chpl"
+  chpl_string ret_chpl;
+#line 3361 "IO.chpl"
+  c_string err_args_chpl;
+#line 3361 "IO.chpl"
+  c_string name_chpl;
+#line 3361 "IO.chpl"
+  chpl_string coerce_tmp_chpl;
+#line 3361 "IO.chpl"
+  _ref_c_string _ref_tmp__chpl = NULL;
+#line 3361 "IO.chpl"
+  c_string call_tmp_chpl;
+#line 3361 "IO.chpl"
+  c_string_copy cs_chpl;
+#line 3361 "IO.chpl"
+  c_string call_tmp_chpl2;
+#line 3361 "IO.chpl"
+  c_string_copy call_tmp_chpl3;
+#line 3361 "IO.chpl"
+  _ref_c_string_copy _ref_tmp__chpl2 = NULL;
+#line 3361 "IO.chpl"
+  chpl_string call_tmp_chpl4;
+#line 3361 "IO.chpl"
+  c_string_copy cs_chpl2;
+#line 3361 "IO.chpl"
+  c_string call_tmp_chpl5;
+#line 3361 "IO.chpl"
+  c_string_copy call_tmp_chpl6;
+#line 3361 "IO.chpl"
+  _ref_c_string_copy _ref_tmp__chpl3 = NULL;
+#line 3361 "IO.chpl"
+  chpl_string call_tmp_chpl7;
+#line 3361 "IO.chpl"
+  c_string_copy cs_chpl3;
+#line 3361 "IO.chpl"
+  c_string call_tmp_chpl8;
+#line 3361 "IO.chpl"
+  c_string_copy call_tmp_chpl9;
+#line 3361 "IO.chpl"
+  _ref_c_string_copy _ref_tmp__chpl4 = NULL;
+#line 3361 "IO.chpl"
+  chpl_string call_tmp_chpl10;
+#line 3361 "IO.chpl"
+  _ref_c_string _ref_tmp__chpl5 = NULL;
+#line 3361 "IO.chpl"
+  c_string_copy cs_chpl4;
+#line 3361 "IO.chpl"
+  c_string call_tmp_chpl11;
+#line 3361 "IO.chpl"
+  c_string_copy call_tmp_chpl12;
+#line 3361 "IO.chpl"
+  _ref_c_string_copy _ref_tmp__chpl6 = NULL;
+#line 3361 "IO.chpl"
+  chpl_string call_tmp_chpl13;
+#line 3361 "IO.chpl"
+  c_string call_tmp_chpl14;
+#line 3361 "IO.chpl"
+  chpl_string call_tmp_chpl15;
+#line 3361 "IO.chpl"
+  _ref_c_string _ref_tmp__chpl7 = NULL;
+#line 3361 "IO.chpl"
+  c_string_copy cs_chpl5;
+#line 3361 "IO.chpl"
+  c_string call_tmp_chpl16;
+#line 3361 "IO.chpl"
+  c_string_copy call_tmp_chpl17;
+#line 3361 "IO.chpl"
+  _ref_c_string_copy _ref_tmp__chpl8 = NULL;
+#line 3361 "IO.chpl"
+  chpl_string call_tmp_chpl18;
+#line 3361 "IO.chpl"
+  c_string call_tmp_chpl19;
+#line 3361 "IO.chpl"
+  c_string name_chpl2;
+#line 3361 "IO.chpl"
+  chpl_string coerce_tmp_chpl2;
+#line 3361 "IO.chpl"
+  _ref_c_string _ref_tmp__chpl9 = NULL;
+#line 3361 "IO.chpl"
+  c_string call_tmp_chpl20;
+#line 3361 "IO.chpl"
+  c_string_copy cs_chpl6;
+#line 3361 "IO.chpl"
+  c_string call_tmp_chpl21;
+#line 3361 "IO.chpl"
+  c_string_copy call_tmp_chpl22;
+#line 3361 "IO.chpl"
+  _ref_c_string_copy _ref_tmp__chpl10 = NULL;
+#line 3361 "IO.chpl"
+  chpl_string call_tmp_chpl23;
+#line 3361 "IO.chpl"
+  c_string_copy cs_chpl7;
+#line 3361 "IO.chpl"
+  c_string call_tmp_chpl24;
+#line 3361 "IO.chpl"
+  c_string_copy call_tmp_chpl25;
+#line 3361 "IO.chpl"
+  _ref_c_string_copy _ref_tmp__chpl11 = NULL;
+#line 3361 "IO.chpl"
+  chpl_string call_tmp_chpl26;
+#line 3361 "IO.chpl"
+  c_string_copy cs_chpl8;
+#line 3361 "IO.chpl"
+  c_string call_tmp_chpl27;
+#line 3361 "IO.chpl"
+  c_string_copy call_tmp_chpl28;
+#line 3361 "IO.chpl"
+  _ref_c_string_copy _ref_tmp__chpl12 = NULL;
+#line 3361 "IO.chpl"
+  chpl_string call_tmp_chpl29;
+#line 3361 "IO.chpl"
+  _ref_c_string _ref_tmp__chpl13 = NULL;
+#line 3361 "IO.chpl"
+  c_string_copy cs_chpl9;
+#line 3361 "IO.chpl"
+  c_string call_tmp_chpl30;
+#line 3361 "IO.chpl"
+  c_string_copy call_tmp_chpl31;
+#line 3361 "IO.chpl"
+  _ref_c_string_copy _ref_tmp__chpl14 = NULL;
+#line 3361 "IO.chpl"
+  chpl_string call_tmp_chpl32;
+#line 3361 "IO.chpl"
+  c_string call_tmp_chpl33;
+#line 3361 "IO.chpl"
+  chpl_string call_tmp_chpl34;
+#line 3701 "IO.chpl"
+  err_args_chpl = "";
+#line 3703 "IO.chpl"
+  name_chpl = "";
+#line 3704 "IO.chpl"
+  coerce_tmp_chpl = *(_arg_to_proto_names_chpl + INT64(0));
+#line 3704 "IO.chpl"
+  _ref_tmp__chpl = &name_chpl;
+#line 3704 "IO.chpl"
+  c_string_from_string(&call_tmp_chpl, &coerce_tmp_chpl, _ln_chpl, _fn_chpl);
+#line 3704 "IO.chpl"
+  *(_ref_tmp__chpl) = call_tmp_chpl;
+#line 3708 "IO.chpl"
+  c_string_from_string(&call_tmp_chpl2, &preArg_chpl, _ln_chpl, _fn_chpl);
+#line 3708 "IO.chpl"
+  call_tmp_chpl3 = string_concat(call_tmp_chpl2, name_chpl, _ln_chpl, _fn_chpl);
+#line 3708 "IO.chpl"
+  cs_chpl = call_tmp_chpl3;
+#line 3708 "IO.chpl"
+  _ref_tmp__chpl2 = &cs_chpl;
+#line 3708 "IO.chpl"
+  call_tmp_chpl4 = string_from_c_string_copy(_ref_tmp__chpl2, false, INT64(0));
+#line 3708 "IO.chpl"
+  c_string_from_string(&call_tmp_chpl5, &call_tmp_chpl4, _ln_chpl, _fn_chpl);
+#line 3708 "IO.chpl"
+  call_tmp_chpl6 = string_concat(call_tmp_chpl5, ":", _ln_chpl, _fn_chpl);
+#line 3708 "IO.chpl"
+  cs_chpl2 = call_tmp_chpl6;
+#line 3708 "IO.chpl"
+  _ref_tmp__chpl3 = &cs_chpl2;
+#line 3708 "IO.chpl"
+  call_tmp_chpl7 = string_from_c_string_copy(_ref_tmp__chpl3, false, INT64(0));
+#line 3708 "IO.chpl"
+  c_string_from_string(&call_tmp_chpl8, &call_tmp_chpl7, _ln_chpl, _fn_chpl);
+#line 3708 "IO.chpl"
+  call_tmp_chpl9 = string_concat(call_tmp_chpl8, "string", _ln_chpl, _fn_chpl);
+#line 3708 "IO.chpl"
+  cs_chpl3 = call_tmp_chpl9;
+#line 3708 "IO.chpl"
+  _ref_tmp__chpl4 = &cs_chpl3;
+#line 3708 "IO.chpl"
+  call_tmp_chpl10 = string_from_c_string_copy(_ref_tmp__chpl4, false, INT64(0));
+#line 3708 "IO.chpl"
+  _ref_tmp__chpl5 = &err_args_chpl;
+#line 3708 "IO.chpl"
+  c_string_from_string(&call_tmp_chpl11, &call_tmp_chpl10, _ln_chpl, _fn_chpl);
+#line 3708 "IO.chpl"
+  call_tmp_chpl12 = string_concat(err_args_chpl, call_tmp_chpl11, _ln_chpl, _fn_chpl);
+#line 3708 "IO.chpl"
+  cs_chpl4 = call_tmp_chpl12;
+#line 3708 "IO.chpl"
+  _ref_tmp__chpl6 = &cs_chpl4;
+#line 3708 "IO.chpl"
+  call_tmp_chpl13 = string_from_c_string_copy(_ref_tmp__chpl6, false, INT64(0));
+#line 3708 "IO.chpl"
+  c_string_from_string(&call_tmp_chpl14, &call_tmp_chpl13, _ln_chpl, _fn_chpl);
+#line 3708 "IO.chpl"
+  *(_ref_tmp__chpl5) = call_tmp_chpl14;
+#line 3709 "IO.chpl"
+  string_from_c_string(&call_tmp_chpl15, ", ", INT64(0), INT64(0), _ln_chpl, _fn_chpl);
+#line 3709 "IO.chpl"
+  _ref_tmp__chpl7 = &err_args_chpl;
+#line 3709 "IO.chpl"
+  c_string_from_string(&call_tmp_chpl16, &call_tmp_chpl15, _ln_chpl, _fn_chpl);
+#line 3709 "IO.chpl"
+  call_tmp_chpl17 = string_concat(err_args_chpl, call_tmp_chpl16, _ln_chpl, _fn_chpl);
+#line 3709 "IO.chpl"
+  cs_chpl5 = call_tmp_chpl17;
+#line 3709 "IO.chpl"
+  _ref_tmp__chpl8 = &cs_chpl5;
+#line 3709 "IO.chpl"
+  call_tmp_chpl18 = string_from_c_string_copy(_ref_tmp__chpl8, false, INT64(0));
+#line 3709 "IO.chpl"
+  c_string_from_string(&call_tmp_chpl19, &call_tmp_chpl18, _ln_chpl, _fn_chpl);
+#line 3709 "IO.chpl"
+  *(_ref_tmp__chpl7) = call_tmp_chpl19;
+#line 3703 "IO.chpl"
+  name_chpl2 = "";
+#line 3704 "IO.chpl"
+  coerce_tmp_chpl2 = *(_arg_to_proto_names_chpl + INT64(1));
+#line 3704 "IO.chpl"
+  _ref_tmp__chpl9 = &name_chpl2;
+#line 3704 "IO.chpl"
+  c_string_from_string(&call_tmp_chpl20, &coerce_tmp_chpl2, _ln_chpl, _fn_chpl);
+#line 3704 "IO.chpl"
+  *(_ref_tmp__chpl9) = call_tmp_chpl20;
+#line 3708 "IO.chpl"
+  c_string_from_string(&call_tmp_chpl21, &preArg_chpl, _ln_chpl, _fn_chpl);
+#line 3708 "IO.chpl"
+  call_tmp_chpl22 = string_concat(call_tmp_chpl21, name_chpl2, _ln_chpl, _fn_chpl);
+#line 3708 "IO.chpl"
+  cs_chpl6 = call_tmp_chpl22;
+#line 3708 "IO.chpl"
+  _ref_tmp__chpl10 = &cs_chpl6;
+#line 3708 "IO.chpl"
+  call_tmp_chpl23 = string_from_c_string_copy(_ref_tmp__chpl10, false, INT64(0));
+#line 3708 "IO.chpl"
+  c_string_from_string(&call_tmp_chpl24, &call_tmp_chpl23, _ln_chpl, _fn_chpl);
+#line 3708 "IO.chpl"
+  call_tmp_chpl25 = string_concat(call_tmp_chpl24, ":", _ln_chpl, _fn_chpl);
+#line 3708 "IO.chpl"
+  cs_chpl7 = call_tmp_chpl25;
+#line 3708 "IO.chpl"
+  _ref_tmp__chpl11 = &cs_chpl7;
+#line 3708 "IO.chpl"
+  call_tmp_chpl26 = string_from_c_string_copy(_ref_tmp__chpl11, false, INT64(0));
+#line 3708 "IO.chpl"
+  c_string_from_string(&call_tmp_chpl27, &call_tmp_chpl26, _ln_chpl, _fn_chpl);
+#line 3708 "IO.chpl"
+  call_tmp_chpl28 = string_concat(call_tmp_chpl27, "ioNewline", _ln_chpl, _fn_chpl);
+#line 3708 "IO.chpl"
+  cs_chpl8 = call_tmp_chpl28;
+#line 3708 "IO.chpl"
+  _ref_tmp__chpl12 = &cs_chpl8;
+#line 3708 "IO.chpl"
+  call_tmp_chpl29 = string_from_c_string_copy(_ref_tmp__chpl12, false, INT64(0));
+#line 3708 "IO.chpl"
+  _ref_tmp__chpl13 = &err_args_chpl;
+#line 3708 "IO.chpl"
+  c_string_from_string(&call_tmp_chpl30, &call_tmp_chpl29, _ln_chpl, _fn_chpl);
+#line 3708 "IO.chpl"
+  call_tmp_chpl31 = string_concat(err_args_chpl, call_tmp_chpl30, _ln_chpl, _fn_chpl);
+#line 3708 "IO.chpl"
+  cs_chpl9 = call_tmp_chpl31;
+#line 3708 "IO.chpl"
+  _ref_tmp__chpl14 = &cs_chpl9;
+#line 3708 "IO.chpl"
+  call_tmp_chpl32 = string_from_c_string_copy(_ref_tmp__chpl14, false, INT64(0));
+#line 3708 "IO.chpl"
+  c_string_from_string(&call_tmp_chpl33, &call_tmp_chpl32, _ln_chpl, _fn_chpl);
+#line 3708 "IO.chpl"
+  *(_ref_tmp__chpl13) = call_tmp_chpl33;
+#line 3711 "IO.chpl"
+  string_from_c_string(&call_tmp_chpl34, err_args_chpl, INT64(0), INT64(0), _ln_chpl, _fn_chpl);
+#line 3712 "IO.chpl"
+  ret_chpl = call_tmp_chpl34;
+#line 3697 "IO.chpl"
+  return ret_chpl;
+#line 3697 "IO.chpl"
+}
+
+#line 3697 "IO.chpl"
+/* IO.chpl:4264 */
+#line 3697 "IO.chpl"
+static chpl_bool writeln_chpl(_ref_channel_T_dynamic_T this_chpl, chpl_string _e0_args_chpl, int64_t _ln_chpl, c_string _fn_chpl) {
+#line 3697 "IO.chpl"
+  ioNewline_chpl this_chpl2;
+#line 3697 "IO.chpl"
+  ioNewline_chpl wrap_call_tmp_chpl;
+#line 3697 "IO.chpl"
+  chpl_bool ret_chpl;
+#line 3697 "IO.chpl"
+  syserr e_chpl;
+#line 3697 "IO.chpl"
+  syserr type_tmp_chpl;
+#line 3697 "IO.chpl"
+  _ref_syserr _ref_tmp__chpl = NULL;
+#line 3697 "IO.chpl"
+  syserr call_tmp_chpl;
+#line 3697 "IO.chpl"
+  _ref_syserr _ref_tmp__chpl2 = NULL;
+#line 3697 "IO.chpl"
+  syserr _formal_tmp_error_chpl;
+#line 3697 "IO.chpl"
+  _ref_syserr _ref_tmp__chpl3 = NULL;
+#line 3697 "IO.chpl"
+  syserr call_tmp_chpl2;
+#line 3697 "IO.chpl"
+  syserr err_chpl;
+#line 3697 "IO.chpl"
+  syserr type_tmp_chpl2;
+#line 3697 "IO.chpl"
+  _ref_syserr _ref_tmp__chpl4 = NULL;
+#line 3697 "IO.chpl"
+  syserr call_tmp_chpl3;
+#line 3697 "IO.chpl"
+  _ref_syserr _ref_tmp__chpl5 = NULL;
+#line 3697 "IO.chpl"
+  syserr _formal_tmp_error_chpl2;
+#line 3697 "IO.chpl"
+  _ref_syserr _ref_tmp__chpl6 = NULL;
+#line 3697 "IO.chpl"
+  syserr call_tmp_chpl4;
+#line 3697 "IO.chpl"
+  qio_channel_ptr_t ret_chpl2;
+#line 3697 "IO.chpl"
+  syserr call_tmp_chpl5;
+#line 3697 "IO.chpl"
+  int32_t call_tmp_chpl6;
+#line 3697 "IO.chpl"
+  chpl_bool call_tmp_chpl7;
+#line 3697 "IO.chpl"
+  chpl_string call_tmp_chpl8;
+#line 3697 "IO.chpl"
+  int32_t call_tmp_chpl9;
+#line 3697 "IO.chpl"
+  chpl_bool call_tmp_chpl10;
+#line 3697 "IO.chpl"
+  qio_channel_ptr_t ret_chpl3;
+#line 3697 "IO.chpl"
+  syserr e_chpl2;
+#line 3697 "IO.chpl"
+  syserr type_tmp_chpl3;
+#line 3697 "IO.chpl"
+  _ref_syserr _ref_tmp__chpl7 = NULL;
+#line 3697 "IO.chpl"
+  syserr call_tmp_chpl11;
+#line 3697 "IO.chpl"
+  uint8_t call_tmp_chpl12;
+#line 3697 "IO.chpl"
+  uint8_t call_tmp_chpl13;
+#line 3697 "IO.chpl"
+  chpl_bool call_tmp_chpl14;
+#line 3697 "IO.chpl"
+  int16_t call_tmp_chpl15;
+#line 3697 "IO.chpl"
+  int16_t call_tmp_chpl16;
+#line 3697 "IO.chpl"
+  chpl_bool call_tmp_chpl17;
+#line 3697 "IO.chpl"
+  int64_t call_tmp_chpl18;
+#line 3697 "IO.chpl"
+  c_string call_tmp_chpl19;
+#line 3697 "IO.chpl"
+  c_string call_tmp_chpl20;
+#line 3697 "IO.chpl"
+  int64_t call_tmp_chpl21;
+#line 3697 "IO.chpl"
+  syserr call_tmp_chpl22;
+#line 3697 "IO.chpl"
+  int32_t call_tmp_chpl23;
+#line 3697 "IO.chpl"
+  int32_t call_tmp_chpl24;
+#line 3697 "IO.chpl"
+  int16_t call_tmp_chpl25;
+#line 3697 "IO.chpl"
+  int16_t call_tmp_chpl26;
+#line 3697 "IO.chpl"
+  chpl_bool call_tmp_chpl27;
+#line 3697 "IO.chpl"
+  int64_t call_tmp_chpl28;
+#line 3697 "IO.chpl"
+  c_string call_tmp_chpl29;
+#line 3697 "IO.chpl"
+  c_string call_tmp_chpl30;
+#line 3697 "IO.chpl"
+  int64_t call_tmp_chpl31;
+#line 3697 "IO.chpl"
+  syserr call_tmp_chpl32;
+#line 3697 "IO.chpl"
+  int32_t call_tmp_chpl33;
+#line 3697 "IO.chpl"
+  int32_t call_tmp_chpl34;
+#line 3697 "IO.chpl"
+  int64_t call_tmp_chpl35;
+#line 3697 "IO.chpl"
+  c_string call_tmp_chpl36;
+#line 3697 "IO.chpl"
+  c_string call_tmp_chpl37;
+#line 3697 "IO.chpl"
+  int64_t call_tmp_chpl38;
+#line 3697 "IO.chpl"
+  syserr call_tmp_chpl39;
+#line 3697 "IO.chpl"
+  int32_t call_tmp_chpl40;
+#line 3697 "IO.chpl"
+  int32_t call_tmp_chpl41;
+#line 3697 "IO.chpl"
+  syserr call_tmp_chpl42;
+#line 3697 "IO.chpl"
+  int32_t call_tmp_chpl43;
+#line 3697 "IO.chpl"
+  chpl_bool call_tmp_chpl44;
+#line 3697 "IO.chpl"
+  qio_channel_ptr_t ret_chpl4;
+#line 3697 "IO.chpl"
+  syserr type_tmp_chpl4;
+#line 3697 "IO.chpl"
+  _ref_syserr _ref_tmp__chpl8 = NULL;
+#line 3697 "IO.chpl"
+  syserr call_tmp_chpl45;
+#line 3697 "IO.chpl"
+  syserr call_tmp_chpl46;
+#line 3697 "IO.chpl"
+  int32_t call_tmp_chpl47;
+#line 3697 "IO.chpl"
+  qio_channel_ptr_t ret_chpl5;
+#line 3697 "IO.chpl"
+  int32_t call_tmp_chpl48;
+#line 3697 "IO.chpl"
+  chpl_bool call_tmp_chpl49;
+#line 3697 "IO.chpl"
+  chpl_string call_tmp_chpl50;
+#line 3697 "IO.chpl"
+  chpl_string call_tmp_chpl51;
+#line 3697 "IO.chpl"
+  c_string_copy cs_chpl;
+#line 3697 "IO.chpl"
+  c_string call_tmp_chpl52;
+#line 3697 "IO.chpl"
+  c_string_copy call_tmp_chpl53;
+#line 3697 "IO.chpl"
+  _ref_c_string_copy _ref_tmp__chpl9 = NULL;
+#line 3697 "IO.chpl"
+  chpl_string call_tmp_chpl54;
+#line 3697 "IO.chpl"
+  c_string_copy cs_chpl2;
+#line 3697 "IO.chpl"
+  c_string call_tmp_chpl55;
+#line 3697 "IO.chpl"
+  c_string_copy call_tmp_chpl56;
+#line 3697 "IO.chpl"
+  _ref_c_string_copy _ref_tmp__chpl10 = NULL;
+#line 3697 "IO.chpl"
+  chpl_string call_tmp_chpl57;
+#line 4265 "IO.chpl"
+  (&this_chpl2)->skipWhitespaceOnly_chpl = false;
+#line 4265 "IO.chpl"
+  (&this_chpl2)->skipWhitespaceOnly_chpl = false;
+#line 4265 "IO.chpl"
+  wrap_call_tmp_chpl = _construct_ioNewline_chpl(false, &this_chpl2, _ln_chpl, _fn_chpl);
+#line 4265 "IO.chpl"
+  _ref_tmp__chpl = &type_tmp_chpl;
+#line 4265 "IO.chpl"
+  call_tmp_chpl = qio_int_to_err(INT32(0));
+#line 4265 "IO.chpl"
+  *(_ref_tmp__chpl) = call_tmp_chpl;
+#line 4265 "IO.chpl"
+  e_chpl = type_tmp_chpl;
+#line 4265 "IO.chpl"
+  _ref_tmp__chpl2 = &e_chpl;
+#line 4265 "IO.chpl"
+  _ref_tmp__chpl3 = &_formal_tmp_error_chpl;
+#line 4265 "IO.chpl"
+  call_tmp_chpl2 = qio_int_to_err(INT32(0));
+#line 4265 "IO.chpl"
+  *(_ref_tmp__chpl3) = call_tmp_chpl2;
+#line 4265 "IO.chpl"
+  _ref_tmp__chpl4 = &type_tmp_chpl2;
+#line 4265 "IO.chpl"
+  call_tmp_chpl3 = qio_int_to_err(INT32(0));
+#line 4265 "IO.chpl"
+  *(_ref_tmp__chpl4) = call_tmp_chpl3;
+#line 4265 "IO.chpl"
+  err_chpl = type_tmp_chpl2;
+#line 4265 "IO.chpl"
+  _ref_tmp__chpl5 = &err_chpl;
+#line 4265 "IO.chpl"
+  _ref_tmp__chpl6 = &_formal_tmp_error_chpl2;
+#line 4265 "IO.chpl"
+  call_tmp_chpl4 = qio_int_to_err(INT32(0));
+#line 4265 "IO.chpl"
+  *(_ref_tmp__chpl6) = call_tmp_chpl4;
+#line 4265 "IO.chpl"
+  chpl_check_nil(this_chpl, INT64(4265), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/standard/IO.chpl");
+#line 4265 "IO.chpl"
+  ret_chpl2 = (this_chpl)->_channel_internal_chpl;
+#line 4265 "IO.chpl"
+  call_tmp_chpl5 = qio_channel_lock(ret_chpl2);
+#line 4265 "IO.chpl"
+  _formal_tmp_error_chpl2 = call_tmp_chpl5;
+#line 4265 "IO.chpl"
+  *(_ref_tmp__chpl5) = call_tmp_chpl5;
+#line 4265 "IO.chpl"
+  call_tmp_chpl6 = qio_err_iserr(err_chpl);
+#line 4265 "IO.chpl"
+  call_tmp_chpl7 = (call_tmp_chpl6 != INT32(0));
+#line 4265 "IO.chpl"
+  if (call_tmp_chpl7) /* ZLINE: 4265 /home/agobin/Documents/GitHub/chapel-1.12.0/modules/standard/IO.chpl */
+#line 4265 "IO.chpl"
+  {
+#line 4265 "IO.chpl"
+    string_from_c_string(&call_tmp_chpl8, "in lock", INT64(0), INT64(0), _ln_chpl, _fn_chpl);
+#line 4265 "IO.chpl"
+    chpl_check_nil(this_chpl, INT64(4265), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/standard/IO.chpl");
+#line 4265 "IO.chpl"
+    _ch_ioerror_chpl(this_chpl, err_chpl, call_tmp_chpl8, _ln_chpl, _fn_chpl);
+#line 4265 "IO.chpl"
+  }
+#line 4265 "IO.chpl"
+  call_tmp_chpl9 = qio_err_iserr(_formal_tmp_error_chpl);
+#line 4265 "IO.chpl"
+  call_tmp_chpl10 = (call_tmp_chpl9 == INT32(0));
+#line 4265 "IO.chpl"
+  if (call_tmp_chpl10) /* ZLINE: 4265 /home/agobin/Documents/GitHub/chapel-1.12.0/modules/standard/IO.chpl */
+#line 4265 "IO.chpl"
+  {
+#line 4265 "IO.chpl"
+    chpl_check_nil(this_chpl, INT64(4265), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/standard/IO.chpl");
+#line 4265 "IO.chpl"
+    ret_chpl3 = (this_chpl)->_channel_internal_chpl;
+#line 4265 "IO.chpl"
+    _ref_tmp__chpl7 = &type_tmp_chpl3;
+#line 4265 "IO.chpl"
+    call_tmp_chpl11 = qio_int_to_err(INT32(0));
+#line 4265 "IO.chpl"
+    *(_ref_tmp__chpl7) = call_tmp_chpl11;
+#line 4265 "IO.chpl"
+    call_tmp_chpl12 = qio_channel_binary(ret_chpl3);
+#line 4265 "IO.chpl"
+    call_tmp_chpl13 = qio_channel_byteorder(ret_chpl3);
+#line 4265 "IO.chpl"
+    call_tmp_chpl14 = (call_tmp_chpl12 != UINT8(0));
+#line 4265 "IO.chpl"
+    if (call_tmp_chpl14) /* ZLINE: 4265 /home/agobin/Documents/GitHub/chapel-1.12.0/modules/standard/IO.chpl */
+#line 4265 "IO.chpl"
+    {
+#line 4265 "IO.chpl"
+      call_tmp_chpl15 = ((int16_t)(call_tmp_chpl13));
+#line 4265 "IO.chpl"
+      call_tmp_chpl16 = ((int16_t)(iokind_chpl_big_chpl));
+#line 4265 "IO.chpl"
+      call_tmp_chpl17 = (call_tmp_chpl15 == call_tmp_chpl16);
+#line 4265 "IO.chpl"
+      if (call_tmp_chpl17) /* ZLINE: 4265 /home/agobin/Documents/GitHub/chapel-1.12.0/modules/standard/IO.chpl */
+#line 4265 "IO.chpl"
+      {
+#line 4265 "IO.chpl"
+        call_tmp_chpl18 = qio_channel_str_style(ret_chpl3);
+#line 4265 "IO.chpl"
+        c_string_from_string(&call_tmp_chpl19, &_e0_args_chpl, _ln_chpl, _fn_chpl);
+#line 4265 "IO.chpl"
+        c_string_from_string(&call_tmp_chpl20, &_e0_args_chpl, _ln_chpl, _fn_chpl);
+#line 4265 "IO.chpl"
+        call_tmp_chpl21 = string_length(call_tmp_chpl20);
+#line 4265 "IO.chpl"
+        call_tmp_chpl23 = ((int32_t)(false));
+#line 4265 "IO.chpl"
+        call_tmp_chpl24 = ((int32_t)(iokind_chpl_big_chpl));
+#line 4265 "IO.chpl"
+        call_tmp_chpl22 = qio_channel_write_string(call_tmp_chpl23, call_tmp_chpl24, call_tmp_chpl18, ret_chpl3, call_tmp_chpl19, call_tmp_chpl21);
+#line 4265 "IO.chpl"
+        e_chpl2 = call_tmp_chpl22;
+#line 4265 "IO.chpl"
+      } else /* ZLINE: 4265 /home/agobin/Documents/GitHub/chapel-1.12.0/modules/standard/IO.chpl */
+#line 4265 "IO.chpl"
+      {
+#line 4265 "IO.chpl"
+        call_tmp_chpl25 = ((int16_t)(call_tmp_chpl13));
+#line 4265 "IO.chpl"
+        call_tmp_chpl26 = ((int16_t)(iokind_chpl_little_chpl));
+#line 4265 "IO.chpl"
+        call_tmp_chpl27 = (call_tmp_chpl25 == call_tmp_chpl26);
+#line 4265 "IO.chpl"
+        if (call_tmp_chpl27) /* ZLINE: 4265 /home/agobin/Documents/GitHub/chapel-1.12.0/modules/standard/IO.chpl */
+#line 4265 "IO.chpl"
+        {
+#line 4265 "IO.chpl"
+          call_tmp_chpl28 = qio_channel_str_style(ret_chpl3);
+#line 4265 "IO.chpl"
+          c_string_from_string(&call_tmp_chpl29, &_e0_args_chpl, _ln_chpl, _fn_chpl);
+#line 4265 "IO.chpl"
+          c_string_from_string(&call_tmp_chpl30, &_e0_args_chpl, _ln_chpl, _fn_chpl);
+#line 4265 "IO.chpl"
+          call_tmp_chpl31 = string_length(call_tmp_chpl30);
+#line 4265 "IO.chpl"
+          call_tmp_chpl33 = ((int32_t)(false));
+#line 4265 "IO.chpl"
+          call_tmp_chpl34 = ((int32_t)(iokind_chpl_little_chpl));
+#line 4265 "IO.chpl"
+          call_tmp_chpl32 = qio_channel_write_string(call_tmp_chpl33, call_tmp_chpl34, call_tmp_chpl28, ret_chpl3, call_tmp_chpl29, call_tmp_chpl31);
+#line 4265 "IO.chpl"
+          e_chpl2 = call_tmp_chpl32;
+#line 4265 "IO.chpl"
+        } else /* ZLINE: 4265 /home/agobin/Documents/GitHub/chapel-1.12.0/modules/standard/IO.chpl */
+#line 4265 "IO.chpl"
+        {
+#line 4265 "IO.chpl"
+          call_tmp_chpl35 = qio_channel_str_style(ret_chpl3);
+#line 4265 "IO.chpl"
+          c_string_from_string(&call_tmp_chpl36, &_e0_args_chpl, _ln_chpl, _fn_chpl);
+#line 4265 "IO.chpl"
+          c_string_from_string(&call_tmp_chpl37, &_e0_args_chpl, _ln_chpl, _fn_chpl);
+#line 4265 "IO.chpl"
+          call_tmp_chpl38 = string_length(call_tmp_chpl37);
+#line 4265 "IO.chpl"
+          call_tmp_chpl40 = ((int32_t)(false));
+#line 4265 "IO.chpl"
+          call_tmp_chpl41 = ((int32_t)(iokind_chpl_native_chpl));
+#line 4265 "IO.chpl"
+          call_tmp_chpl39 = qio_channel_write_string(call_tmp_chpl40, call_tmp_chpl41, call_tmp_chpl35, ret_chpl3, call_tmp_chpl36, call_tmp_chpl38);
+#line 4265 "IO.chpl"
+          e_chpl2 = call_tmp_chpl39;
+#line 4265 "IO.chpl"
+        }
+#line 4265 "IO.chpl"
+      }
+#line 4265 "IO.chpl"
+    } else /* ZLINE: 4265 /home/agobin/Documents/GitHub/chapel-1.12.0/modules/standard/IO.chpl */
+#line 4265 "IO.chpl"
+    {
+#line 4265 "IO.chpl"
+      call_tmp_chpl42 = _write_text_internal_chpl(ret_chpl3, _e0_args_chpl, _ln_chpl, _fn_chpl);
+#line 4265 "IO.chpl"
+      e_chpl2 = call_tmp_chpl42;
+#line 4265 "IO.chpl"
+    }
+#line 4265 "IO.chpl"
+    _formal_tmp_error_chpl = e_chpl2;
+#line 4265 "IO.chpl"
+  }
+#line 4265 "IO.chpl"
+  call_tmp_chpl43 = qio_err_iserr(_formal_tmp_error_chpl);
+#line 4265 "IO.chpl"
+  call_tmp_chpl44 = (call_tmp_chpl43 == INT32(0));
+#line 4265 "IO.chpl"
+  if (call_tmp_chpl44) /* ZLINE: 4265 /home/agobin/Documents/GitHub/chapel-1.12.0/modules/standard/IO.chpl */
+#line 4265 "IO.chpl"
+  {
+#line 4265 "IO.chpl"
+    chpl_check_nil(this_chpl, INT64(4265), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/standard/IO.chpl");
+#line 4265 "IO.chpl"
+    ret_chpl4 = (this_chpl)->_channel_internal_chpl;
+#line 4265 "IO.chpl"
+    _ref_tmp__chpl8 = &type_tmp_chpl4;
+#line 4265 "IO.chpl"
+    call_tmp_chpl45 = qio_int_to_err(INT32(0));
+#line 4265 "IO.chpl"
+    *(_ref_tmp__chpl8) = call_tmp_chpl45;
+#line 4265 "IO.chpl"
+    call_tmp_chpl47 = ((int32_t)(false));
+#line 4265 "IO.chpl"
+    call_tmp_chpl46 = qio_channel_write_newline(call_tmp_chpl47, ret_chpl4);
+#line 4265 "IO.chpl"
+    _formal_tmp_error_chpl = call_tmp_chpl46;
+#line 4265 "IO.chpl"
+  }
+#line 4265 "IO.chpl"
+  chpl_check_nil(this_chpl, INT64(4265), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/standard/IO.chpl");
+#line 4265 "IO.chpl"
+  ret_chpl5 = (this_chpl)->_channel_internal_chpl;
+#line 4265 "IO.chpl"
+  qio_channel_unlock(ret_chpl5);
+#line 4265 "IO.chpl"
+  qio_err_iserr(_formal_tmp_error_chpl);
+#line 4265 "IO.chpl"
+  *(_ref_tmp__chpl2) = _formal_tmp_error_chpl;
+#line 4265 "IO.chpl"
+  call_tmp_chpl48 = qio_err_iserr(e_chpl);
+#line 4265 "IO.chpl"
+  call_tmp_chpl49 = (call_tmp_chpl48 == INT32(0));
+#line 4265 "IO.chpl"
+  if (call_tmp_chpl49) /* ZLINE: 4265 /home/agobin/Documents/GitHub/chapel-1.12.0/modules/standard/IO.chpl */
+#line 4265 "IO.chpl"
+  {
+#line 4265 "IO.chpl"
+    ret_chpl = true;
+#line 4265 "IO.chpl"
+    goto _end_write_chpl;
+#line 4265 "IO.chpl"
+  } else /* ZLINE: 4265 /home/agobin/Documents/GitHub/chapel-1.12.0/modules/standard/IO.chpl */
+#line 4265 "IO.chpl"
+  {
+#line 4265 "IO.chpl"
+    string_from_c_string(&call_tmp_chpl51, "", INT64(0), INT64(0), _ln_chpl, _fn_chpl);
+#line 4265 "IO.chpl"
+    call_tmp_chpl50 = _args_to_proto_chpl(_e0_args_chpl, &wrap_call_tmp_chpl, call_tmp_chpl51, _ln_chpl, _fn_chpl);
+#line 4265 "IO.chpl"
+    c_string_from_string(&call_tmp_chpl52, &call_tmp_chpl50, _ln_chpl, _fn_chpl);
+#line 4265 "IO.chpl"
+    call_tmp_chpl53 = string_concat("in channel.write(", call_tmp_chpl52, _ln_chpl, _fn_chpl);
+#line 4265 "IO.chpl"
+    cs_chpl = call_tmp_chpl53;
+#line 4265 "IO.chpl"
+    _ref_tmp__chpl9 = &cs_chpl;
+#line 4265 "IO.chpl"
+    call_tmp_chpl54 = string_from_c_string_copy(_ref_tmp__chpl9, false, INT64(0));
+#line 4265 "IO.chpl"
+    c_string_from_string(&call_tmp_chpl55, &call_tmp_chpl54, _ln_chpl, _fn_chpl);
+#line 4265 "IO.chpl"
+    call_tmp_chpl56 = string_concat(call_tmp_chpl55, ")", _ln_chpl, _fn_chpl);
+#line 4265 "IO.chpl"
+    cs_chpl2 = call_tmp_chpl56;
+#line 4265 "IO.chpl"
+    _ref_tmp__chpl10 = &cs_chpl2;
+#line 4265 "IO.chpl"
+    call_tmp_chpl57 = string_from_c_string_copy(_ref_tmp__chpl10, false, INT64(0));
+#line 4265 "IO.chpl"
+    chpl_check_nil(this_chpl, INT64(4265), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/standard/IO.chpl");
+#line 4265 "IO.chpl"
+    _ch_ioerror_chpl(this_chpl, e_chpl, call_tmp_chpl57, _ln_chpl, _fn_chpl);
+#line 4265 "IO.chpl"
+    ret_chpl = false;
+#line 4265 "IO.chpl"
+    goto _end_write_chpl;
+#line 4265 "IO.chpl"
+  }
+#line 4265 "IO.chpl"
+  _end_write_chpl:;
+#line 4264 "IO.chpl"
+  return ret_chpl;
+#line 4264 "IO.chpl"
+}
+
+#line 4264 "IO.chpl"
+/* IO.chpl:4502 */
+#line 4264 "IO.chpl"
+static void writeln_chpl2(chpl_string _e0_args_chpl, int64_t _ln_chpl, c_string _fn_chpl) {
+#line 4264 "IO.chpl"
+  channel_T_dynamic_T_chpl local_stdout_chpl;
+#line 4264 "IO.chpl"
+  _ref_channel_T_dynamic_T _ref_tmp__chpl = NULL;
+#line 4503 "IO.chpl"
+  local_stdout_chpl = stdout_chpl;
+#line 4503 "IO.chpl"
+  _ref_tmp__chpl = &local_stdout_chpl;
+#line 4503 "IO.chpl"
+  chpl_check_nil(_ref_tmp__chpl, INT64(4503), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/standard/IO.chpl");
+#line 4503 "IO.chpl"
+  writeln_chpl(_ref_tmp__chpl, _e0_args_chpl, _ln_chpl, _fn_chpl);
+#line 4502 "IO.chpl"
+  return;
+#line 4502 "IO.chpl"
 }
 

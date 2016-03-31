@@ -1189,7 +1189,7 @@ static void reinitString_chpl(_ref_string_rec this_chpl, c_string s_chpl, int64_
 #line 158 "NewString.chpl"
 /* NewString.chpl:397 */
 #line 158 "NewString.chpl"
-static void chpl___ASSIGN_6(_ref_string_rec lhs_chpl, c_string rhs_c_chpl, int64_t _ln_chpl, c_string _fn_chpl) {
+static void chpl___ASSIGN_7(_ref_string_rec lhs_chpl, c_string rhs_c_chpl, int64_t _ln_chpl, c_string _fn_chpl) {
 #line 158 "NewString.chpl"
   int32_t local_c_sublocid_any_chpl;
 #line 158 "NewString.chpl"

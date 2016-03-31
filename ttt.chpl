@@ -1,4 +1,5 @@
 use gtk;
+use Random;
 
 var boardMatrix: [1..9] int;
 var output: c_ptr(GtkWidget);
@@ -7,7 +8,16 @@ var button_array: [1..9] c_ptr(GtkWidget);
 var board: c_ptr(GtkWidget);
 var gameOver:bool = false;
 
+
 module Functions{
+	
+	proc computersMind( boardMatrix: []int): void{
+		var randN = new RandomStream();
+		var availableMoves: int = 9 - playCounter;
+		var moves_list: [1..availableMoves]int;
+		writeln("Random number: " + randN.getNext():int );
+		
+	}
 	
 	proc analyseBoard( a: []int, n: int, key: int): int{	
 		if( (a[1] == key && a[2] == key && a[3] == key) || (a[4] == key && a[5] == key && a[6] == key) || (a[7] == key && a[8] == key && a[9] == key) || 
@@ -33,7 +43,7 @@ module Functions{
 		
 		var num = numPtr.deref();
 		var ptr: c_void_ptr;
-		
+				
 		if( gameOver ){
 			resetGame(button, ptr);  
 			gameOver = false;
@@ -50,38 +60,40 @@ module Functions{
 		}
 		else{ //Move was valid
 		
+			//Player one played
 			if(playCounter % 2 == 0){
 				boardMatrix[num] = 1;
-				gtk_button_set_label(GTK_BUTTON(button), "X");
-			}
-			else{
-				boardMatrix[num] = 2;
 				gtk_button_set_label(GTK_BUTTON(button), "O");
+			}
+			else{ //Computer or player two played
+				computersMind(boardMatrix);
+				boardMatrix[num] = 2;
+				gtk_button_set_label(GTK_BUTTON(button), "X");
 			}
 			
 			var gameWon1: int = analyseBoard(boardMatrix, 9, 1);
 			var gameWon2: int = analyseBoard(boardMatrix, 9, 2);
 			
 			if( gameWon1 ){ 
-				gtk_label_set_text(GTK_LABEL(output), "  Game Over\nPlayer one won!!");
+				gtk_label_set_text(GTK_LABEL(output), "  Game Over: You win!!");
 				gameOver = true;
 			}
 			else if( gameWon2){
-				gtk_label_set_text(GTK_LABEL(output), "  Game Over\nPlayer two won!!");
+				gtk_label_set_text(GTK_LABEL(output), "  Game Over: You lose!!");
 				gameOver = true;
 			}
 			else if(playCounter == 8){
 				gameOver = true;
-				gtk_label_set_text(GTK_LABEL(output), "  Game Over\nNobody won");
+				gtk_label_set_text(GTK_LABEL(output), "  Game Over: Draw");
 			}
 			else if(playCounter < 8){
 			
 				if(playCounter % 2 == 0){
-					gtk_label_set_text(GTK_LABEL(output), "Player two's time to play");
-				}
-				else{
 					gtk_label_set_text(GTK_LABEL(output), "Player one's time to play");
 				}
+				//else{
+					//gtk_label_set_text(GTK_LABEL(output), "Player one's time to play");
+				//}
 				
 				playCounter += 1;
 			}
@@ -102,7 +114,8 @@ module FunctionSysbols{
 proc main( args: [] string){
 	
 	use FunctionSysbols;
-      
+	var num:int;
+    
 	//Initialises all widgets
 	gtk_init(args);    
 	

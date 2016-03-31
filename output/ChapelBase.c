@@ -156,7 +156,7 @@ static void compilerAssert(void) {
 #line 182 "ChapelBase.chpl"
 /* ChapelBase.chpl:669 */
 #line 182 "ChapelBase.chpl"
-static void init_elts2(_ddata_locale x, int64_t s, int64_t _ln, c_string _fn) {
+static void init_elts(_ddata_locale x, int64_t s, int64_t _ln, c_string _fn) {
 #line 182 "ChapelBase.chpl"
   int64_t _ic__F1_high;
 #line 182 "ChapelBase.chpl"
@@ -187,7 +187,7 @@ static void init_elts2(_ddata_locale x, int64_t s, int64_t _ln, c_string _fn) {
 #line 669 "ChapelBase.chpl"
 /* ChapelBase.chpl:669 */
 #line 669 "ChapelBase.chpl"
-static void init_elts(_ddata_localesSignal x, int64_t s, int64_t _ln, c_string _fn) {
+static void init_elts5(_ddata_localesSignal x, int64_t s, int64_t _ln, c_string _fn) {
 #line 669 "ChapelBase.chpl"
   int64_t _ic__F1_high;
 #line 669 "ChapelBase.chpl"
@@ -218,7 +218,7 @@ static void init_elts(_ddata_localesSignal x, int64_t s, int64_t _ln, c_string _
 #line 669 "ChapelBase.chpl"
 /* ChapelBase.chpl:669 */
 #line 669 "ChapelBase.chpl"
-static void init_elts5(_ddata_int64_t x, int64_t s, int64_t _ln, c_string _fn) {
+static void init_elts4(_ddata_int64_t x, int64_t s, int64_t _ln, c_string _fn) {
 #line 669 "ChapelBase.chpl"
   locale local_dummyLocale = NULL;
 #line 669 "ChapelBase.chpl"
@@ -546,7 +546,7 @@ static void init_elts5(_ddata_int64_t x, int64_t s, int64_t _ln, c_string _fn) {
 #line 712 "ChapelBase.chpl"
         chpl_here_alloc_size = sizeof(chpl__class_localscoforall_fn_object);
 #line 712 "ChapelBase.chpl"
-        chpl_here_alloc_tmp = chpl_here_alloc(chpl_here_alloc_size, INT16(36), _ln, _fn);
+        chpl_here_alloc_tmp = chpl_here_alloc(chpl_here_alloc_size, INT16(37), _ln, _fn);
 #line 712 "ChapelBase.chpl"
         _args_forcoforall_fn = ((_class_localscoforall_fn)(chpl_here_alloc_tmp));
 #line 712 "ChapelBase.chpl"
@@ -556,7 +556,7 @@ static void init_elts5(_ddata_int64_t x, int64_t s, int64_t _ln, c_string _fn) {
 #line 712 "ChapelBase.chpl"
         chpl_check_nil(_args_forcoforall_fn, INT64(712), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelBase.chpl");
 #line 712 "ChapelBase.chpl"
-        (_args_forcoforall_fn)->_1_rvfDerefTmp = rvfDerefTmp;
+        (_args_forcoforall_fn)->_1__yieldedIndex = i2;
 #line 712 "ChapelBase.chpl"
         chpl_check_nil(_args_forcoforall_fn, INT64(712), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelBase.chpl");
 #line 712 "ChapelBase.chpl"
@@ -564,21 +564,21 @@ static void init_elts5(_ddata_int64_t x, int64_t s, int64_t _ln, c_string _fn) {
 #line 712 "ChapelBase.chpl"
         chpl_check_nil(_args_forcoforall_fn, INT64(712), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelBase.chpl");
 #line 712 "ChapelBase.chpl"
-        (_args_forcoforall_fn)->_3__yieldedIndex = i2;
+        (_args_forcoforall_fn)->_3_this = this11;
 #line 712 "ChapelBase.chpl"
         chpl_check_nil(_args_forcoforall_fn, INT64(712), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelBase.chpl");
 #line 712 "ChapelBase.chpl"
-        (_args_forcoforall_fn)->_4_this = this11;
+        (_args_forcoforall_fn)->_4_len = len;
 #line 712 "ChapelBase.chpl"
         chpl_check_nil(_args_forcoforall_fn, INT64(712), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelBase.chpl");
 #line 712 "ChapelBase.chpl"
-        (_args_forcoforall_fn)->_5_len = len;
+        (_args_forcoforall_fn)->_5_rvfDerefTmp = rvfDerefTmp;
 #line 712 "ChapelBase.chpl"
         (_args_forcoforall_fn)->_ln = _ln;
 #line 712 "ChapelBase.chpl"
         (_args_forcoforall_fn)->_fn = _fn;
 #line 712 "ChapelBase.chpl"
-        /*** wrapcoforall_fn ***/ chpl_taskListAddCoStmt(INT32(-2), INT64(0), ((void*)(_args_forcoforall_fn)), &(((_args_forcoforall_fn)->_1_rvfDerefTmp)->taskList), chpl_nodeID, INT64(712), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelBase.chpl");
+        /*** wrapcoforall_fn ***/ chpl_taskListAddCoStmt(INT32(-2), INT64(0), ((void*)(_args_forcoforall_fn)), &(((_args_forcoforall_fn)->_5_rvfDerefTmp)->taskList), chpl_nodeID, INT64(712), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelBase.chpl");
 #line 712 "ChapelBase.chpl"
       }
 #line 712 "ChapelBase.chpl"
@@ -629,7 +629,7 @@ static void init_elts5(_ddata_int64_t x, int64_t s, int64_t _ln, c_string _fn) {
 #line 669 "ChapelBase.chpl"
 /* ChapelBase.chpl:669 */
 #line 669 "ChapelBase.chpl"
-static void init_elts4(_ddata_c_ptr_GtkWidget x, int64_t s, int64_t _ln, c_string _fn) {
+static void init_elts2(_ddata_c_ptr_GtkWidget x, int64_t s, int64_t _ln, c_string _fn) {
 #line 669 "ChapelBase.chpl"
   int64_t _ic__F1_high;
 #line 669 "ChapelBase.chpl"
@@ -699,15 +699,15 @@ static void wrapcoforall_fn(_class_localscoforall_fn c) {
 #line 669 "ChapelBase.chpl"
   _ddata_int64_t _0_x1_tet = NULL;
 #line 669 "ChapelBase.chpl"
-  chpl___EndCount_atomic_int64_int64_t _1_rvfDerefTmp = NULL;
+  int64_t _1__yieldedIndex;
 #line 669 "ChapelBase.chpl"
   int64_t _2_numChunks;
 #line 669 "ChapelBase.chpl"
-  int64_t _3__yieldedIndex;
+  _ref_range_int64_t_bounded_F _3_this = NULL;
 #line 669 "ChapelBase.chpl"
-  _ref_range_int64_t_bounded_F _4_this = NULL;
+  int64_t _4_len;
 #line 669 "ChapelBase.chpl"
-  int64_t _5_len;
+  chpl___EndCount_atomic_int64_int64_t _5_rvfDerefTmp = NULL;
 #line 712 "ChapelBase.chpl"
   _ln = (c)->_ln;
 #line 712 "ChapelBase.chpl"
@@ -719,7 +719,7 @@ static void wrapcoforall_fn(_class_localscoforall_fn c) {
 #line 712 "ChapelBase.chpl"
   chpl_check_nil(c, INT64(712), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelBase.chpl");
 #line 712 "ChapelBase.chpl"
-  _1_rvfDerefTmp = (c)->_1_rvfDerefTmp;
+  _1__yieldedIndex = (c)->_1__yieldedIndex;
 #line 712 "ChapelBase.chpl"
   chpl_check_nil(c, INT64(712), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelBase.chpl");
 #line 712 "ChapelBase.chpl"
@@ -727,17 +727,17 @@ static void wrapcoforall_fn(_class_localscoforall_fn c) {
 #line 712 "ChapelBase.chpl"
   chpl_check_nil(c, INT64(712), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelBase.chpl");
 #line 712 "ChapelBase.chpl"
-  _3__yieldedIndex = (c)->_3__yieldedIndex;
+  _3_this = (c)->_3_this;
 #line 712 "ChapelBase.chpl"
   chpl_check_nil(c, INT64(712), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelBase.chpl");
 #line 712 "ChapelBase.chpl"
-  _4_this = (c)->_4_this;
+  _4_len = (c)->_4_len;
 #line 712 "ChapelBase.chpl"
   chpl_check_nil(c, INT64(712), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelBase.chpl");
 #line 712 "ChapelBase.chpl"
-  _5_len = (c)->_5_len;
+  _5_rvfDerefTmp = (c)->_5_rvfDerefTmp;
 #line 712 "ChapelBase.chpl"
-  coforall_fn(_0_x1_tet, _1_rvfDerefTmp, _2_numChunks, _3__yieldedIndex, _4_this, _5_len, _ln, _fn);
+  coforall_fn(_0_x1_tet, _1__yieldedIndex, _2_numChunks, _3_this, _4_len, _5_rvfDerefTmp, _ln, _fn);
 #line 712 "ChapelBase.chpl"
   chpl_here_free(((void*)(c)), _ln, _fn);
 #line 712 "ChapelBase.chpl"
@@ -1084,7 +1084,7 @@ static void _waitEndCount2(chpl___EndCount_atomic_int64_int64_t _endCount, int64
 #line 947 "ChapelBase.chpl"
 /* ChapelBase.chpl:953 */
 #line 947 "ChapelBase.chpl"
-static int64_t _command_line_cast7(c_string x, int64_t _ln, c_string _fn) {
+static int64_t _command_line_cast5(c_string x, int64_t _ln, c_string _fn) {
 #line 947 "ChapelBase.chpl"
   int64_t call_tmp;
 #line 953 "ChapelBase.chpl"
@@ -1097,7 +1097,99 @@ static int64_t _command_line_cast7(c_string x, int64_t _ln, c_string _fn) {
 #line 953 "ChapelBase.chpl"
 /* ChapelBase.chpl:953 */
 #line 953 "ChapelBase.chpl"
-static int64_t _command_line_cast2(c_string x, int64_t _ln, c_string _fn) {
+static int64_t _command_line_cast(c_string x, int64_t _ln, c_string _fn) {
+#line 953 "ChapelBase.chpl"
+  int64_t call_tmp;
+#line 953 "ChapelBase.chpl"
+  call_tmp = c_string_to_int64_t(x, _ln, _fn);
+#line 953 "ChapelBase.chpl"
+  return call_tmp;
+#line 953 "ChapelBase.chpl"
+}
+
+#line 953 "ChapelBase.chpl"
+/* ChapelBase.chpl:953 */
+#line 953 "ChapelBase.chpl"
+static chpl_bool _command_line_cast10(c_string x, int64_t _ln, c_string _fn) {
+#line 953 "ChapelBase.chpl"
+  chpl_bool call_tmp;
+#line 953 "ChapelBase.chpl"
+  call_tmp = c_string_to_chpl_bool(x, _ln, _fn);
+#line 953 "ChapelBase.chpl"
+  return call_tmp;
+#line 953 "ChapelBase.chpl"
+}
+
+#line 953 "ChapelBase.chpl"
+/* ChapelBase.chpl:953 */
+#line 953 "ChapelBase.chpl"
+static c_string _command_line_cast11(c_string x) {
+#line 953 "ChapelBase.chpl"
+  return x;
+#line 953 "ChapelBase.chpl"
+}
+
+#line 953 "ChapelBase.chpl"
+/* ChapelBase.chpl:953 */
+#line 953 "ChapelBase.chpl"
+static c_string _command_line_cast14(c_string x) {
+#line 953 "ChapelBase.chpl"
+  return x;
+#line 953 "ChapelBase.chpl"
+}
+
+#line 953 "ChapelBase.chpl"
+/* ChapelBase.chpl:953 */
+#line 953 "ChapelBase.chpl"
+static c_string _command_line_cast13(c_string x) {
+#line 953 "ChapelBase.chpl"
+  return x;
+#line 953 "ChapelBase.chpl"
+}
+
+#line 953 "ChapelBase.chpl"
+/* ChapelBase.chpl:953 */
+#line 953 "ChapelBase.chpl"
+static uint64_t _command_line_cast12(c_string x, int64_t _ln, c_string _fn) {
+#line 953 "ChapelBase.chpl"
+  uint64_t call_tmp;
+#line 953 "ChapelBase.chpl"
+  call_tmp = c_string_to_uint64_t(x, _ln, _fn);
+#line 953 "ChapelBase.chpl"
+  return call_tmp;
+#line 953 "ChapelBase.chpl"
+}
+
+#line 953 "ChapelBase.chpl"
+/* ChapelBase.chpl:953 */
+#line 953 "ChapelBase.chpl"
+static chpl_bool _command_line_cast8(c_string x, int64_t _ln, c_string _fn) {
+#line 953 "ChapelBase.chpl"
+  chpl_bool call_tmp;
+#line 953 "ChapelBase.chpl"
+  call_tmp = c_string_to_chpl_bool(x, _ln, _fn);
+#line 953 "ChapelBase.chpl"
+  return call_tmp;
+#line 953 "ChapelBase.chpl"
+}
+
+#line 953 "ChapelBase.chpl"
+/* ChapelBase.chpl:953 */
+#line 953 "ChapelBase.chpl"
+static chpl_bool _command_line_cast2(c_string x, int64_t _ln, c_string _fn) {
+#line 953 "ChapelBase.chpl"
+  chpl_bool call_tmp;
+#line 953 "ChapelBase.chpl"
+  call_tmp = c_string_to_chpl_bool(x, _ln, _fn);
+#line 953 "ChapelBase.chpl"
+  return call_tmp;
+#line 953 "ChapelBase.chpl"
+}
+
+#line 953 "ChapelBase.chpl"
+/* ChapelBase.chpl:953 */
+#line 953 "ChapelBase.chpl"
+static int64_t _command_line_cast7(c_string x, int64_t _ln, c_string _fn) {
 #line 953 "ChapelBase.chpl"
   int64_t call_tmp;
 #line 953 "ChapelBase.chpl"
@@ -1123,99 +1215,7 @@ static chpl_bool _command_line_cast3(c_string x, int64_t _ln, c_string _fn) {
 #line 953 "ChapelBase.chpl"
 /* ChapelBase.chpl:953 */
 #line 953 "ChapelBase.chpl"
-static c_string _command_line_cast5(c_string x) {
-#line 953 "ChapelBase.chpl"
-  return x;
-#line 953 "ChapelBase.chpl"
-}
-
-#line 953 "ChapelBase.chpl"
-/* ChapelBase.chpl:953 */
-#line 953 "ChapelBase.chpl"
-static c_string _command_line_cast6(c_string x) {
-#line 953 "ChapelBase.chpl"
-  return x;
-#line 953 "ChapelBase.chpl"
-}
-
-#line 953 "ChapelBase.chpl"
-/* ChapelBase.chpl:953 */
-#line 953 "ChapelBase.chpl"
-static c_string _command_line_cast(c_string x) {
-#line 953 "ChapelBase.chpl"
-  return x;
-#line 953 "ChapelBase.chpl"
-}
-
-#line 953 "ChapelBase.chpl"
-/* ChapelBase.chpl:953 */
-#line 953 "ChapelBase.chpl"
-static uint64_t _command_line_cast8(c_string x, int64_t _ln, c_string _fn) {
-#line 953 "ChapelBase.chpl"
-  uint64_t call_tmp;
-#line 953 "ChapelBase.chpl"
-  call_tmp = c_string_to_uint64_t(x, _ln, _fn);
-#line 953 "ChapelBase.chpl"
-  return call_tmp;
-#line 953 "ChapelBase.chpl"
-}
-
-#line 953 "ChapelBase.chpl"
-/* ChapelBase.chpl:953 */
-#line 953 "ChapelBase.chpl"
-static chpl_bool _command_line_cast10(c_string x, int64_t _ln, c_string _fn) {
-#line 953 "ChapelBase.chpl"
-  chpl_bool call_tmp;
-#line 953 "ChapelBase.chpl"
-  call_tmp = c_string_to_chpl_bool(x, _ln, _fn);
-#line 953 "ChapelBase.chpl"
-  return call_tmp;
-#line 953 "ChapelBase.chpl"
-}
-
-#line 953 "ChapelBase.chpl"
-/* ChapelBase.chpl:953 */
-#line 953 "ChapelBase.chpl"
-static chpl_bool _command_line_cast4(c_string x, int64_t _ln, c_string _fn) {
-#line 953 "ChapelBase.chpl"
-  chpl_bool call_tmp;
-#line 953 "ChapelBase.chpl"
-  call_tmp = c_string_to_chpl_bool(x, _ln, _fn);
-#line 953 "ChapelBase.chpl"
-  return call_tmp;
-#line 953 "ChapelBase.chpl"
-}
-
-#line 953 "ChapelBase.chpl"
-/* ChapelBase.chpl:953 */
-#line 953 "ChapelBase.chpl"
-static int64_t _command_line_cast14(c_string x, int64_t _ln, c_string _fn) {
-#line 953 "ChapelBase.chpl"
-  int64_t call_tmp;
-#line 953 "ChapelBase.chpl"
-  call_tmp = c_string_to_int64_t(x, _ln, _fn);
-#line 953 "ChapelBase.chpl"
-  return call_tmp;
-#line 953 "ChapelBase.chpl"
-}
-
-#line 953 "ChapelBase.chpl"
-/* ChapelBase.chpl:953 */
-#line 953 "ChapelBase.chpl"
-static chpl_bool _command_line_cast13(c_string x, int64_t _ln, c_string _fn) {
-#line 953 "ChapelBase.chpl"
-  chpl_bool call_tmp;
-#line 953 "ChapelBase.chpl"
-  call_tmp = c_string_to_chpl_bool(x, _ln, _fn);
-#line 953 "ChapelBase.chpl"
-  return call_tmp;
-#line 953 "ChapelBase.chpl"
-}
-
-#line 953 "ChapelBase.chpl"
-/* ChapelBase.chpl:953 */
-#line 953 "ChapelBase.chpl"
-static chpl_bool _command_line_cast11(c_string x, int64_t _ln, c_string _fn) {
+static chpl_bool _command_line_cast6(c_string x, int64_t _ln, c_string _fn) {
 #line 953 "ChapelBase.chpl"
   chpl_bool call_tmp;
 #line 953 "ChapelBase.chpl"
@@ -1241,7 +1241,7 @@ static uint64_t _command_line_cast9(c_string x, int64_t _ln, c_string _fn) {
 #line 953 "ChapelBase.chpl"
 /* ChapelBase.chpl:953 */
 #line 953 "ChapelBase.chpl"
-static chpl_bool _command_line_cast12(c_string x, int64_t _ln, c_string _fn) {
+static chpl_bool _command_line_cast4(c_string x, int64_t _ln, c_string _fn) {
 #line 953 "ChapelBase.chpl"
   chpl_bool call_tmp;
 #line 953 "ChapelBase.chpl"
@@ -1356,7 +1356,7 @@ static DefaultRectangularDom_1_int64_t_F chpl__autoCopy2(DefaultRectangularDom_1
 #line 1107 "ChapelBase.chpl"
 /* ChapelBase.chpl:1115 */
 #line 1107 "ChapelBase.chpl"
-static DefaultRectangularArr_locale_1_int64_t_F chpl__autoCopy3(DefaultRectangularArr_locale_1_int64_t_F x, int64_t _ln, c_string _fn) {
+static DefaultRectangularArr_locale_1_int64_t_F chpl__autoCopy6(DefaultRectangularArr_locale_1_int64_t_F x, int64_t _ln, c_string _fn) {
 #line 1107 "ChapelBase.chpl"
   memory_order local_memory_order_seq_cst;
 #line 1107 "ChapelBase.chpl"
@@ -1407,7 +1407,7 @@ static DefaultRectangularArr_locale_1_int64_t_F chpl__autoCopy3(DefaultRectangul
 #line 1115 "ChapelBase.chpl"
 /* ChapelBase.chpl:1115 */
 #line 1115 "ChapelBase.chpl"
-static DefaultRectangularArr_localesSignal_1_int64_t_F chpl__autoCopy5(DefaultRectangularArr_localesSignal_1_int64_t_F x, int64_t _ln, c_string _fn) {
+static DefaultRectangularArr_localesSignal_1_int64_t_F chpl__autoCopy3(DefaultRectangularArr_localesSignal_1_int64_t_F x, int64_t _ln, c_string _fn) {
 #line 1115 "ChapelBase.chpl"
   memory_order local_memory_order_seq_cst;
 #line 1115 "ChapelBase.chpl"
@@ -1509,7 +1509,7 @@ static DefaultRectangularArr_int64_t_1_int64_t_F chpl__autoCopy7(DefaultRectangu
 #line 1115 "ChapelBase.chpl"
 /* ChapelBase.chpl:1115 */
 #line 1115 "ChapelBase.chpl"
-static DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F chpl__autoCopy6(DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F x, int64_t _ln, c_string _fn) {
+static DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F chpl__autoCopy5(DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F x, int64_t _ln, c_string _fn) {
 #line 1115 "ChapelBase.chpl"
   memory_order local_memory_order_seq_cst;
 #line 1115 "ChapelBase.chpl"
@@ -1633,18 +1633,7 @@ static void chpl__autoDestroy2(DefaultRectangularDom_1_int64_t_F x, int64_t _ln,
 #line 1158 "ChapelBase.chpl"
 /* ChapelBase.chpl:1163 */
 #line 1158 "ChapelBase.chpl"
-static void chpl__autoDestroy3(DefaultRectangularArr_locale_1_int64_t_F x, int64_t _ln, c_string _fn) {
-#line 1164 "ChapelBase.chpl"
-  chpl___TILDE__array2(x, _ln, _fn);
-#line 1163 "ChapelBase.chpl"
-  return;
-#line 1163 "ChapelBase.chpl"
-}
-
-#line 1163 "ChapelBase.chpl"
-/* ChapelBase.chpl:1163 */
-#line 1163 "ChapelBase.chpl"
-static void chpl__autoDestroy5(DefaultRectangularArr_localesSignal_1_int64_t_F x, int64_t _ln, c_string _fn) {
+static void chpl__autoDestroy5(DefaultRectangularArr_locale_1_int64_t_F x, int64_t _ln, c_string _fn) {
 #line 1164 "ChapelBase.chpl"
   chpl___TILDE__array3(x, _ln, _fn);
 #line 1163 "ChapelBase.chpl"
@@ -1655,7 +1644,7 @@ static void chpl__autoDestroy5(DefaultRectangularArr_localesSignal_1_int64_t_F x
 #line 1163 "ChapelBase.chpl"
 /* ChapelBase.chpl:1163 */
 #line 1163 "ChapelBase.chpl"
-static void chpl__autoDestroy6(DefaultRectangularArr_int64_t_1_int64_t_F x, int64_t _ln, c_string _fn) {
+static void chpl__autoDestroy3(DefaultRectangularArr_localesSignal_1_int64_t_F x, int64_t _ln, c_string _fn) {
 #line 1164 "ChapelBase.chpl"
   chpl___TILDE__array(x, _ln, _fn);
 #line 1163 "ChapelBase.chpl"
@@ -1666,7 +1655,7 @@ static void chpl__autoDestroy6(DefaultRectangularArr_int64_t_1_int64_t_F x, int6
 #line 1163 "ChapelBase.chpl"
 /* ChapelBase.chpl:1163 */
 #line 1163 "ChapelBase.chpl"
-static void chpl__autoDestroy4(DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F x, int64_t _ln, c_string _fn) {
+static void chpl__autoDestroy4(DefaultRectangularArr_int64_t_1_int64_t_F x, int64_t _ln, c_string _fn) {
 #line 1164 "ChapelBase.chpl"
   chpl___TILDE__array4(x, _ln, _fn);
 #line 1163 "ChapelBase.chpl"
@@ -1675,9 +1664,20 @@ static void chpl__autoDestroy4(DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F
 }
 
 #line 1163 "ChapelBase.chpl"
+/* ChapelBase.chpl:1163 */
+#line 1163 "ChapelBase.chpl"
+static void chpl__autoDestroy6(DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F x, int64_t _ln, c_string _fn) {
+#line 1164 "ChapelBase.chpl"
+  chpl___TILDE__array2(x, _ln, _fn);
+#line 1163 "ChapelBase.chpl"
+  return;
+#line 1163 "ChapelBase.chpl"
+}
+
+#line 1163 "ChapelBase.chpl"
 /* ChapelRange.chpl:1507 */
 #line 1163 "ChapelBase.chpl"
-static void coforall_fn(_ddata_int64_t x1_tet, chpl___EndCount_atomic_int64_int64_t _coforallCount, int64_t numChunks, int64_t chunk, _ref_range_int64_t_bounded_F this6, int64_t len, int64_t _ln, c_string _fn) {
+static void coforall_fn(_ddata_int64_t x1_tet, int64_t chunk, int64_t numChunks, _ref_range_int64_t_bounded_F this6, int64_t len, chpl___EndCount_atomic_int64_int64_t _coforallCount, int64_t _ln, c_string _fn) {
 #line 1163 "ChapelBase.chpl"
   _tuple_2_star_int64_t const_tmp;
 #line 1163 "ChapelBase.chpl"

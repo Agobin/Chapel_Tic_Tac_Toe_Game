@@ -82,7 +82,7 @@ static void chpl__init_LocalesArray(int64_t _ln, c_string _fn) {
 #line 55 "LocalesArray.chpl"
   LocaleSpace = const_tmp;
 #line 51 "LocalesArray.chpl"
-  chpl__autoDestroy3(call_tmp5, _ln, _fn);
+  chpl__autoDestroy5(call_tmp5, _ln, _fn);
 #line 40 "LocalesArray.chpl"
   *(refIndentLevel) -= INT64(1);
 #line 40 "LocalesArray.chpl"

@@ -685,7 +685,7 @@ static void chpl__auto_destroy_RootLocale(RootLocale this6, int64_t _ln, c_strin
 #line 195 "LocaleModel.chpl"
   _field_destructor_tmp_ = (this6)->myLocales;
 #line 195 "LocaleModel.chpl"
-  chpl__autoDestroy3(_field_destructor_tmp_, _ln, _fn);
+  chpl__autoDestroy5(_field_destructor_tmp_, _ln, _fn);
 #line 194 "LocaleModel.chpl"
   chpl_check_nil(this6, INT64(194), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/localeModels/flat/LocaleModel.chpl");
 #line 194 "LocaleModel.chpl"
@@ -1176,7 +1176,7 @@ static void init2(RootLocale this6, int64_t _ln, c_string _fn) {
 #line 207 "LocaleModel.chpl"
     chpl_here_alloc_size = sizeof(chpl__class_localscoforall_fn2_object);
 #line 207 "LocaleModel.chpl"
-    chpl_here_alloc_tmp = chpl_here_alloc(chpl_here_alloc_size, INT16(36), _ln, _fn);
+    chpl_here_alloc_tmp = chpl_here_alloc(chpl_here_alloc_size, INT16(37), _ln, _fn);
 #line 207 "LocaleModel.chpl"
     _args_forcoforall_fn = ((_class_localscoforall_fn2)(chpl_here_alloc_tmp));
 #line 207 "LocaleModel.chpl"
@@ -1228,7 +1228,7 @@ static void init2(RootLocale this6, int64_t _ln, c_string _fn) {
 #line 207 "LocaleModel.chpl"
   chpl_here_free(call_tmp10, _ln, _fn);
 #line 207 "LocaleModel.chpl"
-  chpl__autoDestroy5(flags, _ln, _fn);
+  chpl__autoDestroy3(flags, _ln, _fn);
 #line 214 "LocaleModel.chpl"
   _autoCopy_tmp_ = chpl_rt_buildLocaleID(chpl_nodeID, local_c_sublocid_any);
 #line 214 "LocaleModel.chpl"
@@ -1658,7 +1658,7 @@ static void getDefaultLocaleArray(RootLocale this6, _ref_DefaultRectangularArr_l
 #line 249 "LocaleModel.chpl"
   call_tmp = (this6)->myLocales;
 #line 249 "LocaleModel.chpl"
-  *(_retArg) = chpl__autoCopy3(call_tmp, _ln, _fn);
+  *(_retArg) = chpl__autoCopy6(call_tmp, _ln, _fn);
 #line 249 "LocaleModel.chpl"
   return;
 #line 249 "LocaleModel.chpl"
