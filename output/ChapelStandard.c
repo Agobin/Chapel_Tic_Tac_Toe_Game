@@ -44,8 +44,6 @@ void chpl__init_ChapelStandard(int64_t _ln, c_string _fn) {
 #line 23 "ChapelStandard.chpl"
     chpl__init_ChapelRange(_ln, _fn);
 #line 23 "ChapelStandard.chpl"
-    chpl__init_ChapelSyncvar(_ln, _fn);
-#line 23 "ChapelStandard.chpl"
     chpl__init_LocaleModel(_ln, _fn);
 #line 23 "ChapelStandard.chpl"
     chpl__init_ChapelLocale(_ln, _fn);
@@ -73,8 +71,6 @@ void chpl__init_ChapelStandard(int64_t _ln, c_string _fn) {
     chpl__init_ChapelDynDispHack(_ln, _fn);
 #line 23 "ChapelStandard.chpl"
     chpl__init_Assert(_ln, _fn);
-#line 23 "ChapelStandard.chpl"
-    chpl__init_Math(_ln, _fn);
 #line 23 "ChapelStandard.chpl"
     chpl__init_CommDiagnostics(_ln, _fn);
 #line 23 "ChapelStandard.chpl"

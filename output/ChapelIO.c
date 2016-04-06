@@ -95,7 +95,7 @@ static int64_t styleElement(Writer this6, int64_t element) {
 #line 297 "ChapelIO.chpl"
 /* ChapelIO.chpl:317 */
 #line 297 "ChapelIO.chpl"
-static void writePrimitive2(Writer this6, int64_t x, int64_t _ln, c_string _fn) {
+static void writePrimitive3(Writer this6, int64_t x, int64_t _ln, c_string _fn) {
 #line 319 "ChapelIO.chpl"
   halt("Generic Writer.writePrimitive called", _ln, _fn);
 #line 317 "ChapelIO.chpl"
@@ -106,7 +106,7 @@ static void writePrimitive2(Writer this6, int64_t x, int64_t _ln, c_string _fn) 
 #line 317 "ChapelIO.chpl"
 /* ChapelIO.chpl:317 */
 #line 317 "ChapelIO.chpl"
-static void writePrimitive(Writer this6, chpl_string x, int64_t _ln, c_string _fn) {
+static void writePrimitive2(Writer this6, chpl_string x, int64_t _ln, c_string _fn) {
 #line 319 "ChapelIO.chpl"
   halt("Generic Writer.writePrimitive called", _ln, _fn);
 #line 317 "ChapelIO.chpl"
@@ -117,7 +117,7 @@ static void writePrimitive(Writer this6, chpl_string x, int64_t _ln, c_string _f
 #line 317 "ChapelIO.chpl"
 /* ChapelIO.chpl:317 */
 #line 317 "ChapelIO.chpl"
-static void writePrimitive3(Writer this6, ioLiteral_chpl* const x, int64_t _ln, c_string _fn) {
+static void writePrimitive(Writer this6, ioLiteral_chpl* const x, int64_t _ln, c_string _fn) {
 #line 319 "ChapelIO.chpl"
   halt("Generic Writer.writePrimitive called", _ln, _fn);
 #line 317 "ChapelIO.chpl"
@@ -170,7 +170,7 @@ static void writeIt2(Writer this6, ioLiteral_chpl* const x, int64_t _ln, c_strin
 #line 332 "ChapelIO.chpl"
   _virtual_method_tmp_ = ((object)(this6))->chpl__cid;
 #line 332 "ChapelIO.chpl"
-  ((void(*)(Writer, ioLiteral_chpl* const, int64_t, c_string))chpl_vmtable[((INT64(4) * _virtual_method_tmp_) + INT64(2))])(this6, x, _ln, _fn);
+  ((void(*)(Writer, ioLiteral_chpl* const, int64_t, c_string))chpl_vmtable[((INT64(4) * _virtual_method_tmp_) + INT64(3))])(this6, x, _ln, _fn);
 #line 330 "ChapelIO.chpl"
   return;
 #line 330 "ChapelIO.chpl"
@@ -187,7 +187,7 @@ static void writeIt4(Writer this6, int64_t x, int64_t _ln, c_string _fn) {
 #line 332 "ChapelIO.chpl"
   _virtual_method_tmp_ = ((object)(this6))->chpl__cid;
 #line 332 "ChapelIO.chpl"
-  ((void(*)(Writer, int64_t, int64_t, c_string))chpl_vmtable[((INT64(4) * _virtual_method_tmp_) + INT64(3))])(this6, x, _ln, _fn);
+  ((void(*)(Writer, int64_t, int64_t, c_string))chpl_vmtable[((INT64(4) * _virtual_method_tmp_) + INT64(2))])(this6, x, _ln, _fn);
 #line 330 "ChapelIO.chpl"
   return;
 #line 330 "ChapelIO.chpl"
@@ -310,7 +310,7 @@ static void halt3(chpl_string _e0_args, _tuple_1_star_int64_t* const _e1_args, i
 #line 907 "ChapelIO.chpl"
   chpl_check_nil(_ref_tmp_, INT64(907), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelIO.chpl");
 #line 907 "ChapelIO.chpl"
-  write5(_ref_tmp_, _e0_args, &coerce_tmp, _ln, _fn);
+  write4(_ref_tmp_, _e0_args, &coerce_tmp, _ln, _fn);
 #line 908 "ChapelIO.chpl"
   call_tmp = string_concat("halt reached - ", tmpstring, _ln, _fn);
 #line 908 "ChapelIO.chpl"
@@ -337,7 +337,7 @@ static void halt2(chpl_string _e0_args, int64_t _e1_args, int64_t _ln, c_string 
 #line 907 "ChapelIO.chpl"
   chpl_check_nil(_ref_tmp_, INT64(907), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelIO.chpl");
 #line 907 "ChapelIO.chpl"
-  write4(_ref_tmp_, _e0_args, _e1_args, _ln, _fn);
+  write5(_ref_tmp_, _e0_args, _e1_args, _ln, _fn);
 #line 908 "ChapelIO.chpl"
   call_tmp = string_concat("halt reached - ", tmpstring, _ln, _fn);
 #line 908 "ChapelIO.chpl"
@@ -460,7 +460,7 @@ static StringWriter StringWriter2(c_string x, int64_t _ln, c_string _fn) {
 #line 960 "ChapelIO.chpl"
 /* ChapelIO.chpl:964 */
 #line 960 "ChapelIO.chpl"
-static void writePrimitive5(StringWriter this6, chpl_string x, int64_t _ln, c_string _fn) {
+static void writePrimitive6(StringWriter this6, chpl_string x, int64_t _ln, c_string _fn) {
 #line 960 "ChapelIO.chpl"
   c_string_copy aug;
 #line 960 "ChapelIO.chpl"
@@ -561,7 +561,7 @@ static void writePrimitive5(StringWriter this6, chpl_string x, int64_t _ln, c_st
 #line 964 "ChapelIO.chpl"
 /* ChapelIO.chpl:964 */
 #line 964 "ChapelIO.chpl"
-static void writePrimitive6(StringWriter this6, ioLiteral_chpl* const x, int64_t _ln, c_string _fn) {
+static void writePrimitive4(StringWriter this6, ioLiteral_chpl* const x, int64_t _ln, c_string _fn) {
 #line 964 "ChapelIO.chpl"
   c_string_copy aug;
 #line 964 "ChapelIO.chpl"
@@ -674,7 +674,7 @@ static void writePrimitive6(StringWriter this6, ioLiteral_chpl* const x, int64_t
 #line 964 "ChapelIO.chpl"
 /* ChapelIO.chpl:964 */
 #line 964 "ChapelIO.chpl"
-static void writePrimitive4(StringWriter this6, int64_t x, int64_t _ln, c_string _fn) {
+static void writePrimitive5(StringWriter this6, int64_t x, int64_t _ln, c_string _fn) {
 #line 964 "ChapelIO.chpl"
   c_string_copy aug;
 #line 964 "ChapelIO.chpl"
@@ -832,7 +832,7 @@ static void chpl___TILDE_StringWriter(StringWriter this6, int64_t _ln, c_string 
 #line 971 "ChapelIO.chpl"
 /* ChapelIO.chpl:995 */
 #line 971 "ChapelIO.chpl"
-static void write5(_ref_c_string this6, chpl_string _e0_args, _tuple_1_star_int64_t* const _e1_args, int64_t _ln, c_string _fn) {
+static void write4(_ref_c_string this6, chpl_string _e0_args, _tuple_1_star_int64_t* const _e1_args, int64_t _ln, c_string _fn) {
 #line 971 "ChapelIO.chpl"
   int64_t this_x2_x1;
 #line 971 "ChapelIO.chpl"
@@ -897,7 +897,7 @@ static void write5(_ref_c_string this6, chpl_string _e0_args, _tuple_1_star_int6
 #line 995 "ChapelIO.chpl"
 /* ChapelIO.chpl:995 */
 #line 995 "ChapelIO.chpl"
-static void write4(_ref_c_string this6, chpl_string _e0_args, int64_t _e1_args, int64_t _ln, c_string _fn) {
+static void write5(_ref_c_string this6, chpl_string _e0_args, int64_t _e1_args, int64_t _ln, c_string _fn) {
 #line 995 "ChapelIO.chpl"
   StringWriter sc = NULL;
 #line 995 "ChapelIO.chpl"

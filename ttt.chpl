@@ -10,24 +10,106 @@ var gameOver:bool = false;
 
 
 module Functions{
+	proc printArray(a:[]int){
+		for i in 1..9{
+			write(a[i] + " ");
+			if( i % 3 == 0){
+				writeln();
+			}
+		}
+		writeln();
+	}
+	proc defend(boardMatrix: []int, moves: []int){
+
+		var position: int = moves[1];
+		var playerOneWon: int = 0;
+		
+		if(boardMatrix[5] == 0){
+			return 5;
+		}
+			
+		//Checking for positions that will let the player win
+		for i in 1..moves.size{
+			
+			//Based on some assumptions of his next move
+			playerOneWon = analyseBoard(boardMatrix, 1, moves[i]);
+			if( playerOneWon){
+				position = moves[i];
+				break;
+			}
+		}
+		
+		return position;
+	}
 	
-	proc computersMind( boardMatrix: []int): void{
-		var randN = new RandomStream();
+	proc attack(boardMatrix: []int, moves: []int){
+
+		var position: int = moves[1];
+		var computerWon: int = 0;
+		
+	
+		//Checking for positions that will let the computer win
+		for i in 1..moves.size{
+			
+			//Based on some assumptions of its next move
+			computerWon = analyseBoard(boardMatrix, 2, moves[i]);
+			if(computerWon){
+				position = moves[i];
+				break;
+			}
+		}
+		return position;
+	}
+	
+	proc computersMind( boardMatrix: []int): int{
+
 		var availableMoves: int = 9 - playCounter;
-		var moves_list: [1..availableMoves]int;
-		writeln("Random number: " + randN.getNext():int );
+		
+		var moves: [1..availableMoves]int;
+		var counter: int = 1;
+		
+		//Getting all the available positions
+		for i in 1..9{
+			if( boardMatrix[i] == 0){
+				moves[counter] = i;
+				counter += 1;
+			}
+		}
+		
+		var position:int = defend(boardMatrix, moves);
+		
+		//If a spot found where the player can win, the computer defends
+		if( position){
+			return position;
+		}
+		else{ //Else computer attacks
+			position = attack(boardMatrix, moves);
+			return position;
+		}
 		
 	}
 	
-	proc analyseBoard( a: []int, n: int, key: int): int{	
+	proc analyseBoard( a: []int, key: int, assumeIndex:int = 0): int{	
+		var result = 0;
+		
+		if( assumeIndex){
+			a[assumeIndex] = key;
+		}
+			
 		if( (a[1] == key && a[2] == key && a[3] == key) || (a[4] == key && a[5] == key && a[6] == key) || (a[7] == key && a[8] == key && a[9] == key) || 
 			(a[1] == key && a[5] == key && a[9] == key) || (a[1] == key && a[4] == key && a[7] == key) || (a[2] == key && a[5] == key && a[8] == key) || 
 			(a[3] == key && a[6] == key && a[9] == key) || (a[7] == key && a[5] == key && a[3] == key) ){
-			return key;	
+				
+			result = key;	
 		}
 		
-		return 0; 
-	}  
+		if( assumeIndex ){
+			a[assumeIndex] = 0;
+		}
+		
+		return result; 
+	}
+	
 	export proc resetGame(btn: c_ptr(GtkWidget), data: c_void_ptr): void{
 	
 		playCounter = 0;
@@ -42,7 +124,8 @@ module Functions{
 	export proc record_move (button: c_ptr(GtkWidget), numPtr: c_ptr(int)): void{
 		
 		var num = numPtr.deref();
-		var ptr: c_void_ptr;
+		var ptr: c_void_ptr; //Variable passed to resetGame() method
+		
 				
 		if( gameOver ){
 			resetGame(button, ptr);  
@@ -51,10 +134,7 @@ module Functions{
 		else if( boardMatrix[num] != 0){          
 			//Not a valid play
 			if(playCounter % 2 == 0){
-				gtk_label_set_text(GTK_LABEL(output), "   Invalid move, spot occupied, Player one play again");
-			}
-			else{
-				gtk_label_set_text(GTK_LABEL(output), "   Invalid move, spot occupied, Player two play again");
+				gtk_label_set_text(GTK_LABEL(output), "   Invalid move, spot occupied, Play again");
 			}
 
 		}
@@ -64,43 +144,40 @@ module Functions{
 			if(playCounter % 2 == 0){
 				boardMatrix[num] = 1;
 				gtk_button_set_label(GTK_BUTTON(button), "O");
-			}
-			else{ //Computer or player two played
-				computersMind(boardMatrix);
-				boardMatrix[num] = 2;
-				gtk_button_set_label(GTK_BUTTON(button), "X");
-			}
-			
-			var gameWon1: int = analyseBoard(boardMatrix, 9, 1);
-			var gameWon2: int = analyseBoard(boardMatrix, 9, 2);
-			
-			if( gameWon1 ){ 
-				gtk_label_set_text(GTK_LABEL(output), "  Game Over: You win!!");
-				gameOver = true;
-			}
-			else if( gameWon2){
-				gtk_label_set_text(GTK_LABEL(output), "  Game Over: You lose!!");
-				gameOver = true;
-			}
-			else if(playCounter == 8){
-				gameOver = true;
-				gtk_label_set_text(GTK_LABEL(output), "  Game Over: Draw");
-			}
-			else if(playCounter < 8){
-			
-				if(playCounter % 2 == 0){
-					gtk_label_set_text(GTK_LABEL(output), "Player one's time to play");
-				}
-				//else{
-					//gtk_label_set_text(GTK_LABEL(output), "Player one's time to play");
-				//}
-				
 				playCounter += 1;
+				
+				var player: int = analyseBoard(boardMatrix, 1);
+				
+				if( player ){ 
+					gtk_label_set_text(GTK_LABEL(output), "  Game Over: You win!!");
+					gameOver = true;
+				}
+				else{ //If player doesn't win, the computer plays
+					//Clears the output label's text
+					if(playCounter == 1){
+						gtk_label_set_text(GTK_LABEL(output), "");
+					}
+					var computersMove = computersMind(boardMatrix);
+					boardMatrix[computersMove] = 2;
+					gtk_button_set_label(GTK_BUTTON(button_array[computersMove]), "X");
+					
+					
+					var computer: int = analyseBoard(boardMatrix, 2);
+			
+					if( computer){ //if computer wins
+						gtk_label_set_text(GTK_LABEL(output), "  Game Over: You lose!!");
+						gameOver = true;
+					}
+					else if(playCounter == 8){ //All slots have been occupied
+						gameOver = true;
+						gtk_label_set_text(GTK_LABEL(output), "  Game Over: Draw");
+					}
+					playCounter += 1;
+				}
+				
 			}
 		}
-
 	}
-
 }
 
 module FunctionSysbols{
@@ -112,10 +189,11 @@ module FunctionSysbols{
 
 //Beginning of main
 proc main( args: [] string){
-	
+
 	use FunctionSysbols;
 	var num:int;
-    
+	
+	
 	//Initialises all widgets
 	gtk_init(args);    
 	
@@ -133,7 +211,7 @@ proc main( args: [] string){
 	g_signal_connect_swapped(stopBtn, "clicked", G_CALLBACK(gtk_widget_destroy), window);
 	 
 	//outputLabel is used to display game status at any moment
-	output = gtk_label_new("Player one start play");
+	output = gtk_label_new("Start play.");
 	
 	//These nested for loops add buttons to the board
 	var counter = 1;
@@ -164,7 +242,7 @@ proc main( args: [] string){
 					g_signal_connect(button_array[counter], "clicked", G_CALLBACK(record_move), c_ptrTo(nine));
 			}
 			
-			gtk_table_attach_defaults(GTK_TABLE(board), button_array[counter], (i-1):c_int, i:c_int, (j-1):c_int, j:c_int); 
+			gtk_table_attach_defaults(GTK_TABLE(board), button_array[counter], (j-1):c_int, j:c_int, (i-1):c_int, i:c_int); 
 			counter += 1;
 		}
 	}

@@ -72,7 +72,7 @@ static void _newArray(DefaultRectangularArr_locale_1_int64_t_F value, _ref_Defau
 #line 242 "ChapelArray.chpl"
   this6 = value;
 #line 242 "ChapelArray.chpl"
-  wrap_call_tmp = _construct__array5(value, this6, _ln, _fn);
+  wrap_call_tmp = _construct__array2(value, this6, _ln, _fn);
 #line 242 "ChapelArray.chpl"
   *(_retArg) = chpl__autoCopy6(wrap_call_tmp, _ln, _fn);
 #line 238 "ChapelArray.chpl"
@@ -93,9 +93,9 @@ static void _newArray2(DefaultRectangularArr_localesSignal_1_int64_t_F value, _r
 #line 242 "ChapelArray.chpl"
   this6 = value;
 #line 242 "ChapelArray.chpl"
-  wrap_call_tmp = _construct__array(value, this6, _ln, _fn);
+  wrap_call_tmp = _construct__array3(value, this6, _ln, _fn);
 #line 242 "ChapelArray.chpl"
-  *(_retArg) = chpl__autoCopy3(wrap_call_tmp, _ln, _fn);
+  *(_retArg) = chpl__autoCopy7(wrap_call_tmp, _ln, _fn);
 #line 238 "ChapelArray.chpl"
   return;
 #line 238 "ChapelArray.chpl"
@@ -114,28 +114,7 @@ static void _newArray3(DefaultRectangularArr_int64_t_1_int64_t_F value, _ref_Def
 #line 242 "ChapelArray.chpl"
   this6 = value;
 #line 242 "ChapelArray.chpl"
-  wrap_call_tmp = _construct__array4(value, this6, _ln, _fn);
-#line 242 "ChapelArray.chpl"
-  *(_retArg) = chpl__autoCopy7(wrap_call_tmp, _ln, _fn);
-#line 238 "ChapelArray.chpl"
-  return;
-#line 238 "ChapelArray.chpl"
-}
-
-#line 238 "ChapelArray.chpl"
-/* ChapelArray.chpl:238 */
-#line 238 "ChapelArray.chpl"
-static void _newArray5(DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F value, _ref_DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F _retArg, int64_t _ln, c_string _fn) {
-#line 238 "ChapelArray.chpl"
-  DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F this6 = NULL;
-#line 238 "ChapelArray.chpl"
-  DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F wrap_call_tmp = NULL;
-#line 242 "ChapelArray.chpl"
-  this6 = nil;
-#line 242 "ChapelArray.chpl"
-  this6 = value;
-#line 242 "ChapelArray.chpl"
-  wrap_call_tmp = _construct__array3(value, this6, _ln, _fn);
+  wrap_call_tmp = _construct__array5(value, this6, _ln, _fn);
 #line 242 "ChapelArray.chpl"
   *(_retArg) = chpl__autoCopy5(wrap_call_tmp, _ln, _fn);
 #line 238 "ChapelArray.chpl"
@@ -146,7 +125,28 @@ static void _newArray5(DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F value, 
 #line 238 "ChapelArray.chpl"
 /* ChapelArray.chpl:238 */
 #line 238 "ChapelArray.chpl"
-static void _newArray4(DefaultRectangularArr_chpl_string_1_int64_t_F value, _ref_DefaultRectangularArr_chpl_string_1_int64_t_F _retArg, int64_t _ln, c_string _fn) {
+static void _newArray4(DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F value, _ref_DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F _retArg, int64_t _ln, c_string _fn) {
+#line 238 "ChapelArray.chpl"
+  DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F this6 = NULL;
+#line 238 "ChapelArray.chpl"
+  DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F wrap_call_tmp = NULL;
+#line 242 "ChapelArray.chpl"
+  this6 = nil;
+#line 242 "ChapelArray.chpl"
+  this6 = value;
+#line 242 "ChapelArray.chpl"
+  wrap_call_tmp = _construct__array4(value, this6, _ln, _fn);
+#line 242 "ChapelArray.chpl"
+  *(_retArg) = chpl__autoCopy4(wrap_call_tmp, _ln, _fn);
+#line 238 "ChapelArray.chpl"
+  return;
+#line 238 "ChapelArray.chpl"
+}
+
+#line 238 "ChapelArray.chpl"
+/* ChapelArray.chpl:238 */
+#line 238 "ChapelArray.chpl"
+static void _newArray5(DefaultRectangularArr_chpl_string_1_int64_t_F value, _ref_DefaultRectangularArr_chpl_string_1_int64_t_F _retArg, int64_t _ln, c_string _fn) {
 #line 238 "ChapelArray.chpl"
   DefaultRectangularArr_chpl_string_1_int64_t_F this6 = NULL;
 #line 238 "ChapelArray.chpl"
@@ -156,9 +156,9 @@ static void _newArray4(DefaultRectangularArr_chpl_string_1_int64_t_F value, _ref
 #line 242 "ChapelArray.chpl"
   this6 = value;
 #line 242 "ChapelArray.chpl"
-  wrap_call_tmp = _construct__array2(value, this6, _ln, _fn);
+  wrap_call_tmp = _construct__array(value, this6, _ln, _fn);
 #line 242 "ChapelArray.chpl"
-  *(_retArg) = chpl__autoCopy4(wrap_call_tmp, _ln, _fn);
+  *(_retArg) = chpl__autoCopy3(wrap_call_tmp, _ln, _fn);
 #line 238 "ChapelArray.chpl"
   return;
 #line 238 "ChapelArray.chpl"
@@ -319,7 +319,7 @@ static chpl___RuntimeTypeInfo5 chpl__buildArrayRuntimeType3(DefaultRectangularDo
 #line 332 "ChapelArray.chpl"
 /* ChapelArray.chpl:332 */
 #line 332 "ChapelArray.chpl"
-static chpl___RuntimeTypeInfo6 chpl__buildArrayRuntimeType2(DefaultRectangularDom_1_int64_t_F dom, int64_t _ln, c_string _fn) {
+static chpl___RuntimeTypeInfo6 chpl__buildArrayRuntimeType5(DefaultRectangularDom_1_int64_t_F dom, int64_t _ln, c_string _fn) {
 #line 332 "ChapelArray.chpl"
   chpl___RuntimeTypeInfo6 _return_tmp_;
 #line 332 "ChapelArray.chpl"
@@ -332,7 +332,7 @@ static chpl___RuntimeTypeInfo6 chpl__buildArrayRuntimeType2(DefaultRectangularDo
 #line 332 "ChapelArray.chpl"
 /* ChapelArray.chpl:332 */
 #line 332 "ChapelArray.chpl"
-static void chpl__convertRuntimeTypeToValue6(DefaultRectangularDom_1_int64_t_F dom, _ref_DefaultRectangularArr_chpl_string_1_int64_t_F _retArg, int64_t _ln, c_string _fn) {
+static void chpl__convertRuntimeTypeToValue3(DefaultRectangularDom_1_int64_t_F dom, _ref_DefaultRectangularArr_chpl_string_1_int64_t_F _retArg, int64_t _ln, c_string _fn) {
 #line 332 "ChapelArray.chpl"
   DefaultRectangularArr_chpl_string_1_int64_t_F call_tmp = NULL;
 #line 332 "ChapelArray.chpl"
@@ -353,7 +353,7 @@ static void chpl__convertRuntimeTypeToValue6(DefaultRectangularDom_1_int64_t_F d
 #line 332 "ChapelArray.chpl"
 /* ChapelArray.chpl:332 */
 #line 332 "ChapelArray.chpl"
-static void chpl__convertRuntimeTypeToValue2(DefaultRectangularDom_1_int64_t_F dom, _ref_DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F _retArg, int64_t _ln, c_string _fn) {
+static void chpl__convertRuntimeTypeToValue5(DefaultRectangularDom_1_int64_t_F dom, _ref_DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F _retArg, int64_t _ln, c_string _fn) {
 #line 332 "ChapelArray.chpl"
   DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F call_tmp = NULL;
 #line 332 "ChapelArray.chpl"
@@ -374,7 +374,7 @@ static void chpl__convertRuntimeTypeToValue2(DefaultRectangularDom_1_int64_t_F d
 #line 332 "ChapelArray.chpl"
 /* ChapelArray.chpl:332 */
 #line 332 "ChapelArray.chpl"
-static chpl___RuntimeTypeInfo4 chpl__buildArrayRuntimeType5(DefaultRectangularDom_1_int64_t_F dom, int64_t _ln, c_string _fn) {
+static chpl___RuntimeTypeInfo4 chpl__buildArrayRuntimeType4(DefaultRectangularDom_1_int64_t_F dom, int64_t _ln, c_string _fn) {
 #line 332 "ChapelArray.chpl"
   chpl___RuntimeTypeInfo4 _return_tmp_;
 #line 332 "ChapelArray.chpl"
@@ -387,7 +387,7 @@ static chpl___RuntimeTypeInfo4 chpl__buildArrayRuntimeType5(DefaultRectangularDo
 #line 332 "ChapelArray.chpl"
 /* ChapelArray.chpl:332 */
 #line 332 "ChapelArray.chpl"
-static chpl___RuntimeTypeInfo3 chpl__buildArrayRuntimeType(DefaultRectangularDom_1_int64_t_F dom, int64_t _ln, c_string _fn) {
+static chpl___RuntimeTypeInfo3 chpl__buildArrayRuntimeType2(DefaultRectangularDom_1_int64_t_F dom, int64_t _ln, c_string _fn) {
 #line 332 "ChapelArray.chpl"
   chpl___RuntimeTypeInfo3 _return_tmp_;
 #line 332 "ChapelArray.chpl"
@@ -400,7 +400,7 @@ static chpl___RuntimeTypeInfo3 chpl__buildArrayRuntimeType(DefaultRectangularDom
 #line 332 "ChapelArray.chpl"
 /* ChapelArray.chpl:332 */
 #line 332 "ChapelArray.chpl"
-static void chpl__convertRuntimeTypeToValue3(DefaultRectangularDom_1_int64_t_F dom, _ref_DefaultRectangularArr_locale_1_int64_t_F _retArg, int64_t _ln, c_string _fn) {
+static void chpl__convertRuntimeTypeToValue6(DefaultRectangularDom_1_int64_t_F dom, _ref_DefaultRectangularArr_locale_1_int64_t_F _retArg, int64_t _ln, c_string _fn) {
 #line 332 "ChapelArray.chpl"
   DefaultRectangularArr_locale_1_int64_t_F call_tmp = NULL;
 #line 332 "ChapelArray.chpl"
@@ -421,7 +421,7 @@ static void chpl__convertRuntimeTypeToValue3(DefaultRectangularDom_1_int64_t_F d
 #line 332 "ChapelArray.chpl"
 /* ChapelArray.chpl:332 */
 #line 332 "ChapelArray.chpl"
-static void chpl__convertRuntimeTypeToValue5(DefaultRectangularDom_1_int64_t_F dom, _ref_DefaultRectangularArr_localesSignal_1_int64_t_F _retArg, int64_t _ln, c_string _fn) {
+static void chpl__convertRuntimeTypeToValue4(DefaultRectangularDom_1_int64_t_F dom, _ref_DefaultRectangularArr_localesSignal_1_int64_t_F _retArg, int64_t _ln, c_string _fn) {
 #line 332 "ChapelArray.chpl"
   DefaultRectangularArr_localesSignal_1_int64_t_F call_tmp = NULL;
 #line 332 "ChapelArray.chpl"
@@ -442,7 +442,7 @@ static void chpl__convertRuntimeTypeToValue5(DefaultRectangularDom_1_int64_t_F d
 #line 332 "ChapelArray.chpl"
 /* ChapelArray.chpl:332 */
 #line 332 "ChapelArray.chpl"
-static chpl___RuntimeTypeInfo2 chpl__buildArrayRuntimeType4(DefaultRectangularDom_1_int64_t_F dom, int64_t _ln, c_string _fn) {
+static chpl___RuntimeTypeInfo2 chpl__buildArrayRuntimeType(DefaultRectangularDom_1_int64_t_F dom, int64_t _ln, c_string _fn) {
 #line 332 "ChapelArray.chpl"
   chpl___RuntimeTypeInfo2 _return_tmp_;
 #line 332 "ChapelArray.chpl"
@@ -455,7 +455,7 @@ static chpl___RuntimeTypeInfo2 chpl__buildArrayRuntimeType4(DefaultRectangularDo
 #line 332 "ChapelArray.chpl"
 /* ChapelArray.chpl:332 */
 #line 332 "ChapelArray.chpl"
-static void chpl__convertRuntimeTypeToValue4(DefaultRectangularDom_1_int64_t_F dom, _ref_DefaultRectangularArr_int64_t_1_int64_t_F _retArg, int64_t _ln, c_string _fn) {
+static void chpl__convertRuntimeTypeToValue2(DefaultRectangularDom_1_int64_t_F dom, _ref_DefaultRectangularArr_int64_t_1_int64_t_F _retArg, int64_t _ln, c_string _fn) {
 #line 332 "ChapelArray.chpl"
   DefaultRectangularArr_int64_t_1_int64_t_F call_tmp = NULL;
 #line 332 "ChapelArray.chpl"
@@ -476,7 +476,7 @@ static void chpl__convertRuntimeTypeToValue4(DefaultRectangularDom_1_int64_t_F d
 #line 332 "ChapelArray.chpl"
 /* ChapelArray.chpl:450 */
 #line 332 "ChapelArray.chpl"
-static void chpl_incRefCountsForDomainsInArrayEltTypes3(void) {
+static void chpl_incRefCountsForDomainsInArrayEltTypes4(void) {
 #line 451 "ChapelArray.chpl"
   compilerAssert();
 #line 450 "ChapelArray.chpl"
@@ -498,7 +498,7 @@ static void chpl_incRefCountsForDomainsInArrayEltTypes2(void) {
 #line 450 "ChapelArray.chpl"
 /* ChapelArray.chpl:450 */
 #line 450 "ChapelArray.chpl"
-static void chpl_incRefCountsForDomainsInArrayEltTypes(void) {
+static void chpl_incRefCountsForDomainsInArrayEltTypes3(void) {
 #line 451 "ChapelArray.chpl"
   compilerAssert();
 #line 450 "ChapelArray.chpl"
@@ -509,7 +509,7 @@ static void chpl_incRefCountsForDomainsInArrayEltTypes(void) {
 #line 450 "ChapelArray.chpl"
 /* ChapelArray.chpl:450 */
 #line 450 "ChapelArray.chpl"
-static void chpl_incRefCountsForDomainsInArrayEltTypes4(void) {
+static void chpl_incRefCountsForDomainsInArrayEltTypes(void) {
 #line 451 "ChapelArray.chpl"
   compilerAssert();
 #line 450 "ChapelArray.chpl"
@@ -531,6 +531,17 @@ static void chpl_incRefCountsForDomainsInArrayEltTypes5(void) {
 #line 450 "ChapelArray.chpl"
 /* ChapelArray.chpl:471 */
 #line 450 "ChapelArray.chpl"
+static void chpl_decRefCountsForDomainsInArrayEltTypes3(void) {
+#line 472 "ChapelArray.chpl"
+  compilerAssert();
+#line 471 "ChapelArray.chpl"
+  return;
+#line 471 "ChapelArray.chpl"
+}
+
+#line 471 "ChapelArray.chpl"
+/* ChapelArray.chpl:471 */
+#line 471 "ChapelArray.chpl"
 static void chpl_decRefCountsForDomainsInArrayEltTypes(void) {
 #line 472 "ChapelArray.chpl"
   compilerAssert();
@@ -543,17 +554,6 @@ static void chpl_decRefCountsForDomainsInArrayEltTypes(void) {
 /* ChapelArray.chpl:471 */
 #line 471 "ChapelArray.chpl"
 static void chpl_decRefCountsForDomainsInArrayEltTypes2(void) {
-#line 472 "ChapelArray.chpl"
-  compilerAssert();
-#line 471 "ChapelArray.chpl"
-  return;
-#line 471 "ChapelArray.chpl"
-}
-
-#line 471 "ChapelArray.chpl"
-/* ChapelArray.chpl:471 */
-#line 471 "ChapelArray.chpl"
-static void chpl_decRefCountsForDomainsInArrayEltTypes3(void) {
 #line 472 "ChapelArray.chpl"
   compilerAssert();
 #line 471 "ChapelArray.chpl"
@@ -1003,7 +1003,7 @@ static void this2(DefaultRectangularDom_1_int64_t_F this6, range_int64_t_bounded
 #line 855 "ChapelArray.chpl"
   _ref_DefaultRectangularDom_1_int64_t_F ret_to_arg_ref_tmp_3 = NULL;
 #line 915 "ChapelArray.chpl"
-  wrap_call_tmp = range2(INT64(1), INT64(0), INT64(1), INT64(0), false, _ln, _fn);
+  wrap_call_tmp = range(INT64(1), INT64(0), INT64(1), INT64(0), false, _ln, _fn);
 #line 915 "ChapelArray.chpl"
   *(r + INT64(0)) = wrap_call_tmp;
 #line 920 "ChapelArray.chpl"
@@ -1064,7 +1064,7 @@ static void buildArray5(DefaultRectangularDom_1_int64_t_F this6, _ref_DefaultRec
 #line 982 "ChapelArray.chpl"
   chpl_check_nil(ret, INT64(982), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelArray.chpl");
 #line 982 "ChapelArray.chpl"
-  call_tmp = dsiBuildArray4(ret, _ln, _fn);
+  call_tmp = dsiBuildArray3(ret, _ln, _fn);
 #line 982 "ChapelArray.chpl"
   x = call_tmp;
 #line 982 "ChapelArray.chpl"
@@ -1103,7 +1103,7 @@ static void buildArray4(DefaultRectangularDom_1_int64_t_F this6, _ref_DefaultRec
 #line 982 "ChapelArray.chpl"
   chpl_check_nil(ret, INT64(982), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelArray.chpl");
 #line 982 "ChapelArray.chpl"
-  call_tmp = dsiBuildArray3(ret, _ln, _fn);
+  call_tmp = dsiBuildArray5(ret, _ln, _fn);
 #line 982 "ChapelArray.chpl"
   x = call_tmp;
 #line 982 "ChapelArray.chpl"
@@ -1142,7 +1142,7 @@ static void buildArray3(DefaultRectangularDom_1_int64_t_F this6, _ref_DefaultRec
 #line 982 "ChapelArray.chpl"
   chpl_check_nil(ret, INT64(982), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelArray.chpl");
 #line 982 "ChapelArray.chpl"
-  call_tmp = dsiBuildArray(ret, _ln, _fn);
+  call_tmp = dsiBuildArray4(ret, _ln, _fn);
 #line 982 "ChapelArray.chpl"
   x = call_tmp;
 #line 982 "ChapelArray.chpl"
@@ -1181,7 +1181,7 @@ static void buildArray2(DefaultRectangularDom_1_int64_t_F this6, _ref_DefaultRec
 #line 982 "ChapelArray.chpl"
   chpl_check_nil(ret, INT64(982), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelArray.chpl");
 #line 982 "ChapelArray.chpl"
-  call_tmp = dsiBuildArray5(ret, _ln, _fn);
+  call_tmp = dsiBuildArray2(ret, _ln, _fn);
 #line 982 "ChapelArray.chpl"
   x = call_tmp;
 #line 982 "ChapelArray.chpl"
@@ -1191,7 +1191,7 @@ static void buildArray2(DefaultRectangularDom_1_int64_t_F this6, _ref_DefaultRec
 #line 990 "ChapelArray.chpl"
   ret_to_arg_ref_tmp_ = &call_tmp2;
 #line 990 "ChapelArray.chpl"
-  _newArray5(x, ret_to_arg_ref_tmp_, _ln, _fn);
+  _newArray4(x, ret_to_arg_ref_tmp_, _ln, _fn);
 #line 990 "ChapelArray.chpl"
   *(_retArg) = call_tmp2;
 #line 981 "ChapelArray.chpl"
@@ -1220,7 +1220,7 @@ static void buildArray(DefaultRectangularDom_1_int64_t_F this6, _ref_DefaultRect
 #line 982 "ChapelArray.chpl"
   chpl_check_nil(ret, INT64(982), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelArray.chpl");
 #line 982 "ChapelArray.chpl"
-  call_tmp = dsiBuildArray2(ret, _ln, _fn);
+  call_tmp = dsiBuildArray(ret, _ln, _fn);
 #line 982 "ChapelArray.chpl"
   x = call_tmp;
 #line 982 "ChapelArray.chpl"
@@ -1230,7 +1230,7 @@ static void buildArray(DefaultRectangularDom_1_int64_t_F this6, _ref_DefaultRect
 #line 990 "ChapelArray.chpl"
   ret_to_arg_ref_tmp_ = &call_tmp2;
 #line 990 "ChapelArray.chpl"
-  _newArray4(x, ret_to_arg_ref_tmp_, _ln, _fn);
+  _newArray5(x, ret_to_arg_ref_tmp_, _ln, _fn);
 #line 990 "ChapelArray.chpl"
   *(_retArg) = call_tmp2;
 #line 981 "ChapelArray.chpl"
@@ -2061,9 +2061,9 @@ static void getIndices(DefaultRectangularDom_1_int64_t_F this6, _ref__tuple_1_st
 #line 1310 "ChapelArray.chpl"
 /* ChapelArray.chpl:1526 */
 #line 1310 "ChapelArray.chpl"
-static DefaultRectangularArr_int64_t_1_int64_t_F _construct__array4(DefaultRectangularArr_int64_t_1_int64_t_F _value, DefaultRectangularArr_int64_t_1_int64_t_F meme, int64_t _ln, c_string _fn) {
+static DefaultRectangularArr_localesSignal_1_int64_t_F _construct__array3(DefaultRectangularArr_localesSignal_1_int64_t_F _value, DefaultRectangularArr_localesSignal_1_int64_t_F meme, int64_t _ln, c_string _fn) {
 #line 1310 "ChapelArray.chpl"
-  DefaultRectangularArr_int64_t_1_int64_t_F this6 = NULL;
+  DefaultRectangularArr_localesSignal_1_int64_t_F this6 = NULL;
 #line 1526 "ChapelArray.chpl"
   this6 = meme;
 #line 1527 "ChapelArray.chpl"
@@ -2071,7 +2071,7 @@ static DefaultRectangularArr_int64_t_1_int64_t_F _construct__array4(DefaultRecta
 #line 1526 "ChapelArray.chpl"
   chpl_check_nil(this6, INT64(1526), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelArray.chpl");
 #line 1526 "ChapelArray.chpl"
-  initialize3(this6);
+  initialize5(this6);
 #line 1526 "ChapelArray.chpl"
   return this6;
 #line 1526 "ChapelArray.chpl"
@@ -2080,7 +2080,7 @@ static DefaultRectangularArr_int64_t_1_int64_t_F _construct__array4(DefaultRecta
 #line 1526 "ChapelArray.chpl"
 /* ChapelArray.chpl:1526 */
 #line 1526 "ChapelArray.chpl"
-static DefaultRectangularArr_chpl_string_1_int64_t_F _construct__array2(DefaultRectangularArr_chpl_string_1_int64_t_F _value, DefaultRectangularArr_chpl_string_1_int64_t_F meme, int64_t _ln, c_string _fn) {
+static DefaultRectangularArr_chpl_string_1_int64_t_F _construct__array(DefaultRectangularArr_chpl_string_1_int64_t_F _value, DefaultRectangularArr_chpl_string_1_int64_t_F meme, int64_t _ln, c_string _fn) {
 #line 1526 "ChapelArray.chpl"
   DefaultRectangularArr_chpl_string_1_int64_t_F this6 = NULL;
 #line 1526 "ChapelArray.chpl"
@@ -2099,7 +2099,7 @@ static DefaultRectangularArr_chpl_string_1_int64_t_F _construct__array2(DefaultR
 #line 1526 "ChapelArray.chpl"
 /* ChapelArray.chpl:1526 */
 #line 1526 "ChapelArray.chpl"
-static DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F _construct__array3(DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F _value, DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F meme, int64_t _ln, c_string _fn) {
+static DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F _construct__array4(DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F _value, DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F meme, int64_t _ln, c_string _fn) {
 #line 1526 "ChapelArray.chpl"
   DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F this6 = NULL;
 #line 1526 "ChapelArray.chpl"
@@ -2109,7 +2109,7 @@ static DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F _construct__array3(Defa
 #line 1526 "ChapelArray.chpl"
   chpl_check_nil(this6, INT64(1526), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelArray.chpl");
 #line 1526 "ChapelArray.chpl"
-  initialize5(this6);
+  initialize3(this6);
 #line 1526 "ChapelArray.chpl"
   return this6;
 #line 1526 "ChapelArray.chpl"
@@ -2118,9 +2118,9 @@ static DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F _construct__array3(Defa
 #line 1526 "ChapelArray.chpl"
 /* ChapelArray.chpl:1526 */
 #line 1526 "ChapelArray.chpl"
-static DefaultRectangularArr_localesSignal_1_int64_t_F _construct__array(DefaultRectangularArr_localesSignal_1_int64_t_F _value, DefaultRectangularArr_localesSignal_1_int64_t_F meme, int64_t _ln, c_string _fn) {
+static DefaultRectangularArr_int64_t_1_int64_t_F _construct__array5(DefaultRectangularArr_int64_t_1_int64_t_F _value, DefaultRectangularArr_int64_t_1_int64_t_F meme, int64_t _ln, c_string _fn) {
 #line 1526 "ChapelArray.chpl"
-  DefaultRectangularArr_localesSignal_1_int64_t_F this6 = NULL;
+  DefaultRectangularArr_int64_t_1_int64_t_F this6 = NULL;
 #line 1526 "ChapelArray.chpl"
   this6 = meme;
 #line 1527 "ChapelArray.chpl"
@@ -2137,7 +2137,7 @@ static DefaultRectangularArr_localesSignal_1_int64_t_F _construct__array(Default
 #line 1526 "ChapelArray.chpl"
 /* ChapelArray.chpl:1526 */
 #line 1526 "ChapelArray.chpl"
-static DefaultRectangularArr_locale_1_int64_t_F _construct__array5(DefaultRectangularArr_locale_1_int64_t_F _value, DefaultRectangularArr_locale_1_int64_t_F meme, int64_t _ln, c_string _fn) {
+static DefaultRectangularArr_locale_1_int64_t_F _construct__array2(DefaultRectangularArr_locale_1_int64_t_F _value, DefaultRectangularArr_locale_1_int64_t_F meme, int64_t _ln, c_string _fn) {
 #line 1526 "ChapelArray.chpl"
   DefaultRectangularArr_locale_1_int64_t_F this6 = NULL;
 #line 1526 "ChapelArray.chpl"
@@ -2156,9 +2156,9 @@ static DefaultRectangularArr_locale_1_int64_t_F _construct__array5(DefaultRectan
 #line 1526 "ChapelArray.chpl"
 /* ChapelArray.chpl:1532 */
 #line 1526 "ChapelArray.chpl"
-static void initialize3(DefaultRectangularArr_int64_t_1_int64_t_F this6) {
+static void initialize4(DefaultRectangularArr_int64_t_1_int64_t_F this6) {
 #line 1534 "ChapelArray.chpl"
-  chpl_incRefCountsForDomainsInArrayEltTypes();
+  chpl_incRefCountsForDomainsInArrayEltTypes3();
 #line 1532 "ChapelArray.chpl"
   return;
 #line 1532 "ChapelArray.chpl"
@@ -2167,7 +2167,7 @@ static void initialize3(DefaultRectangularArr_int64_t_1_int64_t_F this6) {
 #line 1532 "ChapelArray.chpl"
 /* ChapelArray.chpl:1532 */
 #line 1532 "ChapelArray.chpl"
-static void initialize4(DefaultRectangularArr_localesSignal_1_int64_t_F this6) {
+static void initialize5(DefaultRectangularArr_localesSignal_1_int64_t_F this6) {
 #line 1534 "ChapelArray.chpl"
   chpl_incRefCountsForDomainsInArrayEltTypes2();
 #line 1532 "ChapelArray.chpl"
@@ -2180,7 +2180,7 @@ static void initialize4(DefaultRectangularArr_localesSignal_1_int64_t_F this6) {
 #line 1532 "ChapelArray.chpl"
 static void initialize(DefaultRectangularArr_locale_1_int64_t_F this6) {
 #line 1534 "ChapelArray.chpl"
-  chpl_incRefCountsForDomainsInArrayEltTypes3();
+  chpl_incRefCountsForDomainsInArrayEltTypes4();
 #line 1532 "ChapelArray.chpl"
   return;
 #line 1532 "ChapelArray.chpl"
@@ -2200,9 +2200,9 @@ static void initialize2(DefaultRectangularArr_chpl_string_1_int64_t_F this6) {
 #line 1532 "ChapelArray.chpl"
 /* ChapelArray.chpl:1532 */
 #line 1532 "ChapelArray.chpl"
-static void initialize5(DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F this6) {
+static void initialize3(DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F this6) {
 #line 1534 "ChapelArray.chpl"
-  chpl_incRefCountsForDomainsInArrayEltTypes4();
+  chpl_incRefCountsForDomainsInArrayEltTypes();
 #line 1532 "ChapelArray.chpl"
   return;
 #line 1532 "ChapelArray.chpl"
@@ -2211,7 +2211,7 @@ static void initialize5(DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F this6)
 #line 1532 "ChapelArray.chpl"
 /* ChapelArray.chpl:1552 */
 #line 1532 "ChapelArray.chpl"
-static void chpl___TILDE__array2(DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F this6, int64_t _ln, c_string _fn) {
+static void chpl___TILDE__array3(DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F this6, int64_t _ln, c_string _fn) {
 #line 1532 "ChapelArray.chpl"
   DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F ret = NULL;
 #line 1532 "ChapelArray.chpl"
@@ -2231,6 +2231,75 @@ static void chpl___TILDE__array2(DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t
 #line 1532 "ChapelArray.chpl"
   _ref_atomic_int_least64_t call_tmp4 = NULL;
 #line 1532 "ChapelArray.chpl"
+  chpl_opaque call_tmp5;
+#line 1556 "ChapelArray.chpl"
+  ret = this6;
+#line 1556 "ChapelArray.chpl"
+  call_tmp2 = ((BaseArr)(ret));
+#line 1556 "ChapelArray.chpl"
+  chpl_check_nil(call_tmp2, INT64(1556), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelArray.chpl");
+#line 1556 "ChapelArray.chpl"
+  call_tmp = destroyArr(call_tmp2, _ln, _fn);
+#line 1557 "ChapelArray.chpl"
+  call_tmp3 = (call_tmp == INT64(0));
+#line 1557 "ChapelArray.chpl"
+  if (call_tmp3) /* ZLINE: 1558 /home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelArray.chpl */
+#line 1557 "ChapelArray.chpl"
+  {
+#line 1558 "ChapelArray.chpl"
+    chpl_decRefCountsForDomainsInArrayEltTypes();
+#line 1559 "ChapelArray.chpl"
+    ret2 = this6;
+#line 1559 "ChapelArray.chpl"
+    _parent_destructor_tmp_ = ((BaseArr)(ret2));
+#line 1559 "ChapelArray.chpl"
+    chpl_check_nil(_parent_destructor_tmp_, INT64(1559), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelArray.chpl");
+#line 1559 "ChapelArray.chpl"
+    _field_destructor_tmp_ = &((_parent_destructor_tmp_)->_arrCnt);
+#line 1559 "ChapelArray.chpl"
+    chpl_check_nil(_field_destructor_tmp_, INT64(1559), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelArray.chpl");
+#line 1559 "ChapelArray.chpl"
+    _field_destructor_tmp_2 = &((_field_destructor_tmp_)->_cnt);
+#line 1559 "ChapelArray.chpl"
+    chpl_check_nil(_field_destructor_tmp_2, INT64(1559), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelArray.chpl");
+#line 1559 "ChapelArray.chpl"
+    call_tmp4 = &((_field_destructor_tmp_2)->_v);
+#line 1559 "ChapelArray.chpl"
+    atomic_destroy_int_least64_t(call_tmp4);
+#line 1559 "ChapelArray.chpl"
+    call_tmp5 = ((void*)(ret2));
+#line 1559 "ChapelArray.chpl"
+    chpl_here_free(call_tmp5, _ln, _fn);
+#line 1559 "ChapelArray.chpl"
+  }
+#line 1552 "ChapelArray.chpl"
+  return;
+#line 1552 "ChapelArray.chpl"
+}
+
+#line 1552 "ChapelArray.chpl"
+/* ChapelArray.chpl:1552 */
+#line 1552 "ChapelArray.chpl"
+static void chpl___TILDE__array(DefaultRectangularArr_int64_t_1_int64_t_F this6, int64_t _ln, c_string _fn) {
+#line 1552 "ChapelArray.chpl"
+  DefaultRectangularArr_int64_t_1_int64_t_F ret = NULL;
+#line 1552 "ChapelArray.chpl"
+  int64_t call_tmp;
+#line 1552 "ChapelArray.chpl"
+  BaseArr call_tmp2 = NULL;
+#line 1552 "ChapelArray.chpl"
+  chpl_bool call_tmp3;
+#line 1552 "ChapelArray.chpl"
+  DefaultRectangularArr_int64_t_1_int64_t_F ret2 = NULL;
+#line 1552 "ChapelArray.chpl"
+  BaseArr _parent_destructor_tmp_ = NULL;
+#line 1552 "ChapelArray.chpl"
+  _ref_atomic_refcnt _field_destructor_tmp_ = NULL;
+#line 1552 "ChapelArray.chpl"
+  _ref_atomic_int64 _field_destructor_tmp_2 = NULL;
+#line 1552 "ChapelArray.chpl"
+  _ref_atomic_int_least64_t call_tmp4 = NULL;
+#line 1552 "ChapelArray.chpl"
   chpl_opaque call_tmp5;
 #line 1556 "ChapelArray.chpl"
   ret = this6;
@@ -2280,9 +2349,9 @@ static void chpl___TILDE__array2(DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t
 #line 1552 "ChapelArray.chpl"
 /* ChapelArray.chpl:1552 */
 #line 1552 "ChapelArray.chpl"
-static void chpl___TILDE__array4(DefaultRectangularArr_int64_t_1_int64_t_F this6, int64_t _ln, c_string _fn) {
+static void chpl___TILDE__array2(DefaultRectangularArr_localesSignal_1_int64_t_F this6, int64_t _ln, c_string _fn) {
 #line 1552 "ChapelArray.chpl"
-  DefaultRectangularArr_int64_t_1_int64_t_F ret = NULL;
+  DefaultRectangularArr_localesSignal_1_int64_t_F ret = NULL;
 #line 1552 "ChapelArray.chpl"
   int64_t call_tmp;
 #line 1552 "ChapelArray.chpl"
@@ -2290,7 +2359,7 @@ static void chpl___TILDE__array4(DefaultRectangularArr_int64_t_1_int64_t_F this6
 #line 1552 "ChapelArray.chpl"
   chpl_bool call_tmp3;
 #line 1552 "ChapelArray.chpl"
-  DefaultRectangularArr_int64_t_1_int64_t_F ret2 = NULL;
+  DefaultRectangularArr_localesSignal_1_int64_t_F ret2 = NULL;
 #line 1552 "ChapelArray.chpl"
   BaseArr _parent_destructor_tmp_ = NULL;
 #line 1552 "ChapelArray.chpl"
@@ -2349,76 +2418,7 @@ static void chpl___TILDE__array4(DefaultRectangularArr_int64_t_1_int64_t_F this6
 #line 1552 "ChapelArray.chpl"
 /* ChapelArray.chpl:1552 */
 #line 1552 "ChapelArray.chpl"
-static void chpl___TILDE__array(DefaultRectangularArr_localesSignal_1_int64_t_F this6, int64_t _ln, c_string _fn) {
-#line 1552 "ChapelArray.chpl"
-  DefaultRectangularArr_localesSignal_1_int64_t_F ret = NULL;
-#line 1552 "ChapelArray.chpl"
-  int64_t call_tmp;
-#line 1552 "ChapelArray.chpl"
-  BaseArr call_tmp2 = NULL;
-#line 1552 "ChapelArray.chpl"
-  chpl_bool call_tmp3;
-#line 1552 "ChapelArray.chpl"
-  DefaultRectangularArr_localesSignal_1_int64_t_F ret2 = NULL;
-#line 1552 "ChapelArray.chpl"
-  BaseArr _parent_destructor_tmp_ = NULL;
-#line 1552 "ChapelArray.chpl"
-  _ref_atomic_refcnt _field_destructor_tmp_ = NULL;
-#line 1552 "ChapelArray.chpl"
-  _ref_atomic_int64 _field_destructor_tmp_2 = NULL;
-#line 1552 "ChapelArray.chpl"
-  _ref_atomic_int_least64_t call_tmp4 = NULL;
-#line 1552 "ChapelArray.chpl"
-  chpl_opaque call_tmp5;
-#line 1556 "ChapelArray.chpl"
-  ret = this6;
-#line 1556 "ChapelArray.chpl"
-  call_tmp2 = ((BaseArr)(ret));
-#line 1556 "ChapelArray.chpl"
-  chpl_check_nil(call_tmp2, INT64(1556), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelArray.chpl");
-#line 1556 "ChapelArray.chpl"
-  call_tmp = destroyArr(call_tmp2, _ln, _fn);
-#line 1557 "ChapelArray.chpl"
-  call_tmp3 = (call_tmp == INT64(0));
-#line 1557 "ChapelArray.chpl"
-  if (call_tmp3) /* ZLINE: 1558 /home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelArray.chpl */
-#line 1557 "ChapelArray.chpl"
-  {
-#line 1558 "ChapelArray.chpl"
-    chpl_decRefCountsForDomainsInArrayEltTypes();
-#line 1559 "ChapelArray.chpl"
-    ret2 = this6;
-#line 1559 "ChapelArray.chpl"
-    _parent_destructor_tmp_ = ((BaseArr)(ret2));
-#line 1559 "ChapelArray.chpl"
-    chpl_check_nil(_parent_destructor_tmp_, INT64(1559), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelArray.chpl");
-#line 1559 "ChapelArray.chpl"
-    _field_destructor_tmp_ = &((_parent_destructor_tmp_)->_arrCnt);
-#line 1559 "ChapelArray.chpl"
-    chpl_check_nil(_field_destructor_tmp_, INT64(1559), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelArray.chpl");
-#line 1559 "ChapelArray.chpl"
-    _field_destructor_tmp_2 = &((_field_destructor_tmp_)->_cnt);
-#line 1559 "ChapelArray.chpl"
-    chpl_check_nil(_field_destructor_tmp_2, INT64(1559), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelArray.chpl");
-#line 1559 "ChapelArray.chpl"
-    call_tmp4 = &((_field_destructor_tmp_2)->_v);
-#line 1559 "ChapelArray.chpl"
-    atomic_destroy_int_least64_t(call_tmp4);
-#line 1559 "ChapelArray.chpl"
-    call_tmp5 = ((void*)(ret2));
-#line 1559 "ChapelArray.chpl"
-    chpl_here_free(call_tmp5, _ln, _fn);
-#line 1559 "ChapelArray.chpl"
-  }
-#line 1552 "ChapelArray.chpl"
-  return;
-#line 1552 "ChapelArray.chpl"
-}
-
-#line 1552 "ChapelArray.chpl"
-/* ChapelArray.chpl:1552 */
-#line 1552 "ChapelArray.chpl"
-static void chpl___TILDE__array3(DefaultRectangularArr_locale_1_int64_t_F this6, int64_t _ln, c_string _fn) {
+static void chpl___TILDE__array4(DefaultRectangularArr_locale_1_int64_t_F this6, int64_t _ln, c_string _fn) {
 #line 1552 "ChapelArray.chpl"
   DefaultRectangularArr_locale_1_int64_t_F ret = NULL;
 #line 1552 "ChapelArray.chpl"
@@ -2520,14 +2520,58 @@ static void _dom(DefaultRectangularArr_locale_1_int64_t_F this6, _ref_DefaultRec
 }
 
 #line 1570 "ChapelArray.chpl"
+/* ChapelArray.chpl:1717 */
+#line 1570 "ChapelArray.chpl"
+static int64_t numElements(DefaultRectangularArr_int64_t_1_int64_t_F this6, int64_t _ln, c_string _fn) {
+#line 1570 "ChapelArray.chpl"
+  DefaultRectangularArr_int64_t_1_int64_t_F call_tmp = NULL;
+#line 1570 "ChapelArray.chpl"
+  DefaultRectangularArr_int64_t_1_int64_t_F ret = NULL;
+#line 1570 "ChapelArray.chpl"
+  DefaultRectangularDom_1_int64_t_F ret2 = NULL;
+#line 1570 "ChapelArray.chpl"
+  int64_t call_tmp2;
+#line 1717 "ChapelArray.chpl"
+  ret = this6;
+#line 1717 "ChapelArray.chpl"
+  call_tmp = ret;
+#line 1717 "ChapelArray.chpl"
+  chpl_check_nil(call_tmp, INT64(1717), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelArray.chpl");
+#line 1717 "ChapelArray.chpl"
+  ret2 = (call_tmp)->dom;
+#line 1717 "ChapelArray.chpl"
+  chpl_check_nil(ret2, INT64(1717), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelArray.chpl");
+#line 1717 "ChapelArray.chpl"
+  call_tmp2 = dsiNumIndices(ret2, _ln, _fn);
+#line 1717 "ChapelArray.chpl"
+  return call_tmp2;
+#line 1717 "ChapelArray.chpl"
+}
+
+#line 1717 "ChapelArray.chpl"
+/* ChapelArray.chpl:1719 */
+#line 1717 "ChapelArray.chpl"
+static int64_t size(DefaultRectangularArr_int64_t_1_int64_t_F this6, int64_t _ln, c_string _fn) {
+#line 1717 "ChapelArray.chpl"
+  int64_t call_tmp;
+#line 1719 "ChapelArray.chpl"
+  chpl_check_nil(this6, INT64(1719), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelArray.chpl");
+#line 1719 "ChapelArray.chpl"
+  call_tmp = numElements(this6, _ln, _fn);
+#line 1719 "ChapelArray.chpl"
+  return call_tmp;
+#line 1719 "ChapelArray.chpl"
+}
+
+#line 1719 "ChapelArray.chpl"
 /* ChapelArray.chpl:1723 */
-#line 1570 "ChapelArray.chpl"
+#line 1719 "ChapelArray.chpl"
 static void newAlias(DefaultRectangularArr_locale_1_int64_t_F this6, _ref_DefaultRectangularArr_locale_1_int64_t_F _retArg, int64_t _ln, c_string _fn) {
-#line 1570 "ChapelArray.chpl"
+#line 1719 "ChapelArray.chpl"
   DefaultRectangularArr_locale_1_int64_t_F ret = NULL;
-#line 1570 "ChapelArray.chpl"
+#line 1719 "ChapelArray.chpl"
   DefaultRectangularArr_locale_1_int64_t_F call_tmp = NULL;
-#line 1570 "ChapelArray.chpl"
+#line 1719 "ChapelArray.chpl"
   _ref_DefaultRectangularArr_locale_1_int64_t_F ret_to_arg_ref_tmp_ = NULL;
 #line 1724 "ChapelArray.chpl"
   ret = this6;
@@ -2667,7 +2711,7 @@ static void chpl___ASSIGN_(DefaultRectangularDom_1_int64_t_F a, DefaultRectangul
 #line 2445 "ChapelArray.chpl"
       chpl_check_nil(_cast_tmp_, INT64(2445), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelArray.chpl");
 #line 2445 "ChapelArray.chpl"
-      dsiReallocate3(_cast_tmp_, b, _ln, _fn);
+      dsiReallocate4(_cast_tmp_, b, _ln, _fn);
 #line 2445 "ChapelArray.chpl"
     } else /* ZLINE: 2445 /home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelArray.chpl */
 #line 2445 "ChapelArray.chpl"
@@ -2685,7 +2729,7 @@ static void chpl___ASSIGN_(DefaultRectangularDom_1_int64_t_F a, DefaultRectangul
 #line 2445 "ChapelArray.chpl"
         chpl_check_nil(_cast_tmp_2, INT64(2445), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelArray.chpl");
 #line 2445 "ChapelArray.chpl"
-        dsiReallocate6(_cast_tmp_2, b, _ln, _fn);
+        dsiReallocate5(_cast_tmp_2, b, _ln, _fn);
 #line 2445 "ChapelArray.chpl"
       } else /* ZLINE: 2445 /home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelArray.chpl */
 #line 2445 "ChapelArray.chpl"
@@ -2703,7 +2747,7 @@ static void chpl___ASSIGN_(DefaultRectangularDom_1_int64_t_F a, DefaultRectangul
 #line 2445 "ChapelArray.chpl"
           chpl_check_nil(_cast_tmp_3, INT64(2445), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelArray.chpl");
 #line 2445 "ChapelArray.chpl"
-          dsiReallocate5(_cast_tmp_3, b, _ln, _fn);
+          dsiReallocate6(_cast_tmp_3, b, _ln, _fn);
 #line 2445 "ChapelArray.chpl"
         } else /* ZLINE: 2445 /home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelArray.chpl */
 #line 2445 "ChapelArray.chpl"
@@ -2739,7 +2783,7 @@ static void chpl___ASSIGN_(DefaultRectangularDom_1_int64_t_F a, DefaultRectangul
 #line 2445 "ChapelArray.chpl"
               chpl_check_nil(_cast_tmp_5, INT64(2445), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelArray.chpl");
 #line 2445 "ChapelArray.chpl"
-              dsiReallocate4(_cast_tmp_5, b, _ln, _fn);
+              dsiReallocate3(_cast_tmp_5, b, _ln, _fn);
 #line 2445 "ChapelArray.chpl"
             } else /* ZLINE: 2445 /home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelArray.chpl */
 #line 2445 "ChapelArray.chpl"

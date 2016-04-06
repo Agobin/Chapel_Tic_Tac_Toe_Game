@@ -84,7 +84,7 @@ static void chpl__init_DefaultRectangular(int64_t _ln, c_string _fn) {
 #line 24 "DefaultRectangular.chpl"
     call_tmp3 = chpl_config_get_value("dataParTasksPerLocale", "Built-in");
 #line 24 "DefaultRectangular.chpl"
-    const_tmp = _command_line_cast(call_tmp3, _ln, _fn);
+    const_tmp = _command_line_cast14(call_tmp3, _ln, _fn);
 #line 24 "DefaultRectangular.chpl"
   }
 #line 24 "DefaultRectangular.chpl"
@@ -106,7 +106,7 @@ static void chpl__init_DefaultRectangular(int64_t _ln, c_string _fn) {
 #line 25 "DefaultRectangular.chpl"
     call_tmp6 = chpl_config_get_value("dataParIgnoreRunningTasks", "Built-in");
 #line 25 "DefaultRectangular.chpl"
-    const_tmp2 = _command_line_cast2(call_tmp6, _ln, _fn);
+    const_tmp2 = _command_line_cast12(call_tmp6, _ln, _fn);
 #line 25 "DefaultRectangular.chpl"
   }
 #line 25 "DefaultRectangular.chpl"
@@ -128,7 +128,7 @@ static void chpl__init_DefaultRectangular(int64_t _ln, c_string _fn) {
 #line 27 "DefaultRectangular.chpl"
     call_tmp9 = chpl_config_get_value("dataParMinGranularity", "Built-in");
 #line 27 "DefaultRectangular.chpl"
-    const_tmp3 = _command_line_cast5(call_tmp9, _ln, _fn);
+    const_tmp3 = _command_line_cast13(call_tmp9, _ln, _fn);
 #line 27 "DefaultRectangular.chpl"
   }
 #line 27 "DefaultRectangular.chpl"
@@ -687,7 +687,7 @@ static DefaultRectangularDom_1_int64_t_F DefaultRectangularDom(DefaultDist dist2
 #line 99 "DefaultRectangular.chpl"
   (this7)->dist = call_tmp4;
 #line 99 "DefaultRectangular.chpl"
-  wrap_call_tmp5 = range2(INT64(1), INT64(0), INT64(1), INT64(0), false, _ln, _fn);
+  wrap_call_tmp5 = range(INT64(1), INT64(0), INT64(1), INT64(0), false, _ln, _fn);
 #line 99 "DefaultRectangular.chpl"
   *(this12 + INT64(0)) = wrap_call_tmp5;
 #line 99 "DefaultRectangular.chpl"
@@ -916,7 +916,7 @@ static int64_t dsiLow(DefaultRectangularDom_1_int64_t_F this6, int64_t _ln, c_st
 #line 491 "DefaultRectangular.chpl"
 /* DefaultRectangular.chpl:579 */
 #line 491 "DefaultRectangular.chpl"
-static DefaultRectangularArr_int64_t_1_int64_t_F dsiBuildArray(DefaultRectangularDom_1_int64_t_F this6, int64_t _ln, c_string _fn) {
+static DefaultRectangularArr_int64_t_1_int64_t_F dsiBuildArray4(DefaultRectangularDom_1_int64_t_F this6, int64_t _ln, c_string _fn) {
 #line 491 "DefaultRectangular.chpl"
   DefaultRectangularArr_int64_t_1_int64_t_F this7 = NULL;
 #line 491 "DefaultRectangular.chpl"
@@ -1074,7 +1074,7 @@ static DefaultRectangularArr_int64_t_1_int64_t_F dsiBuildArray(DefaultRectangula
 #line 580 "DefaultRectangular.chpl"
   (this7)->noinit_data = false;
 #line 580 "DefaultRectangular.chpl"
-  wrap_call_tmp3 = _construct_DefaultRectangularArr3(&wrap_call_tmp2, call_tmp2, this6, &this10, &this11, &this12, INT64(0), INT64(0), call_tmp3, call_tmp4, false, this7, _ln, _fn);
+  wrap_call_tmp3 = _construct_DefaultRectangularArr5(&wrap_call_tmp2, call_tmp2, this6, &this10, &this11, &this12, INT64(0), INT64(0), call_tmp3, call_tmp4, false, this7, _ln, _fn);
 #line 579 "DefaultRectangular.chpl"
   return wrap_call_tmp3;
 #line 579 "DefaultRectangular.chpl"
@@ -1083,7 +1083,7 @@ static DefaultRectangularArr_int64_t_1_int64_t_F dsiBuildArray(DefaultRectangula
 #line 579 "DefaultRectangular.chpl"
 /* DefaultRectangular.chpl:579 */
 #line 579 "DefaultRectangular.chpl"
-static DefaultRectangularArr_chpl_string_1_int64_t_F dsiBuildArray2(DefaultRectangularDom_1_int64_t_F this6, int64_t _ln, c_string _fn) {
+static DefaultRectangularArr_chpl_string_1_int64_t_F dsiBuildArray(DefaultRectangularDom_1_int64_t_F this6, int64_t _ln, c_string _fn) {
 #line 579 "DefaultRectangular.chpl"
   DefaultRectangularArr_chpl_string_1_int64_t_F this7 = NULL;
 #line 579 "DefaultRectangular.chpl"
@@ -1250,7 +1250,7 @@ static DefaultRectangularArr_chpl_string_1_int64_t_F dsiBuildArray2(DefaultRecta
 #line 579 "DefaultRectangular.chpl"
 /* DefaultRectangular.chpl:579 */
 #line 579 "DefaultRectangular.chpl"
-static DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F dsiBuildArray5(DefaultRectangularDom_1_int64_t_F this6, int64_t _ln, c_string _fn) {
+static DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F dsiBuildArray2(DefaultRectangularDom_1_int64_t_F this6, int64_t _ln, c_string _fn) {
 #line 579 "DefaultRectangular.chpl"
   DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F this7 = NULL;
 #line 579 "DefaultRectangular.chpl"
@@ -1408,7 +1408,7 @@ static DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F dsiBuildArray5(DefaultR
 #line 580 "DefaultRectangular.chpl"
   (this7)->noinit_data = false;
 #line 580 "DefaultRectangular.chpl"
-  wrap_call_tmp3 = _construct_DefaultRectangularArr4(&wrap_call_tmp2, call_tmp2, this6, &this10, &this11, &this12, INT64(0), INT64(0), call_tmp3, call_tmp4, false, this7, _ln, _fn);
+  wrap_call_tmp3 = _construct_DefaultRectangularArr2(&wrap_call_tmp2, call_tmp2, this6, &this10, &this11, &this12, INT64(0), INT64(0), call_tmp3, call_tmp4, false, this7, _ln, _fn);
 #line 579 "DefaultRectangular.chpl"
   return wrap_call_tmp3;
 #line 579 "DefaultRectangular.chpl"
@@ -1417,7 +1417,7 @@ static DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F dsiBuildArray5(DefaultR
 #line 579 "DefaultRectangular.chpl"
 /* DefaultRectangular.chpl:579 */
 #line 579 "DefaultRectangular.chpl"
-static DefaultRectangularArr_localesSignal_1_int64_t_F dsiBuildArray3(DefaultRectangularDom_1_int64_t_F this6, int64_t _ln, c_string _fn) {
+static DefaultRectangularArr_localesSignal_1_int64_t_F dsiBuildArray5(DefaultRectangularDom_1_int64_t_F this6, int64_t _ln, c_string _fn) {
 #line 579 "DefaultRectangular.chpl"
   DefaultRectangularArr_localesSignal_1_int64_t_F this7 = NULL;
 #line 579 "DefaultRectangular.chpl"
@@ -1575,7 +1575,7 @@ static DefaultRectangularArr_localesSignal_1_int64_t_F dsiBuildArray3(DefaultRec
 #line 580 "DefaultRectangular.chpl"
   (this7)->noinit_data = false;
 #line 580 "DefaultRectangular.chpl"
-  wrap_call_tmp3 = _construct_DefaultRectangularArr2(&wrap_call_tmp2, call_tmp2, this6, &this10, &this11, &this12, INT64(0), INT64(0), call_tmp3, call_tmp4, false, this7, _ln, _fn);
+  wrap_call_tmp3 = _construct_DefaultRectangularArr3(&wrap_call_tmp2, call_tmp2, this6, &this10, &this11, &this12, INT64(0), INT64(0), call_tmp3, call_tmp4, false, this7, _ln, _fn);
 #line 579 "DefaultRectangular.chpl"
   return wrap_call_tmp3;
 #line 579 "DefaultRectangular.chpl"
@@ -1584,7 +1584,7 @@ static DefaultRectangularArr_localesSignal_1_int64_t_F dsiBuildArray3(DefaultRec
 #line 579 "DefaultRectangular.chpl"
 /* DefaultRectangular.chpl:579 */
 #line 579 "DefaultRectangular.chpl"
-static DefaultRectangularArr_locale_1_int64_t_F dsiBuildArray4(DefaultRectangularDom_1_int64_t_F this6, int64_t _ln, c_string _fn) {
+static DefaultRectangularArr_locale_1_int64_t_F dsiBuildArray3(DefaultRectangularDom_1_int64_t_F this6, int64_t _ln, c_string _fn) {
 #line 579 "DefaultRectangular.chpl"
   DefaultRectangularArr_locale_1_int64_t_F this7 = NULL;
 #line 579 "DefaultRectangular.chpl"
@@ -1742,7 +1742,7 @@ static DefaultRectangularArr_locale_1_int64_t_F dsiBuildArray4(DefaultRectangula
 #line 580 "DefaultRectangular.chpl"
   (this7)->noinit_data = false;
 #line 580 "DefaultRectangular.chpl"
-  wrap_call_tmp3 = _construct_DefaultRectangularArr5(&wrap_call_tmp2, call_tmp2, this6, &this10, &this11, &this12, INT64(0), INT64(0), call_tmp3, call_tmp4, false, this7, _ln, _fn);
+  wrap_call_tmp3 = _construct_DefaultRectangularArr4(&wrap_call_tmp2, call_tmp2, this6, &this10, &this11, &this12, INT64(0), INT64(0), call_tmp3, call_tmp4, false, this7, _ln, _fn);
 #line 579 "DefaultRectangular.chpl"
   return wrap_call_tmp3;
 #line 579 "DefaultRectangular.chpl"
@@ -1789,7 +1789,7 @@ static DefaultRectangularDom_1_int64_t_F dsiBuildRectangularDom(DefaultRectangul
 #line 590 "DefaultRectangular.chpl"
     chpl_check_nil(_this_tmp_, INT64(590), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/DefaultRectangular.chpl");
 #line 590 "DefaultRectangular.chpl"
-    call_tmp = this4(_this_tmp_, i, _ln, _fn);
+    call_tmp = this5(_this_tmp_, i, _ln, _fn);
 #line 590 "DefaultRectangular.chpl"
     ret_to_arg_ref_tmp_ = &T;
 #line 590 "DefaultRectangular.chpl"
@@ -1797,7 +1797,7 @@ static DefaultRectangularDom_1_int64_t_F dsiBuildRectangularDom(DefaultRectangul
 #line 590 "DefaultRectangular.chpl"
     chpl_check_nil(_ref_tmp_, INT64(590), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/DefaultRectangular.chpl");
 #line 590 "DefaultRectangular.chpl"
-    this5(_ref_tmp_, i, ret_to_arg_ref_tmp_, _ln, _fn);
+    this4(_ref_tmp_, i, ret_to_arg_ref_tmp_, _ln, _fn);
 #line 590 "DefaultRectangular.chpl"
     *(call_tmp) = T;
 #line 590 "DefaultRectangular.chpl"
@@ -1810,7 +1810,7 @@ static DefaultRectangularDom_1_int64_t_F dsiBuildRectangularDom(DefaultRectangul
 #line 584 "DefaultRectangular.chpl"
 /* DefaultRectangular.chpl:629 */
 #line 584 "DefaultRectangular.chpl"
-static void chpl__auto_destroy_DefaultRectangularArr5(DefaultRectangularArr_chpl_string_1_int64_t_F this6, int64_t _ln, c_string _fn) {
+static void chpl__auto_destroy_DefaultRectangularArr(DefaultRectangularArr_chpl_string_1_int64_t_F this6, int64_t _ln, c_string _fn) {
 #line 584 "DefaultRectangular.chpl"
   BaseArr _parent_destructor_tmp_ = NULL;
 #line 584 "DefaultRectangular.chpl"
@@ -1876,7 +1876,7 @@ static void chpl__auto_destroy_DefaultRectangularArr4(DefaultRectangularArr_c_pt
 #line 629 "DefaultRectangular.chpl"
 /* DefaultRectangular.chpl:629 */
 #line 629 "DefaultRectangular.chpl"
-static void chpl__auto_destroy_DefaultRectangularArr(DefaultRectangularArr_int64_t_1_int64_t_F this6, int64_t _ln, c_string _fn) {
+static void chpl__auto_destroy_DefaultRectangularArr2(DefaultRectangularArr_int64_t_1_int64_t_F this6, int64_t _ln, c_string _fn) {
 #line 629 "DefaultRectangular.chpl"
   BaseArr _parent_destructor_tmp_ = NULL;
 #line 629 "DefaultRectangular.chpl"
@@ -1942,7 +1942,7 @@ static void chpl__auto_destroy_DefaultRectangularArr3(DefaultRectangularArr_loca
 #line 629 "DefaultRectangular.chpl"
 /* DefaultRectangular.chpl:629 */
 #line 629 "DefaultRectangular.chpl"
-static void chpl__auto_destroy_DefaultRectangularArr2(DefaultRectangularArr_locale_1_int64_t_F this6, int64_t _ln, c_string _fn) {
+static void chpl__auto_destroy_DefaultRectangularArr5(DefaultRectangularArr_locale_1_int64_t_F this6, int64_t _ln, c_string _fn) {
 #line 629 "DefaultRectangular.chpl"
   BaseArr _parent_destructor_tmp_ = NULL;
 #line 629 "DefaultRectangular.chpl"
@@ -2027,7 +2027,7 @@ static DefaultRectangularArr_chpl_string_1_int64_t_F _construct_DefaultRectangul
 #line 629 "DefaultRectangular.chpl"
   chpl_check_nil(this6, INT64(629), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/DefaultRectangular.chpl");
 #line 629 "DefaultRectangular.chpl"
-  initialize7(this6, _ln, _fn);
+  initialize9(this6, _ln, _fn);
 #line 629 "DefaultRectangular.chpl"
   return this6;
 #line 629 "DefaultRectangular.chpl"
@@ -2036,7 +2036,7 @@ static DefaultRectangularArr_chpl_string_1_int64_t_F _construct_DefaultRectangul
 #line 629 "DefaultRectangular.chpl"
 /* DefaultRectangular.chpl:629 */
 #line 629 "DefaultRectangular.chpl"
-static DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F _construct_DefaultRectangularArr4(atomic_refcnt* const _arrCnt, BaseArr _arrAlias, DefaultRectangularDom_1_int64_t_F dom, _tuple_1_star_int64_t* const off, _tuple_1_star_int64_t* const blk, _tuple_1_star_int64_t* const str, int64_t origin, int64_t factoredOffs, _ddata_c_ptr_GtkWidget data, _ddata_c_ptr_GtkWidget shiftedData, chpl_bool noinit_data, DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F meme, int64_t _ln, c_string _fn) {
+static DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F _construct_DefaultRectangularArr2(atomic_refcnt* const _arrCnt, BaseArr _arrAlias, DefaultRectangularDom_1_int64_t_F dom, _tuple_1_star_int64_t* const off, _tuple_1_star_int64_t* const blk, _tuple_1_star_int64_t* const str, int64_t origin, int64_t factoredOffs, _ddata_c_ptr_GtkWidget data, _ddata_c_ptr_GtkWidget shiftedData, chpl_bool noinit_data, DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F meme, int64_t _ln, c_string _fn) {
 #line 629 "DefaultRectangular.chpl"
   DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F this6 = NULL;
 #line 629 "DefaultRectangular.chpl"
@@ -2088,7 +2088,7 @@ static DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F _construct_DefaultRecta
 #line 629 "DefaultRectangular.chpl"
   chpl_check_nil(this6, INT64(629), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/DefaultRectangular.chpl");
 #line 629 "DefaultRectangular.chpl"
-  initialize11(this6, _ln, _fn);
+  initialize6(this6, _ln, _fn);
 #line 629 "DefaultRectangular.chpl"
   return this6;
 #line 629 "DefaultRectangular.chpl"
@@ -2097,9 +2097,70 @@ static DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F _construct_DefaultRecta
 #line 629 "DefaultRectangular.chpl"
 /* DefaultRectangular.chpl:629 */
 #line 629 "DefaultRectangular.chpl"
-static DefaultRectangularArr_int64_t_1_int64_t_F _construct_DefaultRectangularArr3(atomic_refcnt* const _arrCnt, BaseArr _arrAlias, DefaultRectangularDom_1_int64_t_F dom, _tuple_1_star_int64_t* const off, _tuple_1_star_int64_t* const blk, _tuple_1_star_int64_t* const str, int64_t origin, int64_t factoredOffs, _ddata_int64_t data, _ddata_int64_t shiftedData, chpl_bool noinit_data, DefaultRectangularArr_int64_t_1_int64_t_F meme, int64_t _ln, c_string _fn) {
+static DefaultRectangularArr_int64_t_1_int64_t_F _construct_DefaultRectangularArr5(atomic_refcnt* const _arrCnt, BaseArr _arrAlias, DefaultRectangularDom_1_int64_t_F dom, _tuple_1_star_int64_t* const off, _tuple_1_star_int64_t* const blk, _tuple_1_star_int64_t* const str, int64_t origin, int64_t factoredOffs, _ddata_int64_t data, _ddata_int64_t shiftedData, chpl_bool noinit_data, DefaultRectangularArr_int64_t_1_int64_t_F meme, int64_t _ln, c_string _fn) {
 #line 629 "DefaultRectangular.chpl"
   DefaultRectangularArr_int64_t_1_int64_t_F this6 = NULL;
+#line 629 "DefaultRectangular.chpl"
+  BaseArr T = NULL;
+#line 629 "DefaultRectangular.chpl"
+  this6 = meme;
+#line 629 "DefaultRectangular.chpl"
+  chpl_check_nil(this6, INT64(629), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/DefaultRectangular.chpl");
+#line 629 "DefaultRectangular.chpl"
+  T = &((this6)->super);
+#line 629 "DefaultRectangular.chpl"
+  _construct_BaseArr(_arrCnt, _arrAlias, T, _ln, _fn);
+#line 635 "DefaultRectangular.chpl"
+  chpl_check_nil(this6, INT64(635), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/DefaultRectangular.chpl");
+#line 635 "DefaultRectangular.chpl"
+  (this6)->dom = dom;
+#line 637 "DefaultRectangular.chpl"
+  chpl_check_nil(this6, INT64(637), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/DefaultRectangular.chpl");
+#line 637 "DefaultRectangular.chpl"
+  *((this6)->off + INT64(0)) = *(*(off) + INT64(0));
+#line 638 "DefaultRectangular.chpl"
+  chpl_check_nil(this6, INT64(638), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/DefaultRectangular.chpl");
+#line 638 "DefaultRectangular.chpl"
+  *((this6)->blk + INT64(0)) = *(*(blk) + INT64(0));
+#line 639 "DefaultRectangular.chpl"
+  chpl_check_nil(this6, INT64(639), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/DefaultRectangular.chpl");
+#line 639 "DefaultRectangular.chpl"
+  *((this6)->str + INT64(0)) = *(*(str) + INT64(0));
+#line 640 "DefaultRectangular.chpl"
+  chpl_check_nil(this6, INT64(640), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/DefaultRectangular.chpl");
+#line 640 "DefaultRectangular.chpl"
+  (this6)->origin = origin;
+#line 641 "DefaultRectangular.chpl"
+  chpl_check_nil(this6, INT64(641), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/DefaultRectangular.chpl");
+#line 641 "DefaultRectangular.chpl"
+  (this6)->factoredOffs = factoredOffs;
+#line 643 "DefaultRectangular.chpl"
+  chpl_check_nil(this6, INT64(643), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/DefaultRectangular.chpl");
+#line 643 "DefaultRectangular.chpl"
+  (this6)->data = data;
+#line 645 "DefaultRectangular.chpl"
+  chpl_check_nil(this6, INT64(645), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/DefaultRectangular.chpl");
+#line 645 "DefaultRectangular.chpl"
+  (this6)->shiftedData = shiftedData;
+#line 646 "DefaultRectangular.chpl"
+  chpl_check_nil(this6, INT64(646), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/DefaultRectangular.chpl");
+#line 646 "DefaultRectangular.chpl"
+  (this6)->noinit_data = noinit_data;
+#line 629 "DefaultRectangular.chpl"
+  chpl_check_nil(this6, INT64(629), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/DefaultRectangular.chpl");
+#line 629 "DefaultRectangular.chpl"
+  initialize7(this6, _ln, _fn);
+#line 629 "DefaultRectangular.chpl"
+  return this6;
+#line 629 "DefaultRectangular.chpl"
+}
+
+#line 629 "DefaultRectangular.chpl"
+/* DefaultRectangular.chpl:629 */
+#line 629 "DefaultRectangular.chpl"
+static DefaultRectangularArr_localesSignal_1_int64_t_F _construct_DefaultRectangularArr3(atomic_refcnt* const _arrCnt, BaseArr _arrAlias, DefaultRectangularDom_1_int64_t_F dom, _tuple_1_star_int64_t* const off, _tuple_1_star_int64_t* const blk, _tuple_1_star_int64_t* const str, int64_t origin, int64_t factoredOffs, _ddata_localesSignal data, _ddata_localesSignal shiftedData, chpl_bool noinit_data, DefaultRectangularArr_localesSignal_1_int64_t_F meme, int64_t _ln, c_string _fn) {
+#line 629 "DefaultRectangular.chpl"
+  DefaultRectangularArr_localesSignal_1_int64_t_F this6 = NULL;
 #line 629 "DefaultRectangular.chpl"
   BaseArr T = NULL;
 #line 629 "DefaultRectangular.chpl"
@@ -2158,9 +2219,9 @@ static DefaultRectangularArr_int64_t_1_int64_t_F _construct_DefaultRectangularAr
 #line 629 "DefaultRectangular.chpl"
 /* DefaultRectangular.chpl:629 */
 #line 629 "DefaultRectangular.chpl"
-static DefaultRectangularArr_localesSignal_1_int64_t_F _construct_DefaultRectangularArr2(atomic_refcnt* const _arrCnt, BaseArr _arrAlias, DefaultRectangularDom_1_int64_t_F dom, _tuple_1_star_int64_t* const off, _tuple_1_star_int64_t* const blk, _tuple_1_star_int64_t* const str, int64_t origin, int64_t factoredOffs, _ddata_localesSignal data, _ddata_localesSignal shiftedData, chpl_bool noinit_data, DefaultRectangularArr_localesSignal_1_int64_t_F meme, int64_t _ln, c_string _fn) {
+static DefaultRectangularArr_locale_1_int64_t_F _construct_DefaultRectangularArr4(atomic_refcnt* const _arrCnt, BaseArr _arrAlias, DefaultRectangularDom_1_int64_t_F dom, _tuple_1_star_int64_t* const off, _tuple_1_star_int64_t* const blk, _tuple_1_star_int64_t* const str, int64_t origin, int64_t factoredOffs, _ddata_locale data, _ddata_locale shiftedData, chpl_bool noinit_data, DefaultRectangularArr_locale_1_int64_t_F meme, int64_t _ln, c_string _fn) {
 #line 629 "DefaultRectangular.chpl"
-  DefaultRectangularArr_localesSignal_1_int64_t_F this6 = NULL;
+  DefaultRectangularArr_locale_1_int64_t_F this6 = NULL;
 #line 629 "DefaultRectangular.chpl"
   BaseArr T = NULL;
 #line 629 "DefaultRectangular.chpl"
@@ -2217,67 +2278,6 @@ static DefaultRectangularArr_localesSignal_1_int64_t_F _construct_DefaultRectang
 }
 
 #line 629 "DefaultRectangular.chpl"
-/* DefaultRectangular.chpl:629 */
-#line 629 "DefaultRectangular.chpl"
-static DefaultRectangularArr_locale_1_int64_t_F _construct_DefaultRectangularArr5(atomic_refcnt* const _arrCnt, BaseArr _arrAlias, DefaultRectangularDom_1_int64_t_F dom, _tuple_1_star_int64_t* const off, _tuple_1_star_int64_t* const blk, _tuple_1_star_int64_t* const str, int64_t origin, int64_t factoredOffs, _ddata_locale data, _ddata_locale shiftedData, chpl_bool noinit_data, DefaultRectangularArr_locale_1_int64_t_F meme, int64_t _ln, c_string _fn) {
-#line 629 "DefaultRectangular.chpl"
-  DefaultRectangularArr_locale_1_int64_t_F this6 = NULL;
-#line 629 "DefaultRectangular.chpl"
-  BaseArr T = NULL;
-#line 629 "DefaultRectangular.chpl"
-  this6 = meme;
-#line 629 "DefaultRectangular.chpl"
-  chpl_check_nil(this6, INT64(629), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/DefaultRectangular.chpl");
-#line 629 "DefaultRectangular.chpl"
-  T = &((this6)->super);
-#line 629 "DefaultRectangular.chpl"
-  _construct_BaseArr(_arrCnt, _arrAlias, T, _ln, _fn);
-#line 635 "DefaultRectangular.chpl"
-  chpl_check_nil(this6, INT64(635), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/DefaultRectangular.chpl");
-#line 635 "DefaultRectangular.chpl"
-  (this6)->dom = dom;
-#line 637 "DefaultRectangular.chpl"
-  chpl_check_nil(this6, INT64(637), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/DefaultRectangular.chpl");
-#line 637 "DefaultRectangular.chpl"
-  *((this6)->off + INT64(0)) = *(*(off) + INT64(0));
-#line 638 "DefaultRectangular.chpl"
-  chpl_check_nil(this6, INT64(638), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/DefaultRectangular.chpl");
-#line 638 "DefaultRectangular.chpl"
-  *((this6)->blk + INT64(0)) = *(*(blk) + INT64(0));
-#line 639 "DefaultRectangular.chpl"
-  chpl_check_nil(this6, INT64(639), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/DefaultRectangular.chpl");
-#line 639 "DefaultRectangular.chpl"
-  *((this6)->str + INT64(0)) = *(*(str) + INT64(0));
-#line 640 "DefaultRectangular.chpl"
-  chpl_check_nil(this6, INT64(640), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/DefaultRectangular.chpl");
-#line 640 "DefaultRectangular.chpl"
-  (this6)->origin = origin;
-#line 641 "DefaultRectangular.chpl"
-  chpl_check_nil(this6, INT64(641), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/DefaultRectangular.chpl");
-#line 641 "DefaultRectangular.chpl"
-  (this6)->factoredOffs = factoredOffs;
-#line 643 "DefaultRectangular.chpl"
-  chpl_check_nil(this6, INT64(643), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/DefaultRectangular.chpl");
-#line 643 "DefaultRectangular.chpl"
-  (this6)->data = data;
-#line 645 "DefaultRectangular.chpl"
-  chpl_check_nil(this6, INT64(645), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/DefaultRectangular.chpl");
-#line 645 "DefaultRectangular.chpl"
-  (this6)->shiftedData = shiftedData;
-#line 646 "DefaultRectangular.chpl"
-  chpl_check_nil(this6, INT64(646), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/DefaultRectangular.chpl");
-#line 646 "DefaultRectangular.chpl"
-  (this6)->noinit_data = noinit_data;
-#line 629 "DefaultRectangular.chpl"
-  chpl_check_nil(this6, INT64(629), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/DefaultRectangular.chpl");
-#line 629 "DefaultRectangular.chpl"
-  initialize9(this6, _ln, _fn);
-#line 629 "DefaultRectangular.chpl"
-  return this6;
-#line 629 "DefaultRectangular.chpl"
-}
-
-#line 629 "DefaultRectangular.chpl"
 /* DefaultRectangular.chpl:661 */
 #line 629 "DefaultRectangular.chpl"
 static DefaultRectangularDom_1_int64_t_F dsiGetBaseDom6(DefaultRectangularArr_locale_1_int64_t_F this6, int64_t _ln, c_string _fn) {
@@ -2295,7 +2295,7 @@ static DefaultRectangularDom_1_int64_t_F dsiGetBaseDom6(DefaultRectangularArr_lo
 #line 661 "DefaultRectangular.chpl"
 /* DefaultRectangular.chpl:661 */
 #line 661 "DefaultRectangular.chpl"
-static DefaultRectangularDom_1_int64_t_F dsiGetBaseDom4(DefaultRectangularArr_localesSignal_1_int64_t_F this6, int64_t _ln, c_string _fn) {
+static DefaultRectangularDom_1_int64_t_F dsiGetBaseDom5(DefaultRectangularArr_localesSignal_1_int64_t_F this6, int64_t _ln, c_string _fn) {
 #line 661 "DefaultRectangular.chpl"
   DefaultRectangularDom_1_int64_t_F ret = NULL;
 #line 661 "DefaultRectangular.chpl"
@@ -2310,7 +2310,7 @@ static DefaultRectangularDom_1_int64_t_F dsiGetBaseDom4(DefaultRectangularArr_lo
 #line 661 "DefaultRectangular.chpl"
 /* DefaultRectangular.chpl:661 */
 #line 661 "DefaultRectangular.chpl"
-static DefaultRectangularDom_1_int64_t_F dsiGetBaseDom2(DefaultRectangularArr_int64_t_1_int64_t_F this6, int64_t _ln, c_string _fn) {
+static DefaultRectangularDom_1_int64_t_F dsiGetBaseDom4(DefaultRectangularArr_int64_t_1_int64_t_F this6, int64_t _ln, c_string _fn) {
 #line 661 "DefaultRectangular.chpl"
   DefaultRectangularDom_1_int64_t_F ret = NULL;
 #line 661 "DefaultRectangular.chpl"
@@ -2340,7 +2340,7 @@ static DefaultRectangularDom_1_int64_t_F dsiGetBaseDom3(DefaultRectangularArr_c_
 #line 661 "DefaultRectangular.chpl"
 /* DefaultRectangular.chpl:661 */
 #line 661 "DefaultRectangular.chpl"
-static DefaultRectangularDom_1_int64_t_F dsiGetBaseDom5(DefaultRectangularArr_chpl_string_1_int64_t_F this6, int64_t _ln, c_string _fn) {
+static DefaultRectangularDom_1_int64_t_F dsiGetBaseDom2(DefaultRectangularArr_chpl_string_1_int64_t_F this6, int64_t _ln, c_string _fn) {
 #line 661 "DefaultRectangular.chpl"
   DefaultRectangularDom_1_int64_t_F ret = NULL;
 #line 661 "DefaultRectangular.chpl"
@@ -2355,7 +2355,7 @@ static DefaultRectangularDom_1_int64_t_F dsiGetBaseDom5(DefaultRectangularArr_ch
 #line 661 "DefaultRectangular.chpl"
 /* DefaultRectangular.chpl:663 */
 #line 661 "DefaultRectangular.chpl"
-static void dsiDestroyData6(DefaultRectangularArr_locale_1_int64_t_F this6, int64_t _ln, c_string _fn) {
+static void dsiDestroyData2(DefaultRectangularArr_locale_1_int64_t_F this6, int64_t _ln, c_string _fn) {
 #line 661 "DefaultRectangular.chpl"
   DefaultRectangularDom_1_int64_t_F ret = NULL;
 #line 661 "DefaultRectangular.chpl"
@@ -2404,7 +2404,7 @@ static void dsiDestroyData6(DefaultRectangularArr_locale_1_int64_t_F this6, int6
 #line 663 "DefaultRectangular.chpl"
 /* DefaultRectangular.chpl:663 */
 #line 663 "DefaultRectangular.chpl"
-static void dsiDestroyData5(DefaultRectangularArr_localesSignal_1_int64_t_F this6, int64_t _ln, c_string _fn) {
+static void dsiDestroyData6(DefaultRectangularArr_localesSignal_1_int64_t_F this6, int64_t _ln, c_string _fn) {
 #line 663 "DefaultRectangular.chpl"
   DefaultRectangularDom_1_int64_t_F ret = NULL;
 #line 663 "DefaultRectangular.chpl"
@@ -2453,7 +2453,7 @@ static void dsiDestroyData5(DefaultRectangularArr_localesSignal_1_int64_t_F this
 #line 663 "DefaultRectangular.chpl"
 /* DefaultRectangular.chpl:663 */
 #line 663 "DefaultRectangular.chpl"
-static void dsiDestroyData4(DefaultRectangularArr_int64_t_1_int64_t_F this6, int64_t _ln, c_string _fn) {
+static void dsiDestroyData5(DefaultRectangularArr_int64_t_1_int64_t_F this6, int64_t _ln, c_string _fn) {
 #line 663 "DefaultRectangular.chpl"
   DefaultRectangularDom_1_int64_t_F ret = NULL;
 #line 663 "DefaultRectangular.chpl"
@@ -2502,7 +2502,7 @@ static void dsiDestroyData4(DefaultRectangularArr_int64_t_1_int64_t_F this6, int
 #line 663 "DefaultRectangular.chpl"
 /* DefaultRectangular.chpl:663 */
 #line 663 "DefaultRectangular.chpl"
-static void dsiDestroyData3(DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F this6, int64_t _ln, c_string _fn) {
+static void dsiDestroyData4(DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F this6, int64_t _ln, c_string _fn) {
 #line 663 "DefaultRectangular.chpl"
   DefaultRectangularDom_1_int64_t_F ret = NULL;
 #line 663 "DefaultRectangular.chpl"
@@ -2589,7 +2589,7 @@ static void dsiDestroyData3(DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F th
 #line 663 "DefaultRectangular.chpl"
 /* DefaultRectangular.chpl:663 */
 #line 663 "DefaultRectangular.chpl"
-static void dsiDestroyData2(DefaultRectangularArr_chpl_string_1_int64_t_F this6, int64_t _ln, c_string _fn) {
+static void dsiDestroyData3(DefaultRectangularArr_chpl_string_1_int64_t_F this6, int64_t _ln, c_string _fn) {
 #line 663 "DefaultRectangular.chpl"
   DefaultRectangularDom_1_int64_t_F ret = NULL;
 #line 663 "DefaultRectangular.chpl"
@@ -2676,7 +2676,7 @@ static void dsiDestroyData2(DefaultRectangularArr_chpl_string_1_int64_t_F this6,
 #line 663 "DefaultRectangular.chpl"
 /* DefaultRectangular.chpl:777 */
 #line 663 "DefaultRectangular.chpl"
-static void computeFactoredOffs5(DefaultRectangularArr_localesSignal_1_int64_t_F this6, int64_t _ln, c_string _fn) {
+static void computeFactoredOffs3(DefaultRectangularArr_localesSignal_1_int64_t_F this6, int64_t _ln, c_string _fn) {
 #line 663 "DefaultRectangular.chpl"
   _ref_int64_t call_tmp = NULL;
 #line 663 "DefaultRectangular.chpl"
@@ -2735,7 +2735,7 @@ static void computeFactoredOffs5(DefaultRectangularArr_localesSignal_1_int64_t_F
 #line 777 "DefaultRectangular.chpl"
 /* DefaultRectangular.chpl:777 */
 #line 777 "DefaultRectangular.chpl"
-static void computeFactoredOffs4(DefaultRectangularArr_chpl_string_1_int64_t_F this6, int64_t _ln, c_string _fn) {
+static void computeFactoredOffs2(DefaultRectangularArr_chpl_string_1_int64_t_F this6, int64_t _ln, c_string _fn) {
 #line 777 "DefaultRectangular.chpl"
   _ref_int64_t call_tmp = NULL;
 #line 777 "DefaultRectangular.chpl"
@@ -2794,7 +2794,7 @@ static void computeFactoredOffs4(DefaultRectangularArr_chpl_string_1_int64_t_F t
 #line 777 "DefaultRectangular.chpl"
 /* DefaultRectangular.chpl:777 */
 #line 777 "DefaultRectangular.chpl"
-static void computeFactoredOffs3(DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F this6, int64_t _ln, c_string _fn) {
+static void computeFactoredOffs5(DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F this6, int64_t _ln, c_string _fn) {
 #line 777 "DefaultRectangular.chpl"
   _ref_int64_t call_tmp = NULL;
 #line 777 "DefaultRectangular.chpl"
@@ -2853,7 +2853,7 @@ static void computeFactoredOffs3(DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t
 #line 777 "DefaultRectangular.chpl"
 /* DefaultRectangular.chpl:777 */
 #line 777 "DefaultRectangular.chpl"
-static void computeFactoredOffs(DefaultRectangularArr_int64_t_1_int64_t_F this6, int64_t _ln, c_string _fn) {
+static void computeFactoredOffs4(DefaultRectangularArr_int64_t_1_int64_t_F this6, int64_t _ln, c_string _fn) {
 #line 777 "DefaultRectangular.chpl"
   _ref_int64_t call_tmp = NULL;
 #line 777 "DefaultRectangular.chpl"
@@ -2912,7 +2912,7 @@ static void computeFactoredOffs(DefaultRectangularArr_int64_t_1_int64_t_F this6,
 #line 777 "DefaultRectangular.chpl"
 /* DefaultRectangular.chpl:777 */
 #line 777 "DefaultRectangular.chpl"
-static void computeFactoredOffs2(DefaultRectangularArr_locale_1_int64_t_F this6, int64_t _ln, c_string _fn) {
+static void computeFactoredOffs(DefaultRectangularArr_locale_1_int64_t_F this6, int64_t _ln, c_string _fn) {
 #line 777 "DefaultRectangular.chpl"
   _ref_int64_t call_tmp = NULL;
 #line 777 "DefaultRectangular.chpl"
@@ -2971,7 +2971,7 @@ static void computeFactoredOffs2(DefaultRectangularArr_locale_1_int64_t_F this6,
 #line 777 "DefaultRectangular.chpl"
 /* DefaultRectangular.chpl:800 */
 #line 777 "DefaultRectangular.chpl"
-static void initialize7(DefaultRectangularArr_chpl_string_1_int64_t_F this6, int64_t _ln, c_string _fn) {
+static void initialize9(DefaultRectangularArr_chpl_string_1_int64_t_F this6, int64_t _ln, c_string _fn) {
 #line 777 "DefaultRectangular.chpl"
   chpl_bool ret;
 #line 777 "DefaultRectangular.chpl"
@@ -3105,7 +3105,7 @@ static void initialize7(DefaultRectangularArr_chpl_string_1_int64_t_F this6, int
 #line 809 "DefaultRectangular.chpl"
   chpl_check_nil(this6, INT64(809), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/DefaultRectangular.chpl");
 #line 809 "DefaultRectangular.chpl"
-  computeFactoredOffs4(this6, _ln, _fn);
+  computeFactoredOffs2(this6, _ln, _fn);
 #line 810 "DefaultRectangular.chpl"
   chpl_check_nil(this6, INT64(810), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/DefaultRectangular.chpl");
 #line 810 "DefaultRectangular.chpl"
@@ -3192,7 +3192,7 @@ static void initialize7(DefaultRectangularArr_chpl_string_1_int64_t_F this6, int
 #line 800 "DefaultRectangular.chpl"
 /* DefaultRectangular.chpl:800 */
 #line 800 "DefaultRectangular.chpl"
-static void initialize11(DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F this6, int64_t _ln, c_string _fn) {
+static void initialize6(DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F this6, int64_t _ln, c_string _fn) {
 #line 800 "DefaultRectangular.chpl"
   chpl_bool ret;
 #line 800 "DefaultRectangular.chpl"
@@ -3326,7 +3326,7 @@ static void initialize11(DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F this6
 #line 809 "DefaultRectangular.chpl"
   chpl_check_nil(this6, INT64(809), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/DefaultRectangular.chpl");
 #line 809 "DefaultRectangular.chpl"
-  computeFactoredOffs3(this6, _ln, _fn);
+  computeFactoredOffs5(this6, _ln, _fn);
 #line 810 "DefaultRectangular.chpl"
   chpl_check_nil(this6, INT64(810), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/DefaultRectangular.chpl");
 #line 810 "DefaultRectangular.chpl"
@@ -3360,7 +3360,7 @@ static void initialize11(DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F this6
 #line 811 "DefaultRectangular.chpl"
   call_tmp11 = chpl_array_alloc(call_tmp9, sizeof(c_ptr_GtkWidget_chpl), _ln, _fn);
 #line 811 "DefaultRectangular.chpl"
-  init_elts2(call_tmp11, call_tmp9, _ln, _fn);
+  init_elts4(call_tmp11, call_tmp9, _ln, _fn);
 #line 811 "DefaultRectangular.chpl"
   *(call_tmp10) = call_tmp11;
 #line 812 "DefaultRectangular.chpl"
@@ -3413,7 +3413,7 @@ static void initialize11(DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F this6
 #line 800 "DefaultRectangular.chpl"
 /* DefaultRectangular.chpl:800 */
 #line 800 "DefaultRectangular.chpl"
-static void initialize10(DefaultRectangularArr_int64_t_1_int64_t_F this6, int64_t _ln, c_string _fn) {
+static void initialize7(DefaultRectangularArr_int64_t_1_int64_t_F this6, int64_t _ln, c_string _fn) {
 #line 800 "DefaultRectangular.chpl"
   chpl_bool ret;
 #line 800 "DefaultRectangular.chpl"
@@ -3547,7 +3547,7 @@ static void initialize10(DefaultRectangularArr_int64_t_1_int64_t_F this6, int64_
 #line 809 "DefaultRectangular.chpl"
   chpl_check_nil(this6, INT64(809), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/DefaultRectangular.chpl");
 #line 809 "DefaultRectangular.chpl"
-  computeFactoredOffs(this6, _ln, _fn);
+  computeFactoredOffs4(this6, _ln, _fn);
 #line 810 "DefaultRectangular.chpl"
   chpl_check_nil(this6, INT64(810), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/DefaultRectangular.chpl");
 #line 810 "DefaultRectangular.chpl"
@@ -3581,7 +3581,7 @@ static void initialize10(DefaultRectangularArr_int64_t_1_int64_t_F this6, int64_
 #line 811 "DefaultRectangular.chpl"
   call_tmp11 = chpl_array_alloc(call_tmp9, sizeof(int64_t), _ln, _fn);
 #line 811 "DefaultRectangular.chpl"
-  init_elts4(call_tmp11, call_tmp9, _ln, _fn);
+  init_elts(call_tmp11, call_tmp9, _ln, _fn);
 #line 811 "DefaultRectangular.chpl"
   *(call_tmp10) = call_tmp11;
 #line 812 "DefaultRectangular.chpl"
@@ -3634,7 +3634,7 @@ static void initialize10(DefaultRectangularArr_int64_t_1_int64_t_F this6, int64_
 #line 800 "DefaultRectangular.chpl"
 /* DefaultRectangular.chpl:800 */
 #line 800 "DefaultRectangular.chpl"
-static void initialize8(DefaultRectangularArr_localesSignal_1_int64_t_F this6, int64_t _ln, c_string _fn) {
+static void initialize10(DefaultRectangularArr_localesSignal_1_int64_t_F this6, int64_t _ln, c_string _fn) {
 #line 800 "DefaultRectangular.chpl"
   chpl_bool ret;
 #line 800 "DefaultRectangular.chpl"
@@ -3768,7 +3768,7 @@ static void initialize8(DefaultRectangularArr_localesSignal_1_int64_t_F this6, i
 #line 809 "DefaultRectangular.chpl"
   chpl_check_nil(this6, INT64(809), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/DefaultRectangular.chpl");
 #line 809 "DefaultRectangular.chpl"
-  computeFactoredOffs5(this6, _ln, _fn);
+  computeFactoredOffs3(this6, _ln, _fn);
 #line 810 "DefaultRectangular.chpl"
   chpl_check_nil(this6, INT64(810), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/DefaultRectangular.chpl");
 #line 810 "DefaultRectangular.chpl"
@@ -3855,7 +3855,7 @@ static void initialize8(DefaultRectangularArr_localesSignal_1_int64_t_F this6, i
 #line 800 "DefaultRectangular.chpl"
 /* DefaultRectangular.chpl:800 */
 #line 800 "DefaultRectangular.chpl"
-static void initialize9(DefaultRectangularArr_locale_1_int64_t_F this6, int64_t _ln, c_string _fn) {
+static void initialize8(DefaultRectangularArr_locale_1_int64_t_F this6, int64_t _ln, c_string _fn) {
 #line 800 "DefaultRectangular.chpl"
   chpl_bool ret;
 #line 800 "DefaultRectangular.chpl"
@@ -3989,7 +3989,7 @@ static void initialize9(DefaultRectangularArr_locale_1_int64_t_F this6, int64_t 
 #line 809 "DefaultRectangular.chpl"
   chpl_check_nil(this6, INT64(809), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/DefaultRectangular.chpl");
 #line 809 "DefaultRectangular.chpl"
-  computeFactoredOffs2(this6, _ln, _fn);
+  computeFactoredOffs(this6, _ln, _fn);
 #line 810 "DefaultRectangular.chpl"
   chpl_check_nil(this6, INT64(810), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/DefaultRectangular.chpl");
 #line 810 "DefaultRectangular.chpl"
@@ -4023,7 +4023,7 @@ static void initialize9(DefaultRectangularArr_locale_1_int64_t_F this6, int64_t 
 #line 811 "DefaultRectangular.chpl"
   call_tmp11 = chpl_array_alloc(call_tmp9, sizeof(locale), _ln, _fn);
 #line 811 "DefaultRectangular.chpl"
-  init_elts(call_tmp11, call_tmp9, _ln, _fn);
+  init_elts2(call_tmp11, call_tmp9, _ln, _fn);
 #line 811 "DefaultRectangular.chpl"
   *(call_tmp10) = call_tmp11;
 #line 812 "DefaultRectangular.chpl"
@@ -4076,7 +4076,7 @@ static void initialize9(DefaultRectangularArr_locale_1_int64_t_F this6, int64_t 
 #line 800 "DefaultRectangular.chpl"
 /* DefaultRectangular.chpl:988 */
 #line 800 "DefaultRectangular.chpl"
-static void dsiReallocate6(DefaultRectangularArr_localesSignal_1_int64_t_F this6, DefaultRectangularDom_1_int64_t_F d, int64_t _ln, c_string _fn) {
+static void dsiReallocate5(DefaultRectangularArr_localesSignal_1_int64_t_F this6, DefaultRectangularDom_1_int64_t_F d, int64_t _ln, c_string _fn) {
 #line 800 "DefaultRectangular.chpl"
   DefaultRectangularArr_localesSignal_1_int64_t_F copy = NULL;
 #line 800 "DefaultRectangular.chpl"
@@ -4388,7 +4388,7 @@ static void dsiReallocate6(DefaultRectangularArr_localesSignal_1_int64_t_F this6
 #line 991 "DefaultRectangular.chpl"
   (this7)->noinit_data = false;
 #line 991 "DefaultRectangular.chpl"
-  wrap_call_tmp3 = _construct_DefaultRectangularArr2(&wrap_call_tmp2, call_tmp2, ret, &this10, &this11, &this12, INT64(0), INT64(0), call_tmp3, call_tmp4, false, this7, _ln, _fn);
+  wrap_call_tmp3 = _construct_DefaultRectangularArr3(&wrap_call_tmp2, call_tmp2, ret, &this10, &this11, &this12, INT64(0), INT64(0), call_tmp3, call_tmp4, false, this7, _ln, _fn);
 #line 991 "DefaultRectangular.chpl"
   copy = wrap_call_tmp3;
 #line 995 "DefaultRectangular.chpl"
@@ -4604,7 +4604,7 @@ static void dsiReallocate6(DefaultRectangularArr_localesSignal_1_int64_t_F this6
 #line 1002 "DefaultRectangular.chpl"
   chpl_check_nil(this6, INT64(1002), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/DefaultRectangular.chpl");
 #line 1002 "DefaultRectangular.chpl"
-  dsiDestroyData5(this6, _ln, _fn);
+  dsiDestroyData6(this6, _ln, _fn);
 #line 1003 "DefaultRectangular.chpl"
   chpl_check_nil(this6, INT64(1003), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/DefaultRectangular.chpl");
 #line 1003 "DefaultRectangular.chpl"
@@ -4665,7 +4665,7 @@ static void dsiReallocate6(DefaultRectangularArr_localesSignal_1_int64_t_F this6
 #line 988 "DefaultRectangular.chpl"
 /* DefaultRectangular.chpl:988 */
 #line 988 "DefaultRectangular.chpl"
-static void dsiReallocate5(DefaultRectangularArr_int64_t_1_int64_t_F this6, DefaultRectangularDom_1_int64_t_F d, int64_t _ln, c_string _fn) {
+static void dsiReallocate6(DefaultRectangularArr_int64_t_1_int64_t_F this6, DefaultRectangularDom_1_int64_t_F d, int64_t _ln, c_string _fn) {
 #line 988 "DefaultRectangular.chpl"
   DefaultRectangularArr_int64_t_1_int64_t_F copy = NULL;
 #line 988 "DefaultRectangular.chpl"
@@ -4977,7 +4977,7 @@ static void dsiReallocate5(DefaultRectangularArr_int64_t_1_int64_t_F this6, Defa
 #line 991 "DefaultRectangular.chpl"
   (this7)->noinit_data = false;
 #line 991 "DefaultRectangular.chpl"
-  wrap_call_tmp3 = _construct_DefaultRectangularArr3(&wrap_call_tmp2, call_tmp2, ret, &this10, &this11, &this12, INT64(0), INT64(0), call_tmp3, call_tmp4, false, this7, _ln, _fn);
+  wrap_call_tmp3 = _construct_DefaultRectangularArr5(&wrap_call_tmp2, call_tmp2, ret, &this10, &this11, &this12, INT64(0), INT64(0), call_tmp3, call_tmp4, false, this7, _ln, _fn);
 #line 991 "DefaultRectangular.chpl"
   copy = wrap_call_tmp3;
 #line 995 "DefaultRectangular.chpl"
@@ -5193,7 +5193,7 @@ static void dsiReallocate5(DefaultRectangularArr_int64_t_1_int64_t_F this6, Defa
 #line 1002 "DefaultRectangular.chpl"
   chpl_check_nil(this6, INT64(1002), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/DefaultRectangular.chpl");
 #line 1002 "DefaultRectangular.chpl"
-  dsiDestroyData4(this6, _ln, _fn);
+  dsiDestroyData5(this6, _ln, _fn);
 #line 1003 "DefaultRectangular.chpl"
   chpl_check_nil(this6, INT64(1003), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/DefaultRectangular.chpl");
 #line 1003 "DefaultRectangular.chpl"
@@ -5566,7 +5566,7 @@ static void dsiReallocate2(DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F thi
 #line 991 "DefaultRectangular.chpl"
   (this7)->noinit_data = false;
 #line 991 "DefaultRectangular.chpl"
-  wrap_call_tmp3 = _construct_DefaultRectangularArr4(&wrap_call_tmp2, call_tmp2, ret, &this10, &this11, &this12, INT64(0), INT64(0), call_tmp3, call_tmp4, false, this7, _ln, _fn);
+  wrap_call_tmp3 = _construct_DefaultRectangularArr2(&wrap_call_tmp2, call_tmp2, ret, &this10, &this11, &this12, INT64(0), INT64(0), call_tmp3, call_tmp4, false, this7, _ln, _fn);
 #line 991 "DefaultRectangular.chpl"
   copy = wrap_call_tmp3;
 #line 995 "DefaultRectangular.chpl"
@@ -5782,7 +5782,7 @@ static void dsiReallocate2(DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F thi
 #line 1002 "DefaultRectangular.chpl"
   chpl_check_nil(this6, INT64(1002), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/DefaultRectangular.chpl");
 #line 1002 "DefaultRectangular.chpl"
-  dsiDestroyData3(this6, _ln, _fn);
+  dsiDestroyData4(this6, _ln, _fn);
 #line 1003 "DefaultRectangular.chpl"
   chpl_check_nil(this6, INT64(1003), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/DefaultRectangular.chpl");
 #line 1003 "DefaultRectangular.chpl"
@@ -5843,7 +5843,7 @@ static void dsiReallocate2(DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F thi
 #line 988 "DefaultRectangular.chpl"
 /* DefaultRectangular.chpl:988 */
 #line 988 "DefaultRectangular.chpl"
-static void dsiReallocate4(DefaultRectangularArr_chpl_string_1_int64_t_F this6, DefaultRectangularDom_1_int64_t_F d, int64_t _ln, c_string _fn) {
+static void dsiReallocate3(DefaultRectangularArr_chpl_string_1_int64_t_F this6, DefaultRectangularDom_1_int64_t_F d, int64_t _ln, c_string _fn) {
 #line 988 "DefaultRectangular.chpl"
   DefaultRectangularArr_chpl_string_1_int64_t_F copy = NULL;
 #line 988 "DefaultRectangular.chpl"
@@ -6371,7 +6371,7 @@ static void dsiReallocate4(DefaultRectangularArr_chpl_string_1_int64_t_F this6, 
 #line 1002 "DefaultRectangular.chpl"
   chpl_check_nil(this6, INT64(1002), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/DefaultRectangular.chpl");
 #line 1002 "DefaultRectangular.chpl"
-  dsiDestroyData2(this6, _ln, _fn);
+  dsiDestroyData3(this6, _ln, _fn);
 #line 1003 "DefaultRectangular.chpl"
   chpl_check_nil(this6, INT64(1003), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/DefaultRectangular.chpl");
 #line 1003 "DefaultRectangular.chpl"
@@ -6432,7 +6432,7 @@ static void dsiReallocate4(DefaultRectangularArr_chpl_string_1_int64_t_F this6, 
 #line 988 "DefaultRectangular.chpl"
 /* DefaultRectangular.chpl:988 */
 #line 988 "DefaultRectangular.chpl"
-static void dsiReallocate3(DefaultRectangularArr_locale_1_int64_t_F this6, DefaultRectangularDom_1_int64_t_F d, int64_t _ln, c_string _fn) {
+static void dsiReallocate4(DefaultRectangularArr_locale_1_int64_t_F this6, DefaultRectangularDom_1_int64_t_F d, int64_t _ln, c_string _fn) {
 #line 988 "DefaultRectangular.chpl"
   DefaultRectangularArr_locale_1_int64_t_F copy = NULL;
 #line 988 "DefaultRectangular.chpl"
@@ -6744,7 +6744,7 @@ static void dsiReallocate3(DefaultRectangularArr_locale_1_int64_t_F this6, Defau
 #line 991 "DefaultRectangular.chpl"
   (this7)->noinit_data = false;
 #line 991 "DefaultRectangular.chpl"
-  wrap_call_tmp3 = _construct_DefaultRectangularArr5(&wrap_call_tmp2, call_tmp2, ret, &this10, &this11, &this12, INT64(0), INT64(0), call_tmp3, call_tmp4, false, this7, _ln, _fn);
+  wrap_call_tmp3 = _construct_DefaultRectangularArr4(&wrap_call_tmp2, call_tmp2, ret, &this10, &this11, &this12, INT64(0), INT64(0), call_tmp3, call_tmp4, false, this7, _ln, _fn);
 #line 991 "DefaultRectangular.chpl"
   copy = wrap_call_tmp3;
 #line 995 "DefaultRectangular.chpl"
@@ -6960,7 +6960,7 @@ static void dsiReallocate3(DefaultRectangularArr_locale_1_int64_t_F this6, Defau
 #line 1002 "DefaultRectangular.chpl"
   chpl_check_nil(this6, INT64(1002), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/DefaultRectangular.chpl");
 #line 1002 "DefaultRectangular.chpl"
-  dsiDestroyData6(this6, _ln, _fn);
+  dsiDestroyData2(this6, _ln, _fn);
 #line 1003 "DefaultRectangular.chpl"
   chpl_check_nil(this6, INT64(1003), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/DefaultRectangular.chpl");
 #line 1003 "DefaultRectangular.chpl"

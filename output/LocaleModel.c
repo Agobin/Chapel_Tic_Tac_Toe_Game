@@ -81,13 +81,13 @@ static void chpl__init_LocaleModel(int64_t _ln, c_string _fn) {
 #line 87 "LocaleModel.chpl"
   chpl__ensureDomainExpr(chpl_emptyLocaleSpace, ret_to_arg_ref_tmp_4, _ln, _fn);
 #line 87 "LocaleModel.chpl"
-  call_tmp5 = chpl__buildArrayRuntimeType4(call_tmp4, _ln, _fn);
+  call_tmp5 = chpl__buildArrayRuntimeType(call_tmp4, _ln, _fn);
 #line 87 "LocaleModel.chpl"
   _runtime_type_tmp_2 = (&call_tmp5)->dom;
 #line 87 "LocaleModel.chpl"
   ret_to_arg_ref_tmp_5 = &type_tmp2;
 #line 87 "LocaleModel.chpl"
-  chpl__convertRuntimeTypeToValue3(_runtime_type_tmp_2, ret_to_arg_ref_tmp_5, _ln, _fn);
+  chpl__convertRuntimeTypeToValue6(_runtime_type_tmp_2, ret_to_arg_ref_tmp_5, _ln, _fn);
 #line 87 "LocaleModel.chpl"
   chpl__autoDestroy2(call_tmp4, _ln, _fn);
 #line 87 "LocaleModel.chpl"
@@ -685,7 +685,7 @@ static void chpl__auto_destroy_RootLocale(RootLocale this6, int64_t _ln, c_strin
 #line 195 "LocaleModel.chpl"
   _field_destructor_tmp_ = (this6)->myLocales;
 #line 195 "LocaleModel.chpl"
-  chpl__autoDestroy5(_field_destructor_tmp_, _ln, _fn);
+  chpl__autoDestroy6(_field_destructor_tmp_, _ln, _fn);
 #line 194 "LocaleModel.chpl"
   chpl_check_nil(this6, INT64(194), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/localeModels/flat/LocaleModel.chpl");
 #line 194 "LocaleModel.chpl"
@@ -895,13 +895,13 @@ static RootLocale RootLocale2(int64_t _ln, c_string _fn) {
 #line 197 "LocaleModel.chpl"
   chpl__ensureDomainExpr(default_argmyLocaleSpace, ret_to_arg_ref_tmp_4, _ln, _fn);
 #line 197 "LocaleModel.chpl"
-  call_tmp8 = chpl__buildArrayRuntimeType4(call_tmp7, _ln, _fn);
+  call_tmp8 = chpl__buildArrayRuntimeType(call_tmp7, _ln, _fn);
 #line 197 "LocaleModel.chpl"
   _runtime_type_tmp_2 = (&call_tmp8)->dom;
 #line 197 "LocaleModel.chpl"
   ret_to_arg_ref_tmp_5 = &default_argmyLocales;
 #line 197 "LocaleModel.chpl"
-  chpl__convertRuntimeTypeToValue3(_runtime_type_tmp_2, ret_to_arg_ref_tmp_5, _ln, _fn);
+  chpl__convertRuntimeTypeToValue6(_runtime_type_tmp_2, ret_to_arg_ref_tmp_5, _ln, _fn);
 #line 197 "LocaleModel.chpl"
   chpl_check_nil(this7, INT64(197), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/localeModels/flat/LocaleModel.chpl");
 #line 197 "LocaleModel.chpl"
@@ -1086,13 +1086,13 @@ static void init2(RootLocale this6, int64_t _ln, c_string _fn) {
 #line 207 "LocaleModel.chpl"
   chpl__ensureDomainExpr2(&call_tmp3, ret_to_arg_ref_tmp_3, _ln, _fn);
 #line 207 "LocaleModel.chpl"
-  call_tmp5 = chpl__buildArrayRuntimeType(call_tmp4, _ln, _fn);
+  call_tmp5 = chpl__buildArrayRuntimeType2(call_tmp4, _ln, _fn);
 #line 207 "LocaleModel.chpl"
   _runtime_type_tmp_ = (&call_tmp5)->dom;
 #line 207 "LocaleModel.chpl"
   ret_to_arg_ref_tmp_4 = &type_tmp;
 #line 207 "LocaleModel.chpl"
-  chpl__convertRuntimeTypeToValue5(_runtime_type_tmp_, ret_to_arg_ref_tmp_4, _ln, _fn);
+  chpl__convertRuntimeTypeToValue4(_runtime_type_tmp_, ret_to_arg_ref_tmp_4, _ln, _fn);
 #line 207 "LocaleModel.chpl"
   flags = type_tmp;
 #line 207 "LocaleModel.chpl"
@@ -1176,7 +1176,7 @@ static void init2(RootLocale this6, int64_t _ln, c_string _fn) {
 #line 207 "LocaleModel.chpl"
     chpl_here_alloc_size = sizeof(chpl__class_localscoforall_fn2_object);
 #line 207 "LocaleModel.chpl"
-    chpl_here_alloc_tmp = chpl_here_alloc(chpl_here_alloc_size, INT16(37), _ln, _fn);
+    chpl_here_alloc_tmp = chpl_here_alloc(chpl_here_alloc_size, INT16(36), _ln, _fn);
 #line 207 "LocaleModel.chpl"
     _args_forcoforall_fn = ((_class_localscoforall_fn2)(chpl_here_alloc_tmp));
 #line 207 "LocaleModel.chpl"
@@ -1635,7 +1635,7 @@ static locale getChild3(RootLocale this6, int64_t idx, int64_t _ln, c_string _fn
 #line 241 "LocaleModel.chpl"
 /* LocaleModel.chpl:249 */
 #line 241 "LocaleModel.chpl"
-static DefaultRectangularArr_locale_1_int64_t_F getDefaultLocaleArray2(RootLocale this6, int64_t _ln, c_string _fn) {
+static DefaultRectangularArr_locale_1_int64_t_F getDefaultLocaleArray(RootLocale this6, int64_t _ln, c_string _fn) {
 #line 241 "LocaleModel.chpl"
   DefaultRectangularArr_locale_1_int64_t_F call_tmp = NULL;
 #line 249 "LocaleModel.chpl"
@@ -1650,7 +1650,7 @@ static DefaultRectangularArr_locale_1_int64_t_F getDefaultLocaleArray2(RootLocal
 #line 249 "LocaleModel.chpl"
 /* LocaleModel.chpl:249 */
 #line 249 "LocaleModel.chpl"
-static void getDefaultLocaleArray(RootLocale this6, _ref_DefaultRectangularArr_locale_1_int64_t_F _retArg, int64_t _ln, c_string _fn) {
+static void getDefaultLocaleArray2(RootLocale this6, _ref_DefaultRectangularArr_locale_1_int64_t_F _retArg, int64_t _ln, c_string _fn) {
 #line 249 "LocaleModel.chpl"
   DefaultRectangularArr_locale_1_int64_t_F call_tmp = NULL;
 #line 249 "LocaleModel.chpl"
@@ -1780,7 +1780,7 @@ static locale localeIDtoLocale2(RootLocale this6, chpl_localeID_t* const id2, in
 #line 251 "LocaleModel.chpl"
 /* LocaleModel.chpl:279 */
 #line 251 "LocaleModel.chpl"
-static chpl_opaque chpl_here_alloc(int64_t size, int16_t md, int64_t _ln, c_string _fn) {
+static chpl_opaque chpl_here_alloc(int64_t size2, int16_t md, int64_t _ln, c_string _fn) {
 #line 251 "LocaleModel.chpl"
   int16_t call_tmp;
 #line 251 "LocaleModel.chpl"
@@ -1792,7 +1792,7 @@ static chpl_opaque chpl_here_alloc(int64_t size, int16_t md, int64_t _ln, c_stri
 #line 282 "LocaleModel.chpl"
   call_tmp2 = (md + call_tmp);
 #line 282 "LocaleModel.chpl"
-  call_tmp3 = chpl_mem_alloc(size, call_tmp2, _ln, _fn);
+  call_tmp3 = chpl_mem_alloc(size2, call_tmp2, _ln, _fn);
 #line 279 "LocaleModel.chpl"
   return call_tmp3;
 #line 279 "LocaleModel.chpl"

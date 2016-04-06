@@ -141,13 +141,13 @@ static DefaultRectangularArr_chpl_string_1_int64_t_F chpl_convert_args(chpl_main
 #line 162 "ChapelUtil.chpl"
   chpl__ensureDomainExpr2(&call_tmp2, ret_to_arg_ref_tmp_3, _ln, _fn);
 #line 162 "ChapelUtil.chpl"
-  call_tmp4 = chpl__buildArrayRuntimeType2(call_tmp3, _ln, _fn);
+  call_tmp4 = chpl__buildArrayRuntimeType5(call_tmp3, _ln, _fn);
 #line 162 "ChapelUtil.chpl"
   _runtime_type_tmp_ = (&call_tmp4)->dom;
 #line 162 "ChapelUtil.chpl"
   ret_to_arg_ref_tmp_4 = &type_tmp;
 #line 162 "ChapelUtil.chpl"
-  chpl__convertRuntimeTypeToValue6(_runtime_type_tmp_, ret_to_arg_ref_tmp_4, _ln, _fn);
+  chpl__convertRuntimeTypeToValue3(_runtime_type_tmp_, ret_to_arg_ref_tmp_4, _ln, _fn);
 #line 162 "ChapelUtil.chpl"
   array = type_tmp;
 #line 162 "ChapelUtil.chpl"
