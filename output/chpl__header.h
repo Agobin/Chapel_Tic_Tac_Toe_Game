@@ -85,8 +85,6 @@ typedef enum {iomode_chpl_r_chpl = INT64(1), iomode_chpl_cw_chpl = INT64(2), iom
 typedef enum {iokind_chpl_dynamic_chpl = INT64(0), iokind_chpl_native_chpl = INT64(1), iokind_chpl_big_chpl = INT64(2), iokind_chpl_little_chpl = INT64(3)} iokind_chpl;
 typedef enum {iostringstyle_chpl_len1b_data_chpl = INT64(-1), iostringstyle_chpl_len2b_data_chpl = INT64(-2), iostringstyle_chpl_len4b_data_chpl = INT64(-4), iostringstyle_chpl_len8b_data_chpl = INT64(-8), iostringstyle_chpl_lenVb_data_chpl = INT64(-10), iostringstyle_chpl_data_toeof_chpl = INT64(-65280), iostringstyle_chpl_data_null_chpl = INT64(-256)} iostringstyle_chpl;
 typedef enum {relType_chpl_eq_chpl = INT64(1), relType_chpl_neq_chpl = UINT32(2), relType_chpl_lt_chpl = UINT32(3), relType_chpl_lte_chpl = UINT32(4), relType_chpl_gt_chpl = UINT32(5), relType_chpl_gte_chpl = UINT32(6)} relType_chpl;
-typedef enum {TimeUnits_chpl_microseconds_chpl = UINT32(1), TimeUnits_chpl_milliseconds_chpl = UINT32(2), TimeUnits_chpl_seconds_chpl = UINT32(3), TimeUnits_chpl_minutes_chpl = UINT32(4), TimeUnits_chpl_hours_chpl = UINT32(5)} TimeUnits_chpl;
-typedef enum {Day_chpl_sunday_chpl = INT64(0), Day_chpl_monday_chpl = UINT32(1), Day_chpl_tuesday_chpl = UINT32(2), Day_chpl_wednesday_chpl = UINT32(3), Day_chpl_thursday_chpl = UINT32(4), Day_chpl_friday_chpl = UINT32(5), Day_chpl_saturday_chpl = UINT32(6)} Day_chpl;
 /*** Records, Unions, Data Class, References (Hierarchically) ***/
 
 typedef struct chpl_atomicflag_s {
@@ -123,11 +121,6 @@ typedef DefaultRectangularDom_1_int64_t_F *_ref_DefaultRectangularDom_1_int64_t_
 typedef LocaleModel *_ref_LocaleModel;
 typedef Reader *_ref_Reader;
 typedef RootLocale *_ref_RootLocale;
-typedef struct chpl_SeedGenerators_chpl_s {
-  int dummyFieldToAvoidWarning;
-} SeedGenerators_chpl;
-
-typedef SeedGenerators_chpl *_ref_SeedGenerators;
 typedef StringWriter *_ref_StringWriter;
 typedef Writer *_ref_Writer;
 typedef chpl___EndCount_atomic_int64_int64_t *_ref__EndCount_atomic_int64_int64_t;
@@ -298,10 +291,10 @@ typedef uint64_t *_ref_uint64_t;
 typedef struct chpl__class_localscoforall_fn_s {
   _ddata_int64_t _0_x1_tet;
   int64_t _1__yieldedIndex;
-  int64_t _2_numChunks;
-  chpl___EndCount_atomic_int64_int64_t _3_rvfDerefTmp;
-  int64_t _4_len;
-  _ref_range_int64_t_bounded_F _5_this;
+  int64_t _2_len;
+  _ref_range_int64_t_bounded_F _3_this;
+  chpl___EndCount_atomic_int64_int64_t _4_rvfDerefTmp;
+  int64_t _5_numChunks;
   int64_t _ln;
   c_string _fn;
 } chpl__class_localscoforall_fn_object;
@@ -512,16 +505,16 @@ static void _getDistribution(DefaultDist value, _ref_DefaultDist _retArg, int64_
 static chpl___RuntimeTypeInfo chpl__buildDomainRuntimeType(DefaultDist d, int64_t _ln, c_string _fn);
 static void chpl__convertRuntimeTypeToValue(DefaultDist d, _ref_DefaultRectangularDom_1_int64_t_F _retArg, int64_t _ln, c_string _fn);
 static chpl___RuntimeTypeInfo chpl__convertValueToRuntimeType(DefaultRectangularDom_1_int64_t_F dom, int64_t _ln, c_string _fn);
-static chpl___RuntimeTypeInfo2 chpl__buildArrayRuntimeType(DefaultRectangularDom_1_int64_t_F dom, int64_t _ln, c_string _fn);
-static chpl___RuntimeTypeInfo3 chpl__buildArrayRuntimeType2(DefaultRectangularDom_1_int64_t_F dom, int64_t _ln, c_string _fn);
-static chpl___RuntimeTypeInfo5 chpl__buildArrayRuntimeType3(DefaultRectangularDom_1_int64_t_F dom, int64_t _ln, c_string _fn);
-static chpl___RuntimeTypeInfo4 chpl__buildArrayRuntimeType4(DefaultRectangularDom_1_int64_t_F dom, int64_t _ln, c_string _fn);
-static chpl___RuntimeTypeInfo6 chpl__buildArrayRuntimeType5(DefaultRectangularDom_1_int64_t_F dom, int64_t _ln, c_string _fn);
-static void chpl__convertRuntimeTypeToValue2(DefaultRectangularDom_1_int64_t_F dom, _ref_DefaultRectangularArr_int64_t_1_int64_t_F _retArg, int64_t _ln, c_string _fn);
+static chpl___RuntimeTypeInfo4 chpl__buildArrayRuntimeType(DefaultRectangularDom_1_int64_t_F dom, int64_t _ln, c_string _fn);
+static chpl___RuntimeTypeInfo6 chpl__buildArrayRuntimeType2(DefaultRectangularDom_1_int64_t_F dom, int64_t _ln, c_string _fn);
+static chpl___RuntimeTypeInfo2 chpl__buildArrayRuntimeType3(DefaultRectangularDom_1_int64_t_F dom, int64_t _ln, c_string _fn);
+static chpl___RuntimeTypeInfo5 chpl__buildArrayRuntimeType4(DefaultRectangularDom_1_int64_t_F dom, int64_t _ln, c_string _fn);
+static chpl___RuntimeTypeInfo3 chpl__buildArrayRuntimeType5(DefaultRectangularDom_1_int64_t_F dom, int64_t _ln, c_string _fn);
+static void chpl__convertRuntimeTypeToValue2(DefaultRectangularDom_1_int64_t_F dom, _ref_DefaultRectangularArr_locale_1_int64_t_F _retArg, int64_t _ln, c_string _fn);
 static void chpl__convertRuntimeTypeToValue3(DefaultRectangularDom_1_int64_t_F dom, _ref_DefaultRectangularArr_chpl_string_1_int64_t_F _retArg, int64_t _ln, c_string _fn);
 static void chpl__convertRuntimeTypeToValue4(DefaultRectangularDom_1_int64_t_F dom, _ref_DefaultRectangularArr_localesSignal_1_int64_t_F _retArg, int64_t _ln, c_string _fn);
 static void chpl__convertRuntimeTypeToValue5(DefaultRectangularDom_1_int64_t_F dom, _ref_DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F _retArg, int64_t _ln, c_string _fn);
-static void chpl__convertRuntimeTypeToValue6(DefaultRectangularDom_1_int64_t_F dom, _ref_DefaultRectangularArr_locale_1_int64_t_F _retArg, int64_t _ln, c_string _fn);
+static void chpl__convertRuntimeTypeToValue6(DefaultRectangularDom_1_int64_t_F dom, _ref_DefaultRectangularArr_int64_t_1_int64_t_F _retArg, int64_t _ln, c_string _fn);
 static void chpl_incRefCountsForDomainsInArrayEltTypes(void);
 static void chpl_incRefCountsForDomainsInArrayEltTypes2(void);
 static void chpl_incRefCountsForDomainsInArrayEltTypes3(void);
@@ -544,33 +537,33 @@ static DefaultRectangularDom_1_int64_t_F _construct__domain(DefaultRectangularDo
 static void chpl___TILDE__domain(DefaultRectangularDom_1_int64_t_F this6, int64_t _ln, c_string _fn);
 static void dist(DefaultRectangularDom_1_int64_t_F this6, _ref_DefaultDist _retArg, int64_t _ln, c_string _fn);
 static void this2(DefaultRectangularDom_1_int64_t_F this6, range_int64_t_bounded_F* const _e0_ranges, _ref_DefaultRectangularDom_1_int64_t_F _retArg, int64_t _ln, c_string _fn);
-static void buildArray(DefaultRectangularDom_1_int64_t_F this6, _ref_DefaultRectangularArr_chpl_string_1_int64_t_F _retArg, int64_t _ln, c_string _fn);
-static void buildArray2(DefaultRectangularDom_1_int64_t_F this6, _ref_DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F _retArg, int64_t _ln, c_string _fn);
-static void buildArray3(DefaultRectangularDom_1_int64_t_F this6, _ref_DefaultRectangularArr_int64_t_1_int64_t_F _retArg, int64_t _ln, c_string _fn);
-static void buildArray4(DefaultRectangularDom_1_int64_t_F this6, _ref_DefaultRectangularArr_localesSignal_1_int64_t_F _retArg, int64_t _ln, c_string _fn);
+static void buildArray(DefaultRectangularDom_1_int64_t_F this6, _ref_DefaultRectangularArr_localesSignal_1_int64_t_F _retArg, int64_t _ln, c_string _fn);
+static void buildArray2(DefaultRectangularDom_1_int64_t_F this6, _ref_DefaultRectangularArr_chpl_string_1_int64_t_F _retArg, int64_t _ln, c_string _fn);
+static void buildArray3(DefaultRectangularDom_1_int64_t_F this6, _ref_DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F _retArg, int64_t _ln, c_string _fn);
+static void buildArray4(DefaultRectangularDom_1_int64_t_F this6, _ref_DefaultRectangularArr_int64_t_1_int64_t_F _retArg, int64_t _ln, c_string _fn);
 static void buildArray5(DefaultRectangularDom_1_int64_t_F this6, _ref_DefaultRectangularArr_locale_1_int64_t_F _retArg, int64_t _ln, c_string _fn);
-static void help(DefaultRectangularDom_1_int64_t_F this6, _ref_DefaultRectangularArr_chpl_string_1_int64_t_F x, int64_t _ln, c_string _fn);
-static void help2(DefaultRectangularDom_1_int64_t_F this6, _ref_DefaultRectangularArr_locale_1_int64_t_F x, int64_t _ln, c_string _fn);
-static void help3(DefaultRectangularDom_1_int64_t_F this6, _ref_DefaultRectangularArr_localesSignal_1_int64_t_F x, int64_t _ln, c_string _fn);
-static void help4(DefaultRectangularDom_1_int64_t_F this6, _ref_DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F x, int64_t _ln, c_string _fn);
+static void help(DefaultRectangularDom_1_int64_t_F this6, _ref_DefaultRectangularArr_locale_1_int64_t_F x, int64_t _ln, c_string _fn);
+static void help2(DefaultRectangularDom_1_int64_t_F this6, _ref_DefaultRectangularArr_localesSignal_1_int64_t_F x, int64_t _ln, c_string _fn);
+static void help3(DefaultRectangularDom_1_int64_t_F this6, _ref_DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F x, int64_t _ln, c_string _fn);
+static void help4(DefaultRectangularDom_1_int64_t_F this6, _ref_DefaultRectangularArr_chpl_string_1_int64_t_F x, int64_t _ln, c_string _fn);
 static void help5(DefaultRectangularDom_1_int64_t_F this6, _ref_DefaultRectangularArr_int64_t_1_int64_t_F x, int64_t _ln, c_string _fn);
 static int64_t numIndices(DefaultRectangularDom_1_int64_t_F this6, int64_t _ln, c_string _fn);
 static void setIndices(DefaultRectangularDom_1_int64_t_F this6, _tuple_1_star_range_int64_t_bounded_F* const x, int64_t _ln, c_string _fn);
 static void getIndices(DefaultRectangularDom_1_int64_t_F this6, _ref__tuple_1_star_range_int64_t_bounded_F _retArg, int64_t _ln, c_string _fn);
-static DefaultRectangularArr_chpl_string_1_int64_t_F _construct__array(DefaultRectangularArr_chpl_string_1_int64_t_F _value, DefaultRectangularArr_chpl_string_1_int64_t_F meme, int64_t _ln, c_string _fn);
+static DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F _construct__array(DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F _value, DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F meme, int64_t _ln, c_string _fn);
 static DefaultRectangularArr_locale_1_int64_t_F _construct__array2(DefaultRectangularArr_locale_1_int64_t_F _value, DefaultRectangularArr_locale_1_int64_t_F meme, int64_t _ln, c_string _fn);
-static DefaultRectangularArr_localesSignal_1_int64_t_F _construct__array3(DefaultRectangularArr_localesSignal_1_int64_t_F _value, DefaultRectangularArr_localesSignal_1_int64_t_F meme, int64_t _ln, c_string _fn);
+static DefaultRectangularArr_chpl_string_1_int64_t_F _construct__array3(DefaultRectangularArr_chpl_string_1_int64_t_F _value, DefaultRectangularArr_chpl_string_1_int64_t_F meme, int64_t _ln, c_string _fn);
 static DefaultRectangularArr_int64_t_1_int64_t_F _construct__array4(DefaultRectangularArr_int64_t_1_int64_t_F _value, DefaultRectangularArr_int64_t_1_int64_t_F meme, int64_t _ln, c_string _fn);
-static DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F _construct__array5(DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F _value, DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F meme, int64_t _ln, c_string _fn);
-static void initialize(DefaultRectangularArr_locale_1_int64_t_F this6);
-static void initialize2(DefaultRectangularArr_chpl_string_1_int64_t_F this6);
-static void initialize3(DefaultRectangularArr_localesSignal_1_int64_t_F this6);
-static void initialize4(DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F this6);
-static void initialize5(DefaultRectangularArr_int64_t_1_int64_t_F this6);
+static DefaultRectangularArr_localesSignal_1_int64_t_F _construct__array5(DefaultRectangularArr_localesSignal_1_int64_t_F _value, DefaultRectangularArr_localesSignal_1_int64_t_F meme, int64_t _ln, c_string _fn);
+static void initialize(DefaultRectangularArr_chpl_string_1_int64_t_F this6);
+static void initialize2(DefaultRectangularArr_locale_1_int64_t_F this6);
+static void initialize3(DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F this6);
+static void initialize4(DefaultRectangularArr_int64_t_1_int64_t_F this6);
+static void initialize5(DefaultRectangularArr_localesSignal_1_int64_t_F this6);
 static void chpl___TILDE__array(DefaultRectangularArr_localesSignal_1_int64_t_F this6, int64_t _ln, c_string _fn);
-static void chpl___TILDE__array2(DefaultRectangularArr_int64_t_1_int64_t_F this6, int64_t _ln, c_string _fn);
-static void chpl___TILDE__array3(DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F this6, int64_t _ln, c_string _fn);
-static void chpl___TILDE__array4(DefaultRectangularArr_locale_1_int64_t_F this6, int64_t _ln, c_string _fn);
+static void chpl___TILDE__array2(DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F this6, int64_t _ln, c_string _fn);
+static void chpl___TILDE__array3(DefaultRectangularArr_locale_1_int64_t_F this6, int64_t _ln, c_string _fn);
+static void chpl___TILDE__array4(DefaultRectangularArr_int64_t_1_int64_t_F this6, int64_t _ln, c_string _fn);
 static void _dom(DefaultRectangularArr_locale_1_int64_t_F this6, _ref_DefaultRectangularDom_1_int64_t_F _retArg, int64_t _ln, c_string _fn);
 static int64_t numElements(DefaultRectangularArr_int64_t_1_int64_t_F this6, int64_t _ln, c_string _fn);
 static int64_t size(DefaultRectangularArr_int64_t_1_int64_t_F this6, int64_t _ln, c_string _fn);
@@ -580,11 +573,11 @@ static DefaultDist chpl__initCopy(DefaultDist a, int64_t _ln, c_string _fn);
 static DefaultRectangularDom_1_int64_t_F chpl__initCopy2(DefaultRectangularDom_1_int64_t_F a, int64_t _ln, c_string _fn);
 static void chpl__init_ChapelBase(int64_t _ln, c_string _fn);
 static void compilerAssert(void);
-static void init_elts(_ddata_localesSignal x, int64_t s, int64_t _ln, c_string _fn);
-static void init_elts2(_ddata_chpl_string x, int64_t s, int64_t _ln, c_string _fn);
-static void init_elts3(_ddata_locale x, int64_t s, int64_t _ln, c_string _fn);
-static void init_elts4(_ddata_c_ptr_GtkWidget x, int64_t s, int64_t _ln, c_string _fn);
-static void init_elts5(_ddata_int64_t x, int64_t s, int64_t _ln, c_string _fn);
+static void init_elts(_ddata_c_ptr_GtkWidget x, int64_t s, int64_t _ln, c_string _fn);
+static void init_elts2(_ddata_locale x, int64_t s, int64_t _ln, c_string _fn);
+static void init_elts3(_ddata_localesSignal x, int64_t s, int64_t _ln, c_string _fn);
+static void init_elts4(_ddata_int64_t x, int64_t s, int64_t _ln, c_string _fn);
+static void init_elts5(_ddata_chpl_string x, int64_t s, int64_t _ln, c_string _fn);
 static void wrapcoforall_fn(_class_localscoforall_fn c);
 static chpl___EndCount_atomic_int64_int64_t _construct__EndCount(atomic_int64* const i, int64_t taskCnt, chpl_task_list_p taskList, chpl___EndCount_atomic_int64_int64_t meme, int64_t _ln, c_string _fn);
 static void chpl__auto_destroy__EndCount(chpl___EndCount_atomic_int64_int64_t this6, int64_t _ln, c_string _fn);
@@ -592,34 +585,34 @@ static void _upEndCount(chpl___EndCount_atomic_int64_int64_t e, int64_t _ln, c_s
 static void _downEndCount(chpl___EndCount_atomic_int64_int64_t e, int64_t _ln, c_string _fn);
 static void _waitEndCount(chpl___EndCount_atomic_int64_int64_t e, int64_t _ln, c_string _fn);
 static void _waitEndCount2(chpl___EndCount_atomic_int64_int64_t _endCount, int64_t _ln, c_string _fn);
-static chpl_bool _command_line_cast(c_string x, int64_t _ln, c_string _fn);
-static int64_t _command_line_cast2(c_string x, int64_t _ln, c_string _fn);
-static chpl_bool _command_line_cast3(c_string x, int64_t _ln, c_string _fn);
-static chpl_bool _command_line_cast4(c_string x, int64_t _ln, c_string _fn);
-static int64_t _command_line_cast5(c_string x, int64_t _ln, c_string _fn);
-static chpl_bool _command_line_cast6(c_string x, int64_t _ln, c_string _fn);
+static c_string _command_line_cast(c_string x);
+static c_string _command_line_cast2(c_string x);
+static uint64_t _command_line_cast3(c_string x, int64_t _ln, c_string _fn);
+static uint64_t _command_line_cast4(c_string x, int64_t _ln, c_string _fn);
+static chpl_bool _command_line_cast5(c_string x, int64_t _ln, c_string _fn);
+static c_string _command_line_cast6(c_string x);
 static chpl_bool _command_line_cast7(c_string x, int64_t _ln, c_string _fn);
 static int64_t _command_line_cast8(c_string x, int64_t _ln, c_string _fn);
-static c_string _command_line_cast9(c_string x);
-static c_string _command_line_cast10(c_string x);
-static c_string _command_line_cast11(c_string x);
-static uint64_t _command_line_cast12(c_string x, int64_t _ln, c_string _fn);
-static uint64_t _command_line_cast13(c_string x, int64_t _ln, c_string _fn);
-static chpl_bool _command_line_cast14(c_string x, int64_t _ln, c_string _fn);
+static chpl_bool _command_line_cast9(c_string x, int64_t _ln, c_string _fn);
+static int64_t _command_line_cast10(c_string x, int64_t _ln, c_string _fn);
+static chpl_bool _command_line_cast11(c_string x, int64_t _ln, c_string _fn);
+static chpl_bool _command_line_cast12(c_string x, int64_t _ln, c_string _fn);
+static chpl_bool _command_line_cast13(c_string x, int64_t _ln, c_string _fn);
+static int64_t _command_line_cast14(c_string x, int64_t _ln, c_string _fn);
 static DefaultDist chpl__autoCopy(DefaultDist x, int64_t _ln, c_string _fn);
 static DefaultRectangularDom_1_int64_t_F chpl__autoCopy2(DefaultRectangularDom_1_int64_t_F x, int64_t _ln, c_string _fn);
 static DefaultRectangularArr_locale_1_int64_t_F chpl__autoCopy3(DefaultRectangularArr_locale_1_int64_t_F x, int64_t _ln, c_string _fn);
-static DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F chpl__autoCopy4(DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F x, int64_t _ln, c_string _fn);
+static DefaultRectangularArr_localesSignal_1_int64_t_F chpl__autoCopy4(DefaultRectangularArr_localesSignal_1_int64_t_F x, int64_t _ln, c_string _fn);
 static DefaultRectangularArr_int64_t_1_int64_t_F chpl__autoCopy5(DefaultRectangularArr_int64_t_1_int64_t_F x, int64_t _ln, c_string _fn);
-static DefaultRectangularArr_chpl_string_1_int64_t_F chpl__autoCopy6(DefaultRectangularArr_chpl_string_1_int64_t_F x, int64_t _ln, c_string _fn);
-static DefaultRectangularArr_localesSignal_1_int64_t_F chpl__autoCopy7(DefaultRectangularArr_localesSignal_1_int64_t_F x, int64_t _ln, c_string _fn);
+static DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F chpl__autoCopy6(DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F x, int64_t _ln, c_string _fn);
+static DefaultRectangularArr_chpl_string_1_int64_t_F chpl__autoCopy7(DefaultRectangularArr_chpl_string_1_int64_t_F x, int64_t _ln, c_string _fn);
 static void chpl__autoDestroy(DefaultDist x, int64_t _ln, c_string _fn);
 static void chpl__autoDestroy2(DefaultRectangularDom_1_int64_t_F x, int64_t _ln, c_string _fn);
-static void chpl__autoDestroy3(DefaultRectangularArr_int64_t_1_int64_t_F x, int64_t _ln, c_string _fn);
-static void chpl__autoDestroy4(DefaultRectangularArr_localesSignal_1_int64_t_F x, int64_t _ln, c_string _fn);
-static void chpl__autoDestroy5(DefaultRectangularArr_locale_1_int64_t_F x, int64_t _ln, c_string _fn);
-static void chpl__autoDestroy6(DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F x, int64_t _ln, c_string _fn);
-static void coforall_fn(_ddata_int64_t x1_tet, int64_t chunk, int64_t numChunks, chpl___EndCount_atomic_int64_int64_t _coforallCount, int64_t len, _ref_range_int64_t_bounded_F this6, int64_t _ln, c_string _fn);
+static void chpl__autoDestroy3(DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F x, int64_t _ln, c_string _fn);
+static void chpl__autoDestroy4(DefaultRectangularArr_int64_t_1_int64_t_F x, int64_t _ln, c_string _fn);
+static void chpl__autoDestroy5(DefaultRectangularArr_localesSignal_1_int64_t_F x, int64_t _ln, c_string _fn);
+static void chpl__autoDestroy6(DefaultRectangularArr_locale_1_int64_t_F x, int64_t _ln, c_string _fn);
+static void coforall_fn(_ddata_int64_t x1_tet, int64_t chunk, int64_t len, _ref_range_int64_t_bounded_F this6, chpl___EndCount_atomic_int64_int64_t _coforallCount, int64_t numChunks, int64_t _ln, c_string _fn);
 static void chpl__init_ChapelDistribution(int64_t _ln, c_string _fn);
 static BaseDist _construct_BaseDist(atomic_refcnt* const _distCnt, list_BaseDom_chpl* const _doms, atomicflag* const _domsLock, BaseDist meme, int64_t _ln, c_string _fn);
 static void chpl__auto_destroy_BaseDist(BaseDist this6, int64_t _ln, c_string _fn);
@@ -645,29 +638,29 @@ static Writer _construct_Writer(Writer meme, int64_t _ln, c_string _fn);
 static void chpl__auto_destroy_Writer(Writer this6, int64_t _ln, c_string _fn);
 static chpl_bool binary(Writer this6);
 static int64_t styleElement(Writer this6, int64_t element);
-static void writePrimitive(Writer this6, ioLiteral_chpl* const x, int64_t _ln, c_string _fn);
-static void writePrimitive2(Writer this6, chpl_string x, int64_t _ln, c_string _fn);
+static void writePrimitive(Writer this6, chpl_string x, int64_t _ln, c_string _fn);
+static void writePrimitive2(Writer this6, ioLiteral_chpl* const x, int64_t _ln, c_string _fn);
 static void writePrimitive3(Writer this6, int64_t x, int64_t _ln, c_string _fn);
-static void writeIt(Writer this6, chpl_string x, int64_t _ln, c_string _fn);
-static void writeIt2(Writer this6, ioLiteral_chpl* const x, int64_t _ln, c_string _fn);
-static void writeIt3(Writer this6, int64_t x, int64_t _ln, c_string _fn);
-static void writeIt4(Writer this6, _tuple_1_star_int64_t* const x, int64_t _ln, c_string _fn);
+static void writeIt(Writer this6, ioLiteral_chpl* const x, int64_t _ln, c_string _fn);
+static void writeIt2(Writer this6, int64_t x, int64_t _ln, c_string _fn);
+static void writeIt3(Writer this6, _tuple_1_star_int64_t* const x, int64_t _ln, c_string _fn);
+static void writeIt4(Writer this6, chpl_string x, int64_t _ln, c_string _fn);
 static void readwrite(Writer this6, ioLiteral_chpl* const x, int64_t _ln, c_string _fn);
 static void readwrite2(Writer this6, int64_t x, int64_t _ln, c_string _fn);
-static void write2(Writer this6, chpl_string _e0_args, int64_t _e1_args, int64_t _ln, c_string _fn);
-static void write3(Writer this6, chpl_string _e0_args, _tuple_1_star_int64_t* const _e1_args, int64_t _ln, c_string _fn);
+static void write2(Writer this6, chpl_string _e0_args, _tuple_1_star_int64_t* const _e1_args, int64_t _ln, c_string _fn);
+static void write3(Writer this6, chpl_string _e0_args, int64_t _e1_args, int64_t _ln, c_string _fn);
 static void chpl__auto_destroy_Reader(Reader this6, int64_t _ln, c_string _fn);
 static void halt(c_string s, int64_t _ln, c_string _fn);
-static void halt2(chpl_string _e0_args, int64_t _e1_args, int64_t _ln, c_string _fn);
-static void halt3(chpl_string _e0_args, _tuple_1_star_int64_t* const _e1_args, int64_t _ln, c_string _fn);
+static void halt2(chpl_string _e0_args, _tuple_1_star_int64_t* const _e1_args, int64_t _ln, c_string _fn);
+static void halt3(chpl_string _e0_args, int64_t _e1_args, int64_t _ln, c_string _fn);
 static StringWriter _construct_StringWriter(c_string_copy s, StringWriter meme, int64_t _ln, c_string _fn);
 static StringWriter StringWriter2(c_string x, int64_t _ln, c_string _fn);
-static void writePrimitive4(StringWriter this6, ioLiteral_chpl* const x, int64_t _ln, c_string _fn);
-static void writePrimitive5(StringWriter this6, int64_t x, int64_t _ln, c_string _fn);
+static void writePrimitive4(StringWriter this6, int64_t x, int64_t _ln, c_string _fn);
+static void writePrimitive5(StringWriter this6, ioLiteral_chpl* const x, int64_t _ln, c_string _fn);
 static void writePrimitive6(StringWriter this6, chpl_string x, int64_t _ln, c_string _fn);
 static void chpl___TILDE_StringWriter(StringWriter this6, int64_t _ln, c_string _fn);
-static void write4(_ref_c_string this6, chpl_string _e0_args, _tuple_1_star_int64_t* const _e1_args, int64_t _ln, c_string _fn);
-static void write5(_ref_c_string this6, chpl_string _e0_args, int64_t _e1_args, int64_t _ln, c_string _fn);
+static void write4(_ref_c_string this6, chpl_string _e0_args, int64_t _e1_args, int64_t _ln, c_string _fn);
+static void write5(_ref_c_string this6, chpl_string _e0_args, _tuple_1_star_int64_t* const _e1_args, int64_t _ln, c_string _fn);
 static void chpl__init_ChapelLocale(int64_t _ln, c_string _fn);
 static locale _construct_locale(locale parent, int64_t numCores, int64_t maxTaskPar, atomic_int64* const runningTaskCounter, locale meme, int64_t _ln, c_string _fn);
 static void chpl__auto_destroy_locale(locale this6, int64_t _ln, c_string _fn);
@@ -695,8 +688,8 @@ static void chpl__init_ChapelNumLocales(int64_t _ln, c_string _fn);
 static void chpl__init_ChapelRange(int64_t _ln, c_string _fn);
 static range_int64_t_bounded_F _construct_range(int64_t _low, int64_t _high, int64_t _stride, int64_t _alignment, chpl_bool _aligned, range_int64_t_bounded_F* const meme, int64_t _ln, c_string _fn);
 static range_int64_t_boundedLow_F _construct_range2(int64_t _low, int64_t _high, int64_t _stride, int64_t _alignment, chpl_bool _aligned, range_int64_t_boundedLow_F* const meme, int64_t _ln, c_string _fn);
-static range_int64_t_bounded_F range(int64_t _low, int64_t _high, int64_t _stride, int64_t _alignment, chpl_bool _aligned, int64_t _ln, c_string _fn);
-static range_int64_t_boundedLow_F range2(int64_t _low, int64_t _high, int64_t _stride, int64_t _alignment, chpl_bool _aligned, int64_t _ln, c_string _fn);
+static range_int64_t_boundedLow_F range(int64_t _low, int64_t _high, int64_t _stride, int64_t _alignment, chpl_bool _aligned, int64_t _ln, c_string _fn);
+static range_int64_t_bounded_F range2(int64_t _low, int64_t _high, int64_t _stride, int64_t _alignment, chpl_bool _aligned, int64_t _ln, c_string _fn);
 static void chpl_build_bounded_range(int64_t low, int64_t high, _ref_range_int64_t_bounded_F _retArg, int64_t _ln, c_string _fn);
 static void chpl_build_partially_bounded_range(int64_t bound, _ref_range_int64_t_boundedLow_F _retArg, int64_t _ln, c_string _fn);
 static int64_t length(_ref_range_int64_t_bounded_F this6, int64_t _ln, c_string _fn);
@@ -716,8 +709,8 @@ void chpldev_taskTable_get_tl_info(chpl_taskID_t taskID);
 void chpldev_taskTable_print(int64_t _ln, c_string _fn);
 static void chpl__init_ChapelThreads(int64_t _ln, c_string _fn);
 static void chpl__init_ChapelTuple(int64_t _ln, c_string _fn);
-static void this4(_ref__tuple_1_star_range_int64_t_bounded_F this6, int64_t i, _ref_range_int64_t_bounded_F _retArg, int64_t _ln, c_string _fn);
-static _ref_range_int64_t_bounded_F this5(_ref__tuple_1_star_range_int64_t_bounded_F this6, int64_t i, int64_t _ln, c_string _fn);
+static _ref_range_int64_t_bounded_F this4(_ref__tuple_1_star_range_int64_t_bounded_F this6, int64_t i, int64_t _ln, c_string _fn);
+static void this5(_ref__tuple_1_star_range_int64_t_bounded_F this6, int64_t i, _ref_range_int64_t_bounded_F _retArg, int64_t _ln, c_string _fn);
 static void readWriteThis(_ref__tuple_1_star_int64_t this6, Writer f, int64_t _ln, c_string _fn);
 static void chpl__init_ChapelUtil(int64_t _ln, c_string _fn);
 static DefaultRectangularArr_chpl_string_1_int64_t_F chpl_convert_args(chpl_main_argument* const arg, int64_t _ln, c_string _fn);
@@ -738,47 +731,47 @@ static chpl_bool dsiMember(DefaultRectangularDom_1_int64_t_F this6, _tuple_1_sta
 static void dsiDim(DefaultRectangularDom_1_int64_t_F this6, _ref_range_int64_t_bounded_F _retArg, int64_t _ln, c_string _fn);
 static int64_t dsiNumIndices(DefaultRectangularDom_1_int64_t_F this6, int64_t _ln, c_string _fn);
 static int64_t dsiLow(DefaultRectangularDom_1_int64_t_F this6, int64_t _ln, c_string _fn);
-static DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F dsiBuildArray(DefaultRectangularDom_1_int64_t_F this6, int64_t _ln, c_string _fn);
-static DefaultRectangularArr_locale_1_int64_t_F dsiBuildArray2(DefaultRectangularDom_1_int64_t_F this6, int64_t _ln, c_string _fn);
-static DefaultRectangularArr_chpl_string_1_int64_t_F dsiBuildArray3(DefaultRectangularDom_1_int64_t_F this6, int64_t _ln, c_string _fn);
-static DefaultRectangularArr_int64_t_1_int64_t_F dsiBuildArray4(DefaultRectangularDom_1_int64_t_F this6, int64_t _ln, c_string _fn);
-static DefaultRectangularArr_localesSignal_1_int64_t_F dsiBuildArray5(DefaultRectangularDom_1_int64_t_F this6, int64_t _ln, c_string _fn);
+static DefaultRectangularArr_chpl_string_1_int64_t_F dsiBuildArray(DefaultRectangularDom_1_int64_t_F this6, int64_t _ln, c_string _fn);
+static DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F dsiBuildArray2(DefaultRectangularDom_1_int64_t_F this6, int64_t _ln, c_string _fn);
+static DefaultRectangularArr_locale_1_int64_t_F dsiBuildArray3(DefaultRectangularDom_1_int64_t_F this6, int64_t _ln, c_string _fn);
+static DefaultRectangularArr_localesSignal_1_int64_t_F dsiBuildArray4(DefaultRectangularDom_1_int64_t_F this6, int64_t _ln, c_string _fn);
+static DefaultRectangularArr_int64_t_1_int64_t_F dsiBuildArray5(DefaultRectangularDom_1_int64_t_F this6, int64_t _ln, c_string _fn);
 static DefaultRectangularDom_1_int64_t_F dsiBuildRectangularDom(DefaultRectangularDom_1_int64_t_F this6, _tuple_1_star_range_int64_t_bounded_F* const ranges, int64_t _ln, c_string _fn);
-static DefaultRectangularArr_chpl_string_1_int64_t_F _construct_DefaultRectangularArr(atomic_refcnt* const _arrCnt, BaseArr _arrAlias, DefaultRectangularDom_1_int64_t_F dom, _tuple_1_star_int64_t* const off, _tuple_1_star_int64_t* const blk, _tuple_1_star_int64_t* const str, int64_t origin, int64_t factoredOffs, _ddata_chpl_string data, _ddata_chpl_string shiftedData, chpl_bool noinit_data, DefaultRectangularArr_chpl_string_1_int64_t_F meme, int64_t _ln, c_string _fn);
-static DefaultRectangularArr_locale_1_int64_t_F _construct_DefaultRectangularArr2(atomic_refcnt* const _arrCnt, BaseArr _arrAlias, DefaultRectangularDom_1_int64_t_F dom, _tuple_1_star_int64_t* const off, _tuple_1_star_int64_t* const blk, _tuple_1_star_int64_t* const str, int64_t origin, int64_t factoredOffs, _ddata_locale data, _ddata_locale shiftedData, chpl_bool noinit_data, DefaultRectangularArr_locale_1_int64_t_F meme, int64_t _ln, c_string _fn);
-static DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F _construct_DefaultRectangularArr3(atomic_refcnt* const _arrCnt, BaseArr _arrAlias, DefaultRectangularDom_1_int64_t_F dom, _tuple_1_star_int64_t* const off, _tuple_1_star_int64_t* const blk, _tuple_1_star_int64_t* const str, int64_t origin, int64_t factoredOffs, _ddata_c_ptr_GtkWidget data, _ddata_c_ptr_GtkWidget shiftedData, chpl_bool noinit_data, DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F meme, int64_t _ln, c_string _fn);
-static DefaultRectangularArr_int64_t_1_int64_t_F _construct_DefaultRectangularArr4(atomic_refcnt* const _arrCnt, BaseArr _arrAlias, DefaultRectangularDom_1_int64_t_F dom, _tuple_1_star_int64_t* const off, _tuple_1_star_int64_t* const blk, _tuple_1_star_int64_t* const str, int64_t origin, int64_t factoredOffs, _ddata_int64_t data, _ddata_int64_t shiftedData, chpl_bool noinit_data, DefaultRectangularArr_int64_t_1_int64_t_F meme, int64_t _ln, c_string _fn);
-static DefaultRectangularArr_localesSignal_1_int64_t_F _construct_DefaultRectangularArr5(atomic_refcnt* const _arrCnt, BaseArr _arrAlias, DefaultRectangularDom_1_int64_t_F dom, _tuple_1_star_int64_t* const off, _tuple_1_star_int64_t* const blk, _tuple_1_star_int64_t* const str, int64_t origin, int64_t factoredOffs, _ddata_localesSignal data, _ddata_localesSignal shiftedData, chpl_bool noinit_data, DefaultRectangularArr_localesSignal_1_int64_t_F meme, int64_t _ln, c_string _fn);
+static DefaultRectangularArr_int64_t_1_int64_t_F _construct_DefaultRectangularArr(atomic_refcnt* const _arrCnt, BaseArr _arrAlias, DefaultRectangularDom_1_int64_t_F dom, _tuple_1_star_int64_t* const off, _tuple_1_star_int64_t* const blk, _tuple_1_star_int64_t* const str, int64_t origin, int64_t factoredOffs, _ddata_int64_t data, _ddata_int64_t shiftedData, chpl_bool noinit_data, DefaultRectangularArr_int64_t_1_int64_t_F meme, int64_t _ln, c_string _fn);
+static DefaultRectangularArr_chpl_string_1_int64_t_F _construct_DefaultRectangularArr2(atomic_refcnt* const _arrCnt, BaseArr _arrAlias, DefaultRectangularDom_1_int64_t_F dom, _tuple_1_star_int64_t* const off, _tuple_1_star_int64_t* const blk, _tuple_1_star_int64_t* const str, int64_t origin, int64_t factoredOffs, _ddata_chpl_string data, _ddata_chpl_string shiftedData, chpl_bool noinit_data, DefaultRectangularArr_chpl_string_1_int64_t_F meme, int64_t _ln, c_string _fn);
+static DefaultRectangularArr_locale_1_int64_t_F _construct_DefaultRectangularArr3(atomic_refcnt* const _arrCnt, BaseArr _arrAlias, DefaultRectangularDom_1_int64_t_F dom, _tuple_1_star_int64_t* const off, _tuple_1_star_int64_t* const blk, _tuple_1_star_int64_t* const str, int64_t origin, int64_t factoredOffs, _ddata_locale data, _ddata_locale shiftedData, chpl_bool noinit_data, DefaultRectangularArr_locale_1_int64_t_F meme, int64_t _ln, c_string _fn);
+static DefaultRectangularArr_localesSignal_1_int64_t_F _construct_DefaultRectangularArr4(atomic_refcnt* const _arrCnt, BaseArr _arrAlias, DefaultRectangularDom_1_int64_t_F dom, _tuple_1_star_int64_t* const off, _tuple_1_star_int64_t* const blk, _tuple_1_star_int64_t* const str, int64_t origin, int64_t factoredOffs, _ddata_localesSignal data, _ddata_localesSignal shiftedData, chpl_bool noinit_data, DefaultRectangularArr_localesSignal_1_int64_t_F meme, int64_t _ln, c_string _fn);
+static DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F _construct_DefaultRectangularArr5(atomic_refcnt* const _arrCnt, BaseArr _arrAlias, DefaultRectangularDom_1_int64_t_F dom, _tuple_1_star_int64_t* const off, _tuple_1_star_int64_t* const blk, _tuple_1_star_int64_t* const str, int64_t origin, int64_t factoredOffs, _ddata_c_ptr_GtkWidget data, _ddata_c_ptr_GtkWidget shiftedData, chpl_bool noinit_data, DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F meme, int64_t _ln, c_string _fn);
 static void chpl__auto_destroy_DefaultRectangularArr(DefaultRectangularArr_chpl_string_1_int64_t_F this6, int64_t _ln, c_string _fn);
-static void chpl__auto_destroy_DefaultRectangularArr2(DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F this6, int64_t _ln, c_string _fn);
-static void chpl__auto_destroy_DefaultRectangularArr3(DefaultRectangularArr_locale_1_int64_t_F this6, int64_t _ln, c_string _fn);
-static void chpl__auto_destroy_DefaultRectangularArr4(DefaultRectangularArr_localesSignal_1_int64_t_F this6, int64_t _ln, c_string _fn);
-static void chpl__auto_destroy_DefaultRectangularArr5(DefaultRectangularArr_int64_t_1_int64_t_F this6, int64_t _ln, c_string _fn);
-static DefaultRectangularDom_1_int64_t_F dsiGetBaseDom2(DefaultRectangularArr_chpl_string_1_int64_t_F this6, int64_t _ln, c_string _fn);
-static DefaultRectangularDom_1_int64_t_F dsiGetBaseDom3(DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F this6, int64_t _ln, c_string _fn);
+static void chpl__auto_destroy_DefaultRectangularArr2(DefaultRectangularArr_int64_t_1_int64_t_F this6, int64_t _ln, c_string _fn);
+static void chpl__auto_destroy_DefaultRectangularArr3(DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F this6, int64_t _ln, c_string _fn);
+static void chpl__auto_destroy_DefaultRectangularArr4(DefaultRectangularArr_locale_1_int64_t_F this6, int64_t _ln, c_string _fn);
+static void chpl__auto_destroy_DefaultRectangularArr5(DefaultRectangularArr_localesSignal_1_int64_t_F this6, int64_t _ln, c_string _fn);
+static DefaultRectangularDom_1_int64_t_F dsiGetBaseDom2(DefaultRectangularArr_locale_1_int64_t_F this6, int64_t _ln, c_string _fn);
+static DefaultRectangularDom_1_int64_t_F dsiGetBaseDom3(DefaultRectangularArr_localesSignal_1_int64_t_F this6, int64_t _ln, c_string _fn);
 static DefaultRectangularDom_1_int64_t_F dsiGetBaseDom4(DefaultRectangularArr_int64_t_1_int64_t_F this6, int64_t _ln, c_string _fn);
-static DefaultRectangularDom_1_int64_t_F dsiGetBaseDom5(DefaultRectangularArr_localesSignal_1_int64_t_F this6, int64_t _ln, c_string _fn);
-static DefaultRectangularDom_1_int64_t_F dsiGetBaseDom6(DefaultRectangularArr_locale_1_int64_t_F this6, int64_t _ln, c_string _fn);
+static DefaultRectangularDom_1_int64_t_F dsiGetBaseDom5(DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F this6, int64_t _ln, c_string _fn);
+static DefaultRectangularDom_1_int64_t_F dsiGetBaseDom6(DefaultRectangularArr_chpl_string_1_int64_t_F this6, int64_t _ln, c_string _fn);
 static void dsiDestroyData2(DefaultRectangularArr_localesSignal_1_int64_t_F this6, int64_t _ln, c_string _fn);
-static void dsiDestroyData3(DefaultRectangularArr_int64_t_1_int64_t_F this6, int64_t _ln, c_string _fn);
-static void dsiDestroyData4(DefaultRectangularArr_locale_1_int64_t_F this6, int64_t _ln, c_string _fn);
-static void dsiDestroyData5(DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F this6, int64_t _ln, c_string _fn);
-static void dsiDestroyData6(DefaultRectangularArr_chpl_string_1_int64_t_F this6, int64_t _ln, c_string _fn);
-static void computeFactoredOffs(DefaultRectangularArr_chpl_string_1_int64_t_F this6, int64_t _ln, c_string _fn);
-static void computeFactoredOffs2(DefaultRectangularArr_locale_1_int64_t_F this6, int64_t _ln, c_string _fn);
+static void dsiDestroyData3(DefaultRectangularArr_chpl_string_1_int64_t_F this6, int64_t _ln, c_string _fn);
+static void dsiDestroyData4(DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F this6, int64_t _ln, c_string _fn);
+static void dsiDestroyData5(DefaultRectangularArr_int64_t_1_int64_t_F this6, int64_t _ln, c_string _fn);
+static void dsiDestroyData6(DefaultRectangularArr_locale_1_int64_t_F this6, int64_t _ln, c_string _fn);
+static void computeFactoredOffs(DefaultRectangularArr_locale_1_int64_t_F this6, int64_t _ln, c_string _fn);
+static void computeFactoredOffs2(DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F this6, int64_t _ln, c_string _fn);
 static void computeFactoredOffs3(DefaultRectangularArr_localesSignal_1_int64_t_F this6, int64_t _ln, c_string _fn);
-static void computeFactoredOffs4(DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F this6, int64_t _ln, c_string _fn);
+static void computeFactoredOffs4(DefaultRectangularArr_chpl_string_1_int64_t_F this6, int64_t _ln, c_string _fn);
 static void computeFactoredOffs5(DefaultRectangularArr_int64_t_1_int64_t_F this6, int64_t _ln, c_string _fn);
 static void initialize6(DefaultRectangularArr_locale_1_int64_t_F this6, int64_t _ln, c_string _fn);
-static void initialize7(DefaultRectangularArr_int64_t_1_int64_t_F this6, int64_t _ln, c_string _fn);
+static void initialize7(DefaultRectangularArr_localesSignal_1_int64_t_F this6, int64_t _ln, c_string _fn);
 static void initialize8(DefaultRectangularArr_chpl_string_1_int64_t_F this6, int64_t _ln, c_string _fn);
-static void initialize9(DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F this6, int64_t _ln, c_string _fn);
-static void initialize10(DefaultRectangularArr_localesSignal_1_int64_t_F this6, int64_t _ln, c_string _fn);
-static void dsiReallocate2(DefaultRectangularArr_int64_t_1_int64_t_F this6, DefaultRectangularDom_1_int64_t_F d, int64_t _ln, c_string _fn);
-static void dsiReallocate3(DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F this6, DefaultRectangularDom_1_int64_t_F d, int64_t _ln, c_string _fn);
-static void dsiReallocate4(DefaultRectangularArr_chpl_string_1_int64_t_F this6, DefaultRectangularDom_1_int64_t_F d, int64_t _ln, c_string _fn);
-static void dsiReallocate5(DefaultRectangularArr_locale_1_int64_t_F this6, DefaultRectangularDom_1_int64_t_F d, int64_t _ln, c_string _fn);
-static void dsiReallocate6(DefaultRectangularArr_localesSignal_1_int64_t_F this6, DefaultRectangularDom_1_int64_t_F d, int64_t _ln, c_string _fn);
+static void initialize9(DefaultRectangularArr_int64_t_1_int64_t_F this6, int64_t _ln, c_string _fn);
+static void initialize10(DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F this6, int64_t _ln, c_string _fn);
+static void dsiReallocate2(DefaultRectangularArr_locale_1_int64_t_F this6, DefaultRectangularDom_1_int64_t_F d, int64_t _ln, c_string _fn);
+static void dsiReallocate3(DefaultRectangularArr_chpl_string_1_int64_t_F this6, DefaultRectangularDom_1_int64_t_F d, int64_t _ln, c_string _fn);
+static void dsiReallocate4(DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F this6, DefaultRectangularDom_1_int64_t_F d, int64_t _ln, c_string _fn);
+static void dsiReallocate5(DefaultRectangularArr_localesSignal_1_int64_t_F this6, DefaultRectangularDom_1_int64_t_F d, int64_t _ln, c_string _fn);
+static void dsiReallocate6(DefaultRectangularArr_int64_t_1_int64_t_F this6, DefaultRectangularDom_1_int64_t_F d, int64_t _ln, c_string _fn);
 static void chpl__init_LocaleModel(int64_t _ln, c_string _fn);
 static void chpl_buildLocaleID(int32_t node, int32_t subloc, _ref_chpl_localeID_t _retArg, int64_t _ln, c_string _fn);
 static int32_t chpl_nodeFromLocaleID(chpl_localeID_t* const loc, int64_t _ln, c_string _fn);
@@ -797,8 +790,8 @@ static void wrapcoforall_fn2(_class_localscoforall_fn2 c);
 static int64_t chpl_id3(RootLocale this6, int64_t _ln, c_string _fn);
 static void coforall_fn2(localesBarrier* const b, DefaultRectangularArr_localesSignal_1_int64_t_F flags, int64_t locIdx, chpl___EndCount_atomic_int64_int64_t _coforallCount, RootLocale this6, int64_t _ln, c_string _fn);
 static locale getChild3(RootLocale this6, int64_t idx, int64_t _ln, c_string _fn);
-static void getDefaultLocaleArray(RootLocale this6, _ref_DefaultRectangularArr_locale_1_int64_t_F _retArg, int64_t _ln, c_string _fn);
-static DefaultRectangularArr_locale_1_int64_t_F getDefaultLocaleArray2(RootLocale this6, int64_t _ln, c_string _fn);
+static DefaultRectangularArr_locale_1_int64_t_F getDefaultLocaleArray(RootLocale this6, int64_t _ln, c_string _fn);
+static void getDefaultLocaleArray2(RootLocale this6, _ref_DefaultRectangularArr_locale_1_int64_t_F _retArg, int64_t _ln, c_string _fn);
 static locale localeIDtoLocale2(RootLocale this6, chpl_localeID_t* const id2, int64_t _ln, c_string _fn);
 static chpl_opaque chpl_here_alloc(int64_t size2, int16_t md, int64_t _ln, c_string _fn);
 static void chpl_here_free(chpl_opaque ptr, int64_t _ln, c_string _fn);
@@ -875,8 +868,8 @@ static void chpl__auto_destroy_listNode2(listNode_BaseDom_chpl this_chpl, int64_
 static list_BaseArr_chpl _construct_list_chpl(listNode_BaseArr_chpl first_chpl, listNode_BaseArr_chpl last_chpl, int64_t length_chpl, list_BaseArr_chpl* const meme_chpl, int64_t _ln_chpl, c_string _fn_chpl);
 static list_BaseDom_chpl _construct_list_chpl2(listNode_BaseDom_chpl first_chpl, listNode_BaseDom_chpl last_chpl, int64_t length_chpl, list_BaseDom_chpl* const meme_chpl, int64_t _ln_chpl, c_string _fn_chpl);
 static void append_chpl(_ref_list_BaseArr this_chpl, BaseArr e_chpl, int64_t _ln_chpl, c_string _fn_chpl);
-static void remove_chpl(_ref_list_BaseArr this_chpl, BaseArr x_chpl, int64_t _ln_chpl, c_string _fn_chpl);
-static void remove_chpl2(_ref_list_BaseDom this_chpl, BaseDom x_chpl, int64_t _ln_chpl, c_string _fn_chpl);
+static void remove_chpl(_ref_list_BaseDom this_chpl, BaseDom x_chpl, int64_t _ln_chpl, c_string _fn_chpl);
+static void remove_chpl2(_ref_list_BaseArr this_chpl, BaseArr x_chpl, int64_t _ln_chpl, c_string _fn_chpl);
 static void chpl__init_NewString(int64_t _ln_chpl, c_string _fn_chpl);
 static string_refcnt_chpl _construct_string_refcnt_chpl(atomic_refcnt* const val_chpl, string_refcnt_chpl meme_chpl, int64_t _ln_chpl, c_string _fn_chpl);
 static void chpl__auto_destroy_string_refcnt(string_refcnt_chpl this_chpl, int64_t _ln_chpl, c_string _fn_chpl);
@@ -885,13 +878,10 @@ static string_rec_chpl string_rec_chpl2(int64_t _ln_chpl, c_string _fn_chpl);
 static void chpl___TILDE_string_rec(_ref_string_rec this_chpl, int64_t _ln_chpl, c_string _fn_chpl);
 static void reinitString_chpl(_ref_string_rec this_chpl, c_string s_chpl, int64_t slen_chpl, int64_t _ln_chpl, c_string _fn_chpl);
 static void chpl___ASSIGN_6(_ref_string_rec lhs_chpl, c_string rhs_c_chpl, int64_t _ln_chpl, c_string _fn_chpl);
-static void chpl__init_Random(int64_t _ln_chpl, c_string _fn_chpl);
-static SeedGenerators_chpl _construct_SeedGenerators_chpl(SeedGenerators_chpl* const meme_chpl);
 static void chpl__init_Regexp(int64_t _ln_chpl, c_string _fn_chpl);
 static void chpl__init_Sys(int64_t _ln_chpl, c_string _fn_chpl);
 static void chpl__init_SysBasic(int64_t _ln_chpl, c_string _fn_chpl);
 static void chpl__init_SysCTypes(int64_t _ln_chpl, c_string _fn_chpl);
-static void chpl__init_Time(int64_t _ln_chpl, c_string _fn_chpl);
 static void chpl__init_FunctionSysbols(int64_t _ln_chpl, c_string _fn_chpl);
 static int64_t defend_chpl(DefaultRectangularArr_int64_t_1_int64_t_F boardMatrix_chpl2, DefaultRectangularArr_int64_t_1_int64_t_F moves_chpl);
 static int64_t attack_chpl(DefaultRectangularArr_int64_t_1_int64_t_F boardMatrix_chpl2, DefaultRectangularArr_int64_t_1_int64_t_F moves_chpl);
@@ -900,7 +890,6 @@ static int64_t analyseBoard_chpl(DefaultRectangularArr_int64_t_1_int64_t_F a_chp
 void resetGame(c_ptr_GtkWidget_chpl btn, c_void_ptr data);
 void record_move(c_ptr_GtkWidget_chpl button, c_ptr_int64_t_chpl numPtr);
 static void chpl__init_gtk(int64_t _ln_chpl, c_string _fn_chpl);
-static void showDialog_chpl(c_string title_chpl, c_string message_chpl, int32_t wid_chpl, int32_t h_chpl);
 static void gtk_init_chpl(DefaultRectangularArr_chpl_string_1_int64_t_F args_chpl);
 static void chpl__init_gtk_types(int64_t _ln_chpl, c_string _fn_chpl);
 static void chpl__init_ttt(int64_t _ln_chpl, c_string _fn_chpl);
@@ -947,7 +936,7 @@ chpl_fn_p chpl_vmtable[] = {
   (chpl_fn_p)NULL,
   (chpl_fn_p)NULL,
   /* _class_localscoforall_fn */
-  (chpl_fn_p)chpl__auto_destroy_object,
+  (chpl_fn_p)NULL,
   (chpl_fn_p)NULL,
   (chpl_fn_p)NULL,
   (chpl_fn_p)NULL,
@@ -968,14 +957,14 @@ chpl_fn_p chpl_vmtable[] = {
   (chpl_fn_p)NULL,
   /* BaseArr */
   (chpl_fn_p)chpl__auto_destroy_BaseArr,
-  (chpl_fn_p)dsiReallocate,
   (chpl_fn_p)dsiDestroyData,
   (chpl_fn_p)dsiGetBaseDom,
+  (chpl_fn_p)dsiReallocate,
   /* Writer */
   (chpl_fn_p)chpl__auto_destroy_Writer,
-  (chpl_fn_p)writePrimitive3,
   (chpl_fn_p)writePrimitive2,
   (chpl_fn_p)writePrimitive,
+  (chpl_fn_p)writePrimitive3,
   /* Reader */
   (chpl_fn_p)chpl__auto_destroy_Reader,
   (chpl_fn_p)NULL,
@@ -1017,30 +1006,30 @@ chpl_fn_p chpl_vmtable[] = {
   (chpl_fn_p)NULL,
   (chpl_fn_p)NULL,
   /* DefaultRectangularArr_c_ptr_GtkWidget_1_int64_t_F */
-  (chpl_fn_p)chpl__auto_destroy_DefaultRectangularArr2,
-  (chpl_fn_p)dsiReallocate3,
-  (chpl_fn_p)dsiDestroyData5,
-  (chpl_fn_p)dsiGetBaseDom3,
+  (chpl_fn_p)chpl__auto_destroy_DefaultRectangularArr3,
+  (chpl_fn_p)dsiDestroyData4,
+  (chpl_fn_p)dsiGetBaseDom5,
+  (chpl_fn_p)dsiReallocate4,
   /* DefaultRectangularArr_chpl_string_1_int64_t_F */
   (chpl_fn_p)chpl__auto_destroy_DefaultRectangularArr,
-  (chpl_fn_p)dsiReallocate4,
+  (chpl_fn_p)dsiDestroyData3,
+  (chpl_fn_p)dsiGetBaseDom6,
+  (chpl_fn_p)dsiReallocate3,
+  /* DefaultRectangularArr_int64_t_1_int64_t_F */
+  (chpl_fn_p)chpl__auto_destroy_DefaultRectangularArr2,
+  (chpl_fn_p)dsiDestroyData5,
+  (chpl_fn_p)dsiGetBaseDom4,
+  (chpl_fn_p)dsiReallocate6,
+  /* DefaultRectangularArr_locale_1_int64_t_F */
+  (chpl_fn_p)chpl__auto_destroy_DefaultRectangularArr4,
   (chpl_fn_p)dsiDestroyData6,
   (chpl_fn_p)dsiGetBaseDom2,
-  /* DefaultRectangularArr_int64_t_1_int64_t_F */
-  (chpl_fn_p)chpl__auto_destroy_DefaultRectangularArr5,
   (chpl_fn_p)dsiReallocate2,
-  (chpl_fn_p)dsiDestroyData3,
-  (chpl_fn_p)dsiGetBaseDom4,
-  /* DefaultRectangularArr_locale_1_int64_t_F */
-  (chpl_fn_p)chpl__auto_destroy_DefaultRectangularArr3,
-  (chpl_fn_p)dsiReallocate5,
-  (chpl_fn_p)dsiDestroyData4,
-  (chpl_fn_p)dsiGetBaseDom6,
   /* DefaultRectangularArr_localesSignal_1_int64_t_F */
-  (chpl_fn_p)chpl__auto_destroy_DefaultRectangularArr4,
-  (chpl_fn_p)dsiReallocate6,
+  (chpl_fn_p)chpl__auto_destroy_DefaultRectangularArr5,
   (chpl_fn_p)dsiDestroyData2,
-  (chpl_fn_p)dsiGetBaseDom5,
+  (chpl_fn_p)dsiGetBaseDom3,
+  (chpl_fn_p)dsiReallocate5,
   /* LocaleModel */
   (chpl_fn_p)chpl__auto_destroy_LocaleModel,
   (chpl_fn_p)getChild2,
@@ -1176,7 +1165,6 @@ static chpl_bool chpl__init_Assert_p;
 static chpl_bool chpl__init_ChapelThreads_p;
 static chpl_bool chpl__init_LocaleModel_p;
 static chpl_bool chpl__init_PrintModuleInitOrder_p;
-static chpl_bool chpl__init_Time_p;
 static chpl_bool chpl__init_Error_p;
 static chpl_bool chpl__init_ChapelTuple_p;
 static chpl_bool chpl__init_LocalesArray_p;
@@ -1184,7 +1172,6 @@ static chpl_bool chpl__init_SysBasic_p;
 static chpl_bool chpl__init_Sys_p;
 static chpl_bool chpl__init_Atomics_p;
 static chpl_bool chpl__init_BaseStringType_p;
-static chpl_bool chpl__init_Random_p;
 static chpl_bool chpl__init_ChapelRange_p;
 static chpl_bool chpl__init_NewString_p;
 static chpl_bool chpl__init_ChapelArray_p;
@@ -1208,12 +1195,6 @@ static _tuple_6_star_chpl_string _arg_to_proto_names_chpl;
 static channel_F_dynamic_T_chpl stdin_chpl;
 static channel_T_dynamic_T_chpl stdout_chpl;
 static channel_T_dynamic_T_chpl stderr_chpl;
-static SeedGenerators_chpl SeedGenerator_chpl;
-static _real64 r23_chpl;
-static _real64 t23_chpl;
-static _real64 r46_chpl;
-static _real64 t46_chpl;
-static _real64 arand_chpl;
 static DefaultRectangularArr_int64_t_1_int64_t_F boardMatrix_chpl;
 static c_ptr_GtkWidget_chpl output_chpl;
 static int64_t playCounter_chpl;

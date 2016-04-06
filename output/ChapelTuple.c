@@ -35,7 +35,7 @@ static void chpl__init_ChapelTuple(int64_t _ln, c_string _fn) {
 #line 40 "ChapelTuple.chpl"
 /* ChapelTuple.chpl:136 */
 #line 40 "ChapelTuple.chpl"
-static void this4(_ref__tuple_1_star_range_int64_t_bounded_F this6, int64_t i, _ref_range_int64_t_bounded_F _retArg, int64_t _ln, c_string _fn) {
+static void this5(_ref__tuple_1_star_range_int64_t_bounded_F this6, int64_t i, _ref_range_int64_t_bounded_F _retArg, int64_t _ln, c_string _fn) {
 #line 40 "ChapelTuple.chpl"
   range_int64_t_bounded_F ret;
 #line 40 "ChapelTuple.chpl"
@@ -71,7 +71,7 @@ static void this4(_ref__tuple_1_star_range_int64_t_bounded_F this6, int64_t i, _
 #line 141 "ChapelTuple.chpl"
     string_from_c_string(&call_tmp3, "tuple access out of bounds: ", INT64(0), INT64(0), _ln, _fn);
 #line 141 "ChapelTuple.chpl"
-    halt2(call_tmp3, i, _ln, _fn);
+    halt3(call_tmp3, i, _ln, _fn);
 #line 141 "ChapelTuple.chpl"
   }
 #line 142 "ChapelTuple.chpl"
@@ -86,7 +86,7 @@ static void this4(_ref__tuple_1_star_range_int64_t_bounded_F this6, int64_t i, _
 #line 136 "ChapelTuple.chpl"
 /* ChapelTuple.chpl:136 */
 #line 136 "ChapelTuple.chpl"
-static _ref_range_int64_t_bounded_F this5(_ref__tuple_1_star_range_int64_t_bounded_F this6, int64_t i, int64_t _ln, c_string _fn) {
+static _ref_range_int64_t_bounded_F this4(_ref__tuple_1_star_range_int64_t_bounded_F this6, int64_t i, int64_t _ln, c_string _fn) {
 #line 136 "ChapelTuple.chpl"
   chpl_bool call_tmp;
 #line 136 "ChapelTuple.chpl"
@@ -122,7 +122,7 @@ static _ref_range_int64_t_bounded_F this5(_ref__tuple_1_star_range_int64_t_bound
 #line 141 "ChapelTuple.chpl"
     string_from_c_string(&call_tmp3, "tuple access out of bounds: ", INT64(0), INT64(0), _ln, _fn);
 #line 141 "ChapelTuple.chpl"
-    halt2(call_tmp3, i, _ln, _fn);
+    halt3(call_tmp3, i, _ln, _fn);
 #line 141 "ChapelTuple.chpl"
   }
 #line 142 "ChapelTuple.chpl"

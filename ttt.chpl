@@ -1,6 +1,7 @@
+//Including the gui library
 use gtk;
-use Random;
 
+//Global variables
 var boardMatrix: [1..9] int;
 var output: c_ptr(GtkWidget);
 var playCounter: int = 0;
@@ -8,20 +9,12 @@ var button_array: [1..9] c_ptr(GtkWidget);
 var board: c_ptr(GtkWidget);
 var gameOver:bool = false;
 
-
+//This module contains functions for the game
 module Functions{
-	proc printArray(a:[]int){
-		for i in 1..9{
-			write(a[i] + " ");
-			if( i % 3 == 0){
-				writeln();
-			}
-		}
-		writeln();
-	}
+	//This is the defend function for the computer
 	proc defend(boardMatrix: []int, moves: []int){
 
-		var position: int = 0;
+		var position:int = moves[1];
 		var playerOneWon: int = 0;
 
 		//If the center of the board is free, the computer occupies it to gain more control of the game
@@ -45,8 +38,13 @@ module Functions{
 	
 	proc attack(boardMatrix: []int, moves: []int){
 
-		var position: int = moves[1];
+		var position: int = 0;
 		var computerWon: int = 0;
+		
+		//If the center of the board is free, the computer occupies it to gain more control of the game
+		if(boardMatrix[5] == 0){
+			return 5;
+		}
 		
 		//Checking for positions that will let the computer win
 		for i in 1..moves.size{
@@ -76,14 +74,14 @@ module Functions{
 			}
 		}
 		
-		var position:int = defend(boardMatrix, moves);
+		var position:int = attack(boardMatrix, moves);
 		
-		//If a spot found where the player can win, the computer defends
+		//If a spot is found where the computer can win, the computer wins
 		if(position){
 			return position;
 		}
-		else{ //Else computer attacks
-			position = attack(boardMatrix, moves);
+		else{ //Else computer defends
+			position = defend(boardMatrix, moves);
 			return position;
 		}
 		
@@ -116,12 +114,13 @@ module Functions{
 	export proc resetGame(btn: c_ptr(GtkWidget), data: c_void_ptr): void{
 	
 		playCounter = 0;
+		gameOver = false;
 		
 		for i in 1..9{
 			boardMatrix[i] = 0;
 			gtk_button_set_label(GTK_BUTTON(button_array[i]), "");  
 		}
-		gtk_label_set_text(GTK_LABEL(output), "Player one start play");
+		gtk_label_set_text(GTK_LABEL(output), "Start play");
 	}
 	
 	export proc record_move (button: c_ptr(GtkWidget), numPtr: c_ptr(int)): void{

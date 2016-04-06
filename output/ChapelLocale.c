@@ -968,7 +968,7 @@ static void wait5(_ref_localesBarrier this6, int64_t locIdx, DefaultRectangularA
 #line 290 "ChapelLocale.chpl"
       string_from_c_string(&call_tmp34, "array index out of bounds: ", INT64(0), INT64(0), _ln, _fn);
 #line 290 "ChapelLocale.chpl"
-      halt3(call_tmp34, &this21, _ln, _fn);
+      halt2(call_tmp34, &this21, _ln, _fn);
 #line 290 "ChapelLocale.chpl"
     }
 #line 290 "ChapelLocale.chpl"
@@ -1214,7 +1214,7 @@ static void chpl_rootLocaleInitPrivate(int64_t locIdx, int64_t _ln, c_string _fn
 #line 328 "ChapelLocale.chpl"
     chpl_check_nil(T, INT64(328), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelLocale.chpl");
 #line 328 "ChapelLocale.chpl"
-    origLocales = getDefaultLocaleArray2(T, _ln, _fn);
+    origLocales = getDefaultLocaleArray(T, _ln, _fn);
 #line 329 "ChapelLocale.chpl"
     ret = origLocales;
 #line 329 "ChapelLocale.chpl"
@@ -1230,7 +1230,7 @@ static void chpl_rootLocaleInitPrivate(int64_t locIdx, int64_t _ln, c_string _fn
 #line 330 "ChapelLocale.chpl"
     chpl_check_nil(newRootLocale, INT64(330), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelLocale.chpl");
 #line 330 "ChapelLocale.chpl"
-    getDefaultLocaleArray(newRootLocale, ret_to_arg_ref_tmp_, _ln, _fn);
+    getDefaultLocaleArray2(newRootLocale, ret_to_arg_ref_tmp_, _ln, _fn);
 #line 330 "ChapelLocale.chpl"
     ret3 = call_tmp7;
 #line 330 "ChapelLocale.chpl"
@@ -1264,7 +1264,7 @@ static void chpl_rootLocaleInitPrivate(int64_t locIdx, int64_t _ln, c_string _fn
 #line 340 "ChapelLocale.chpl"
     rootLocale = call_tmp13;
 #line 330 "ChapelLocale.chpl"
-    chpl__autoDestroy5(call_tmp7, _ln, _fn);
+    chpl__autoDestroy6(call_tmp7, _ln, _fn);
 #line 330 "ChapelLocale.chpl"
   }
 #line 342 "ChapelLocale.chpl"
@@ -1298,7 +1298,7 @@ static void chpl_rootLocaleInitPrivate(int64_t locIdx, int64_t _ln, c_string _fn
 #line 345 "ChapelLocale.chpl"
     chpl_check_nil(T2, INT64(345), "/home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelLocale.chpl");
 #line 345 "ChapelLocale.chpl"
-    Locales = getDefaultLocaleArray2(T2, _ln, _fn);
+    Locales = getDefaultLocaleArray(T2, _ln, _fn);
 #line 345 "ChapelLocale.chpl"
   }
 #line 316 "ChapelLocale.chpl"

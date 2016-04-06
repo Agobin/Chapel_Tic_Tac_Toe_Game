@@ -39,93 +39,58 @@ static void chpl__init_gtk(int64_t _ln_chpl, c_string _fn_chpl) {
 }
 
 #line 1 "gtk.chpl"
-/* gtk.chpl:96 */
-#line 1 "gtk.chpl"
-static void showDialog_chpl(c_string title_chpl, c_string message_chpl, int32_t wid_chpl, int32_t h_chpl) {
-#line 1 "gtk.chpl"
-  c_ptr_GtkWidget_chpl window_chpl = NULL;
-#line 1 "gtk.chpl"
-  c_ptr_GtkWidget_chpl call_tmp_chpl = NULL;
-#line 1 "gtk.chpl"
-  c_ptr_GtkWidget_chpl call_tmp_chpl2 = NULL;
-#line 1 "gtk.chpl"
-  c_ptr_GtkContainer_chpl call_tmp_chpl3 = NULL;
-#line 1 "gtk.chpl"
-  _ref_c_ptr_GtkWidget _ref_tmp__chpl = NULL;
-#line 100 "gtk.chpl"
-  call_tmp_chpl = gtk_label_new(message_chpl);
-#line 101 "gtk.chpl"
-  call_tmp_chpl2 = chpl_window_new(title_chpl, wid_chpl, h_chpl);
-#line 101 "gtk.chpl"
-  window_chpl = call_tmp_chpl2;
-#line 102 "gtk.chpl"
-  call_tmp_chpl3 = GTK_CONTAINER(call_tmp_chpl2);
-#line 102 "gtk.chpl"
-  gtk_container_add(call_tmp_chpl3, call_tmp_chpl);
-#line 103 "gtk.chpl"
-  _ref_tmp__chpl = &window_chpl;
-#line 103 "gtk.chpl"
-  link_hide_signal(_ref_tmp__chpl);
-#line 104 "gtk.chpl"
-  gtk_widget_show_all(window_chpl);
-#line 96 "gtk.chpl"
-  return;
-#line 96 "gtk.chpl"
-}
-
-#line 96 "gtk.chpl"
 /* gtk.chpl:109 */
-#line 96 "gtk.chpl"
+#line 1 "gtk.chpl"
 static void gtk_init_chpl(DefaultRectangularArr_chpl_string_1_int64_t_F args_chpl) {
-#line 96 "gtk.chpl"
+#line 1 "gtk.chpl"
   int32_t argc_chpl;
-#line 96 "gtk.chpl"
+#line 1 "gtk.chpl"
   int32_t call_tmp_chpl;
-#line 96 "gtk.chpl"
+#line 1 "gtk.chpl"
   c_string cStr_chpl;
-#line 96 "gtk.chpl"
+#line 1 "gtk.chpl"
   c_string type_tmp_chpl;
-#line 96 "gtk.chpl"
+#line 1 "gtk.chpl"
   _tuple_1_star_int64_t i_chpl;
-#line 96 "gtk.chpl"
+#line 1 "gtk.chpl"
   _tuple_1_star_int64_t this_chpl;
-#line 96 "gtk.chpl"
+#line 1 "gtk.chpl"
   DefaultRectangularArr_chpl_string_1_int64_t_F call_tmp_chpl2 = NULL;
-#line 96 "gtk.chpl"
+#line 1 "gtk.chpl"
   DefaultRectangularArr_chpl_string_1_int64_t_F ret_chpl2 = NULL;
-#line 96 "gtk.chpl"
+#line 1 "gtk.chpl"
   DefaultRectangularDom_1_int64_t_F ret_chpl3 = NULL;
-#line 96 "gtk.chpl"
+#line 1 "gtk.chpl"
   chpl_bool call_tmp_chpl3;
-#line 96 "gtk.chpl"
+#line 1 "gtk.chpl"
   chpl_bool call_tmp_chpl4;
-#line 96 "gtk.chpl"
+#line 1 "gtk.chpl"
   chpl_string call_tmp_chpl5;
-#line 96 "gtk.chpl"
+#line 1 "gtk.chpl"
   int64_t sum_chpl;
-#line 96 "gtk.chpl"
+#line 1 "gtk.chpl"
   int64_t ret_x1_chpl;
-#line 96 "gtk.chpl"
+#line 1 "gtk.chpl"
   _ref__tuple_1_star_int64_t ret__chpl = NULL;
-#line 96 "gtk.chpl"
+#line 1 "gtk.chpl"
   int64_t coerce_tmp_chpl;
-#line 96 "gtk.chpl"
+#line 1 "gtk.chpl"
   int64_t call_tmp_chpl6;
-#line 96 "gtk.chpl"
+#line 1 "gtk.chpl"
   _ddata_chpl_string ret_chpl4 = NULL;
-#line 96 "gtk.chpl"
+#line 1 "gtk.chpl"
   _ddata_chpl_string coerce_tmp_chpl2 = NULL;
-#line 96 "gtk.chpl"
+#line 1 "gtk.chpl"
   chpl_string ret_chpl5;
-#line 96 "gtk.chpl"
+#line 1 "gtk.chpl"
   _ref_chpl_string call_tmp_chpl7 = NULL;
-#line 96 "gtk.chpl"
+#line 1 "gtk.chpl"
   _ref_c_string _ref_tmp__chpl = NULL;
-#line 96 "gtk.chpl"
+#line 1 "gtk.chpl"
   c_string call_tmp_chpl8;
-#line 96 "gtk.chpl"
+#line 1 "gtk.chpl"
   _ref_int32_t _ref_tmp__chpl2 = NULL;
-#line 96 "gtk.chpl"
+#line 1 "gtk.chpl"
   _ref_c_string _ref_tmp__chpl3 = NULL;
 #line 110 "gtk.chpl"
   call_tmp_chpl = ((int32_t)(INT64(1)));
@@ -158,7 +123,7 @@ static void gtk_init_chpl(DefaultRectangularArr_chpl_string_1_int64_t_F args_chp
 #line 111 "gtk.chpl"
     string_from_c_string(&call_tmp_chpl5, "array index out of bounds: ", INT64(0), INT64(0), INT64(111), "./gtk.chpl");
 #line 111 "gtk.chpl"
-    halt3(call_tmp_chpl5, &this_chpl, INT64(111), "./gtk.chpl");
+    halt2(call_tmp_chpl5, &this_chpl, INT64(111), "./gtk.chpl");
 #line 111 "gtk.chpl"
   }
 #line 111 "gtk.chpl"
