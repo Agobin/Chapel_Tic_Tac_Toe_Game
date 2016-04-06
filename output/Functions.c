@@ -19,173 +19,104 @@ static int64_t defend_chpl(DefaultRectangularArr_int64_t_1_int64_t_F boardMatrix
   _ddata_int64_t coerce_tmp_chpl2 = NULL;
   int64_t ret_chpl5;
   _ref_int64_t call_tmp_chpl6 = NULL;
-  _tuple_1_star_int64_t i_chpl2;
+  chpl_bool call_tmp_chpl7;
+  int64_t call_tmp_chpl8;
+  int64_t _ic__F1_high_chpl;
+  int64_t i_chpl2;
+  _tuple_1_star_int64_t i_chpl3;
   _tuple_1_star_int64_t this_chpl2;
-  DefaultRectangularArr_int64_t_1_int64_t_F call_tmp_chpl7 = NULL;
+  DefaultRectangularArr_int64_t_1_int64_t_F call_tmp_chpl9 = NULL;
   DefaultRectangularArr_int64_t_1_int64_t_F ret_chpl6 = NULL;
   DefaultRectangularDom_1_int64_t_F ret_chpl7 = NULL;
-  chpl_bool call_tmp_chpl8;
-  chpl_bool call_tmp_chpl9;
-  chpl_string call_tmp_chpl10;
+  chpl_bool call_tmp_chpl10;
+  chpl_bool call_tmp_chpl11;
+  chpl_string call_tmp_chpl12;
   int64_t sum_chpl2;
   int64_t ret_x1_chpl2;
   _ref__tuple_1_star_int64_t ret__chpl2 = NULL;
   int64_t coerce_tmp_chpl3;
-  int64_t call_tmp_chpl11;
+  int64_t call_tmp_chpl13;
   _ddata_int64_t ret_chpl8 = NULL;
   _ddata_int64_t coerce_tmp_chpl4 = NULL;
   int64_t ret_chpl9;
-  _ref_int64_t call_tmp_chpl12 = NULL;
-  chpl_bool call_tmp_chpl13;
-  int64_t call_tmp_chpl14;
-  int64_t _ic__F1_high_chpl;
-  int64_t i_chpl3;
+  _ref_int64_t call_tmp_chpl14 = NULL;
+  int64_t call_tmp_chpl15;
+  chpl_bool call_tmp_chpl16;
   _tuple_1_star_int64_t i_chpl4;
   _tuple_1_star_int64_t this_chpl3;
-  DefaultRectangularArr_int64_t_1_int64_t_F call_tmp_chpl15 = NULL;
+  DefaultRectangularArr_int64_t_1_int64_t_F call_tmp_chpl17 = NULL;
   DefaultRectangularArr_int64_t_1_int64_t_F ret_chpl10 = NULL;
   DefaultRectangularDom_1_int64_t_F ret_chpl11 = NULL;
-  chpl_bool call_tmp_chpl16;
-  chpl_bool call_tmp_chpl17;
-  chpl_string call_tmp_chpl18;
+  chpl_bool call_tmp_chpl18;
+  chpl_bool call_tmp_chpl19;
+  chpl_string call_tmp_chpl20;
   int64_t sum_chpl3;
   int64_t ret_x1_chpl3;
   _ref__tuple_1_star_int64_t ret__chpl3 = NULL;
   int64_t coerce_tmp_chpl5;
-  int64_t call_tmp_chpl19;
+  int64_t call_tmp_chpl21;
   _ddata_int64_t ret_chpl12 = NULL;
   _ddata_int64_t coerce_tmp_chpl6 = NULL;
   int64_t ret_chpl13;
-  _ref_int64_t call_tmp_chpl20 = NULL;
-  int64_t call_tmp_chpl21;
-  chpl_bool call_tmp_chpl22;
-  _tuple_1_star_int64_t i_chpl5;
-  _tuple_1_star_int64_t this_chpl4;
-  DefaultRectangularArr_int64_t_1_int64_t_F call_tmp_chpl23 = NULL;
-  DefaultRectangularArr_int64_t_1_int64_t_F ret_chpl14 = NULL;
-  DefaultRectangularDom_1_int64_t_F ret_chpl15 = NULL;
-  chpl_bool call_tmp_chpl24;
-  chpl_bool call_tmp_chpl25;
-  chpl_string call_tmp_chpl26;
-  int64_t sum_chpl4;
-  int64_t ret_x1_chpl4;
-  _ref__tuple_1_star_int64_t ret__chpl4 = NULL;
-  int64_t coerce_tmp_chpl7;
-  int64_t call_tmp_chpl27;
-  _ddata_int64_t ret_chpl16 = NULL;
-  _ddata_int64_t coerce_tmp_chpl8 = NULL;
-  int64_t ret_chpl17;
-  _ref_int64_t call_tmp_chpl28 = NULL;
+  _ref_int64_t call_tmp_chpl22 = NULL;
 #line 24 "ttt.chpl"
-  *(this_chpl + INT64(0)) = INT64(1);
-#line 24 "ttt.chpl"
+  position_chpl = INT64(0);
+#line 28 "ttt.chpl"
+  *(this_chpl + INT64(0)) = INT64(5);
+#line 28 "ttt.chpl"
   *(i_chpl + INT64(0)) = *(this_chpl + INT64(0));
-#line 24 "ttt.chpl"
-  ret_chpl2 = moves_chpl;
-#line 24 "ttt.chpl"
+#line 28 "ttt.chpl"
+  ret_chpl2 = boardMatrix_chpl2;
+#line 28 "ttt.chpl"
   call_tmp_chpl = ret_chpl2;
-#line 24 "ttt.chpl"
-  chpl_check_nil(call_tmp_chpl, INT64(24), "ttt.chpl");
-#line 24 "ttt.chpl"
+#line 28 "ttt.chpl"
+  chpl_check_nil(call_tmp_chpl, INT64(28), "ttt.chpl");
+#line 28 "ttt.chpl"
   ret_chpl3 = (call_tmp_chpl)->dom;
-#line 24 "ttt.chpl"
-  chpl_check_nil(ret_chpl3, INT64(24), "ttt.chpl");
-#line 24 "ttt.chpl"
-  call_tmp_chpl2 = dsiMember(ret_chpl3, &this_chpl, INT64(24), "ttt.chpl");
-#line 24 "ttt.chpl"
+#line 28 "ttt.chpl"
+  chpl_check_nil(ret_chpl3, INT64(28), "ttt.chpl");
+#line 28 "ttt.chpl"
+  call_tmp_chpl2 = dsiMember(ret_chpl3, &this_chpl, INT64(28), "ttt.chpl");
+#line 28 "ttt.chpl"
   call_tmp_chpl3 = (! call_tmp_chpl2);
-#line 24 "ttt.chpl"
-  if (call_tmp_chpl3) /* ZLINE: 24 ttt.chpl */
-#line 24 "ttt.chpl"
+#line 28 "ttt.chpl"
+  if (call_tmp_chpl3) /* ZLINE: 28 ttt.chpl */
+#line 28 "ttt.chpl"
   {
-#line 24 "ttt.chpl"
-    string_from_c_string(&call_tmp_chpl4, "array index out of bounds: ", INT64(0), INT64(0), INT64(24), "ttt.chpl");
-#line 24 "ttt.chpl"
-    halt3(call_tmp_chpl4, &this_chpl, INT64(24), "ttt.chpl");
-#line 24 "ttt.chpl"
+#line 28 "ttt.chpl"
+    string_from_c_string(&call_tmp_chpl4, "array index out of bounds: ", INT64(0), INT64(0), INT64(28), "ttt.chpl");
+#line 28 "ttt.chpl"
+    halt3(call_tmp_chpl4, &this_chpl, INT64(28), "ttt.chpl");
+#line 28 "ttt.chpl"
   }
-#line 24 "ttt.chpl"
+#line 28 "ttt.chpl"
   sum_chpl = INT64(0);
-#line 24 "ttt.chpl"
-  chpl_check_nil(call_tmp_chpl, INT64(24), "ttt.chpl");
-#line 24 "ttt.chpl"
+#line 28 "ttt.chpl"
+  chpl_check_nil(call_tmp_chpl, INT64(28), "ttt.chpl");
+#line 28 "ttt.chpl"
   ret__chpl = &((call_tmp_chpl)->blk);
-#line 24 "ttt.chpl"
+#line 28 "ttt.chpl"
   ret_x1_chpl = *(*(ret__chpl) + INT64(0));
-#line 24 "ttt.chpl"
+#line 28 "ttt.chpl"
   coerce_tmp_chpl = *(i_chpl + INT64(0));
-#line 24 "ttt.chpl"
+#line 28 "ttt.chpl"
   call_tmp_chpl5 = (coerce_tmp_chpl * ret_x1_chpl);
-#line 24 "ttt.chpl"
+#line 28 "ttt.chpl"
   sum_chpl += call_tmp_chpl5;
-#line 24 "ttt.chpl"
-  chpl_check_nil(call_tmp_chpl, INT64(24), "ttt.chpl");
-#line 24 "ttt.chpl"
+#line 28 "ttt.chpl"
+  chpl_check_nil(call_tmp_chpl, INT64(28), "ttt.chpl");
+#line 28 "ttt.chpl"
   ret_chpl4 = (call_tmp_chpl)->shiftedData;
-#line 24 "ttt.chpl"
+#line 28 "ttt.chpl"
   coerce_tmp_chpl2 = ret_chpl4;
-#line 24 "ttt.chpl"
+#line 28 "ttt.chpl"
   call_tmp_chpl6 = (coerce_tmp_chpl2 + sum_chpl);
-#line 24 "ttt.chpl"
+#line 28 "ttt.chpl"
   ret_chpl5 = *(call_tmp_chpl6);
-#line 24 "ttt.chpl"
-  position_chpl = ret_chpl5;
 #line 28 "ttt.chpl"
-  *(this_chpl2 + INT64(0)) = INT64(5);
+  call_tmp_chpl7 = (ret_chpl5 == INT64(0));
 #line 28 "ttt.chpl"
-  *(i_chpl2 + INT64(0)) = *(this_chpl2 + INT64(0));
-#line 28 "ttt.chpl"
-  ret_chpl6 = boardMatrix_chpl2;
-#line 28 "ttt.chpl"
-  call_tmp_chpl7 = ret_chpl6;
-#line 28 "ttt.chpl"
-  chpl_check_nil(call_tmp_chpl7, INT64(28), "ttt.chpl");
-#line 28 "ttt.chpl"
-  ret_chpl7 = (call_tmp_chpl7)->dom;
-#line 28 "ttt.chpl"
-  chpl_check_nil(ret_chpl7, INT64(28), "ttt.chpl");
-#line 28 "ttt.chpl"
-  call_tmp_chpl8 = dsiMember(ret_chpl7, &this_chpl2, INT64(28), "ttt.chpl");
-#line 28 "ttt.chpl"
-  call_tmp_chpl9 = (! call_tmp_chpl8);
-#line 28 "ttt.chpl"
-  if (call_tmp_chpl9) /* ZLINE: 28 ttt.chpl */
-#line 28 "ttt.chpl"
-  {
-#line 28 "ttt.chpl"
-    string_from_c_string(&call_tmp_chpl10, "array index out of bounds: ", INT64(0), INT64(0), INT64(28), "ttt.chpl");
-#line 28 "ttt.chpl"
-    halt3(call_tmp_chpl10, &this_chpl2, INT64(28), "ttt.chpl");
-#line 28 "ttt.chpl"
-  }
-#line 28 "ttt.chpl"
-  sum_chpl2 = INT64(0);
-#line 28 "ttt.chpl"
-  chpl_check_nil(call_tmp_chpl7, INT64(28), "ttt.chpl");
-#line 28 "ttt.chpl"
-  ret__chpl2 = &((call_tmp_chpl7)->blk);
-#line 28 "ttt.chpl"
-  ret_x1_chpl2 = *(*(ret__chpl2) + INT64(0));
-#line 28 "ttt.chpl"
-  coerce_tmp_chpl3 = *(i_chpl2 + INT64(0));
-#line 28 "ttt.chpl"
-  call_tmp_chpl11 = (coerce_tmp_chpl3 * ret_x1_chpl2);
-#line 28 "ttt.chpl"
-  sum_chpl2 += call_tmp_chpl11;
-#line 28 "ttt.chpl"
-  chpl_check_nil(call_tmp_chpl7, INT64(28), "ttt.chpl");
-#line 28 "ttt.chpl"
-  ret_chpl8 = (call_tmp_chpl7)->shiftedData;
-#line 28 "ttt.chpl"
-  coerce_tmp_chpl4 = ret_chpl8;
-#line 28 "ttt.chpl"
-  call_tmp_chpl12 = (coerce_tmp_chpl4 + sum_chpl2);
-#line 28 "ttt.chpl"
-  ret_chpl9 = *(call_tmp_chpl12);
-#line 28 "ttt.chpl"
-  call_tmp_chpl13 = (ret_chpl9 == INT64(0));
-#line 28 "ttt.chpl"
-  if (call_tmp_chpl13) /* ZLINE: 29 ttt.chpl */
+  if (call_tmp_chpl7) /* ZLINE: 29 ttt.chpl */
 #line 28 "ttt.chpl"
   {
 #line 29 "ttt.chpl"
@@ -197,127 +128,127 @@ static int64_t defend_chpl(DefaultRectangularArr_int64_t_1_int64_t_F boardMatrix
 #line 33 "ttt.chpl"
   chpl_check_nil(moves_chpl, INT64(33), "ttt.chpl");
 #line 33 "ttt.chpl"
-  call_tmp_chpl14 = size(moves_chpl, INT64(33), "ttt.chpl");
+  call_tmp_chpl8 = size(moves_chpl, INT64(33), "ttt.chpl");
 #line 33 "ttt.chpl"
-  _ic__F1_high_chpl = call_tmp_chpl14;
+  _ic__F1_high_chpl = call_tmp_chpl8;
 #line 33 "ttt.chpl"
-  chpl_checkIfRangeIterWillOverflow(INT64(1), call_tmp_chpl14, INT64(1), INT64(1), call_tmp_chpl14, true, INT64(33), "ttt.chpl");
+  chpl_checkIfRangeIterWillOverflow(INT64(1), call_tmp_chpl8, INT64(1), INT64(1), call_tmp_chpl8, true, INT64(33), "ttt.chpl");
 #line 36 "ttt.chpl"
-  ret_chpl10 = moves_chpl;
+  ret_chpl6 = moves_chpl;
 #line 36 "ttt.chpl"
-  call_tmp_chpl15 = ret_chpl10;
+  call_tmp_chpl9 = ret_chpl6;
 #line 33 "ttt.chpl"
-  for (i_chpl3 = INT64(1); ((i_chpl3 <= _ic__F1_high_chpl)); i_chpl3 += INT64(1)) {
+  for (i_chpl2 = INT64(1); ((i_chpl2 <= _ic__F1_high_chpl)); i_chpl2 += INT64(1)) {
 #line 36 "ttt.chpl"
-    *(this_chpl3 + INT64(0)) = i_chpl3;
+    *(this_chpl2 + INT64(0)) = i_chpl2;
 #line 36 "ttt.chpl"
-    *(i_chpl4 + INT64(0)) = *(this_chpl3 + INT64(0));
+    *(i_chpl3 + INT64(0)) = *(this_chpl2 + INT64(0));
 #line 36 "ttt.chpl"
-    chpl_check_nil(call_tmp_chpl15, INT64(36), "ttt.chpl");
+    chpl_check_nil(call_tmp_chpl9, INT64(36), "ttt.chpl");
 #line 36 "ttt.chpl"
-    ret_chpl11 = (call_tmp_chpl15)->dom;
+    ret_chpl7 = (call_tmp_chpl9)->dom;
 #line 36 "ttt.chpl"
-    chpl_check_nil(ret_chpl11, INT64(36), "ttt.chpl");
+    chpl_check_nil(ret_chpl7, INT64(36), "ttt.chpl");
 #line 36 "ttt.chpl"
-    call_tmp_chpl16 = dsiMember(ret_chpl11, &this_chpl3, INT64(36), "ttt.chpl");
+    call_tmp_chpl10 = dsiMember(ret_chpl7, &this_chpl2, INT64(36), "ttt.chpl");
 #line 36 "ttt.chpl"
-    call_tmp_chpl17 = (! call_tmp_chpl16);
+    call_tmp_chpl11 = (! call_tmp_chpl10);
 #line 36 "ttt.chpl"
-    if (call_tmp_chpl17) /* ZLINE: 36 ttt.chpl */
+    if (call_tmp_chpl11) /* ZLINE: 36 ttt.chpl */
 #line 36 "ttt.chpl"
     {
 #line 36 "ttt.chpl"
-      string_from_c_string(&call_tmp_chpl18, "array index out of bounds: ", INT64(0), INT64(0), INT64(36), "ttt.chpl");
+      string_from_c_string(&call_tmp_chpl12, "array index out of bounds: ", INT64(0), INT64(0), INT64(36), "ttt.chpl");
 #line 36 "ttt.chpl"
-      halt3(call_tmp_chpl18, &this_chpl3, INT64(36), "ttt.chpl");
+      halt3(call_tmp_chpl12, &this_chpl2, INT64(36), "ttt.chpl");
 #line 36 "ttt.chpl"
     }
 #line 36 "ttt.chpl"
-    sum_chpl3 = INT64(0);
+    sum_chpl2 = INT64(0);
 #line 36 "ttt.chpl"
-    chpl_check_nil(call_tmp_chpl15, INT64(36), "ttt.chpl");
+    chpl_check_nil(call_tmp_chpl9, INT64(36), "ttt.chpl");
 #line 36 "ttt.chpl"
-    ret__chpl3 = &((call_tmp_chpl15)->blk);
+    ret__chpl2 = &((call_tmp_chpl9)->blk);
 #line 36 "ttt.chpl"
-    ret_x1_chpl3 = *(*(ret__chpl3) + INT64(0));
+    ret_x1_chpl2 = *(*(ret__chpl2) + INT64(0));
 #line 36 "ttt.chpl"
-    coerce_tmp_chpl5 = *(i_chpl4 + INT64(0));
+    coerce_tmp_chpl3 = *(i_chpl3 + INT64(0));
 #line 36 "ttt.chpl"
-    call_tmp_chpl19 = (coerce_tmp_chpl5 * ret_x1_chpl3);
+    call_tmp_chpl13 = (coerce_tmp_chpl3 * ret_x1_chpl2);
 #line 36 "ttt.chpl"
-    sum_chpl3 += call_tmp_chpl19;
+    sum_chpl2 += call_tmp_chpl13;
 #line 36 "ttt.chpl"
-    chpl_check_nil(call_tmp_chpl15, INT64(36), "ttt.chpl");
+    chpl_check_nil(call_tmp_chpl9, INT64(36), "ttt.chpl");
 #line 36 "ttt.chpl"
-    ret_chpl12 = (call_tmp_chpl15)->shiftedData;
+    ret_chpl8 = (call_tmp_chpl9)->shiftedData;
 #line 36 "ttt.chpl"
-    coerce_tmp_chpl6 = ret_chpl12;
+    coerce_tmp_chpl4 = ret_chpl8;
 #line 36 "ttt.chpl"
-    call_tmp_chpl20 = (coerce_tmp_chpl6 + sum_chpl3);
+    call_tmp_chpl14 = (coerce_tmp_chpl4 + sum_chpl2);
 #line 36 "ttt.chpl"
-    ret_chpl13 = *(call_tmp_chpl20);
+    ret_chpl9 = *(call_tmp_chpl14);
 #line 36 "ttt.chpl"
-    call_tmp_chpl21 = analyseBoard_chpl(boardMatrix_chpl2, INT64(1), ret_chpl13);
+    call_tmp_chpl15 = analyseBoard_chpl(boardMatrix_chpl2, INT64(1), ret_chpl9);
 #line 37 "ttt.chpl"
-    call_tmp_chpl22 = (call_tmp_chpl21 != INT64(0));
+    call_tmp_chpl16 = (call_tmp_chpl15 != INT64(0));
 #line 37 "ttt.chpl"
-    if (call_tmp_chpl22) /* ZLINE: 38 ttt.chpl */
+    if (call_tmp_chpl16) /* ZLINE: 38 ttt.chpl */
 #line 37 "ttt.chpl"
     {
 #line 38 "ttt.chpl"
-      *(this_chpl4 + INT64(0)) = i_chpl3;
+      *(this_chpl3 + INT64(0)) = i_chpl2;
 #line 38 "ttt.chpl"
-      *(i_chpl5 + INT64(0)) = *(this_chpl4 + INT64(0));
+      *(i_chpl4 + INT64(0)) = *(this_chpl3 + INT64(0));
 #line 38 "ttt.chpl"
-      ret_chpl14 = moves_chpl;
+      ret_chpl10 = moves_chpl;
 #line 38 "ttt.chpl"
-      call_tmp_chpl23 = ret_chpl14;
+      call_tmp_chpl17 = ret_chpl10;
 #line 38 "ttt.chpl"
-      chpl_check_nil(call_tmp_chpl23, INT64(38), "ttt.chpl");
+      chpl_check_nil(call_tmp_chpl17, INT64(38), "ttt.chpl");
 #line 38 "ttt.chpl"
-      ret_chpl15 = (call_tmp_chpl23)->dom;
+      ret_chpl11 = (call_tmp_chpl17)->dom;
 #line 38 "ttt.chpl"
-      chpl_check_nil(ret_chpl15, INT64(38), "ttt.chpl");
+      chpl_check_nil(ret_chpl11, INT64(38), "ttt.chpl");
 #line 38 "ttt.chpl"
-      call_tmp_chpl24 = dsiMember(ret_chpl15, &this_chpl4, INT64(38), "ttt.chpl");
+      call_tmp_chpl18 = dsiMember(ret_chpl11, &this_chpl3, INT64(38), "ttt.chpl");
 #line 38 "ttt.chpl"
-      call_tmp_chpl25 = (! call_tmp_chpl24);
+      call_tmp_chpl19 = (! call_tmp_chpl18);
 #line 38 "ttt.chpl"
-      if (call_tmp_chpl25) /* ZLINE: 38 ttt.chpl */
+      if (call_tmp_chpl19) /* ZLINE: 38 ttt.chpl */
 #line 38 "ttt.chpl"
       {
 #line 38 "ttt.chpl"
-        string_from_c_string(&call_tmp_chpl26, "array index out of bounds: ", INT64(0), INT64(0), INT64(38), "ttt.chpl");
+        string_from_c_string(&call_tmp_chpl20, "array index out of bounds: ", INT64(0), INT64(0), INT64(38), "ttt.chpl");
 #line 38 "ttt.chpl"
-        halt3(call_tmp_chpl26, &this_chpl4, INT64(38), "ttt.chpl");
+        halt3(call_tmp_chpl20, &this_chpl3, INT64(38), "ttt.chpl");
 #line 38 "ttt.chpl"
       }
 #line 38 "ttt.chpl"
-      sum_chpl4 = INT64(0);
+      sum_chpl3 = INT64(0);
 #line 38 "ttt.chpl"
-      chpl_check_nil(call_tmp_chpl23, INT64(38), "ttt.chpl");
+      chpl_check_nil(call_tmp_chpl17, INT64(38), "ttt.chpl");
 #line 38 "ttt.chpl"
-      ret__chpl4 = &((call_tmp_chpl23)->blk);
+      ret__chpl3 = &((call_tmp_chpl17)->blk);
 #line 38 "ttt.chpl"
-      ret_x1_chpl4 = *(*(ret__chpl4) + INT64(0));
+      ret_x1_chpl3 = *(*(ret__chpl3) + INT64(0));
 #line 38 "ttt.chpl"
-      coerce_tmp_chpl7 = *(i_chpl5 + INT64(0));
+      coerce_tmp_chpl5 = *(i_chpl4 + INT64(0));
 #line 38 "ttt.chpl"
-      call_tmp_chpl27 = (coerce_tmp_chpl7 * ret_x1_chpl4);
+      call_tmp_chpl21 = (coerce_tmp_chpl5 * ret_x1_chpl3);
 #line 38 "ttt.chpl"
-      sum_chpl4 += call_tmp_chpl27;
+      sum_chpl3 += call_tmp_chpl21;
 #line 38 "ttt.chpl"
-      chpl_check_nil(call_tmp_chpl23, INT64(38), "ttt.chpl");
+      chpl_check_nil(call_tmp_chpl17, INT64(38), "ttt.chpl");
 #line 38 "ttt.chpl"
-      ret_chpl16 = (call_tmp_chpl23)->shiftedData;
+      ret_chpl12 = (call_tmp_chpl17)->shiftedData;
 #line 38 "ttt.chpl"
-      coerce_tmp_chpl8 = ret_chpl16;
+      coerce_tmp_chpl6 = ret_chpl12;
 #line 38 "ttt.chpl"
-      call_tmp_chpl28 = (coerce_tmp_chpl8 + sum_chpl4);
+      call_tmp_chpl22 = (coerce_tmp_chpl6 + sum_chpl3);
 #line 38 "ttt.chpl"
-      ret_chpl17 = *(call_tmp_chpl28);
+      ret_chpl13 = *(call_tmp_chpl22);
 #line 38 "ttt.chpl"
-      position_chpl = ret_chpl17;
+      position_chpl = ret_chpl13;
 #line 39 "ttt.chpl"
       goto _breakLabel_chpl;
 #line 39 "ttt.chpl"
@@ -3853,7 +3784,7 @@ void resetGame(c_ptr_GtkWidget_chpl btn, c_void_ptr data) {
 #line 94 "ttt.chpl"
   c_ptr_GtkLabel_chpl call_tmp_chpl14 = NULL;
 #line 118 "ttt.chpl"
-  playCounter_chpl = INT64(1);
+  playCounter_chpl = INT64(0);
 #line 120 "ttt.chpl"
   _ic__F1_high_chpl = INT64(9);
 #line 120 "ttt.chpl"

@@ -21,9 +21,9 @@ module Functions{
 	}
 	proc defend(boardMatrix: []int, moves: []int){
 
-		var position: int = moves[1];
+		var position: int = 0;
 		var playerOneWon: int = 0;
-		
+
 		//If the center of the board is free, the computer occupies it to gain more control of the game
 		if(boardMatrix[5] == 0){
 			return 5;
@@ -39,14 +39,14 @@ module Functions{
 				break;
 			}
 		}
-		
+
 		return position;
 	}
 	
 	proc attack(boardMatrix: []int, moves: []int){
 
 		var position: int = moves[1];
-		var computerWon: int = 0; showDialog("Attacked fxn called", "Attacked fxn called");
+		var computerWon: int = 0;
 		
 		//Checking for positions that will let the computer win
 		for i in 1..moves.size{
