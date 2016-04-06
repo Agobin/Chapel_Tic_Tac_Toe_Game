@@ -24,6 +24,7 @@ module Functions{
 		var position: int = moves[1];
 		var playerOneWon: int = 0;
 		
+		//If the center of the board is free, the computer occupies it to gain more control of the game
 		if(boardMatrix[5] == 0){
 			return 5;
 		}
@@ -31,7 +32,7 @@ module Functions{
 		//Checking for positions that will let the player win
 		for i in 1..moves.size{
 			
-			//Based on some assumptions of his next move
+			//Based on some assumptions of his next move, moves[i]
 			playerOneWon = analyseBoard(boardMatrix, 1, moves[i]);
 			if( playerOneWon){
 				position = moves[i];
@@ -45,9 +46,8 @@ module Functions{
 	proc attack(boardMatrix: []int, moves: []int){
 
 		var position: int = moves[1];
-		var computerWon: int = 0;
+		var computerWon: int = 0; showDialog("Attacked fxn called", "Attacked fxn called");
 		
-	
 		//Checking for positions that will let the computer win
 		for i in 1..moves.size{
 			
@@ -79,7 +79,7 @@ module Functions{
 		var position:int = defend(boardMatrix, moves);
 		
 		//If a spot found where the player can win, the computer defends
-		if( position){
+		if(position){
 			return position;
 		}
 		else{ //Else computer attacks
@@ -89,13 +89,16 @@ module Functions{
 		
 	}
 	
+	//This function checks if a player with id = key has won.
+	//It also checks for a win base on an assumption if the assumeIndex is set
 	proc analyseBoard( a: []int, key: int, assumeIndex:int = 0): int{	
 		var result = 0;
 		
 		if( assumeIndex){
 			a[assumeIndex] = key;
 		}
-			
+		
+		//Condition for winning
 		if( (a[1] == key && a[2] == key && a[3] == key) || (a[4] == key && a[5] == key && a[6] == key) || (a[7] == key && a[8] == key && a[9] == key) || 
 			(a[1] == key && a[5] == key && a[9] == key) || (a[1] == key && a[4] == key && a[7] == key) || (a[2] == key && a[5] == key && a[8] == key) || 
 			(a[3] == key && a[6] == key && a[9] == key) || (a[7] == key && a[5] == key && a[3] == key) ){
@@ -154,25 +157,29 @@ module Functions{
 				}
 				else{ //If player doesn't win, the computer plays
 					//Clears the output label's text
-					if(playCounter == 1){
+					if(playCounter > 1){
 						gtk_label_set_text(GTK_LABEL(output), "");
 					}
-					var computersMove = computersMind(boardMatrix);
-					boardMatrix[computersMove] = 2;
-					gtk_button_set_label(GTK_BUTTON(button_array[computersMove]), "X");
 					
-					
-					var computer: int = analyseBoard(boardMatrix, 2);
-			
-					if( computer){ //if computer wins
-						gtk_label_set_text(GTK_LABEL(output), "  Game Over: You lose!!");
-						gameOver = true;
+					//If computer still has a chance to play
+					if( playCounter < 9){
+						var computersMove = computersMind(boardMatrix);
+						boardMatrix[computersMove] = 2;
+						gtk_button_set_label(GTK_BUTTON(button_array[computersMove]), "X");
+						
+						var computer: int = analyseBoard(boardMatrix, 2);
+				
+						if( computer){ //if computer wins
+							gtk_label_set_text(GTK_LABEL(output), "  Game Over: You lose!!");
+							gameOver = true;
+						}
+						playCounter += 1;
 					}
-					else if(playCounter == 8){ //All slots have been occupied
+					else{ //All available spots have been occupied, hence game over.
 						gameOver = true;
 						gtk_label_set_text(GTK_LABEL(output), "  Game Over: Draw");
 					}
-					playCounter += 1;
+					
 				}
 				
 			}

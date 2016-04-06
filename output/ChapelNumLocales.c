@@ -47,7 +47,7 @@ static void chpl__init_ChapelNumLocales(int64_t _ln, c_string _fn) {
 #line 29 "ChapelNumLocales.chpl"
     call_tmp4 = chpl_config_get_value("numLocales", "Built-in");
 #line 29 "ChapelNumLocales.chpl"
-    const_tmp = _command_line_cast9(call_tmp4, _ln, _fn);
+    const_tmp = _command_line_cast2(call_tmp4, _ln, _fn);
 #line 29 "ChapelNumLocales.chpl"
   }
 #line 29 "ChapelNumLocales.chpl"
