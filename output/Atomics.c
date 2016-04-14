@@ -1,10 +1,10 @@
 /* Atomics.chpl:70 */
-static void chpl__init_Atomics(int64_t _ln, c_string _fn) {
+static void chpl__init_Atomics(int64_t _ln, int32_t _fn) {
   c_string modFormatStr;
   c_string modStr;
   _ref_int32_t refIndentLevel = NULL;
 #line 70 "Atomics.chpl"
-  if (chpl__init_Atomics_p) /* ZLINE: 70 /home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/Atomics.chpl */
+  if (chpl__init_Atomics_p) /* ZLINE: 70 /home/agobin/Documents/chapel-1.13.0/modules/internal/Atomics.chpl */
 #line 70 "Atomics.chpl"
   {
 #line 70 "Atomics.chpl"
@@ -22,7 +22,7 @@ static void chpl__init_Atomics(int64_t _ln, c_string _fn) {
 #line 70 "Atomics.chpl"
   *(refIndentLevel) += INT64(1);
 #line 70 "Atomics.chpl"
-  chpl__init_Atomics_p = true;
+  chpl__init_Atomics_p = UINT8(true);
 #line 70 "Atomics.chpl"
   {
 #line 70 "Atomics.chpl"
@@ -39,45 +39,45 @@ static void chpl__init_Atomics(int64_t _ln, c_string _fn) {
 }
 
 #line 70 "Atomics.chpl"
-/* Atomics.chpl:266 */
+/* Atomics.chpl:267 */
 #line 70 "Atomics.chpl"
-static void atomic_fence(memory_order order, int64_t _ln, c_string _fn) {
-#line 267 "Atomics.chpl"
-  atomic_thread_fence(order);
+static void atomic_fence(memory_order order, int64_t _ln, int32_t _fn) {
 #line 268 "Atomics.chpl"
+  atomic_thread_fence(order);
+#line 269 "Atomics.chpl"
   chpl_rmem_consist_fence(order, _ln, _fn);
-#line 266 "Atomics.chpl"
+#line 267 "Atomics.chpl"
   return;
-#line 266 "Atomics.chpl"
+#line 267 "Atomics.chpl"
 }
 
-#line 266 "Atomics.chpl"
-/* Atomics.chpl:309 */
-#line 266 "Atomics.chpl"
-static atomicflag _construct_atomicflag(atomic_flag _v, atomicflag* const meme, int64_t _ln, c_string _fn) {
-#line 266 "Atomics.chpl"
-  atomicflag this6;
-#line 309 "Atomics.chpl"
-  this6 = *(meme);
-#line 311 "Atomics.chpl"
-  (&this6)->_v = _v;
-#line 309 "Atomics.chpl"
-  return this6;
-#line 309 "Atomics.chpl"
+#line 267 "Atomics.chpl"
+/* Atomics.chpl:310 */
+#line 267 "Atomics.chpl"
+static atomicflag _construct_atomicflag(atomic_flag _v, atomicflag* const meme, int64_t _ln, int32_t _fn) {
+#line 267 "Atomics.chpl"
+  atomicflag this5;
+#line 310 "Atomics.chpl"
+  this5 = *(meme);
+#line 312 "Atomics.chpl"
+  (&this5)->_v = _v;
+#line 310 "Atomics.chpl"
+  return this5;
+#line 310 "Atomics.chpl"
 }
 
-#line 309 "Atomics.chpl"
-/* Atomics.chpl:1151 */
-#line 309 "Atomics.chpl"
-static atomic_int64 _construct_atomic_int64(atomic_int_least64_t _v, atomic_int64* const meme, int64_t _ln, c_string _fn) {
-#line 309 "Atomics.chpl"
-  atomic_int64 this6;
-#line 1151 "Atomics.chpl"
-  this6 = *(meme);
-#line 1153 "Atomics.chpl"
-  (&this6)->_v = _v;
-#line 1151 "Atomics.chpl"
-  return this6;
-#line 1151 "Atomics.chpl"
+#line 310 "Atomics.chpl"
+/* Atomics.chpl:1152 */
+#line 310 "Atomics.chpl"
+static atomic_int64 _construct_atomic_int64(atomic_int_least64_t _v, atomic_int64* const meme, int64_t _ln, int32_t _fn) {
+#line 310 "Atomics.chpl"
+  atomic_int64 this5;
+#line 1152 "Atomics.chpl"
+  this5 = *(meme);
+#line 1154 "Atomics.chpl"
+  (&this5)->_v = _v;
+#line 1152 "Atomics.chpl"
+  return this5;
+#line 1152 "Atomics.chpl"
 }
 

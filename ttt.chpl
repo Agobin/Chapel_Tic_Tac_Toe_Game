@@ -120,7 +120,7 @@ module Functions{
 			boardMatrix[i] = 0;
 			gtk_button_set_label(GTK_BUTTON(button_array[i]), "");  
 		}
-		gtk_label_set_text(GTK_LABEL(output), "Start play");
+		gtk_label_set_text(GTK_LABEL(output), "Click on a button to start play.");
 	}
 	
 	export proc record_move (button: c_ptr(GtkWidget), numPtr: c_ptr(int)): void{
@@ -156,7 +156,7 @@ module Functions{
 				}
 				else{ //If player doesn't win, the computer plays
 					//Clears the output label's text
-					if(playCounter > 1){
+					if(playCounter >= 1){
 						gtk_label_set_text(GTK_LABEL(output), "");
 					}
 					
@@ -199,15 +199,17 @@ proc main( args: [] string){
 	use FunctionSysbols;
 	var num:int;
 	
+	const HIEGHT:c_int = 100;
+	const WIDTH:c_int = 150;
 	
 	//Initialises all widgets
 	gtk_init(args);    
 	
-	var window: c_ptr(GtkWidget) = chpl_window_new("Tic Tac Toe Game", 600, 500);
+	var window: c_ptr(GtkWidget) = chpl_window_new("Tic Tac Toe Game", 400, 400);
 	gtk_window_set_resizable(GTK_WINDOW(window), false);
    
 	//Declaring and initialising a table to hold widgets  
-	board = gtk_table_new(5, 3, true);
+	board = gtk_grid_new();
 	
 	//Declaring resetBtn and stopBtn to reset and stop game respectively
 	var resetBtn: c_ptr(GtkWidget) = gtk_button_new_with_mnemonic("Reset game");
@@ -217,7 +219,7 @@ proc main( args: [] string){
 	g_signal_connect_swapped(stopBtn, "clicked", G_CALLBACK(gtk_widget_destroy), window);
 	 
 	//outputLabel is used to display game status at any moment
-	output = gtk_label_new("Start play.");
+	output = gtk_label_new("Click on a button to start play.");
 	
 	//These nested for loops add buttons to the board
 	var counter = 1;
@@ -248,15 +250,21 @@ proc main( args: [] string){
 					g_signal_connect(button_array[counter], "clicked", G_CALLBACK(record_move), c_ptrTo(nine));
 			}
 			
-			gtk_table_attach_defaults(GTK_TABLE(board), button_array[counter], (j-1):c_int, j:c_int, (i-1):c_int, i:c_int); 
+			gtk_widget_set_size_request(button_array[counter], WIDTH, HIEGHT);
+			gtk_grid_attach(GTK_GRID(board), button_array[counter], (j-1):c_int, (i-1):c_int, 1:c_int, 1:c_int); 
 			counter += 1;
 		}
 	}
 	
 	//Attaching buttons to the board(a table)
-	gtk_table_attach_defaults(GTK_TABLE(board), output, 0:c_int, 3:c_int, 3:c_int, 4:c_int);
-	gtk_table_attach_defaults(GTK_TABLE(board), resetBtn, 0:c_int, 1:c_int, 4:c_int, 5:c_int);
-	gtk_table_attach_defaults(GTK_TABLE(board), stopBtn, 2:c_int, 3:c_int, 4:c_int, 5:c_int);
+	gtk_widget_set_size_request(output, WIDTH, HIEGHT);
+	gtk_grid_attach(GTK_GRID(board), output, 0:c_int, 3:c_int, 3:c_int, 1:c_int);
+	
+	gtk_widget_set_size_request(resetBtn, WIDTH, HIEGHT);
+	gtk_grid_attach(GTK_GRID(board), resetBtn, 0:c_int, 4:c_int, 1:c_int, 1:c_int);
+	
+	gtk_widget_set_size_request(stopBtn, WIDTH, HIEGHT);
+	gtk_grid_attach(GTK_GRID(board), stopBtn, 2:c_int, 4:c_int, 1:c_int, 1:c_int);
 	
 	//Adds the board to the window
 	gtk_container_add(GTK_CONTAINER(window), board);

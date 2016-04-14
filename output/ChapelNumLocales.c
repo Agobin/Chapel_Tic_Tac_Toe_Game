@@ -1,5 +1,5 @@
 /* ChapelNumLocales.chpl:22 */
-static void chpl__init_ChapelNumLocales(int64_t _ln, c_string _fn) {
+static void chpl__init_ChapelNumLocales(int64_t _ln, int32_t _fn) {
   c_string modFormatStr;
   c_string modStr;
   _ref_int32_t refIndentLevel = NULL;
@@ -9,7 +9,7 @@ static void chpl__init_ChapelNumLocales(int64_t _ln, c_string _fn) {
   int64_t call_tmp3;
   c_string call_tmp4;
 #line 22 "ChapelNumLocales.chpl"
-  if (chpl__init_ChapelNumLocales_p) /* ZLINE: 22 /home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelNumLocales.chpl */
+  if (chpl__init_ChapelNumLocales_p) /* ZLINE: 22 /home/agobin/Documents/chapel-1.13.0/modules/internal/ChapelNumLocales.chpl */
 #line 22 "ChapelNumLocales.chpl"
   {
 #line 22 "ChapelNumLocales.chpl"
@@ -27,13 +27,13 @@ static void chpl__init_ChapelNumLocales(int64_t _ln, c_string _fn) {
 #line 22 "ChapelNumLocales.chpl"
   *(refIndentLevel) += INT64(1);
 #line 22 "ChapelNumLocales.chpl"
-  chpl__init_ChapelNumLocales_p = true;
+  chpl__init_ChapelNumLocales_p = UINT8(true);
 #line 29 "ChapelNumLocales.chpl"
   call_tmp = chpl_config_has_value("numLocales", "Built-in");
 #line 29 "ChapelNumLocales.chpl"
   call_tmp2 = (! call_tmp);
 #line 29 "ChapelNumLocales.chpl"
-  if (call_tmp2) /* ZLINE: 29 /home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelNumLocales.chpl */
+  if (call_tmp2) /* ZLINE: 29 /home/agobin/Documents/chapel-1.13.0/modules/internal/ChapelNumLocales.chpl */
 #line 29 "ChapelNumLocales.chpl"
   {
 #line 29 "ChapelNumLocales.chpl"
@@ -41,13 +41,13 @@ static void chpl__init_ChapelNumLocales(int64_t _ln, c_string _fn) {
 #line 29 "ChapelNumLocales.chpl"
     const_tmp = call_tmp3;
 #line 29 "ChapelNumLocales.chpl"
-  } else /* ZLINE: 29 /home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelNumLocales.chpl */
+  } else /* ZLINE: 29 /home/agobin/Documents/chapel-1.13.0/modules/internal/ChapelNumLocales.chpl */
 #line 29 "ChapelNumLocales.chpl"
   {
 #line 29 "ChapelNumLocales.chpl"
     call_tmp4 = chpl_config_get_value("numLocales", "Built-in");
 #line 29 "ChapelNumLocales.chpl"
-    const_tmp = _command_line_cast14(call_tmp4, _ln, _fn);
+    const_tmp = _command_line_cast12(call_tmp4, _ln, _fn);
 #line 29 "ChapelNumLocales.chpl"
   }
 #line 29 "ChapelNumLocales.chpl"

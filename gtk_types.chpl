@@ -1,4 +1,3 @@
-
 //This file contains gtk types externded into chapel
 
 extern type gpointer;
@@ -132,7 +131,8 @@ extern type GtkLayout; 			//- Infinite scrollable area containing child widgets 
 extern type GtkNotebook; 		//- A tabbed notebook container
 extern type GtkTable; 			//- Pack widgets in regular patterns
 extern type GtkExpander; 		//- A container which can hide its child
-	
+extern type GtkGrid;			//- A container for widgets
+
 	//Ornaments
 extern type GtkFrame; 			//- A bin with a decorative frame and optional label
 extern type GtkHSeparator; 		//- A horizontal separator

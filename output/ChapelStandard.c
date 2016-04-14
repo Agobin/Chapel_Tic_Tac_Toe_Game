@@ -1,10 +1,10 @@
 /* ChapelStandard.chpl:23 */
-void chpl__init_ChapelStandard(int64_t _ln, c_string _fn) {
+void chpl__init_ChapelStandard(int64_t _ln, int32_t _fn) {
   c_string modFormatStr;
   c_string modStr;
   _ref_int32_t refIndentLevel = NULL;
 #line 23 "ChapelStandard.chpl"
-  if (chpl__init_ChapelStandard_p) /* ZLINE: 23 /home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelStandard.chpl */
+  if (chpl__init_ChapelStandard_p) /* ZLINE: 23 /home/agobin/Documents/chapel-1.13.0/modules/internal/ChapelStandard.chpl */
 #line 23 "ChapelStandard.chpl"
   {
 #line 23 "ChapelStandard.chpl"
@@ -22,21 +22,23 @@ void chpl__init_ChapelStandard(int64_t _ln, c_string _fn) {
 #line 23 "ChapelStandard.chpl"
   *(refIndentLevel) += INT64(1);
 #line 23 "ChapelStandard.chpl"
-  chpl__init_ChapelStandard_p = true;
+  chpl__init_ChapelStandard_p = UINT8(true);
 #line 23 "ChapelStandard.chpl"
   {
 #line 23 "ChapelStandard.chpl"
-    chpl__init_ChapelBase(_ln, _fn);
+    chpl__init_CPtr(_ln, _fn);
+#line 23 "ChapelStandard.chpl"
+    chpl__init_CString(_ln, _fn);
 #line 23 "ChapelStandard.chpl"
     chpl__init_String(_ln, _fn);
+#line 23 "ChapelStandard.chpl"
+    chpl__init_ChapelBase(_ln, _fn);
 #line 23 "ChapelStandard.chpl"
     chpl__init_MemConsistency(_ln, _fn);
 #line 23 "ChapelStandard.chpl"
     chpl__init_Atomics(_ln, _fn);
 #line 23 "ChapelStandard.chpl"
     chpl__init_AtomicsCommon(_ln, _fn);
-#line 23 "ChapelStandard.chpl"
-    chpl__init_NewString(_ln, _fn);
 #line 23 "ChapelStandard.chpl"
     chpl__init_ChapelThreads(_ln, _fn);
 #line 23 "ChapelStandard.chpl"

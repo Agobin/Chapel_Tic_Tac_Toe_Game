@@ -1,10 +1,10 @@
 /* MemConsistency.chpl:20 */
-static void chpl__init_MemConsistency(int64_t _ln, c_string _fn) {
+static void chpl__init_MemConsistency(int64_t _ln, int32_t _fn) {
   c_string modFormatStr;
   c_string modStr;
   _ref_int32_t refIndentLevel = NULL;
 #line 20 "MemConsistency.chpl"
-  if (chpl__init_MemConsistency_p) /* ZLINE: 20 /home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/MemConsistency.chpl */
+  if (chpl__init_MemConsistency_p) /* ZLINE: 20 /home/agobin/Documents/chapel-1.13.0/modules/internal/MemConsistency.chpl */
 #line 20 "MemConsistency.chpl"
   {
 #line 20 "MemConsistency.chpl"
@@ -22,7 +22,7 @@ static void chpl__init_MemConsistency(int64_t _ln, c_string _fn) {
 #line 20 "MemConsistency.chpl"
   *(refIndentLevel) += INT64(1);
 #line 20 "MemConsistency.chpl"
-  chpl__init_MemConsistency_p = true;
+  chpl__init_MemConsistency_p = UINT8(true);
 #line 20 "MemConsistency.chpl"
   *(refIndentLevel) -= INT64(1);
 #line 20 "MemConsistency.chpl"

@@ -1,12 +1,12 @@
 /* ChapelThreads.chpl:29 */
-static void chpl__init_ChapelThreads(int64_t _ln, c_string _fn) {
+static void chpl__init_ChapelThreads(int64_t _ln, int32_t _fn) {
   c_string modFormatStr;
   c_string modStr;
   _ref_int32_t refIndentLevel = NULL;
   int32_t call_tmp;
   int64_t call_tmp2;
 #line 29 "ChapelThreads.chpl"
-  if (chpl__init_ChapelThreads_p) /* ZLINE: 29 /home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/ChapelThreads.chpl */
+  if (chpl__init_ChapelThreads_p) /* ZLINE: 29 /home/agobin/Documents/chapel-1.13.0/modules/internal/ChapelThreads.chpl */
 #line 29 "ChapelThreads.chpl"
   {
 #line 29 "ChapelThreads.chpl"
@@ -24,7 +24,7 @@ static void chpl__init_ChapelThreads(int64_t _ln, c_string _fn) {
 #line 29 "ChapelThreads.chpl"
   *(refIndentLevel) += INT64(1);
 #line 29 "ChapelThreads.chpl"
-  chpl__init_ChapelThreads_p = true;
+  chpl__init_ChapelThreads_p = UINT8(true);
 #line 33 "ChapelThreads.chpl"
   call_tmp = chpl_task_getenvNumThreadsPerLocale();
 #line 33 "ChapelThreads.chpl"

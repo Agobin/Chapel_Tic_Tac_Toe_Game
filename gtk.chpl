@@ -83,7 +83,12 @@ extern proc gtk_table_set_homogeneous(table: c_ptr(GtkTable), homogeneous: bool)
 extern proc gtk_table_set_row_spacing(table: c_ptr(GtkTable), row: c_int, spacing: c_int): void;
 extern proc gtk_table_set_row_spacings(table: c_ptr(GtkTable), spacing: c_int): void;
 
-
+//GtkGrid
+extern proc gtk_grid_new(): c_ptr(GtkWidget);
+extern proc gtk_grid_attach(grid: c_ptr(GtkGrid), widget: c_ptr(GtkWidget),
+							attachLeft: c_int, attachTop: c_int,
+							width: c_int, height: c_int): void;
+extern proc GTK_GRID(grid:c_ptr(GtkWidget)): c_ptr(GtkGrid);
  
 //Custom defined functions 
 extern proc destroy_c( a:c_ptr(GtkWidget) , b:gpointer): void;

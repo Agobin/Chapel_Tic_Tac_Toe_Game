@@ -1,5 +1,5 @@
 /* PrintModuleInitOrder.chpl:29 */
-void chpl__init_PrintModuleInitOrder(int64_t _ln, c_string _fn) {
+void chpl__init_PrintModuleInitOrder(int64_t _ln, int32_t _fn) {
   c_string modFormatStr;
   c_string modStr;
   _ref_int32_t refIndentLevel = NULL;
@@ -9,7 +9,7 @@ void chpl__init_PrintModuleInitOrder(int64_t _ln, c_string _fn) {
   c_string call_tmp3;
   chpl_bool call_tmp4;
 #line 29 "PrintModuleInitOrder.chpl"
-  if (chpl__init_PrintModuleInitOrder_p) /* ZLINE: 29 /home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/PrintModuleInitOrder.chpl */
+  if (chpl__init_PrintModuleInitOrder_p) /* ZLINE: 29 /home/agobin/Documents/chapel-1.13.0/modules/internal/PrintModuleInitOrder.chpl */
 #line 29 "PrintModuleInitOrder.chpl"
   {
 #line 29 "PrintModuleInitOrder.chpl"
@@ -27,25 +27,25 @@ void chpl__init_PrintModuleInitOrder(int64_t _ln, c_string _fn) {
 #line 29 "PrintModuleInitOrder.chpl"
   *(refIndentLevel) += INT64(1);
 #line 29 "PrintModuleInitOrder.chpl"
-  chpl__init_PrintModuleInitOrder_p = true;
+  chpl__init_PrintModuleInitOrder_p = UINT8(true);
 #line 30 "PrintModuleInitOrder.chpl"
   call_tmp = chpl_config_has_value("printModuleInitOrder", "Built-in");
 #line 30 "PrintModuleInitOrder.chpl"
   call_tmp2 = (! call_tmp);
 #line 30 "PrintModuleInitOrder.chpl"
-  if (call_tmp2) /* ZLINE: 30 /home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/PrintModuleInitOrder.chpl */
+  if (call_tmp2) /* ZLINE: 30 /home/agobin/Documents/chapel-1.13.0/modules/internal/PrintModuleInitOrder.chpl */
 #line 30 "PrintModuleInitOrder.chpl"
   {
 #line 30 "PrintModuleInitOrder.chpl"
-    const_tmp = false;
+    const_tmp = UINT8(false);
 #line 30 "PrintModuleInitOrder.chpl"
-  } else /* ZLINE: 30 /home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/PrintModuleInitOrder.chpl */
+  } else /* ZLINE: 30 /home/agobin/Documents/chapel-1.13.0/modules/internal/PrintModuleInitOrder.chpl */
 #line 30 "PrintModuleInitOrder.chpl"
   {
 #line 30 "PrintModuleInitOrder.chpl"
     call_tmp3 = chpl_config_get_value("printModuleInitOrder", "Built-in");
 #line 30 "PrintModuleInitOrder.chpl"
-    const_tmp = _command_line_cast13(call_tmp3, _ln, _fn);
+    const_tmp = _command_line_cast11(call_tmp3, _ln, _fn);
 #line 30 "PrintModuleInitOrder.chpl"
   }
 #line 30 "PrintModuleInitOrder.chpl"
@@ -55,7 +55,7 @@ void chpl__init_PrintModuleInitOrder(int64_t _ln, c_string _fn) {
 #line 48 "PrintModuleInitOrder.chpl"
   call_tmp4 = printModuleInitOrder;
 #line 48 "PrintModuleInitOrder.chpl"
-  if (call_tmp4) /* ZLINE: 48 /home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/PrintModuleInitOrder.chpl */
+  if (call_tmp4) /* ZLINE: 48 /home/agobin/Documents/chapel-1.13.0/modules/internal/PrintModuleInitOrder.chpl */
 #line 48 "PrintModuleInitOrder.chpl"
   {
 #line 48 "PrintModuleInitOrder.chpl"
@@ -74,7 +74,7 @@ void chpl__init_PrintModuleInitOrder(int64_t _ln, c_string _fn) {
 #line 29 "PrintModuleInitOrder.chpl"
 /* PrintModuleInitOrder.chpl:37 */
 #line 29 "PrintModuleInitOrder.chpl"
-static void printModuleInit(c_string s1, c_string s2, int64_t len, int64_t _ln, c_string _fn) {
+static void printModuleInit(c_string s1, c_string s2, int64_t len, int64_t _ln, int32_t _fn) {
 #line 29 "PrintModuleInitOrder.chpl"
   chpl_bool local_printModuleInitOrder;
 #line 29 "PrintModuleInitOrder.chpl"
@@ -90,7 +90,7 @@ static void printModuleInit(c_string s1, c_string s2, int64_t len, int64_t _ln, 
 #line 39 "PrintModuleInitOrder.chpl"
   call_tmp = local_printModuleInitOrder;
 #line 39 "PrintModuleInitOrder.chpl"
-  if (call_tmp) /* ZLINE: 39 /home/agobin/Documents/GitHub/chapel-1.12.0/modules/internal/PrintModuleInitOrder.chpl */
+  if (call_tmp) /* ZLINE: 39 /home/agobin/Documents/chapel-1.13.0/modules/internal/PrintModuleInitOrder.chpl */
 #line 39 "PrintModuleInitOrder.chpl"
   {
 #line 40 "PrintModuleInitOrder.chpl"
