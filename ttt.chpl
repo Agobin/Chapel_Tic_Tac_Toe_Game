@@ -155,7 +155,7 @@ module Functions{
 	/*
 	 The resetGame function resets the game to its initial state. It's called when the reset button is clicked
 	 :arg btn: The button that triggers the function to be called
-	 :type btn: c_ptr(GtkWidget)
+	 :type btn: c_ptr(GtkWidget) 
 	  
 	 :arg data: Data passed to the resetGame function, it could be a string, a number or anything else depending on the instance
 	 :type data: c_void_ptr
@@ -298,7 +298,7 @@ proc main( args: [] string){
 			button_array[counter] = gtk_button_new_with_label(" ");
 			
 			//This switch statement links a button with the appropriate callback function based on the index of the 
-			//button in the button_array matrix  
+			//button in the button_array matrix          
 			select(counter){
 				when 1 do
 					g_signal_connect(button_array[counter], "clicked", G_CALLBACK(record_move), c_ptrTo(one));
