@@ -11,8 +11,19 @@ var gameOver:bool = false;
 
 //This module contains functions for the game
 module Functions{
-	//This is the defend function for the computer
-	proc defend(boardMatrix: []int, moves: []int){
+	
+	/*
+	 This function implements the Computer's Artificial Intelligence for defending the game
+	 :arg boardMatrix: A matrix representation of the board
+	 :type arg: []int
+	  
+	 :arg moves: An array of all available moves the computer can make
+	 :type moves: []int
+	  
+	 :returns: Returns a number representing the index of a move in the moves array which prevents its opponent from winning
+	 :rtype: int
+	 */
+	proc defend(boardMatrix: []int, moves: []int): int{
 
 		var position:int = moves[1];
 		var playerOneWon: int = 0;
@@ -36,6 +47,17 @@ module Functions{
 		return position;
 	}
 	
+	/*
+	 This function implements the Computer's Artificial Intelligence for winning the game
+	 :arg boardMatrix: A matrix representation of the board
+	 :type arg: []int
+	  
+	 :arg moves: An array of all available moves the computer can make
+	 :type moves: []int
+	  
+	 :returns: Returns a number representing the index of a move in the moves array which will make the computer win the game
+	 :rtype: int
+	 */
 	proc attack(boardMatrix: []int, moves: []int){
 
 		var position: int = 0;
@@ -59,10 +81,17 @@ module Functions{
 		return position;
 	}
 	
+	/*
+	 This function represents the computer's mind. It calls the defend and/or attack functions depending on the state of the game
+	 :arg boardMatrix: A matrix representation of the board
+	 :type arg: []int
+	  
+	 :returns: Returns the value returned by either the attack or defend function
+	 :rtype: int
+	 */
 	proc computersMind( boardMatrix: []int): int{
 
 		var availableMoves: int = 9 - playCounter;
-		
 		var moves: [1..availableMoves]int;
 		var counter: int = 1;
 		
@@ -87,8 +116,20 @@ module Functions{
 		
 	}
 	
-	//This function checks if a player with id = key has won.
-	//It also checks for a win base on an assumption if the assumeIndex is set
+	/*This function checks if a player with id = key has won the game. It can also check if a player with id = key has won based on some
+	 assumptions.
+		:arg a: A matrix representing the state of the game
+		:type a:[]int
+		
+		:arg key: The id of the player it has to check if has won the game
+		:type key: int
+		
+		:arg assumeIndex: An index in matrix a that assumes the player with id = key had played in that index, by default it's 0 meaning no assumption has been made
+		:type assumeIndex: int
+		 
+		:returns: Returns the value of key if the player wins or 0 if the player doesn't win
+		
+	*/
 	proc analyseBoard( a: []int, key: int, assumeIndex:int = 0): int{	
 		var result = 0;
 		
@@ -111,6 +152,17 @@ module Functions{
 		return result; 
 	}
 	
+	/*
+	 The resetGame function resets the game to its initial state. It's called when the reset button is clicked
+	 :arg btn: The button that triggers the function to be called
+	 :type btn: c_ptr(GtkWidget)
+	  
+	 :arg data: Data passed to the resetGame function, it could be a string, a number or anything else depending on the instance
+	 :type data: c_void_ptr
+	  
+	 :returns: Returns nothing
+	 :rtype: void
+	 */
 	export proc resetGame(btn: c_ptr(GtkWidget), data: c_void_ptr): void{
 	
 		playCounter = 0;
@@ -123,6 +175,16 @@ module Functions{
 		gtk_label_set_text(GTK_LABEL(output), "Click on a button to start play.");
 	}
 	
+	/*
+	 The record_move function stores the move made by a player. It checks if the move is valid i.e if the spot has not been occupied already
+	 It is called when a button is clicked
+	 
+	 :arg button: The button - representing the move - that has been clicked
+	 :type button: c_ptr(GtkWidget)
+	 
+	 :arg numPtr: An integer reference that points to the index of the button clicked
+	 :type numPtr: c_ptr(int)
+	 */
 	export proc record_move (button: c_ptr(GtkWidget), numPtr: c_ptr(int)): void{
 		
 		var num = numPtr.deref();
@@ -150,6 +212,7 @@ module Functions{
 				
 				var player: int = analyseBoard(boardMatrix, 1);
 				
+				//If the player with id = player has won
 				if( player ){ 
 					gtk_label_set_text(GTK_LABEL(output), "  Game Over: You win!!");
 					gameOver = true;
