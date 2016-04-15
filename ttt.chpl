@@ -249,6 +249,11 @@ module Functions{
 	}
 }
 
+/*
+ This module contains the declaration of all callback functions(function defined to call when an event like a button click occurs) defined in this program
+ Because chapel doesn't currently support this C feature, we let the compiler see the functions as C variables using extend and using opaque
+ to make it compile the program without an error message. Opaque in this instance hides the fact that the functions are callback functions
+ */
 module FunctionSysbols{
 	
 	extern var callMe: opaque;
@@ -292,6 +297,8 @@ proc main( args: [] string){
 		for j in 1..3{  
 			button_array[counter] = gtk_button_new_with_label(" ");
 			
+			//This switch statement links a button with the appropriate callback function based on the index of the 
+			//button in the button_array matrix
 			select(counter){
 				when 1 do
 					g_signal_connect(button_array[counter], "clicked", G_CALLBACK(record_move), c_ptrTo(one));
