@@ -1,0 +1,28 @@
+.. default-domain:: chpl
+
+.. module:: ttt
+
+ttt
+===
+**Submodules**
+
+.. toctree::
+   :maxdepth: 1
+   :glob:
+
+   ttt/*
+
+.. data:: var boardMatrix: [1..9] int
+
+.. data:: var output: c_ptr(GtkWidget)
+
+.. data:: var playCounter: int = 0
+
+.. data:: var button_array: [1..9] c_ptr(GtkWidget)
+
+.. data:: var board: c_ptr(GtkWidget)
+
+.. data:: var gameOver: bool = false
+
+.. function:: proc main(args: [] string)
+

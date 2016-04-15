@@ -1,0 +1,332 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Functions &mdash; chpldoc 0.0.1 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="chpldoc 0.0.1 documentation" href="../../index.html"/>
+        <link rel="prev" title="FunctionSysbols" href="FunctionSysbols.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> chpldoc
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">chpldoc documentation</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../ttt.html">ttt</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="FunctionSysbols.html">FunctionSysbols</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Functions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="FunctionSysbols.html">FunctionSysbols</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Functions</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../index.html">chpldoc</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../index.html">Docs</a> &raquo;</li>
+      
+    <li>Functions</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/modules/ttt/Functions.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <span class="target" id="module-Functions"></span><div class="section" id="functions">
+<h1>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="Functions.defend">
+<em class="property">proc </em><code class="descname">defend</code><span class="sig-paren">(</span><em>boardMatrix: [] int</em>, <em>moves: [] int</em><span class="sig-paren">)</span>: int<a class="headerlink" href="#Functions.defend" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function implements the Computer&#8217;s Artificial Intelligence for defending the game
+:arg boardMatrix: A matrix representation of the board
+:type arg: []int</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Arguments:</th><td class="field-body"><strong>moves</strong> : <em>[]int</em> &#8211; An array of all available moves the computer can make</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Returns a number representing the index of a move in the moves array which prevents its opponent from winning</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Functions.attack">
+<em class="property">proc </em><code class="descname">attack</code><span class="sig-paren">(</span><em>boardMatrix: [] int</em>, <em>moves: [] int</em><span class="sig-paren">)</span><a class="headerlink" href="#Functions.attack" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function implements the Computer&#8217;s Artificial Intelligence for winning the game
+:arg boardMatrix: A matrix representation of the board
+:type arg: []int</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Arguments:</th><td class="field-body"><strong>moves</strong> : <em>[]int</em> &#8211; An array of all available moves the computer can make</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Returns a number representing the index of a move in the moves array which will make the computer win the game</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Functions.computersMind">
+<em class="property">proc </em><code class="descname">computersMind</code><span class="sig-paren">(</span><em>boardMatrix: [] int</em><span class="sig-paren">)</span>: int<a class="headerlink" href="#Functions.computersMind" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function represents the computer&#8217;s mind. It calls the defend and/or attack functions depending on the state of the game
+:arg boardMatrix: A matrix representation of the board
+:type arg: []int</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Returns the value returned by either the attack or defend function</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Functions.analyseBoard">
+<em class="property">proc </em><code class="descname">analyseBoard</code><span class="sig-paren">(</span><em>a: [] int</em>, <em>key: int</em>, <em>assumeIndex: int = 0</em><span class="sig-paren">)</span>: int<a class="headerlink" href="#Functions.analyseBoard" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function checks if a player with id = key has won the game. It can also check if a player with id = key has won based on some
+assumptions.
+:arg a: A matrix representing the state of the game
+:type a:[]int</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Arguments:</th><td class="field-body"><ul class="first simple">
+<li><strong>key</strong> : <em>int</em> &#8211; The id of the player it has to check if has won the game</li>
+<li><strong>assumeIndex</strong> : <em>int</em> &#8211; An index in matrix a that assumes the player with id = key had played in that index, by default it&#8217;s 0 meaning no assumption has been made</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Returns the value of key if the player wins or 0 if the player doesn&#8217;t win</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Functions.resetGame">
+<em class="property">export proc </em><code class="descname">resetGame</code><span class="sig-paren">(</span><em>btn: c_ptr(GtkWidget)</em>, <em>data: c_void_ptr</em><span class="sig-paren">)</span>: void<a class="headerlink" href="#Functions.resetGame" title="Permalink to this definition">¶</a></dt>
+<dd><p>The resetGame function resets the game to its initial state. It&#8217;s called when the reset button is clicked
+:arg btn: The button that triggers the function to be called
+:type btn: c_ptr(GtkWidget)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Arguments:</th><td class="field-body"><strong>data</strong> : <em>c_void_ptr</em> &#8211; Data passed to the resetGame function, it could be a string, a number or anything else depending on the instance</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Returns nothing</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">void</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Functions.record_move">
+<em class="property">export proc </em><code class="descname">record_move</code><span class="sig-paren">(</span><em>button: c_ptr(GtkWidget)</em>, <em>numPtr: c_ptr(int)</em><span class="sig-paren">)</span>: void<a class="headerlink" href="#Functions.record_move" title="Permalink to this definition">¶</a></dt>
+<dd><p>The record_move function stores the move made by a player. It checks if the move is valid i.e if the spot has not been occupied already
+It is called when a button is clicked</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Arguments:</th><td class="field-body"><ul class="first last simple">
+<li><strong>button</strong> : <em>c_ptr(GtkWidget)</em> &#8211; The button - representing the move - that has been clicked</li>
+<li><strong>numPtr</strong> : <em>c_ptr(int)</em> &#8211; An integer reference that points to the index of the button clicked</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="FunctionSysbols.html" class="btn btn-neutral" title="FunctionSysbols" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, .
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'0.0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+  
+ 
+
+
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+.. default-domain:: chpl
+
+.. module:: FunctionSysbols
+
+FunctionSysbols
+===============
+.. data:: var callMe: opaque
+
+.. data:: var record_move: opaque
+
+.. data:: var resetGame: opaque
+
