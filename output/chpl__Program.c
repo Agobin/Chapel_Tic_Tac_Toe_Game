@@ -78,7 +78,7 @@ void chpl__init_preInit(int64_t _ln, int32_t _fn) {
   chpl__init_StringCasts_p = UINT8(false);
 #line 22 "ChapelNumLocales.chpl"
   chpl__init_ChapelNumLocales_p = UINT8(false);
-#line 189 "ttt.chpl"
+#line 257 "ttt.chpl"
   chpl__init_FunctionSysbols_p = UINT8(false);
 #line 1 "ttt.chpl"
   chpl__init_ttt_p = UINT8(false);

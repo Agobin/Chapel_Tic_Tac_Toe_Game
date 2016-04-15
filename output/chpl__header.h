@@ -275,10 +275,10 @@ typedef uint8_t *_ref_uint8_t;
 typedef struct chpl__class_localscoforall_fn_s {
   _ddata_int64_t _0_x1_tet;
   chpl___EndCount_atomic_int64_int64_t _1_rvfDerefTmp;
-  int64_t _2_len;
-  int64_t _3_numChunks;
+  _ref_range_int64_t_bounded_F _2_this;
+  int64_t _3_len;
   int64_t _4__yieldedIndex;
-  _ref_range_int64_t_bounded_F _5_this;
+  int64_t _5_numChunks;
   int64_t _ln;
   int32_t _fn;
 } chpl__class_localscoforall_fn_object;
@@ -554,7 +554,7 @@ static void init_elts2(_ddata_locale x, int64_t s, int64_t _ln, int32_t _fn);
 static void init_elts3(_ddata_string x, int64_t s, int64_t _ln, int32_t _fn);
 static void init_elts4(_ddata_c_ptr_GtkWidget x, int64_t s, int64_t _ln, int32_t _fn);
 static void init_elts5(_ddata_localesSignal x, int64_t s, int64_t _ln, int32_t _fn);
-static void coforall_fn(_ddata_int64_t x1_tet, chpl___EndCount_atomic_int64_int64_t _coforallCount, int64_t len, int64_t numChunks, int64_t chunk, _ref_range_int64_t_bounded_F this5, int64_t _ln, int32_t _fn);
+static void coforall_fn(_ddata_int64_t x1_tet, chpl___EndCount_atomic_int64_int64_t _coforallCount, _ref_range_int64_t_bounded_F this5, int64_t len, int64_t chunk, int64_t numChunks, int64_t _ln, int32_t _fn);
 static void wrapcoforall_fn(_class_localscoforall_fn dummy_c);
 static chpl___EndCount_atomic_int64_int64_t _construct__EndCount(atomic_int64* const i, int64_t taskCnt, c_void_ptr taskList, chpl___EndCount_atomic_int64_int64_t meme, int64_t _ln, int32_t _fn);
 static void chpl__auto_destroy__EndCount(chpl___EndCount_atomic_int64_int64_t this5, int64_t _ln, int32_t _fn);
@@ -901,7 +901,7 @@ chpl_fn_p chpl_vmtable[] = {
   (chpl_fn_p)NULL,
   (chpl_fn_p)NULL,
   /* _class_localscoforall_fn */
-  (chpl_fn_p)NULL,
+  (chpl_fn_p)chpl__auto_destroy_object,
   (chpl_fn_p)NULL,
   (chpl_fn_p)NULL,
   (chpl_fn_p)NULL,
@@ -957,18 +957,18 @@ chpl_fn_p chpl_vmtable[] = {
   (chpl_fn_p)dsiGetBaseDom,
   /* locale */
   (chpl_fn_p)chpl__auto_destroy_locale,
-  (chpl_fn_p)getChild,
   (chpl_fn_p)chpl_id,
+  (chpl_fn_p)getChild,
   (chpl_fn_p)NULL,
   /* AbstractLocaleModel */
   (chpl_fn_p)chpl__auto_destroy_AbstractLocaleModel,
-  (chpl_fn_p)getChild,
   (chpl_fn_p)chpl_id,
+  (chpl_fn_p)getChild,
   (chpl_fn_p)NULL,
   /* AbstractRootLocale */
   (chpl_fn_p)chpl__auto_destroy_AbstractRootLocale,
-  (chpl_fn_p)getChild,
   (chpl_fn_p)chpl_id,
+  (chpl_fn_p)getChild,
   (chpl_fn_p)localeIDtoLocale,
   /* localesSignal */
   (chpl_fn_p)chpl__auto_destroy_localesSignal,
@@ -1012,13 +1012,13 @@ chpl_fn_p chpl_vmtable[] = {
   (chpl_fn_p)dsiGetBaseDom6,
   /* LocaleModel */
   (chpl_fn_p)chpl__auto_destroy_LocaleModel,
-  (chpl_fn_p)getChild2,
   (chpl_fn_p)chpl_id2,
+  (chpl_fn_p)getChild2,
   (chpl_fn_p)NULL,
   /* RootLocale */
   (chpl_fn_p)chpl__auto_destroy_RootLocale,
-  (chpl_fn_p)getChild3,
   (chpl_fn_p)chpl_id3,
+  (chpl_fn_p)getChild3,
   (chpl_fn_p)localeIDtoLocale2,
   /* _class_localscoforall_fn2 */
   (chpl_fn_p)NULL,

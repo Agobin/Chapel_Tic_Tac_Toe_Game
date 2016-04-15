@@ -540,11 +540,11 @@ static void init_elts(_ddata_int64_t x, int64_t s, int64_t _ln, int32_t _fn) {
 #line 632 "ChapelBase.chpl"
         chpl_check_nil(_args_forcoforall_fn, INT64(632), INT64(2));
 #line 632 "ChapelBase.chpl"
-        (_args_forcoforall_fn)->_2_len = len;
+        (_args_forcoforall_fn)->_2_this = this9;
 #line 632 "ChapelBase.chpl"
         chpl_check_nil(_args_forcoforall_fn, INT64(632), INT64(2));
 #line 632 "ChapelBase.chpl"
-        (_args_forcoforall_fn)->_3_numChunks = numChunks;
+        (_args_forcoforall_fn)->_3_len = len;
 #line 632 "ChapelBase.chpl"
         chpl_check_nil(_args_forcoforall_fn, INT64(632), INT64(2));
 #line 632 "ChapelBase.chpl"
@@ -552,7 +552,7 @@ static void init_elts(_ddata_int64_t x, int64_t s, int64_t _ln, int32_t _fn) {
 #line 632 "ChapelBase.chpl"
         chpl_check_nil(_args_forcoforall_fn, INT64(632), INT64(2));
 #line 632 "ChapelBase.chpl"
-        (_args_forcoforall_fn)->_5_this = this9;
+        (_args_forcoforall_fn)->_5_numChunks = numChunks;
 #line 632 "ChapelBase.chpl"
         _args_vforcoforall_fn = ((void*)(_args_forcoforall_fn));
 #line 632 "ChapelBase.chpl"
@@ -723,13 +723,13 @@ static void wrapcoforall_fn(_class_localscoforall_fn dummy_c) {
 #line 583 "ChapelBase.chpl"
   chpl___EndCount_atomic_int64_int64_t _1_rvfDerefTmp = NULL;
 #line 583 "ChapelBase.chpl"
-  int64_t _2_len;
+  _ref_range_int64_t_bounded_F _2_this = NULL;
 #line 583 "ChapelBase.chpl"
-  int64_t _3_numChunks;
+  int64_t _3_len;
 #line 583 "ChapelBase.chpl"
   int64_t _4__yieldedIndex;
 #line 583 "ChapelBase.chpl"
-  _ref_range_int64_t_bounded_F _5_this = NULL;
+  int64_t _5_numChunks;
 #line 632 "ChapelBase.chpl"
   _fn = (dummy_c)->_fn;
 #line 632 "ChapelBase.chpl"
@@ -745,11 +745,11 @@ static void wrapcoforall_fn(_class_localscoforall_fn dummy_c) {
 #line 632 "ChapelBase.chpl"
   chpl_check_nil(dummy_c, INT64(632), INT64(2));
 #line 632 "ChapelBase.chpl"
-  _2_len = (dummy_c)->_2_len;
+  _2_this = (dummy_c)->_2_this;
 #line 632 "ChapelBase.chpl"
   chpl_check_nil(dummy_c, INT64(632), INT64(2));
 #line 632 "ChapelBase.chpl"
-  _3_numChunks = (dummy_c)->_3_numChunks;
+  _3_len = (dummy_c)->_3_len;
 #line 632 "ChapelBase.chpl"
   chpl_check_nil(dummy_c, INT64(632), INT64(2));
 #line 632 "ChapelBase.chpl"
@@ -757,9 +757,9 @@ static void wrapcoforall_fn(_class_localscoforall_fn dummy_c) {
 #line 632 "ChapelBase.chpl"
   chpl_check_nil(dummy_c, INT64(632), INT64(2));
 #line 632 "ChapelBase.chpl"
-  _5_this = (dummy_c)->_5_this;
+  _5_numChunks = (dummy_c)->_5_numChunks;
 #line 632 "ChapelBase.chpl"
-  coforall_fn(_0_x1_tet, _1_rvfDerefTmp, _2_len, _3_numChunks, _4__yieldedIndex, _5_this, _ln, _fn);
+  coforall_fn(_0_x1_tet, _1_rvfDerefTmp, _2_this, _3_len, _4__yieldedIndex, _5_numChunks, _ln, _fn);
 #line 632 "ChapelBase.chpl"
   chpl_here_free(((void*)(dummy_c)), _ln, _fn);
 #line 632 "ChapelBase.chpl"
@@ -770,7 +770,7 @@ static void wrapcoforall_fn(_class_localscoforall_fn dummy_c) {
 #line 632 "ChapelBase.chpl"
 /* ChapelBase.chpl:632 */
 #line 632 "ChapelBase.chpl"
-static void coforall_fn(_ddata_int64_t x1_tet, chpl___EndCount_atomic_int64_int64_t _coforallCount, int64_t len, int64_t numChunks, int64_t chunk, _ref_range_int64_t_bounded_F this5, int64_t _ln, int32_t _fn) {
+static void coforall_fn(_ddata_int64_t x1_tet, chpl___EndCount_atomic_int64_int64_t _coforallCount, _ref_range_int64_t_bounded_F this5, int64_t len, int64_t chunk, int64_t numChunks, int64_t _ln, int32_t _fn) {
 #line 632 "ChapelBase.chpl"
   _tuple_2_star_int64_t const_tmp;
 #line 632 "ChapelBase.chpl"
